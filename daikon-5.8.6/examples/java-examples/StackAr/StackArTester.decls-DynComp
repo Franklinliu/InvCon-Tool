@@ -1,0 +1,2854 @@
+// Declarations for DataStructures.StackArTester
+// Declarations written 2021-01-19T14:19:52.541565 by daikon.DynComp
+
+decl-version 2.0
+var-comparability implicit
+
+ppt DataStructures.StackArTester:::CLASS
+ppt-type class
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+
+ppt DataStructures.StackArTester:::OBJECT
+ppt-type object
+variable this
+  var-kind variable
+  dec-type DataStructures.StackArTester
+  rep-type hashcode
+  flags is_param non_null
+  comparability 6
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+
+ppt DataStructures.StackArTester.StackArTester():::ENTER
+ppt-type enter
+
+ppt DataStructures.StackArTester.StackArTester():::EXIT5
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackArTester
+  rep-type hashcode
+  flags is_param non_null
+  comparability 6
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+
+ppt DataStructures.StackArTester.doNew(int):::ENTER
+ppt-type enter
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable size
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 4
+
+ppt DataStructures.StackArTester.doNew(int):::EXIT14
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable size
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 4
+
+ppt DataStructures.StackArTester.createItem(int):::ENTER
+ppt-type enter
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable phase
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 6
+
+ppt DataStructures.StackArTester.createItem(int):::EXIT20
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable phase
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 6
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 7
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackArTester.createItem(int):::EXIT22
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable phase
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 6
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 7
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackArTester.createItem(int):::EXIT24
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable phase
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 6
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 7
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackArTester.createItem(int):::EXIT26
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable phase
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 6
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 7
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackArTester.createItem(int):::EXIT28
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable phase
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 6
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 7
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackArTester.createItem(int):::EXIT31
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable phase
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 6
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 7
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackArTester.push():::ENTER
+ppt-type enter
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+
+ppt DataStructures.StackArTester.push():::EXIT40
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+
+ppt DataStructures.StackArTester.topOrPop():::ENTER
+ppt-type enter
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+
+ppt DataStructures.StackArTester.topOrPop():::EXIT47
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+
+ppt DataStructures.StackArTester.observe():::ENTER
+ppt-type enter
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+
+ppt DataStructures.StackArTester.observe():::EXIT53
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+
+ppt DataStructures.StackArTester.fill(int):::ENTER
+ppt-type enter
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable n
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 4
+
+ppt DataStructures.StackArTester.fill(int):::EXIT74
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable n
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 4
+
+ppt DataStructures.StackArTester.main(java.lang.String[]):::ENTER
+ppt-type enter
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable args
+  var-kind variable
+  dec-type java.lang.String[]
+  rep-type hashcode
+  flags is_param
+  comparability 6
+variable args.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args args
+  flags synthetic classname non_null
+  comparability 1
+variable args[..]
+  var-kind array
+  array 1
+  dec-type java.lang.String[]
+  rep-type hashcode[]
+  comparability 7[9]
+variable args[..].toString
+  var-kind function toString()
+  array 1
+  dec-type java.lang.String[]
+  rep-type java.lang.String[]
+  function-args args[]
+  flags synthetic to_string
+  comparability 8[10]
+
+ppt DataStructures.StackArTester.main(java.lang.String[]):::EXIT83
+ppt-type subexit
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable args
+  var-kind variable
+  dec-type java.lang.String[]
+  rep-type hashcode
+  flags is_param
+  comparability 6
+variable args.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args args
+  flags synthetic classname non_null
+  comparability 1
+variable args[..]
+  var-kind array
+  array 1
+  dec-type java.lang.String[]
+  rep-type hashcode[]
+  comparability 7[9]
+variable args[..].toString
+  var-kind function toString()
+  array 1
+  dec-type java.lang.String[]
+  rep-type java.lang.String[]
+  function-args args[]
+  flags synthetic to_string
+  comparability 8[10]
+
+ppt DataStructures.StackArTester.equals(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackArTester
+  rep-type hashcode
+  flags is_param non_null
+  comparability 7
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 6
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackArTester.equals(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackArTester
+  rep-type hashcode
+  flags is_param non_null
+  comparability 8
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 6
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 7
+
+ppt DataStructures.StackArTester.equals_dcomp_instrumented(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackArTester
+  rep-type hashcode
+  flags is_param non_null
+  comparability 7
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 6
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackArTester.equals_dcomp_instrumented(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackArTester
+  rep-type hashcode
+  flags is_param non_null
+  comparability 8
+variable DataStructures.StackArTester.s
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  comparability 3
+variable DataStructures.StackArTester.s.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable DataStructures.StackArTester.s.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args DataStructures.StackArTester.s.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable DataStructures.StackArTester.s.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable DataStructures.StackArTester.s.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args DataStructures.StackArTester.s.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable DataStructures.StackArTester.s.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable DataStructures.StackArTester.rnd
+  var-kind variable
+  dec-type java.util.Random
+  rep-type hashcode
+  comparability 2
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 6
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 7
+
+ppt DataStructures.StackAr:::CLASS
+ppt-type class
+
+ppt DataStructures.StackAr:::OBJECT
+ppt-type object
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.StackAr.StackAr(int):::ENTER
+ppt-type enter
+variable capacity
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 2
+
+ppt DataStructures.StackAr.StackAr(int):::EXIT33
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 3
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 4[2]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[2]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 2
+variable capacity
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 2
+
+ppt DataStructures.StackAr.isEmpty():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.StackAr.isEmpty():::EXIT42
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 2
+
+ppt DataStructures.StackAr.isFull():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.StackAr.isFull():::EXIT52
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 2
+
+ppt DataStructures.StackAr.makeEmpty():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.StackAr.makeEmpty():::EXIT63
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.StackAr.top():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.StackAr.top():::EXIT74
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 2
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackAr.top():::EXIT75
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 2
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackAr.pop():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.StackAr.pop():::EXIT87
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.StackAr.push(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+variable x
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable x.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args x
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackAr.push(java.lang.Object):::EXIT99
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+variable x
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable x.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args x
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackAr.topAndPop():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 4
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 2[3]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[3]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.StackAr.topAndPop():::EXIT108
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 2
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackAr.topAndPop():::EXIT111
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable return
+  var-kind return
+  dec-type java.lang.Object
+  rep-type hashcode
+  comparability 2
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackAr.equals(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackAr.equals(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 6
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 4[5]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[5]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 5
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt DataStructures.StackAr.equals_dcomp_instrumented(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 5
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 3[4]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[4]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.StackAr.equals_dcomp_instrumented(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.StackAr
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable this.theArray
+  var-kind field theArray
+  dec-type java.lang.Object[]
+  rep-type hashcode
+  comparability 6
+variable this.theArray.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args this.theArray
+  flags synthetic classname non_null
+  comparability 1
+variable this.theArray[..]
+  var-kind array
+  array 1
+  dec-type java.lang.Object[]
+  rep-type hashcode[]
+  comparability 4[5]
+variable this.theArray[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args this.theArray[]
+  flags synthetic classname non_null
+  comparability 1[5]
+variable this.topOfStack
+  var-kind field topOfStack
+  dec-type int
+  rep-type int
+  comparability 5
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt DataStructures.Overflow:::CLASS
+ppt-type class
+
+ppt DataStructures.Overflow:::OBJECT
+ppt-type object
+variable this
+  var-kind variable
+  dec-type DataStructures.Overflow
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt DataStructures.Overflow.Overflow():::ENTER
+ppt-type enter
+
+ppt DataStructures.Overflow.Overflow():::EXIT8
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.Overflow
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt DataStructures.MyInteger:::CLASS
+ppt-type class
+
+ppt DataStructures.MyInteger:::OBJECT
+ppt-type object
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.MyInteger.MyInteger():::ENTER
+ppt-type enter
+
+ppt DataStructures.MyInteger.MyInteger():::EXIT17
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.MyInteger.MyInteger(int):::ENTER
+ppt-type enter
+variable x
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 2
+
+ppt DataStructures.MyInteger.MyInteger(int):::EXIT26
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 3
+variable x
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 3
+
+ppt DataStructures.MyInteger.intValue():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 3
+
+ppt DataStructures.MyInteger.intValue():::EXIT34
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 4
+variable return
+  var-kind return
+  dec-type int
+  rep-type int
+  comparability 2
+
+ppt DataStructures.MyInteger.compareTo(DataStructures.Comparable):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 4
+variable rhs
+  var-kind variable
+  dec-type DataStructures.Comparable
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable rhs.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args rhs
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.MyInteger.compareTo(DataStructures.Comparable):::EXIT57
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 5
+variable rhs
+  var-kind variable
+  dec-type DataStructures.Comparable
+  rep-type hashcode
+  flags is_param
+  comparability 3
+variable rhs.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args rhs
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type int
+  rep-type int
+  comparability 2
+
+ppt DataStructures.MyInteger.equals(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 4
+variable rhs
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable rhs.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args rhs
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.MyInteger.equals(java.lang.Object):::EXIT70
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 5
+variable rhs
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 3
+variable rhs.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args rhs
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 2
+
+ppt DataStructures.MyInteger.hash(int):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 4
+variable tableSize
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 2
+
+ppt DataStructures.MyInteger.hash(int):::EXIT81
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 5
+variable tableSize
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 3
+variable return
+  var-kind return
+  dec-type int
+  rep-type int
+  comparability 2
+
+ppt DataStructures.MyInteger.hash(int):::EXIT83
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 5
+variable tableSize
+  var-kind variable
+  dec-type int
+  rep-type int
+  flags is_param
+  comparability 3
+variable return
+  var-kind return
+  dec-type int
+  rep-type int
+  comparability 2
+
+ppt DataStructures.MyInteger.equals_dcomp_instrumented(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt DataStructures.MyInteger.equals_dcomp_instrumented(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type DataStructures.MyInteger
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable this.value
+  var-kind field value
+  dec-type int
+  rep-type int
+  comparability 5
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+

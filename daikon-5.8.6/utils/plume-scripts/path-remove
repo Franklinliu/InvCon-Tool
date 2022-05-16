@@ -1,0 +1,67 @@
+#!/usr/bin/env perl
+
+# Shorten a path environment variable by removing duplicates and
+# non-existent directories.
+# With optional argument "-r REGEXP", removes any matching path element.
+# Works for either space- or colon- delimiated paths.
+# Usage:
+#   # csh
+#   setenv PATH `echo $PATH | .../plume-scripts/path-remove`
+#   # sh
+#   export PATH=`echo $PATH | .../plume-scripts/path-remove`
+#   ## Does this even work??
+#   set path = (`echo $path | .../plume-scripts/path-remove`)
+
+my $debug = 0;
+# $debug = 1;
+
+my $extra_regexp;               # undefined if not specified on command line.
+
+while (scalar(@ARGV) > 0) {
+  if ($ARGV[0] eq "-r") {
+    if (scalar(@ARGV) < 2) {
+      die "No regexp specified after -r";
+    }
+    shift @ARGV;
+    $extra_regexp = shift @ARGV;
+  } else {
+    die "path-remove: Unrecognized argument $ARGV[1]";
+  }
+}
+
+$splitchar = ":";
+@result = ();
+while (<>) {
+      my @pieces;
+      chomp;
+      if ($_ =~ /:/) {
+	@pieces = split(":");
+	$splitchar = ":";
+      } elsif ($_ =~ / /) {
+	@pieces = split(" ");
+	$splitchar = " ";
+      } else {
+	# no separators; assume colon, but don't set splitchar.
+	@pieces = split(":");
+      }
+      if ($debug) {
+	print STDERR "splitchar: $splitchar\n";
+	print STDERR "" . scalar(@pieces) . " initial components\n";
+	# print STDERR "Input: $_\n";
+      }
+      foreach $temp (@pieces) {
+	if (! -d $temp) { next; }
+	if (defined($already_seen{$temp})) { next; }
+        if ($temp =~ /vortex\/(M3|Smalltalk)\/bin\/shell$/) { next; }
+        if (defined($extra_regexp) && ($temp =~ /$extra_regexp/)) { next; }
+        # This directory should appear in the output
+        push(@result, $temp);
+        $already_seen{$temp} = 1;
+      }
+}
+
+if ($debug) {
+  print STDERR "" . scalar(@result) . " final components\n";
+}
+
+print join($splitchar, @result);

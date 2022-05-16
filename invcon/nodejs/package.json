@@ -1,0 +1,26 @@
+{
+    "dependencies": {
+        "commander": "^8.2.0",
+        "shelljs": "^0.8.4",
+        "solc-0.4.25": "npm:solc@^0.4.25",
+        "solc-0.5.0": "npm:solc@^0.5.0",
+        "solc-0.5.1": "npm:solc@^0.5.1",
+        "solc-0.5.10": "npm:solc@^0.5.10",
+        "solc-0.5.11": "npm:solc@^0.5.11",
+        "solc-0.5.12": "npm:solc@^0.5.12",
+        "solc-0.5.13": "npm:solc@^0.5.13",
+        "solc-0.5.14": "npm:solc@^0.5.14",
+        "solc-0.5.17": "npm:solc@^0.5.17",
+        "solc-0.5.3": "npm:solc@^0.5.3",
+        "solc-0.5.4": "npm:solc@^0.5.4",
+        "solc-0.5.5": "npm:solc@^0.5.5",
+        "solc-0.5.6": "npm:solc@^0.5.6",
+        "solc-0.5.7": "npm:solc@^0.5.7",
+        "solc-0.5.8": "npm:solc@^0.5.8",
+        "solc-0.5.9": "npm:solc@^0.5.9",
+        "solc-0.6.0": "npm:solc@^0.6.0",
+        "solc-0.6.1": "npm:solc@^0.6.1",
+        "solc-0.6.2": "npm:solc@^0.6.2",
+        "web3-eth-abi": "^1.5.2"
+    }
+}

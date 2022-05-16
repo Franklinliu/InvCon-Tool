@@ -1,0 +1,28 @@
+diff --git a/checker/bin-devel/git.pre-commit b/checker/bin-devel/git.pre-commit
+index f9bc0e66f..f7cb5a219 100755
+--- a/checker/bin-devel/git.pre-commit
++++ b/checker/bin-devel/git.pre-commit
+@@ -21,7 +21,7 @@ if [ ! -z "$CHANGED_JAVA_FILES" ]; then
+     python3 checker/bin-devel/.run-google-java-format/check-google-java-format.py --aosp ${CHANGED_JAVA_FILES} || (echo "Try running: ./gradlew reformat" && /bin/false)
+ 
+     ./gradlew getPlumeScripts -q
+-    (git diff > /tmp/diff.txt 2>&1) || true
++    (git diff --staged > /tmp/diff.txt 2>&1) || true
+     [ -s /tmp/diff.txt ] || (echo "/tmp/diff.txt is empty" && false)
+     (./gradlew requireJavadocPrivate > /tmp/warnings.txt 2>&1) || true
+     python3 checker/bin-devel/.plume-scripts/lint-diff.py --strip-diff=1 --strip-lint=2 /tmp/diff.txt /tmp/warnings.txt
+diff --git a/checker/src/main/java/org/checkerframework/checker/formatter/qual/ConversionCategory.java b/checker/src/main/java/org/checkerframework/checker/formatter/qual/ConversionCategory.java
+index d34db8af4..ab5b27629 100644
+--- a/checker/src/main/java/org/checkerframework/checker/formatter/qual/ConversionCategory.java
++++ b/checker/src/main/java/org/checkerframework/checker/formatter/qual/ConversionCategory.java
+@@ -144,6 +144,10 @@ public enum ConversionCategory {
+         return intersect(a, b) == a;
+     }
+ 
++    public static boolean newmethod() {
++        return true;
++    }
++
+     /**
+      * Returns the intersection of two categories. This is seldomly needed.
+      *

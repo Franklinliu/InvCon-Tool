@@ -1,0 +1,628 @@
+search(1)                                                            search(1)
+
+
+
+SEARCH
+       search - search files (a'la grep) in a whole directory tree.
+
+SYNOPSIS
+       search [ grep-like and find-like options] [regex ....]
+
+DESCRIPTION
+       Search is more or less a combo of 'find' and 'grep' (although the regu-
+       lar  expression  flavor is that of the perl being used, which is closer
+       to egrep's than grep's).
+
+       Search does generally the same kind of thing that
+          find <blah blah> | xargs egrep <blah blah>
+       does, but is much more powerful and efficient (and intuitive, I think).
+
+       This  manual describes search as of version "960325.7".  You can always
+       find the latest version at
+          http://www.wg.omron.co.jp/~jfriedl/perl/index.html
+
+
+QUICK EXAMPLE
+       Basic use is simple:
+           % search jeff
+       will search files in the current directory, and  all  sub  directories,
+       for  files  that have "jeff" in them. The lines will be listed with the
+       containing file's name prepended.
+
+       If you list more than one regex, such as with
+           % search jeff Larry Randal+ 'Stoc?k' 'C.*son'
+       then a line containing any of the regexes will be listed.   This  makes
+       it effectively the same as
+           % search 'jeff|Larry|Randal+|Stoc?k|C.*son'
+       However,  listing them separately is much more efficient (and is easier
+       to type).
+
+       Note that in the case of these examples, the -w (list whole-words only)
+       option  would  be  useful.   And  if your terminal supports ANSI escape
+       sequences, you can use -bold to higlight the items found.  Furthermore,
+       if your display supports color as well, you can use -red, -green, -yel-
+       low, etc. instead to have the searched  items  marked  with  the  given
+       color.
+
+       Normally, various kinds of files are automatically removed from consid-
+       eration.  If it has has a certain ending (such as ".tar",  ".Z",  ".o",
+       .etc),  or  if  the beginning of the file looks like a binary, it'll be
+       excluded.  You can control exactly how this works  --  see  below.  One
+       quick  way  to  override this is to use the -all option, which means to
+       consider all the files that would normally be  automatically  excluded.
+       Or,  if you're curious, you can use -why to have notes about what files
+       are skipped (and why) printed to stderr.
+
+
+BASIC OVERVIEW
+       Normally, the search starts in the current directory, considering files
+       in all subdirectories.
+
+       You can use the ~/.search file to control ways to automatically exclude
+       files.  If you don't have this file, a default one will kick in,  which
+       automatically add
+           -skip .o .Z .gif
+       (among others) to exclude those kinds of files (which you probably want
+       to skip when searching for text, as is normal).  Files that look to  be
+       be binary will also be excluded.
+
+       Files  ending  with  "#"  and  "~" will also be excluded unless the -x~
+       option is given.
+
+       You can use -showrc to show  what  kinds  of  files  will  normally  be
+       skipped.  See the section on the startup file for more info.
+
+       You  can use the -all option to indicate you want to consider all files
+       that would otherwise be skipped by the startup file.
+
+       Based upon various other flags (see "WHICH FILES TO  CONSIDER"  below),
+       more files might be removed from consideration. For example
+           -mtime 3
+       will exclude files that aren't at least three days old (change the 3 to
+       -3 to exclude files that are more than three days old), while
+           -skip .*
+       would exclude any file beginning with a dot (of course,  '.'  and  '..'
+       are special and always excluded).
+
+       If  you'd  like  to see what files are being excluded, and why, you can
+       get the list via the -why option.
+
+       If a file makes it past all the checks, it is then "considered".   This
+       usually  means it is greped for the regular expressions you gave on the
+       command line.
+
+       If any of the regexes match a line, the line is printed.   However,  if
+       -list  is given, just the filename is printed. Or, if -nice is given, a
+       somewhat more (human-)readable output is generated.
+
+       If you're searching a huge tree and want to keep informed about how the
+       search  is progressing, -v will print (to stderr) the current directory
+       being searched.  Using -vv will also print the current file  "every  so
+       often",  which  could be useful if a directory is huge. Using -vvv will
+       print the update with every file.
+
+       Below is the full listing of options.
+
+
+OPTIONS TELLING *WHERE* TO SEARCH
+       -dir DIR
+              Start searching at the named directory instead  of  the  current
+              directory.  If multiple -dir arguments are given, multiple trees
+              will be searched.
+
+       -ddir DIR
+              Like -dir except it flushes any previous -dir directories  (i.e.
+              "-dir  A  -dir  B -dir C" will search A, B, and C, while "-dir A
+              -ddir B -dir C" will search only B and C. This might be  of  use
+              in the startup file (see that section below).
+
+       -xdev  Stay  on  the same filesystem as the starting directory/directo-
+              ries.
+
+       -sort  Sort the items in a directory before processing them.   Normally
+              they are processed in whatever order they happen to be read from
+              the directory.
+
+       -nolinks
+              Don't follow symbolic links. Normally they're followed.
+
+       -depth=0
+              Don't descend into subdirectories. Only a depth of  0  currently
+              supported.
+
+OPTIONS CONTROLLING WHICH FILES TO CONSIDER AND EXCLUDE
+       -mtime NUM
+              Only  consider  files  that were last changed more than NUM days
+              ago (less than NUM days if NUM has '-' prepended,  i.e.  "-mtime
+              -2.5" means to consider files that have been changed in the last
+              two and a half days).
+
+       -older FILE
+              Only consider files that have not changed since  FILE  was  last
+              changed.  If there is any upper case in the "-older", "or equal"
+              is added to the sense of the test.   Therefore,  "search  -older
+              ./file regex" will never consider "./file", while "search -Older
+              ./file regex" will.
+
+              If a file is a symbolic link, the time used is that of the  file
+              and not the link.
+
+       -newer FILE
+              Opposite of -older.
+
+       -name GLOB
+              Only  consider files that match the shell filename pattern GLOB.
+              The check is only done on a file's name (use -path to check  the
+              whole path, and use -dname to check directory names).
+
+              Multiple  specifications  can  be  given by separating them with
+              spaces, a'la
+                  -name '*.c *.h'
+              to consider C source and header files.  If GLOB doesn't  contain
+              any  special  pattern characters, a '*' is prepended.  This last
+              example could have been given as
+                 -name '.c .h'
+              It could also be given as
+                  -name .c -name .h
+              or
+                  -name '*.c' -name '*.h'
+              or
+                  -name '*.[ch]'
+              (among others) but in this last case, you have  to  be  sure  to
+              supply the leading '*'.
+
+       -path GLOB
+              Like  -name  except  the entire path is checked against the pat-
+              tern.
+
+       -regex  REGEX
+              Considers files whose names (not paths)  match  the  given  perl
+              regex exactly.
+
+       -iname GLOB
+              Case-insensitive version of -name.
+
+       -ipath GLOB
+              Case-insensitive version of -path.
+
+       -iregex REGEX
+              Case-insensitive version of -regex.
+
+
+       -dpath GLOB
+              Only  search  down directories whose path matches the given pat-
+              tern (this doesn't apply to the initial directory given by -dir,
+              of course).  Something like
+                  -dir /usr/man -dpath /usr/man/man*
+              would completely skip "/usr/man/cat1", "/usr/man/cat2", etc.
+
+       -dskip GLOB
+              Skips  directories  whose name (not path) matches the given pat-
+              tern.  Something like
+                  -dir /usr/man -dskip cat*
+              would completely skip any  directory  in  the  tree  whose  name
+              begins  with  "cat" (including "/usr/man/cat1", "/usr/man/cat2",
+              etc.).
+
+       -dregex REGEX
+              Like -dpath, but the pattern is a full  perl  regex.  Note  that
+              this quite different from -regex which considers only file names
+              (not paths). This option considers  full  directory  paths  (not
+              just names). It's much more useful this way.  Sorry if it's con-
+              fusing.
+
+       -dpath GLOB
+              This option exists, but is probably not very useful. It probably
+              wants  to  be  like  the  '-below' or something I mention in the
+              "TODO" section.
+
+       -idpath GLOB
+              Case-insensitive version of -dpath.
+
+       -idskip GLOB
+              Case-insensitive version of -dskip.
+
+       -idregex REGEX
+              Case-insensitive version of -dregex.
+
+       -all   Ignore any 'magic' or 'option' lines in the startup  file.   The
+              effect  is  that all files that would otherwise be automatically
+              excluded are considered.
+
+       -xSPECIAL
+              Arguments starting with -x (except -xdev,  explained  elsewhere)
+              do  special  interaction  with the ~/.search startup file. Some-
+              thing like
+                   -xflag1 -xflag2
+              will turn on "flag1" and "flag2" in the startup file (and is the
+              same  as  "-xflag1,flag2").  You  can use this to write your own
+              rules for what kinds of files are to be considered.
+
+              For example, the internal-default startup file contains the line
+                   <!~> option: -skip '~ #'
+              This means that if the -x~ flag is not seen, the option
+                  -skip '~ #'
+              should  be done.  The effect is that emacs temp and backup files
+              are not normally considered, but you can included them with  the
+              -x~ flag.
+
+              You  can  write  your  own rules to customize search in powerful
+              ways. See the STARTUP FILE section below.
+
+       -why   Print a message (to stderr) when and why a file is  not  consid-
+              ered.
+
+
+OPTIONS TELLING WHAT TO DO WITH FILES THAT WILL BE CONSIDERED
+       -find or -b
+              This option changes the basic action of search.
+
+              Normally,  if a file is considered, it is searched for the regu-
+              lar expressions as described earlier. However, if this option is
+              given,  the  filename  is  printed and no searching takes place.
+              This turns search into a 'find' of some sorts.
+
+              In this case, no regular expressions are needed on  the  command
+              line (any that are there are silently ignored).
+
+              This is not intended to be a replacement for the 'find' program,
+              but to aid you in understanding just what files are getting past
+              the exclusion checks.  If you really want to use it as a sort of
+              replacement for the 'find' program, you might want to  use  -all
+              so  that  it  doesn't  waste time checking to see if the file is
+              binary, etc (unless you really want that, of course).
+
+              If you use -find, none of the "GREP-LIKE OPTIONS"  (below)  mat-
+              ter.
+
+              As a replacement for 'find', search is probably a bit slower (or
+              in the case of GNU find, a lot slower -- GNU find  is  unbeliev-
+              ably  fast).  However, "search -ffind" might be more useful than
+              'find' when options such as  -skip  are  used  (at  least  until
+              'find' gets such functionality).
+
+       -ffind or -ff
+              A faster more 'find'-like find. Does
+                  -find  -all -dorep
+
+GREP-LIKE OPTIONS
+       These  options  control how a searched file is accessed, and how things
+       are printed.
+
+       -F or -lit
+              Causes arguments to be taken as literal text rather than as perl
+              regular expressions.
+
+       -R or -regex
+              Undoes  -T.   Regex  arguments  are indeed taken as perl regular
+              expressions.
+
+       -i     Ignore letter case when matching.
+
+       -noi   Don't ignore letter case when matching (useful for overriding  a
+              -i in the startup file)
+
+       -w     Consider  only  whole-word  matches  ("whole word" as defined by
+              perl's "\b" regex).
+
+       -u     If the regex(es) is/are simple,  try  to  modify  them  so  that
+              they'll   work   in  manpage-like  underlined  text  (i.e.  like
+              _^Ht_^Hh_^Hi_^Hs).  This is very rudimentary at the moment.
+
+       -list or -l
+              -list Don't print matching lines, but the names  of  files  that
+              contain  matching  lines.  This will likely be *much* faster, as
+              special optimizations are made -- particularly with large files.
+
+       -n     Pepfix each line by its line number.
+
+       -nice  Not  a grep-like option, but similar to -list, so included here.
+              -nice will have the output be a bit  more  human-readable,  with
+              matching  lines  printed  slightly  indented after the filename,
+              a'la
+
+                 % search foo
+                 somedir/somefile: line with foo in it
+                 somedir/somefile: some food for thought
+                 anotherdir/x: don't be a buffoon!
+                 %
+
+              will become
+
+                 % search -nice foo
+                 somedir/somefile:
+                   line with foo in it
+                   some food for thought
+                 anotherdir/x:
+                   don't be a buffoon!
+                 %
+
+              This option due to Lionel Cons.
+
+       -nnice Be a bit nicer than -nice.  Prefix each file's output by a  rule
+              line, and follow with an extra blank line.
+
+       -h     Don't  prepend each output line with the name of the file (mean-
+              ingless when -find or -l are given).
+
+
+OPTIONS WHICH INDICATE HOW TO DISPLAY
+       In addition to the -nice and -nnice from just above, you  can  use  the
+       following  if your display supports ANSI escape sequences (most systems
+       seem to).
+
+       -bold  Show the found items in reverse video.
+
+       -red   Show the found items in red.
+
+       -green Show the found items in green.
+
+       -yellow
+              Show the found items in yellow.
+
+       -blue  Show the found items in blue.
+
+       -cyan  Show the found items in cyan.
+
+       -white Show the found items in white.
+
+       -black Show the found items in black.
+
+
+OTHER OPTIONS
+       -help  Print the usage information.
+
+       -version
+              Print the version information and quit.
+
+       -v     Set the level of message verbosity.  -v will print a note  when-
+              ever  a  new  directory  is entered.  -vv will also print a note
+              "every so often". This can be useful  to  see  what's  happening
+              when  searching  huge  directories.   -vvv will print a new with
+              every file.  -vvvv is -vvv plus -why.
+
+       -e     This ends the options, and can be useful  if  the  regex  begins
+              with '-'.
+
+       -showrc
+              Shows  what is being considered in the startup file, then exits.
+
+       -dorep Normally, an identical file won't be checked  twice  (even  with
+              multiple  hard or symbolic links). If you're just trying to do a
+              fast -find, the bookkeeping to remember which  files  have  been
+              seen is not desirable, so you can eliminate the bookkeeping with
+              this flag.
+
+
+STARTUP FILE
+       When search starts up, it processes the directives in ~/.search.  If no
+       such file exists, a default internal version is used.
+
+       The internal version looks like:
+
+          magic: 32 : $H =~ m/[\x00-\x06\x10-\x1a\x1c-\x1f\x80\xff]{2}/
+          filter: $N =~ m/.(gz|Z)$/ : "zcat %"
+          option: -skip '.a .COM .elc .EXE .o .pbm .xbm .dvi'
+          option: -iskip '.tarz .zip .lzh .jpg .jpeg .gif .uu'
+          <!~> option: -skip '~ #'
+
+       If  you wish to create your own "~/.search", you might consider copying
+       the above, and then working from there.
+
+       There are three kinds  of  directives  in  a  startup  file:  "filter",
+       "magic" and "option".
+
+
+       OPTION Option  lines  will  automatically  do  the command-line options
+              given.  For example, the line
+                  option: -v
+              in you startup file will turn on -v every time, without  needing
+              to type it on the command line.
+
+              The  text on the line after the "option:" directive is processed
+              like the Bourne shell, so make sure to pay attention to quoting.
+                  option: -skip .exe .com
+              will  give  an  error  (".com"  by itself isn't a valid option),
+              while
+                  option: -skip ".exe .com"
+              will properly include it as part of -skip's argument.
+
+
+       MAGIC  Magic lines are used to determine if a file should be considered
+              a  binary  or  not (the term "magic" refers to checking a file's
+              magic number).  These are described in more detail below.
+
+
+       FILTER Filter lines are used to apply a command to a file  to  get  the
+              text to search.  The format of a FILTER line is:
+                  filter : EXPRESSION: "command...."
+              where  EXPRESSION  is a perl expression used to determine if the
+              filter should be applied to a given file (the file's  name  will
+              be  in  the  variable  $N,  but remember that files excluded via
+              -skip, etc., won't even be considered for a  filter).  If  true,
+              the  COMMAND  will  be  executed and its standard-output will be
+              checked. ``%'' in the command string  will  be  replace  by  the
+              filename.
+
+              The  most  common  example  would be to uncompress a file on the
+              fly, i.e.
+                 filter: $N =~ m/.(gz|Z)$/ : "zcat %"
+              Note that had the ``zcat'' been ``gunzip'' instead, you'd uncom-
+              press  your  files  in  place instead of searching them, so take
+              care when specifying a filter! If you're worried about mixing up
+              GNU'z zcat with an old one, you might use seperate ones as with:
+                 filter: $N =~ m/.gz$/ : "/my/GNU/binaries/zcat %"
+                 filter: $N =~ m/.Z$/ : "/the/non-GNU/binaries/zcat %"
+
+              Also note that when a filter is applied, the  MAGIC  section  is
+              ignored  for the file (this can be considered a bug, so it might
+              change in the future).
+
+
+       Blank lines and comments (lines beginning with '#') are allowed.
+
+       If a line begins with  <...>, then it's a check to see if the directive
+       on  the line should be done or not. The stuff inside the <...> can con-
+       tain perl's && (and), || (or), ! (not), and parens for grouping,  along
+       with "flags" that might be indicated by the user with -xflag options.
+
+       For example, using "-xfoo" will cause "foo" to be true inside the <...>
+       blocks. Therefore, a line beginning with "<foo>"  would  be  done  only
+       when  "-xfoo"  had been specified, while a line beginning with "<!foo>"
+       would be done only when "-xfoo" is not specified  (of  course,  a  line
+       without any <...> is done in either case).
+
+       A realistic example might be
+            <!v> -vv
+       This  will  cause  -vv  messages  to be the default, but allow "-xv" to
+       override.
+
+       There are a few flags that are set automatically:
+
+              TTY    true if the output is to the screen (as opposed to  being
+                     redirected  to  a file).  You can force this (as with all
+                     the other automatic flags) with -xTTY.
+
+              -v     True if -v was specified. If -vv was specified,  both  -v
+                     and -vv flags are true (and so on).
+
+              -nice  True  if  -nice was specified. Same thing about -nnice as
+                     for -vv.
+
+
+              -list  true if -list (or -l) was given.
+
+              -dir   true if -dir was given.
+
+       Using this info, you might change the last example to
+
+           <!v && !-v> option: -vv
+
+       The added "&& !-v" means "and if the '-v' option not given".  This will
+       allow  you  to  use  "-v"  alone on the command line, and not have this
+       directive add the more verbose "-vv" automatically.
+
+       Some other examples:
+
+       <!-dir && !here> option: -dir ~/
+              Effectively make  the  default  directory  your  home  directory
+              (instead  of  the  current directory). Using -dir or -xhere will
+              undo this.
+
+       <tex> option: -name .tex -dir ~/pub
+              Create '-xtex' to search only "*.tex" files in your ~/pub direc-
+              tory  tree.   Actually,  this could be made a bit better. If you
+              combine '-xtex' and '-dir' on the command line,  this  directive
+              will  add  ~/pub  to the list, when you probably want to use the
+              -dir directory only. You could do
+
+                 <tex> option: -name .tex
+                 <tex && !-dir> option: -dir ~/pub
+
+              to will allow '-xtex' to work as before, but  allow  a  command-
+              line "-dir" to take precedence with respect to ~/pub.
+
+       <fluff> option: -nnice -sort -i -vvv
+              Combine a few user-friendly options into one '-xfluff' option.
+
+       <man> option: -ddir /usr/man -v -w
+              When  the  '-xman' option is given, search "/usr/man" for whole-
+              words (of whatever regex or regexes are  given  on  the  command
+              line), with -v.
+
+       The lines in the startup file are executed from top to bottom, so some-
+       thing like
+
+          <both> option: -xflag1 -xflag2
+          <flag1> option: ...whatever...
+          <flag2> option: ...whatever...
+
+       will  allow  '-xboth'  to  be  the  same  as  '-xflag1   -xflag2'   (or
+       '-xflag1,flag2' for that matter). However, if you put the "<both>" line
+       below the others, they will not be true when encountered, so the result
+       would be different (and probably undesired).
+
+       The  "magic"  directives  are  used  to determine if a file looks to be
+       binary or not. The form of a magic line is
+           magic: SIZE : PERLCODE
+       where SIZE is the number of bytes of the file you need  to  check,  and
+       PERLCODE  is the code to do the check. Within PERLCODE, the variable $H
+       will hold at least the first SIZE bytes of the file (unless the file is
+       shorter  than  that,  of  course).   It might hold more bytes. The perl
+       should evaluate to true if the file should be considered a binary.
+
+       An example might be
+           magic: 6 : substr($H, 0, 6) eq 'GIF87a'
+       to test for a GIF ("-iskip .gif" is better, but this might be useful if
+       you have images in files without the ".gif" extension).
+
+       Since  the startup file is checked from top to bottom, you can be a bit
+       efficient:
+           magic: 6 : ($x6 = substr($H, 0, 6)) eq 'GIF87a'
+           magic: 6 :  $x6                     eq 'GIF89a'
+       You could also write the same thing as
+         magic: 6 : (($x6 = substr($H, 0, 6)) eq 'GIF87a') || ## an old gif, or.. \
+                   $x6                     eq 'GIF89a'     ## .. a new one.
+       since newlines may be escaped.
+
+       The default internal startup file includes
+          magic: 32 : $H =~ m/[\x00-\x06\x10-\x1a\x1c-\x1f\x80\xff]{2}/
+       which checks for certain non-printable characters, and catches a  large
+       number  of  binary files, including most system's executables, linkable
+       objects, compressed, tarred, and otherwise folded, spindled, and  muti-
+       lated files.
+
+       Another example might be
+           ## an archive library
+           magic: 17 : substr($H, 0, 17) eq "!<arch>\n__.SYMDEF"
+
+
+RETURN VALUE
+       Search  returns zero if lines (or files, if appropriate) were found, or
+       if no work was requested (such as with -help).  Returns 1 if  no  lines
+       (or files) were found.  Returns 2 on error.
+
+
+TODO
+       Things I'd like to add some day:
+         + show surrounding lines (context).
+         + highlight matched portions of lines.
+         + add '-and', which can go between regexes to override
+           the default logical or of the regexes.
+         + add something like
+             -below GLOB
+           which will examine a tree and only consider files that
+           lie in a directory deeper than one named by the pattern.
+         + add 'warning' and 'error' directives.
+         + add 'help' directive.
+
+BUGS
+       If  -xdev and multiple -dir arguments are given, any file in any of the
+       target filesystems are allowed.  It  would  be  better  to  allow  each
+       filesystem for each separate tree.
+
+       Multiple -dir args might also cause some confusing effects. Doing
+          -dir some/dir -dir other
+       will search "some/dir" completely, then search "other" completely. This
+       is good. However, something like
+          -dir some/dir -dir some/dir/more/specific
+       will search  "some/dir"  completely  *except  for*  "some/dir/more/spe-
+       cific",  after  which it will return and be searched. Not really a bug,
+       but just sort of odd.
+
+       File times (for -newer, etc.) of symbolic links are for the  file,  not
+       the link. This could cause some misunderstandings.
+
+       Probably more. Please let me know.
+
+AUTHOR
+       Jeffrey Friedl, Omron Corp (jfriedl@omron.co.jp)
+       http://www.wg.omron.co.jp/cgi-bin/j-e/jfriedl.html
+
+
+LATEST SOURCE
+       See http://www.wg.omron.co.jp/~jfriedl/perl/index.html
+
+
+
+                                 Dec 17, 1994                        search(1)

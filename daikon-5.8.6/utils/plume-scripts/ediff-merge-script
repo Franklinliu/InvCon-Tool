@@ -1,0 +1,96 @@
+#!/bin/bash
+
+## USAGE:
+## To make this be invoked when you run `git mergetool`, add the following
+## to your git configuration file, such as ~/.gitconfig :
+# [merge]
+# 	tool = ediff
+#
+# [mergetool "ediff"]
+# 	cmd = /path/to/plume-scripts/ediff-merge-script "$LOCAL" "$REMOTE" "$MERGED" "$BASE"
+# 	trustExitCode = true
+
+## USER CUSTOMAZATION:
+## Choose emacs or emacsclient.  emacsclient starts up faster, but emacs gives a
+## fresh context and avoids cluttering the original emacs with merge buffers.
+_EMACSCLIENT=emacs
+# _EMACSCLIENT=emacsclient
+
+
+# This script is originally from
+#   http://stackoverflow.com/questions/1817370/using-ediff-as-git-mergetool
+# I have extended so it handles both emacs and emacsclient,
+# and made other improvements.
+
+
+# test args
+if [ ! ${#} -ge 3 ]; then
+    echo 1>&2 "Error: ${0} requires 4 arguments, got ${#}"
+    echo 1>&2 "Usage: ${0} LOCAL REMOTE MERGED BASE"
+    echo 1>&2 "       (LOCAL, REMOTE, MERGED, BASE can be provided by \`git mergetool'.)"
+    exit 1
+fi
+
+# tools
+_BASENAME="basename"
+_CP="/bin/cp"
+_EGREP="/bin/egrep"
+_MKTEMP="/bin/mktemp"
+
+# args
+_LOCAL=${1}
+_REMOTE=${2}
+_MERGED=${3}
+if [ -r "${4}" ] ; then
+    _BASE=${4}
+    _EDIFF=ediff-merge-files-with-ancestor
+    _EVAL="(${_EDIFF} \"${_LOCAL}\" \"${_REMOTE}\" \"${_BASE}\" nil \"${_MERGED}\")"
+else
+    _EDIFF=ediff-merge-files
+    _EVAL="(${_EDIFF} \"${_LOCAL}\" \"${_REMOTE}\" nil \"${_MERGED}\")"
+fi
+
+_EVAL_PREFIX="(defun ediff-write-merge-buffer ()\
+    (let ((file ediff-merge-store-file))\
+      (set-buffer ediff-buffer-C)\
+      (write-region (point-min) (point-max) file)\
+      (message \"Merge buffer saved in: %s\" file)\
+      (set-buffer-modified-p nil)))\
+  (setq ediff-quit-merge-hook 'ediff-write-merge-buffer)"
+
+if [[ $_EMACSCLIENT == *"emacsclient"* ]]; then
+  ## emacsclient only, not emacs
+  # console vs. X
+  if [ "${TERM}" = "linux" ]; then
+      unset DISPLAY
+      _EMACSCLIENTOPTS='-t -a \"\"'
+  else
+      _EMACSCLIENTOPTS="-c -a \"\""
+  fi
+else
+  ## emacs only, not emacsclient
+  _EVAL_PREFIX2="(setq ediff-quit-hook 'kill-emacs)"
+fi
+
+# run emacs or emacsclient
+# # For debugging
+# echo "${_EMACSCLIENT}" "${_EMACSCLIENTOPTS}" --eval "(progn ${_EVAL_PREFIX} ${_EVAL_PREFIX2} ${_EVAL})"
+"${_EMACSCLIENT}" "${_EMACSCLIENTOPTS}" --eval "(progn ${_EVAL_PREFIX} ${_EVAL_PREFIX2} ${_EVAL})" 2>&1
+
+
+# check modified file
+if [ ! "$("${_EGREP}" -c '^(<<<<<<<|=======|>>>>>>>|####### Ancestor)$' "${_MERGED}")" = 0 ]; then
+    _MERGEDSAVE=$(${_MKTEMP} --tmpdir "$(${_BASENAME} "${_MERGED}").XXXXXXXXXX")
+    ${_CP} "${_MERGED}" "${_MERGEDSAVE}"
+    echo 1>&2 "Oops! Conflict markers detected in $_MERGED."
+    echo 1>&2 "Saved your changes to ${_MERGEDSAVE}"
+    echo 1>&2 "Exiting with code 1."
+    exit 1
+fi
+
+# It would not be appropriate for this script to do the merge, because
+# this script is called on each file individually.
+echo 1>&2 "Merge succeeded."
+echo 1>&2 "Don't forget to commit changes."
+
+exit 0

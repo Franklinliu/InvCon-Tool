@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Usage:  git-find-branch REPO_URL BRANCH ...
+# Prints either the first BRANCH that exists in REPO_URL,
+# or else prints the default branch name if none of the given branches exists.
+
+# Often, you can use the `git-clone-related` script instead of this one.
+
+REPO_URL=$1
+shift
+
+for BRANCH in "$@"; do
+    if (git ls-remote --quiet --exit-code --heads "${REPO_URL}" "${BRANCH}" > /dev/null) ; then
+        echo "${BRANCH}"
+	exit 0
+    fi
+done
+
+git ls-remote --symref "${REPO_URL}" HEAD | awk '/^ref:/ {sub(/refs\/heads\//, "", $2); print $2}'

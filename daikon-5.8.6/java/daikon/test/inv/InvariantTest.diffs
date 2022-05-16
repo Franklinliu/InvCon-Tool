@@ -1,0 +1,9 @@
+Error on line 14:
+Expected  InvariantStatus: weakened
+Found InvariantStatus: no_change
+Error on line 17:
+Expected  InvariantStatus: weakened
+Found InvariantStatus: no_change
+Error on line 18:
+Expected  InvariantStatus: weakened
+Found InvariantStatus: no_change

@@ -1,0 +1,639 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.43.0 (0)
+%%Title: dfepl
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 352 468
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 316 432 boxprim clip newpath
+0.556701 0.556701 set_scale 0 rotate 68.6667 68.6667 translate
+% dfepl
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 197 694 moveto
+143 694 lineto
+143 658 lineto
+197 658 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+151.5 672.3 moveto 37 (dfepl) alignedtext
+grestore
+% untyped
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+111 606.8 moveto 198 (untyped instrumented code) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+112 591.8 moveto 196 (daikon-untyped/Module.pm) alignedtext
+grestore
+% dfepl->untyped
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 179.6829 657.8129 moveto
+184.2132 649.7715 189.7161 640.0039 194.7837 631.0089 curveto
+stroke
+0 0 0 edgecolor
+newpath 197.989 632.45 moveto
+199.8481 622.0196 lineto
+191.8903 629.0141 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 197.989 632.45 moveto
+199.8481 622.0196 lineto
+191.8903 629.0141 lineto
+closepath stroke
+grestore
+% dfepl -T
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 225.5 402 moveto
+154.5 402 lineto
+154.5 366 lineto
+225.5 366 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+162.5 380.3 moveto 55 (dfepl -T) alignedtext
+grestore
+% typed
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+184.5 314.8 moveto 219 (type-aware instrumented code) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+177 299.8 moveto 234 (daikon-instrumented/Module.pm) alignedtext
+grestore
+% dfepl -T->typed
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 214.9106 365.9937 moveto
+228.1723 356.9401 244.6954 345.6599 259.2045 335.7546 curveto
+stroke
+0 0 0 edgecolor
+newpath 261.1892 338.6376 moveto
+267.4747 330.1086 lineto
+257.2423 332.8563 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 261.1892 338.6376 moveto
+267.4747 330.1086 lineto
+257.2423 332.8563 lineto
+closepath stroke
+grestore
+% decls
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+43 240.8 moveto 196 (program point declarations) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+39 225.8 moveto 204 (daikon-output/package.decls) alignedtext
+grestore
+% dfepl -T->decls
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 178.273 365.5269 moveto
+172.0258 355.5052 164.6852 342.4712 160 330 curveto
+152.2327 309.3245 147.3662 284.7788 144.5051 266.2431 curveto
+stroke
+0 0 0 edgecolor
+newpath 147.9341 265.4984 moveto
+143.0455 256.0988 lineto
+141.0055 266.4954 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 147.9341 265.4984 moveto
+143.0455 256.0988 lineto
+141.0055 266.4954 lineto
+closepath stroke
+grestore
+% dtype-perl
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 284 548 moveto
+194 548 lineto
+194 512 lineto
+284 512 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+202 526.3 moveto 74 (dtype-perl) alignedtext
+grestore
+% types
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+179 460.8 moveto 120 (type information) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+111 445.8 moveto 256 (daikon-instrumented/package.types) alignedtext
+grestore
+% dtype-perl->types
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 239 511.8129 moveto
+239 504.1101 239 494.8234 239 486.149 curveto
+stroke
+0 0 0 edgecolor
+newpath 242.5001 486.0195 moveto
+239 476.0196 lineto
+235.5001 486.0196 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 242.5001 486.0195 moveto
+239 476.0196 lineto
+235.5001 486.0196 lineto
+closepath stroke
+grestore
+% dtrace-perl
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 369.5 255 moveto
+274.5 255 lineto
+274.5 219 lineto
+369.5 219 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+282.5 233.3 moveto 79 (dtrace-perl) alignedtext
+grestore
+% dtrace
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+286.5 166.8 moveto 71 (trace files) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+177.5 151.8 moveto 289 (daikon-output/program-combined.dtrace) alignedtext
+grestore
+% dtrace-perl->dtrace
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 322 218.937 moveto
+322 210.9865 322 201.3134 322 192.3127 curveto
+stroke
+0 0 0 edgecolor
+newpath 325.5001 192.1991 moveto
+322 182.1992 lineto
+318.5001 192.1992 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 325.5001 192.1991 moveto
+322 182.1992 lineto
+318.5001 192.1992 lineto
+closepath stroke
+grestore
+% Daikon
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 264 108 moveto
+198 108 lineto
+198 72 lineto
+264 72 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+206 86.3 moveto 50 (Daikon) alignedtext
+grestore
+% invariants
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+194.5 14.3 moveto 73 (invariants) alignedtext
+grestore
+% Daikon->invariants
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 231 71.6966 moveto
+231 63.9827 231 54.7125 231 46.1124 curveto
+stroke
+0 0 0 edgecolor
+newpath 234.5001 46.1043 moveto
+231 36.1043 lineto
+227.5001 46.1044 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 234.5001 46.1043 moveto
+231 36.1043 lineto
+227.5001 46.1044 lineto
+closepath stroke
+grestore
+% source
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+8 752.8 moveto 188 (source code to instrument) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+17.5 737.8 moveto 169 (Module.pm, program.pl) alignedtext
+grestore
+% source->dfepl
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 119.5117 729.7157 moveto
+127.7509 721.113 137.6946 710.7307 146.5708 701.4628 curveto
+stroke
+0 0 0 edgecolor
+newpath 149.3258 703.6464 moveto
+153.715 694.0034 lineto
+144.2704 698.8046 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 149.3258 703.6464 moveto
+153.715 694.0034 lineto
+144.2704 698.8046 lineto
+closepath stroke
+grestore
+% source->dfepl -T
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 96.274 729.5668 moveto
+88.3484 702.3758 75 649.7842 75 604 curveto
+75 604 75 604 75 529 curveto
+75 487.6834 69.4555 471.236 94 438 curveto
+106.6164 420.9159 126.4666 408.6569 144.8504 400.262 curveto
+stroke
+0 0 0 edgecolor
+newpath 146.4714 403.3752 moveto
+154.2842 396.219 lineto
+143.714 396.9411 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 146.4714 403.3752 moveto
+154.2842 396.219 lineto
+143.714 396.9411 lineto
+closepath stroke
+grestore
+% tests
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+343 606.8 moveto 208 (other source code, test cases) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+383.5 591.8 moveto 127 (program.pl, test.t) alignedtext
+grestore
+% tests->dtype-perl
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 394.2439 583.9919 moveto
+363.6181 573.5379 325.0882 560.3859 294.0756 549.7998 curveto
+stroke
+0 0 0 edgecolor
+newpath 294.8847 546.3778 moveto
+284.2902 546.4596 lineto
+292.6234 553.0025 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 294.8847 546.3778 moveto
+284.2902 546.4596 lineto
+292.6234 553.0025 lineto
+closepath stroke
+grestore
+% tests->dtrace-perl
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 447 583.8146 moveto
+447 556.4983 447 503.25 447 458 curveto
+447 458 447 458 447 383 curveto
+447 341.6834 453.094 324.823 428 292 curveto
+415.6624 275.8624 397.1583 264.154 379.0473 255.8535 curveto
+stroke
+0 0 0 edgecolor
+newpath 380.2167 252.5467 moveto
+369.6469 251.8181 lineto
+377.4554 258.979 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 380.2167 252.5467 moveto
+369.6469 251.8181 lineto
+377.4554 258.979 lineto
+closepath stroke
+grestore
+% untyped->dtype-perl
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 217.4682 583.7157 moveto
+220.736 575.7152 224.6325 566.1755 228.2069 557.4244 curveto
+stroke
+0 0 0 edgecolor
+newpath 231.5138 558.5845 moveto
+232.0549 548.0034 lineto
+225.0335 555.9375 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 231.5138 558.5845 moveto
+232.0549 548.0034 lineto
+225.0335 555.9375 lineto
+closepath stroke
+grestore
+% typed->dtrace-perl
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 301.0656 291.8314 moveto
+304.2541 283.6323 308.0846 273.7824 311.5924 264.7624 curveto
+stroke
+0 0 0 edgecolor
+newpath 314.8639 266.0063 moveto
+315.2264 255.4177 lineto
+308.3399 263.4692 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 314.8639 266.0063 moveto
+315.2264 255.4177 lineto
+308.3399 263.4692 lineto
+closepath stroke
+grestore
+% decls->Daikon
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 141.02 217.9967 moveto
+141.8377 198.3605 145.5553 166.705 160 144 curveto
+167.5006 132.2101 178.6185 122.1137 189.842 113.9935 curveto
+stroke
+0 0 0 edgecolor
+newpath 192.092 116.6958 moveto
+198.3871 108.1739 lineto
+188.1517 110.9101 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 192.092 116.6958 moveto
+198.3871 108.1739 lineto
+188.1517 110.9101 lineto
+closepath stroke
+grestore
+% types->dfepl -T
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 226.3813 437.7157 moveto
+220.6223 429.3711 213.7077 419.352 207.4605 410.2998 curveto
+stroke
+0 0 0 edgecolor
+newpath 210.2955 408.2457 moveto
+201.7348 402.0034 lineto
+204.5343 412.2218 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 210.2955 408.2457 moveto
+201.7348 402.0034 lineto
+204.5343 412.2218 lineto
+closepath stroke
+grestore
+% dtrace->Daikon
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 298.5652 143.7157 moveto
+287.0982 134.7689 273.1641 123.8972 260.9354 114.3562 curveto
+stroke
+0 0 0 edgecolor
+newpath 262.8304 111.3954 moveto
+252.7932 108.0034 lineto
+258.5244 116.9144 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 262.8304 111.3954 moveto
+252.7932 108.0034 lineto
+258.5244 116.9144 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 352 468
+end
+restore
+%%EOF

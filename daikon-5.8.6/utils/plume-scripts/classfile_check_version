@@ -1,0 +1,40 @@
+#! /bin/csh -f
+# usage <version> <classfile>
+# Check that .class file's version is <= the specified version.
+# This ensures that the class will run on a particular version of Java.
+# For example,
+#   classfile_check_version 49 MyClass.class
+# checks that the classfile will run in a 1.5 JVM (1.6 classfiles are version 50).
+# For all class file format version numbers, see
+#   http://en.wikipedia.org/wiki/Class_(file_format)
+
+## TODO: perhaps use plume/ClassFileVersion.java instead.
+
+if ($#argv != 2) then
+  echo "Should be two arguments (version classfile)"
+  exit -1
+endif
+
+if (!( -e $2)) then
+  echo "$2 does not exist"
+  exit -1
+endif
+
+set header = (`xxd -l 8 $2 | sed 's/^0*0: //' | sed 's/   *.*$//'`)
+#echo $header
+#echo $#header
+if (("$header[1]" != "cafe") || ("$header[2]" != "babe")) then
+  echo $2 is not a Java class file
+  exit -1
+endif
+
+# bc needs hex values in upper case
+set HEAD = `echo $header[4] | tr '[:lower:]' '[:upper:]'`
+set version = `echo "ibase=16; " $HEAD | bc`
+
+if ($version > $1) then
+  echo $2 has version $version
+  exit -1
+else
+  exit 0
+endif

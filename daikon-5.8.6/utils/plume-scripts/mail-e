@@ -1,0 +1,28 @@
+#! /bin/sh
+# No "-f" argument above?
+
+# This script reads standard input, and if not empty calls the "mail"
+# program on it.
+
+# In other words it is a version of "mail" that assumes the -e argument:
+#     -e      Don’t send empty mails.  If the body is empty skip the mail.
+# That feature is useful in scripts and cron jobs, but is not supported
+# in all versions of mail.
+
+# Read standard input
+BODY=/tmp/maile-input-$$
+cat > $BODY 2>&1
+
+# Invoke mail if body is non-empty.
+if [ -s $BODY ]; then
+  # Non-empty body
+  mail "$@" < $BODY
+fi
+rm -f $BODY
+
+
+## Testing
+## This should produce no error
+# echo -n "" | mail-e -invalidoption
+## This should send the mail
+# echo -n "body" | mail-e -s "The subject" $USER

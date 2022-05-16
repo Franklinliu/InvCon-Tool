@@ -1,0 +1,11 @@
+tests/lint-diff-test/guessstrip-lint-pruned.txt
+tests/lint-diff-test/reldir-lint-pruned.txt
+tests/lint-diff-test/words-lint.txt
+tests/lint-diff-test/words1.txt
+tests/lint-diff-test/words12-diff.txt
+tests/lint-diff-test/words2-lint-pruned.txt
+tests/lint-diff-test/words2-lint-pruned.txt-goal
+tests/lint-diff-test/words2-lint-pruned.txt-goal-nofilename
+tests/lint-diff-test/words2-lint-pruned.txt-nofilename
+tests/lint-diff-test/words2-lint.txt
+tests/lint-diff-test/words2.txt

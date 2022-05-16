@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/java/dcomp_premain.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java/ChicoryPremain.jar!/" />
+      <root url="jar://$PROJECT_DIR$/java/dcomp_rt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

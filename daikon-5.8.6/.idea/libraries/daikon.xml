@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="daikon">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/daikon.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

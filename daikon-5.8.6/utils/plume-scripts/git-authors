@@ -1,0 +1,50 @@
+#!/bin/sh
+
+# Outputs a list of authors of commits, for the git repository where this is run.
+# The output contains one name per line, in alphabetical order by first name.
+
+# Command-line arguments:
+#  --punctuation  Add commas after names (except a period after the last one)
+# Formatting of accented characters:
+#  --html         Use HTML escape sequences for accented characters
+#  --latex        Use LaTeX escape sequences for accented characters
+#  --texinfo      Use Texinfo escape sequences for accented characters
+
+while :; do
+    case $1 in
+        --punctuation)
+            punctuation=1
+            ;;
+        --html)
+            html=1
+            ;;
+        --latex)
+            latex=1
+            ;;
+        --texinfo)
+            texinfo=1
+            ;;
+        --)              # End of all options.
+            shift
+            break
+            ;;
+        -?*)
+            printf 'WARN: Unknown option (ignored): %s\n' "$1" >&2
+            ;;
+        *)               # Default case: No more options, so break out of the loop.
+            break
+    esac
+
+    shift
+done
+
+# shellcheck disable=SC2015
+git log | grep '^\(Author\|    Co-authored-by\):' | \
+  sed -E 's/(Author|    Co-authored-by): (.*)/\2/' | sed -E 's/(.*) <.*>/\1/' | \
+  LC_ALL=C sort -u | \
+  sed -f "$(dirname "$0")"/git-authors.sed | LC_ALL=C sort -u | \
+  ( [ -n "${html+x}" ] && sed -e "s/á/\\&aacute;/" -e "s/é/\\&eacute;/" || cat ) | \
+  ( [ -n "${latex+x}" ] && sed -e "s/á/\\\\'a/" -e "s/é/\\\\'e/" || cat ) | \
+  ( [ -n "${texinfo+x}" ] && sed -e "s/á/@'a/" -e "s/é/@'e/" || cat ) | \
+  ( [ -n "${punctuation+x}" ] && sed -e 's/$/,/' -e '$ s/,$/./' || cat ) | \
+  cat

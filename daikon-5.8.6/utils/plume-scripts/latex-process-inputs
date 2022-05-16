@@ -1,0 +1,141 @@
+#!/usr/bin/env perl
+
+# This script determines all files that are recursively \input by a given
+# LaTeX file.
+#
+# This script has two modes:
+#  1. Inline mode (the default):  Create a single LaTeX file for the document,
+#     by inlining "\input" commands.
+#     The result is appropriate to be sent to a publisher.
+#       latex-process-inputs main-file.tex > onefile.tex
+#     Additionally, the body of each comment is removed, to prevent revealing
+#     more information than we want.  (Actually, each comment is replaced by
+#     an empty comment, to prevent changes in paragraph breaks.)
+#     (This could perhaps be replaced by the "expand" module of the rubber program.)
+#  2. List mode: List all the files that are (transitively) "\input".
+#     This can be useful for getting a list of source files in a logical order,
+#     for example to be used in a Makefile or Ant buildfile.
+#       latex-process-inputs --list main-file.tex
+#       latex-process-inputs --makefilelist main-file.tex
+#       latex-process-inputs --antlist main-file.tex
+
+# To do:
+# This script needs to be cognizant of directories/subdirectories; it does not
+# properly handle files included across directories.  Given:
+#   foo.tex contains \include{subdir/bar.tex}
+#   subdir/bar.tex contains \include{../baz.tex}
+# the "../baz.tex" will be interpreted with respect to where this script was run, not the file in which it exists.  You can reproduce the problem with:
+#   cd ~/research/vakilian/2015-ICSE-TQI/paper/text
+#   latex-process-inputs -list 2015-icse-tqi.tex
+# The fix is challenging given the current design because the document is
+# treated as one huge block of text that is searched for \input, with that
+#replaced by the text of the inputted file and the process repeating until
+#there are no more \input commands.  The script does not know which file a
+# given \input command came from.  The solution is to rewrite the script to
+# work line-by-line.  That will also do a better job of not handling \input
+# and %-comments in verbatm-included files.
+# Writing a test suite would help with validating this change.
+
+my $debug = 0;
+# $debug = 1;
+
+# Process command-line arguments
+my $list_mode = 0;              # boolean indicating list mode vs. inline mode
+my $ant_list_mode = 0;
+my $makefile_list_mode = 0;
+if ((@ARGV[0] eq "-help") || (@ARGV[0] eq "--help")) {
+  print "Optional arguments: -list -antlist -makefilelist\n";
+  exit(0);
+} elsif ((@ARGV[0] eq "-list") || (@ARGV[0] eq "--list")) {
+  $list_mode = 1;
+  shift @ARGV;
+} elsif ((@ARGV[0] eq "-antlist") || (@ARGV[0] eq "--antlist")) {
+  $list_mode = 1;
+  $makefile_list_mode = 1;
+  shift @ARGV;
+} elsif ((@ARGV[0] eq "-makefilelist") || (@ARGV[0] eq "--makefilelist")) {
+  $list_mode = 1;
+  $makefile_list_mode = 1;
+  shift @ARGV;
+}
+
+if (scalar(@ARGV) > 1) {
+  die "Supply exactly one file on the command line (got " . scalar(@ARGV) . ": " . join(" ", @ARGV) . ")";
+}
+# A list of all the files that have been processed so far.
+my @files = ($ARGV[0]);
+
+# I ought to abstract this out into a (recursively-called) procedure.
+my $text = "";
+open(TOPLEVEL, $files[0]) or die("Can't open $files[0]");
+my @toplevel_lines = <TOPLEVEL>;
+close TOPLEVEL;
+
+for my $line (@toplevel_lines) {
+  # kill comments on the line
+  $line =~ s/((^|[^\\])%).*?$/$1/;
+
+  while ($line =~ s/\\(input|include|subfile|lstinputlisting|verbatiminput)(\[.*\])?\{([-a-z0-9_\.+\/]+)\}/___TOKEN___/i) {
+    my $verbatim_p = ($2 eq "verbatiminput");
+    my $lstinput_p = ($2 eq "lstinputlisting");
+    my $file = "$3";
+    if ($debug) { print STDERR "INPUT: $file\n"; }
+    if (-e "$file.tex") {
+      $file .= ".tex";
+      open(F, "$file") or die("Can't open $file");
+    } elsif (-e "$file") {
+      open(F, "$file") or die("Can't open $file");
+    } else {
+      die("File does not exist: $file.tex or $file");
+    }
+    push @files, $file;
+    my @lines = <F>;
+    close F;
+    my $replace = join('', @lines);
+    if ($verbatim_p) {
+      $replace = "\\begin{verbatim}\n" .
+	$replace .
+	"\\end{verbatim}\n";
+    } elsif ($lstinput_p) {
+      $replace = "\\begin{lstlisting}\n" .
+	$replace .
+	"\\end{lstlisting}\n";
+    } else {
+      # kill comments
+      $replace =~ s/([^\\]%).*?$/$1/gm;
+    }
+    $line =~ s/___TOKEN___/$replace/;
+    # $line may now consist of multiple lines.
+    # kill comments.
+    $line =~ s/((^|[^\\])%).*?$/$1/gm;
+  }
+  $text .= $line;
+}
+
+# kill comments
+$text =~ s/([^\\]%).*?$/$1/gm;
+
+# Insert the bibliography.
+if ((! $list_mode) && ($text =~ /\\bibliography\{.*?\}/)) {
+  my $bbl_file = $files[0];
+  $bbl_file =~ s/\.tex$/.bbl/;
+  open(BBL, "$bbl_file") or die("Run bibtex (didn't find bbl file \"$bbl_file\")");
+  my @bib = <BBL>;
+  close BBL;
+  my $bib = join('', @bib);
+  $text =~ s/\\bibliography\{.*?\}/$bib/i;
+}
+
+if ($ant_list_mode) {
+  for $file (@files) {
+    print "      <arg value=\"$file\"/>\n";
+  }
+} elsif ($makefile_list_mode) {
+  print join(" \\\n", @files), "\n";
+} elsif ($list_mode) {
+  for $file (@files) {
+    print "$file\n";
+  }
+} else {
+  print $text;
+}

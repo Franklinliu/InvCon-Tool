@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# find-git-fork:  finds a fork of a GitHub repository, or returns the upstream
+#   repository if the fork does not exist.
+# Usage:  find-git-fork ORG UPSTREAM_ORG REPONAME
+# Prints the first one of these that exists:
+#   https://github.com/${ORG}/${REPO}.git
+#   https://github.com/${UPSTREAM_ORG}/${REPO}.git
+
+# Often, you can use the `git-clone-related` script instead of this one.
+
+if [ "$#" -ne 3 ]; then
+    script=$(basename -- "$0")
+    >&2 echo "Error: $script requires 3 arguments, got $#"
+    >&2 echo "Usage: $script ORG UPSTREAM_ORG REPONAME"
+    exit 1
+fi
+
+ORG=$1
+UPSTREAM_ORG=$2
+REPONAME=$3
+
+# Problem with "git ls-remote": it may ask for GitHub credentials.
+# (It also downloads more information than wget does.)
+# export GITEXISTS="git ls-remote"
+export GITEXISTS="wget -q --spider"
+
+
+if ( ${GITEXISTS} "https://github.com/${ORG}/${REPONAME}.git" > /dev/null ); then
+   OWNER="${ORG}"
+else
+   OWNER="${UPSTREAM_ORG}"
+fi
+echo "https://github.com/${OWNER}/${REPONAME}.git"

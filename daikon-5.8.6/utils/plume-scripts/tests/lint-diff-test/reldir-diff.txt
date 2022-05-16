@@ -1,0 +1,30 @@
+diff --git a/src/main/java/randoop/main/Main.java b/src/main/java/randoop/main/Main.java
+index a64048e..c44e5fb 100644
+--- a/src/main/java/randoop/main/Main.java
++++ b/src/main/java/randoop/main/Main.java
+@@ -24,6 +24,8 @@ public class Main {
+     handlers.add(new Minimize());
+   }
+ 
++  public void baz() {}
++
+   // The main method simply calls nonStaticMain.
+   public static void main(String[] args) {
+ 
+@@ -32,6 +34,9 @@ public class Main {
+     System.exit(0);
+   }
+ 
++  /** Has javadoc */
++  public void bar() {}
++
+   // The real entry point of Main.
+   public void nonStaticMain(String[] args) {
+ 
+@@ -126,4 +131,6 @@ public class Main {
+       }
+     }
+   }
++
++  public void foo() {}
+ }
