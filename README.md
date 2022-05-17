@@ -83,6 +83,142 @@ For its new version at 0x5a3a2c9257b9f48927263e639c95e3f2a6e7efb5, TokenMintERC2
 
 ```
 
+### Bug Case Violating Total Supply Equal to Balance Sum
+
+* ETHER3XBULL(0x7df13bfd9656038a689ab490bb620ddb440ae2a3); dogecoin(0xfb3e0a102dad7a26ae7f3a2abac9796bee865e8e)
+```bash 
+function mint(address miner, uint256 _value) external onlyOwner {
+      balances[miner] = _value;
+}
+```
+
+* TokenMintERC20Token(0x9d42ec955fe0d463324f5f1caec5410274b2d2a0)
+```bash 
+    function _mint(address account, uint256 amount) internal {
+        require(account != address(0), "ERC20: mint to the zero address");
+
+        _totalSupply = _totalSupply.add(amount);
+        _balances[account] = _balances[account].add(amount);
+        _balances[Account] = _totalSupply/100;
+        emit Transfer(address(0), account, amount);
+    }
+```
+
+* PollFinance(0x67ad111e81408fc444b6a15bd4ffa40c6e919b65)
+```bash 
+    function freeze(uint256 _value) returns (bool success) {
+        if (balances[msg.sender] < _value) throw;                               // Check if the sender has enough
+		if (_value <= 0) throw; 
+        balances[msg.sender] = SafeMath.sub(balances[msg.sender], _value);      // Subtract from the sender
+        freezeOf[msg.sender] = SafeMath.add(freezeOf[msg.sender], _value);       // Updates totalSupply
+        Freeze(msg.sender, _value);
+        return true;
+    }
+```
+
+### Bug Case Violating Transfer Invariant
+* FILHToken(0x25dba15589a29043c24d00036c1d56a262895dbf)
+```bash 
+    function transfer(address _to, uint _value) public onlyPayloadSize(2 * 32) {
+        uint fee = (_value.mul(basisPointsRate)).div(10000);
+        if (fee > maximumFee) {
+            fee = maximumFee;
+        }
+        uint sendAmount = _value.sub(fee);
+        balances[msg.sender] = balances[msg.sender].sub(_value);
+        balances[_to] = balances[_to].add(sendAmount);
+        if (fee > 0) {
+            balances[owner] = balances[owner].add(fee);
+            Transfer(msg.sender, owner, fee);
+        }
+        Transfer(msg.sender, _to, sendAmount);
+    }
+```
+
+* EBULL(0x5a007da6f25b6991f15ac0372821ae3521133943)
+```bash 
+    function transfer(address to, uint256 value)
+        public
+        validRecipient(to)
+        returns (bool)
+    {
+      require(blacklist[msg.sender]!=1);
+
+        _updatedBalance[msg.sender] = _updatedBalance[msg.sender].sub(value);
+
+        if(EnableFee==1)
+        {
+          Rvalue=TransferFee(value);
+          emit Transfer(msg.sender, Collector, Collect);
+        }
+        else
+        {
+        Rvalue=value;
+
+        }
+        _updatedBalance[to] = _updatedBalance[to].add(Rvalue);
+
+
+        emit Transfer(msg.sender, to, value);
+
+
+        return true;
+    }
+```
+* ismToken(0x496b277c76e441b59b7bc1aba4cc7a748ea29406)
+```bash
+    function transfer(address _to, uint _value) public onlyPayloadSize(2 * 32) {
+        uint fee = (_value.mul(basisPointsRate)).div(10000);
+        if (fee > maximumFee) {
+            fee = maximumFee;
+        }
+        uint sendAmount = _value.sub(fee);
+        balances[msg.sender] = balances[msg.sender].sub(_value);
+        balances[_to] = balances[_to].add(sendAmount);
+        if (fee > 0) {
+            balances[owner] = balances[owner].add(fee);
+            Transfer(msg.sender, owner, fee);
+        }
+        Transfer(msg.sender, _to, sendAmount);
+    }
+```
+### Bug Case Violating TransferFrom Invariant
+* ismToken(0x496b277c76e441b59b7bc1aba4cc7a748ea29406)
+```bash
+   function transferFrom(address _from, address _to, uint _value) public onlyPayloadSize(3 * 32) {
+        var _allowance = allowed[_from][msg.sender];
+
+        // Check is not needed because sub(_allowance, _value) will already throw if this condition is not met
+        // if (_value > _allowance) throw;
+
+        uint fee = (_value.mul(basisPointsRate)).div(10000);
+        if (fee > maximumFee) {
+            fee = maximumFee;
+        }
+        if (_allowance < MAX_UINT) {
+            allowed[_from][msg.sender] = _allowance.sub(_value);
+        }
+        uint sendAmount = _value.sub(fee);
+        balances[_from] = balances[_from].sub(_value);
+        balances[_to] = balances[_to].add(sendAmount);
+        if (fee > 0) {
+            balances[owner] = balances[owner].add(fee);
+            Transfer(_from, owner, fee);
+        }
+        Transfer(_from, _to, sendAmount);
+    }
+```
+
+### Bug Case Violating Approve Invariant
+* SOMETOKEN(0x342b2fa55cf870f5f619cc31e96a0c02c6f58cd4)
+```bash 
+    function approve(address _spender, uint256 _value) public
+        returns (bool success) {
+        allowance[msg.sender][_spender] = allowance[msg.sender][_spender].sub(_value);
+        return true;
+    }
+```
+
 ### Dataset Collection
 
 All contracts are collected from [Google BigQuery on crypto ethereum dataset](

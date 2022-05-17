@@ -10,7 +10,7 @@ do
         if [[ $contract == 0x* ]]
         then 
             echo $contract 
-            invcon  --eth_address $contract --cached  --workspace ./Experiment/ERC20  
+            invcon  --eth_address $contract --workspace ./Experiment/ERC20  
         fi 
     done 
 done 

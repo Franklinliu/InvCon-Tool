@@ -218,13 +218,17 @@ def Type_init(self, astId, contract, label, offset, slot, type):
             """
             if self.isStruct():
                 self.value = ContractStorageMonitor(self.members, self.slot)
-            elif self.getType().find("int")!=-1 or self.isEnum() or self.getType().find("bool")!=-1:
+            elif self.getType().find("[")==-1 and (self.getType().find("int")!=-1 or self.isEnum() or self.getType().find("bool")!=-1):
                 self.value = 0
             elif self.basecls is not None:
                 # this is a static array
                 baseNumOfBytes = int(ClassMapping[self.basecls].numOfBytes)
-                self.staticarraysize = int(self.numOfBytes)/baseNumOfBytes
-                self.values = [0]*self.staticarraysize
+                self.staticarraysize = int(int(self.numOfBytes)/baseNumOfBytes)
+                self.elements = []
+                for i in range(self.staticarraysize):
+                    elementSlot = int(self.slot) + int((i*baseNumOfBytes)/32)
+                    self.elements.append(self.getBasecls()(astId=self.astId, contract=self.contract, label="", offset=0, slot=elementSlot, type=self.getBasecls().label))
+                self.values = self.elements
             else:
                 self.value = toHex(0, size=2*self.numOfBytes)
             # TODO 
@@ -234,8 +238,7 @@ def Type_init(self, astId, contract, label, offset, slot, type):
             # This default value may be not true
             self.value = "0x0"
 
-        # For context slicing
-        # record the tainted mapping keys w.r.t. each transaction
+        # For context slicing; record the tainted mapping keys w.r.t. each transaction
         self.taintedKeys = []
     except Exception as e:
         print(e)
@@ -285,6 +288,10 @@ class AbstractStorageItem:
     @classmethod
     def isDynamicArray(cls):
         return cls.encoding=="dynamic_array"
+    
+    @classmethod
+    def isFixedArray(cls):
+        return cls.encoding=="inplace" and cls.getType().find("[")!=-1
     
     @classmethod
     def isStruct(cls):
@@ -342,7 +349,7 @@ class AbstractStorageItem:
     def setValue(self, slot, value, additionalKeys=list()):
         return self._setValue(slot, value, additionalKeys)
 
-    def getVarDecl(self, objvarname="Dicether.GameChannel", ref=False ):
+    def getVarDecl(self, objvarname, ref=False ):
             def getTyRepComp(_type):
                 # else "double" if _type.find("int")!=-1  \
                 return   _type.replace(" ", "_"), \
@@ -361,7 +368,7 @@ class AbstractStorageItem:
                     else Comparability_Boolean if _type.find("bool")!=-1 \
                     else Comparability_Others
             decls = []
-            if self.isInplace():
+            if self.isInplace() and not self.isFixedArray():
                 if not self.isStruct():
                     vartype, reptype, comparability = getTyRepComp(self.getType())
                     decls.append(_obj_field_decl(self.getLabel(), vartype, reptype, comparability, objvarname=objvarname, ref=ref))
@@ -381,7 +388,7 @@ class AbstractStorageItem:
                                 print(f"unsupported type: {storage.getType()} {self.getType()}")
                         else:
                             print(f"unsupported type: {storage.getType()}  {self.getType()}")
-            elif self.isDynamicArray():
+            elif self.isDynamicArray() or self.isFixedArray():
                 vartype, reptype, comparability = self.getType().replace(" ", "_"), "hashcode", Comparability_Others
                 decls.append(_obj_field_decl(self.getLabel(), vartype, reptype, comparability, objvarname=objvarname, ref=ref))
                 basecls =  self.getBasecls()
@@ -419,7 +426,7 @@ class AbstractStorageItem:
                 else:
                     print(f"unsupported mapping key type: {keycls.getType()}  {self.getType()}")
 
-                if valuecls.isInplace():
+                if valuecls.isInplace() and not valuecls.isFixedArray():
                     if not valuecls.isStruct():
                         vartype, reptype, comparability = getTyRepComp(valuecls.getType())
                         decls.append(_obj_field_mapping_value_decl(mappingvar, "Value", vartype, reptype, comparability, objvarname=objvarname, ref=ref))
@@ -435,7 +442,7 @@ class AbstractStorageItem:
                                     print(f"unsupported type: {storage.getType()} {self.getType()}")
                             else:
                                 print(f"unsupported type: {storage.getType()}  {self.getType()}")
-                elif valuecls.isDynamicArray():
+                elif valuecls.isFixedArray() or valuecls.isDynamicArray():
                     basecls =  valuecls.getBasecls()
                     if basecls.isInplace():
                         if not basecls.isStruct():
@@ -473,7 +480,7 @@ class AbstractStorageItem:
 
     def getValueTrace(self):
             dtraces = []
-            if self.isInplace():
+            if self.isInplace() and not self.isFixedArray():
                 if not self.isStruct():
                     v = """this.{0}
 {1}
@@ -499,7 +506,7 @@ class AbstractStorageItem:
                                 print(f"unsupported type: {storage.getType()} {self.getType()}")
                         else:
                             print(f"unsupported type: {storage.getType()}  {self.getType()}")
-            elif self.isDynamicArray():
+            elif  self.isFixedArray() or self.isDynamicArray():
                 arrayname = self.getLabel()
                 v = """this.{0}
 {1}
@@ -1426,10 +1433,15 @@ this_invocation_nonce
         nounce = 0
         count = 0
         dtraces = []
+        handled_tx_hash_set = set()
         with alive_bar(min(LIMIT, len(statechanges)), force_tty=True) as bar:
             for tx_statechange in statechanges[:min(LIMIT, len(statechanges))]:
                 self.envs = set() 
                 tx_hash = tx_statechange.strip().split("\n")[0]
+                if tx_hash in handled_tx_hash_set:
+                    bar()
+                    continue
+                handled_tx_hash_set.add(tx_hash)
                 # print("\ntx:", tx_hash, count)
                 msg_sender, msg_value, dtraceEnvs = self.readTransactionEnvironmentVariables(tx_hash)
             

@@ -4,17 +4,33 @@ import json
 import subprocess
 from slither import Slither
 from slither.core.solidity_types.mapping_type import MappingType
+from slither.core.solidity_types.array_type import ArrayType 
 from slither.core.solidity_types.user_defined_type import UserDefinedType
 from slither.core.declarations.structure import Structure
 from slither.core.declarations.enum_contract import EnumContract
 from slither.core.declarations.structure_contract import StructureContract
+from slither.core.declarations.contract import Contract
 from slither.core.variables.structure_variable import StructureVariable
 import sys
 import math 
 import re 
 
 
+def filtercompilerversion(compiler_version):
+    if compiler_version.find("commit")!=-1:
+        compiler_version = compiler_version.split("+commit")[0].split("v")[1]
+    if compiler_version.find("night")!=-1:
+        compiler_version = compiler_version.split("-night")[0]
+        if compiler_version.find("v")!=-1:
+            compiler_version = compiler_version.split("v")[1]
+    if compiler_version in [f"0.4.{i}" for i in range(25)]:
+        compiler_version = "0.4.25"
+    elif compiler_version.find("0.3")!=-1:
+        compiler_version = "0.4.25"
+    return compiler_version
+
 def installSolc(solcVersion):
+    solcVersion = filtercompilerversion(solcVersion)
     subprocess.run(["solc-select","install", solcVersion])
     subprocess.run(["solc-select","use", solcVersion])
 
@@ -62,20 +78,23 @@ def compute_type_info(vartype, _type_info, contract):
         _type_info[contract.name][type_]  =  dict(encoding="inplace", label="bytes1", numberOfBytes = str(vartype.storage_size[0]))
     elif type_ == "enum":
         _type_info[contract.name][type_]  =  dict(encoding="inplace", label="enum", numberOfBytes = str(vartype.storage_size[0]))
-    elif fixedArrayRegex.match(type_):
-        m = fixedArrayRegex.match(type_)
-        base = m.groups()[0]
-        size = m.groups()[1]
-        info = compute_type_info(base)
-        if info["encoding"] == "inplace":
-            _type_info[contract.name][type_]  =  dict(base = base, encoding= "inplace", label=type_, numberOfBytes=str(vartype.storage_size[0]))
+    elif isinstance(vartype, ArrayType):
+        arraytype: ArrayType = vartype
+        if arraytype.is_fixed_array:
+            base = arraytype.type 
+            size = arraytype.length
+            # m = fixedArrayRegex.match(type_)
+            # base = m.groups()[0]
+            # size = m.groups()[1]
+            compute_type_info(base, _type_info, contract)
+            _type_info[contract.name][type_]  =  dict(base = str(base), encoding= "inplace", label=type_, numberOfBytes=str(vartype.storage_size[0]))
         else:
-            _type_info[contract.name][type_]  =  dict(base = base, encoding= "inplace", label=type_, numberOfBytes=str(vartype.storage_size[0]))
-    elif dynamicArrayRegex.match(type_):
-        m = dynamicArrayRegex.match(type_)
-        base = m.groups()[0]
-        _type_info[contract.name][type_]  =  dict(base = base, encoding= "dynamic_array", label=type_, numberOfBytes=str(vartype.storage_size[0]))
-        compute_type_info(base.type, _type_info, contract)
+            assert arraytype.is_dynamic_array, "must be dynamic array"
+            base = arraytype.type 
+            # m = dynamicArrayRegex.match(type_)
+            # base = m.groups()[0]
+            compute_type_info(base, _type_info, contract)
+            _type_info[contract.name][type_]  =  dict(base = str(base), encoding= "dynamic_array", label=type_, numberOfBytes=str(vartype.storage_size[0]))
     elif isinstance(vartype, MappingType):
         type_from = vartype.type_from
         type_to = vartype.type_to
@@ -118,11 +137,15 @@ def compute_type_info(vartype, _type_info, contract):
                                 slot = _slot,
                                 type = _type_))
                     _index += 1
-                    if _type_ not in  _type_info:
-                        _type_info[contract.name][_type_] = compute_type_info(elem.type, _type_info, contract)
+                    if _type_ not in _type_info:
+                        compute_type_info(elem.type, _type_info, contract)
                     else:
                         pass 
-                _type_info[contract.name][type_] = dict(encoding = "inplace", label=name, members=members,numberOfBytes = totalsize)
+                _type_info[contract.name][type_] = dict(encoding = "inplace", label=str(vartype), members=members,numberOfBytes = totalsize)
+            elif isinstance(vartype.type, Contract):
+                _type_info[contract.name][type_] =  dict(encoding="inplace", label="address", numberOfBytes=str(20))  
+            else:
+                assert False, type_ + " is currently not supported"        
     else:
         assert False, type_ + " is currently not supported"
 
@@ -139,7 +162,7 @@ def compute_storage_layout(self):
             offset = 0
             index = 0
             for var in contract.state_variables_ordered:
-                if var.is_constant or var.is_immutable:
+                if var.is_constant or (hasattr(var, "is_immutable") and  var.is_immutable):
                     continue    
                 astnode_id = index
                 size, new_slot = var.type.storage_size
@@ -154,7 +177,7 @@ def compute_storage_layout(self):
                 self._storage[contract.name].append(dict(
                     astId = astnode_id,
                     contract = contract.name,
-                    label = var.name,
+                    label = var.contract.name+"_own_" + var.name if var.contract.name != contract.name else var.name,
                     offset = offset,
                     slot = str(slot),
                     type = type_
@@ -168,9 +191,9 @@ def compute_storage_layout(self):
 
 # print(ss)
 def main_impl(sol_file, contractName, compilerVersion, outStorageFile=None):
+    installSolc(compilerVersion)
     ss = Slither(sol_file)
     compilation_units = ss.compilation_units
-    installSolc(compilerVersion)
     for compilation_unit in compilation_units:
         compute_storage_layout(compilation_unit)
         # for contract in compilation_unit.contracts:
@@ -181,7 +204,7 @@ def main_impl(sol_file, contractName, compilerVersion, outStorageFile=None):
             # print(layout)
     result =  dict(storage = compilation_unit._storage[contractName], types = compilation_unit._type_info[contractName])
     if outStorageFile is not None:
-        json.dump(result, open(outStorageFile, "w"))
+        json.dump(result, open(outStorageFile, "w"), indent=6)
     return result
 
 def main():

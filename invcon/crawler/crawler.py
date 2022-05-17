@@ -12,27 +12,12 @@ import subprocess
 import invcon.consts.Config as config
 from alive_progress import alive_bar
 from invcon.parsing.storageLayout import main_impl as generateStorageLayout
+import shutil
 
-scraper = cloudscraper.create_scraper() # returns a CloudScraper instance
+scraper = cloudscraper.create_scraper(browser='chrome') # returns a CloudScraper instance
+scraper.proxies = {"http": "socks5://127.0.0.1:20170", "https": "socks5://127.0.0.1:20170",
+    "socks5": "socks5://127.0.0.1:20170"}
 INTERNAL_TRANSACTION="internal_transactions"
-def filtercompilerversion(compiler_version):
-    if compiler_version.find("commit")!=-1:
-        compiler_version = compiler_version.split("+commit")[0].split("v")[1]
-    if compiler_version.find("night")!=-1:
-        compiler_version = compiler_version.split("-night")[0]
-        if compiler_version.find("v")!=-1:
-            compiler_version = compiler_version.split("v")[1]
-    if compiler_version in [f"0.4.{i}" for i in range(25)]:
-        compiler_version = "0.4.25"
-    elif compiler_version.find("0.3")!=-1:
-        compiler_version = "0.4.25"
-    return compiler_version
-
-def installSolc(solcVersion):
-    solcVersion = filtercompilerversion(solcVersion)
-    cp = subprocess.run(["solc-select","install", solcVersion])
-    print(cp)
-    cp = subprocess.run(["solc-select","use", solcVersion])
 
 TransactionThreshold = 50
 def getPage(url):
@@ -336,6 +321,7 @@ class Crawler:
             self.txs_api = TXS_API_BLOCKCHAIN_BSC
             self.abi_api = ABI_API_BLOCKCHAIN_BSC
             self.webpage_func = WEBPAGE_FUNC_BLOCKCAHIN_ETH
+        self.addressdir = f"{self.workdir}/{self.address}"
     
     
     def readLocalSource(self):
@@ -345,7 +331,7 @@ class Crawler:
             return False, None
            
     def saveLocal(self, dictobj):
-        json.dump(dictobj, open(f"{self.addressdir}/config.json", "w"))
+        json.dump(dictobj, open(f"{self.addressdir}/config.json", "w"), indent=6)
           
 
     def getSourceCode(self):
@@ -433,22 +419,26 @@ class Crawler:
         return f"{self.addressdir}/txs.json"
   
     def crawl(self):
-        subdir = f"{self.workdir}/{self.address}"
-        if os.path.exists(subdir):
+        if os.path.exists(self.addressdir):
             boolflag, results = self.readLocalSource()
             if boolflag:
-                nodejs_dir = "~/Projects/InvCon/invcon/nodejs"
+                nodejs_dir = "/home/liuye/Projects/InvCon/invcon/nodejs"
                 cmd = f'cd {nodejs_dir} && node decodeTx.js --abi {results["abi_file"]} --tx {results["transactions_file"]} --output {os.path.join(os.path.dirname(results["transactions_file"]), "tx_decode.json")}'
                 os.system(cmd)
                 assert os.path.exists(os.path.join(os.path.dirname(results["transactions_file"]), "tx_decode.json")), "Decoding error: failed to decode transactions"
                 results["tx_decode_file"] = os.path.join(os.path.dirname(results["transactions_file"]), "tx_decode.json") 
                 return results 
-        if not os.path.exists(subdir):
-            os.mkdir(subdir)
-        self.addressdir = subdir 
+        if not os.path.exists(self.addressdir):
+            os.mkdir(self.addressdir)
         try:
             results = dict()
             contractName, compilerVersion, constructorArguments, sourcecode = self.getSourceCode()
+            if contractName is None or compilerVersion is None or contractName == "" or compilerVersion == "":
+                shutil.rmtree(self.addressdir)
+                with open(os.path.dirname(self.addressdir)+"/sourceCodeNotAvailable.txt", "a") as f:
+                    f.write(self.address)
+                    f.write("\n")
+                exit(-1)
             results["sourcecode_file"] = sourcecode
             results["name"] = contractName
             results["compiler_version"] = compilerVersion
@@ -459,10 +449,16 @@ class Crawler:
             results["transactions_file"] = txs 
             
             # decode txs
-            nodejs_dir = "/home/liuye/Projects/SpecCon/specCon/nodejs"
+            nodejs_dir ="/home/liuye/Projects/InvCon/invcon/nodejs"
             tx_decode_file = os.path.join(os.path.dirname(results["transactions_file"]), "tx_decode.json")
             cmd = f'cd {nodejs_dir} && node decodeTx.js --abi {results["abi_file"]} --tx {results["transactions_file"]} --output {tx_decode_file}'
             os.system(cmd)
+            if not os.path.exists(tx_decode_file):
+                shutil.rmtree(self.addressdir)
+                with open(os.path.dirname(self.addressdir)+"/sourceCodeNotAvailable.txt", "a") as f:
+                    f.write(self.address)
+                    f.write("\n")
+                exit(-1)
             assert os.path.exists(tx_decode_file), "Decoding error: failed to decode transactions"
             results["tx_decode_file"] = tx_decode_file
             
