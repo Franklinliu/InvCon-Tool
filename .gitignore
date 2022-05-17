@@ -88,8 +88,10 @@ typings/
 **/*.invariants.txt
 
 DApp/
-ERC20Tokens/
-Erc721Tokens/
+ERC20Tokens
+Erc721Tokens
+!ERC20Tokens/*.csv
+!Erc721Tokens/*.csv
 legacy/
 solc-select/
 dist/
@@ -98,3 +100,7 @@ tmp/
 0x*/
 *.egg-info/
 */0x*
+Experiment/
+!Experiment/*/*/*.inv 
+!Experiment/*/*/*.sol
+!Experiment/*/*/*.abi 
