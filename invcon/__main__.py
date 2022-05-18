@@ -17,11 +17,8 @@ def execute_command(args):
     crawler = Crawler(address = args.eth_address, blockchain=args.blockchain, workdir=args.workspace)
     results = crawler.crawl()
     
-   
-
     if not args.crawl_only:
         daikon_main(address = args.eth_address,  workdir=args.workspace,  contractName = results["name"], storageLayoutJson = results["storageLayout_file"],  input_abi = results["abi_file"],  input_state_change = results["allstatechanges_file"] ,  input_tx_receipt = results["tx_decode_file"])
-
 
 def main():
     parser = argparse.ArgumentParser(description='InvCon: A Dynamic Invariant Detector for Ethereum Smart Contracts!')

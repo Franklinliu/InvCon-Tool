@@ -139,10 +139,6 @@ print("no such invaraint file:", number3)
 print("no such invariant content:", number2 )
 print("include such invariant content:", number1 )
 
-print("Found book sum invariant:", len(booksum_set) )
-print("Found transfer arithmatic invariant:", len(transfer_set))
-print("Found transferfrom invariant:", len(transferfrom_set))
-print("Found approve invariant:", len(approve_set))
 
 Limit  = 10 
 # pick the contract with transaction larger than 20 
@@ -179,6 +175,11 @@ for addressdir in all_addressdirs.difference(transferfrom_set):
         if "\n".join(f.readlines()).find("transferFrom") != -1:
             if len(txs) > Limit:
                 check_nontransferfrominvariant_contracts.add(addressdir)
+
+print("Found book sum invariant:", len(booksum_set))
+print("Found transfer arithmatic invariant:", len(transfer_set))
+print("Found transferfrom invariant:", len(transferfrom_set))
+print("Found approve invariant:", len(approve_set))
 
 with open("audit.txt", "w") as f:
     f.write(f"For bookkeeping invariant, please check the following contracts having at least {Limit} transactions:\n")

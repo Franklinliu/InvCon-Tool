@@ -124,13 +124,12 @@ def print_function_decl(contractStorageObject, function, contractName):
                 return enter, exit1, exit2
 
 def getDecl(contractName, contractStorageObject, contractAbi=list()):
-
         g_decls = []    
         g_decls.extend(print_head())
         g_decls.extend(contractStorageObject.getObjectDecl(contractName))
         g_decls.append("\n")
         for function in contractAbi:
-            if function["type"] == "function" and (function["stateMutability"] != "view"):
+            if function["type"] == "function" and ("stateMutability" not in function or function["stateMutability"] != "view"):
                 # print(function)
               enter, exit1, exit2 = print_function_decl(contractStorageObject, function, contractName)
               g_decls.extend(enter)

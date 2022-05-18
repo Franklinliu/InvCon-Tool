@@ -87,11 +87,8 @@ typings/
 *.invariants.txt
 **/*.invariants.txt
 
+*.json 
 DApp/
-ERC20Tokens
-Erc721Tokens
-!ERC20Tokens/*.csv
-!Erc721Tokens/*.csv
 legacy/
 solc-select/
 dist/
