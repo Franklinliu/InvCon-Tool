@@ -1,12 +1,11 @@
 <!-- Note -->
 
-## SpecCon
+## InvCon, A Dynamic Invariant Detector for Ethereum Smart Contracts
+---
 
-Automata Based Specification Mining Tool for Smart Contracts.
+<!-- ### Supported Smart Contracts
 
-### Supported Smart Contracts
-
-Written in Solidity >= 0.5.12
+Written in Solidity >= 0.5.12 -->
 
 ### How to build
 
@@ -20,10 +19,10 @@ TODO:
 Mining specification of SteveJobs token contract.
 
 ```
-specCon  --contract_address 0x97b3c9aa2ddf4d215a71090c1ee5990e2ad60fd1
+invcon  --eth_address 0x97b3c9aa2ddf4d215a71090c1ee5990e2ad60fd1
 ```
 
-### Balance Sum Invaraints
+<!-- ### Balance Sum Invaraints
 
 #### ColendiToken#0xf2ccd161f06d88479b50d4bedbad9992dbdaffdd$
 
@@ -40,11 +39,11 @@ ParsiqToken.transfer(address,uint256):::EXIT1
 this._balances[].getValue() SUM1 (elements) == 1.7976931348623157E308
 
 orig(this._balances[].getValue()) elements <= orig(this._totalSupply)
+ -->
 
 
-
-### Buggy Cases
-1. 0xf34ee2ad4d4770de80b885ed5853ac52f4e93c07, 
+<!-- ### Buggy Cases -->
+<!-- 1. 0xf34ee2ad4d4770de80b885ed5853ac52f4e93c07, 
 2. 0x1fcb56176483f706070ea5f6b351ea6990f93f5c, 
 3. 0x6b262b065b0272a51dba9a89020cff67c5e7c81d,
 4. 0xc6f0b1378e6dbda2841795dc6d8f2ead27b308e5.
@@ -81,18 +80,24 @@ For its new version at 0x5a3a2c9257b9f48927263e639c95e3f2a6e7efb5, TokenMintERC2
         emit Transfer(address(0), account, amount);
     }
 
-```
+``` -->
 
-### Bug Case Violating Total Supply Equal to Balance Sum
+### Buggy ERC20 Smart Contracts
 
-* ETHER3XBULL(0x7df13bfd9656038a689ab490bb620ddb440ae2a3); dogecoin(0xfb3e0a102dad7a26ae7f3a2abac9796bee865e8e)
+#### 1. Against Total Supply Equal to Balance Sum
+
+* ETHER3XBULL(0x7df13bfd9656038a689ab490bb620ddb440ae2a3), dogecoin(0xfb3e0a102dad7a26ae7f3a2abac9796bee865e8e)
 ```bash 
 function mint(address miner, uint256 _value) external onlyOwner {
       balances[miner] = _value;
 }
 ```
 
-* TokenMintERC20Token(0x9d42ec955fe0d463324f5f1caec5410274b2d2a0)
+* TokenMintERC20Token(0x9d42ec955fe0d463324f5f1caec5410274b2d2a0, 
+ 0xf34ee2ad4d4770de80b885ed5853ac52f4e93c07, 
+ 0x1fcb56176483f706070ea5f6b351ea6990f93f5c, 
+ 0x6b262b065b0272a51dba9a89020cff67c5e7c81d,
+ 0xc6f0b1378e6dbda2841795dc6d8f2ead27b308e5).
 ```bash 
     function _mint(address account, uint256 amount) internal {
         require(account != address(0), "ERC20: mint to the zero address");
@@ -116,7 +121,7 @@ function mint(address miner, uint256 _value) external onlyOwner {
     }
 ```
 
-### Bug Case Violating Transfer Invariant
+#### 2. Against Transfer Invariant
 * FILHToken(0x25dba15589a29043c24d00036c1d56a262895dbf)
 ```bash 
     function transfer(address _to, uint _value) public onlyPayloadSize(2 * 32) {
@@ -182,7 +187,7 @@ function mint(address miner, uint256 _value) external onlyOwner {
         Transfer(msg.sender, _to, sendAmount);
     }
 ```
-### Bug Case Violating TransferFrom Invariant
+#### 3. Against TransferFrom Invariant
 * ismToken(0x496b277c76e441b59b7bc1aba4cc7a748ea29406)
 ```bash
    function transferFrom(address _from, address _to, uint _value) public onlyPayloadSize(3 * 32) {
@@ -209,7 +214,7 @@ function mint(address miner, uint256 _value) external onlyOwner {
     }
 ```
 
-### Bug Case Violating Approve Invariant
+#### 4. Against Approve Invariant
 * SOMETOKEN(0x342b2fa55cf870f5f619cc31e96a0c02c6f58cd4)
 ```bash 
     function approve(address _spender, uint256 _value) public
