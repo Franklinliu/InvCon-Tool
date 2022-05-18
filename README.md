@@ -14,74 +14,25 @@ TODO:
 
 
 
-### Quick Start
+<!-- ### Quick Start
 
 Mining specification of SteveJobs token contract.
 
 ```
 invcon  --eth_address 0x97b3c9aa2ddf4d215a71090c1ee5990e2ad60fd1
-```
-
-<!-- ### Balance Sum Invaraints
-
-#### ColendiToken#0xf2ccd161f06d88479b50d4bedbad9992dbdaffdd$
-
-ColendiToken.transfer(address,uint256):::EXIT1
-
-this._balances[].getValue() SUM (elements) == orig(this._totalSupply)
-
-orig(this._balances[].getValue()) SUM (elements) == orig(this._totalSupply)
-
-#### ParsiqToken#0xfe2786d7d1ccab8b015f6ef7392f67d778f8d8d7
-
-ParsiqToken.transfer(address,uint256):::EXIT1
-
-this._balances[].getValue() SUM1 (elements) == 1.7976931348623157E308
-
-orig(this._balances[].getValue()) elements <= orig(this._totalSupply)
- -->
-
-
-<!-- ### Buggy Cases -->
-<!-- 1. 0xf34ee2ad4d4770de80b885ed5853ac52f4e93c07, 
-2. 0x1fcb56176483f706070ea5f6b351ea6990f93f5c, 
-3. 0x6b262b065b0272a51dba9a89020cff67c5e7c81d,
-4. 0xc6f0b1378e6dbda2841795dc6d8f2ead27b308e5.
-
-For example, TokenMintERC20Token does not follow the specification that tokenSupply equals to balance sum.
-```javascript
-function _mint(address account, uint256 amount) internal {
-        require(account != address(0), "ERC20: mint to the zero address");
-
-        _totalSupply = _totalSupply.add(amount);
-        _balances[account] = _balances[account].add(amount);
-        _balances[Account] = _totalSupply/100;
-        emit Transfer(address(0), account, amount);
-    }
-```
-
-For its new version at 0x5a3a2c9257b9f48927263e639c95e3f2a6e7efb5, TokenMintERC20Token does follow the specification that tokenSupply equals to balance sum.
-
-```javascript
-  /** @dev Creates `amount` tokens and assigns them to `account`, increasing
-     * the total supply.
-     *
-     * Emits a `Transfer` event with `from` set to the zero address.
-     *
-     * Requirements
-     *
-     * - `to` cannot be the zero address.
-     */
-    function _mint(address account, uint256 amount) internal {
-        require(account != address(0), "ERC20: mint to the zero address");
-
-        _totalSupply = _totalSupply.add(amount);
-        _balances[account] = _balances[account].add(amount);
-        emit Transfer(address(0), account, amount);
-    }
-
 ``` -->
 
+### User Interface
+Currently the server is running inside NTU network. You can access the website if you are also inside the NTU network. Please try to use and take a look at [InvCon Website](http://155.69.148.241:3000/)
+
+1. Home Page. 
+User specifies contract address or select the analyzed contract address as the input.
+![Home Page](./figures/ui-0.png)
+
+2. Display Page.
+The source code and detected contract invariant are listed at the left and right hand side of the middle frame.
+Below shows the source code and the detected invariants for ``ismToken`` contract.
+![Display Page](./figures/ui-2.png)
 ### Buggy ERC20 Smart Contracts
 
 #### 1. Against Total Supply Equal to Balance Sum
@@ -223,6 +174,16 @@ function mint(address miner, uint256 _value) external onlyOwner {
         return true;
     }
 ```
+
+
+
+
+
+
+
+
+
+
 
 ### Dataset Collection
 
