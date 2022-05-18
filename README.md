@@ -240,8 +240,8 @@ and is_erc20 is true
 ```
 Finally 611 ERC20 token contracts are found and stored at ERC20Tokens/ERC20ContractAddress-from2021-03-01-to-2021-03-31.csv.
 
-### SVM Linear Separation
+<!-- ### SVM Linear Separation
 
 Using linear SVC of sklearn to linearly divide the positive and negative data points.
 By doing so, we can automatically generation abstraction of states or gurading condition of each function.
-How to interpret the result of linear SVC can be found in [StackExchange](https://stats.stackexchange.com/questions/39243/how-does-one-interpret-svm-feature-weights).
+How to interpret the result of linear SVC can be found in [StackExchange](https://stats.stackexchange.com/questions/39243/how-does-one-interpret-svm-feature-weights). -->
