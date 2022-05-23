@@ -17,7 +17,7 @@ class HandleContractAddressQuery:
     
     @classmethod
     def __queryContractAddress(cls, contractAddress):
-        matches = glob.glob(f"{cached_folders}/*/{contractAddress}")
+        matches = glob.glob(f"{cached_folders}/*/*/{contractAddress}")
         if len(matches) == 0:
             return None, None, None, None  
         else:
@@ -69,14 +69,14 @@ class MyServer(BaseHTTPRequestHandler):
             assert len(queryresult["address"]) == 1, "only accept one contract address per request"
             address = queryresult["address"][0]
             source, inv, contractName, compilerVersion = HandleContractAddressQuery.query(contractAddress=address)
-            if source is None:
-                # this contract has not been searched
-                # so we search the contract and detect its invariant;
-                # invariant detection may take some time depending on the number of smart contract transactions 
-                # because we need to crawler relevant transaction information from etherscan
-                cmd = "invcon --eth_address {contractAddress} --workspace ./Experiment/tmp"
-                os.system(cmd)
-                source, inv, contractName, compilerVersion = HandleContractAddressQuery.query(contractAddress=address)
+            # if source is None:
+            #     # this contract has not been searched
+            #     # so we search the contract and detect its invariant;
+            #     # invariant detection may take some time depending on the number of smart contract transactions 
+            #     # because we need to crawler relevant transaction information from etherscan
+            #     cmd = "invcon --eth_address {contractAddress} --workspace ./Experiment/tmp"
+            #     os.system(cmd)
+            #     source, inv, contractName, compilerVersion = HandleContractAddressQuery.query(contractAddress=address)
             response_data = dict(data="hello from server", source = source, inv=inv, contractName=contractName, compilerVersion=compilerVersion)
         else:
             response_data = dict(data="hello from server")
