@@ -1,0 +1,107 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+CORD.approve(address,uint256):::EXIT1
+this == orig(this)
+this._balances == orig(this._balances)
+this._allowed == orig(this._allowed)
+this._totalSupply == orig(this._totalSupply)
+this._totalSupply == this._balances[this._devFund].getValue()
+this._devFund == this._taxBenefit
+this._devFund == msg.sender
+this._devFund == orig(this._devFund)
+this._devFund == orig(this._taxBenefit)
+this._devFund == orig(msg.sender)
+this._taxRate == orig(this._allowed[post(pair(spender,msg.sender))].getSubValue())
+this._whenSent == orig(this._whenSent)
+spender == orig(spender)
+orig(this._totalSupply) == this._balances[this._devFund].getValue()
+orig(value) == this._allowed[pair(msg.sender,spender)].getSubValue()
+sum(this._whenSent[].getValue()) == this._whenSent[this._devFund].getValue()
+this._balances == null
+this._allowed has only one value
+this._allowed[].getSubLength() elements == 1
+this._totalSupply == 18990000000000000000000
+this._decimals == 18
+this._taxRate == 0
+this._whenSent has only one value
+orig(this) has only one value
+orig(this._totalSupply) == 18990000000000000000000
+orig(value) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(block.timestamp) == 1612813664
+sum(this._allowed[].getSubLength()) == 1
+sum(this._whenSent[].getValue()) == 1611873084
+sum(orig(this._allowed[].getSubLength())) == 0
+this._balances[this._devFund].getValue() == 18990000000000000000000
+this._whenSent[this._devFund].getValue() == 1611873084
+this._allowed[pair(msg.sender,spender)].getSubValue() == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(this._allowed[post(pair(spender,msg.sender))].getSubValue()) == 0
+sum(this._allowed[].getSubLength()) in this._allowed[].getSubLength()
+this._allowed[].getSubLength() elements == sum(this._allowed[].getSubLength())
+===========================================================================
+CORD.burn(uint256):::EXIT1
+this == orig(this)
+this._balances == orig(this._balances)
+this._allowed == orig(this._allowed)
+this._allowed[].getSubLength() == orig(this._allowed[].getSubLength())
+this._totalSupply == sum(this._balances[].getValue())
+this._totalSupply == this._balances[this._devFund].getValue()
+this._devFund == this._taxBenefit
+this._devFund == msg.sender
+this._devFund == orig(this._devFund)
+this._devFund == orig(this._taxBenefit)
+this._devFund == orig(msg.sender)
+this._whenSent == orig(this._whenSent)
+orig(this._totalSupply) == orig(this._balances[post(msg.sender)].getValue())
+sum(this._balances[].getValue()) == this._balances[this._devFund].getValue()
+sum(this._allowed[].getSubLength()) == sum(orig(this._allowed[].getSubLength()))
+this._balances == null
+this._allowed has only one value
+this._totalSupply == 18990000000000000000000
+this._decimals == 18
+this._taxRate == 0
+this._whenSent has only one value
+orig(this) has only one value
+orig(this._totalSupply) == 19000000000000000000000
+orig(value) == 10000000000000000000
+orig(block.timestamp) == 1611872804
+sum(this._balances[].getValue()) == 18990000000000000000000
+sum(this._allowed[].getSubLength()) == 0
+this._balances[this._devFund].getValue() == 18990000000000000000000
+orig(this._balances[post(msg.sender)].getValue()) == 19000000000000000000000
+===========================================================================
+CORD.transfer(address,uint256):::EXIT1
+this == orig(this)
+this._balances == orig(this._balances)
+this._allowed == orig(this._allowed)
+this._allowed[].getSubLength() == orig(this._allowed[].getSubLength())
+this._totalSupply == orig(this._totalSupply)
+this._totalSupply == this._balances[this._devFund].getValue()
+this._devFund == this._taxBenefit
+this._devFund == to
+this._devFund == msg.sender
+this._devFund == orig(this._devFund)
+this._devFund == orig(this._taxBenefit)
+this._devFund == orig(to)
+this._devFund == orig(msg.sender)
+this._taxRate == orig(this._allowed[post(pair(to,msg.sender))].getSubValue())
+this._whenSent == orig(this._whenSent)
+orig(this._totalSupply) == this._balances[this._devFund].getValue()
+orig(block.timestamp) == this._whenSent[this._devFund].getValue()
+sum(this._allowed[].getSubLength()) == sum(orig(this._allowed[].getSubLength()))
+this._balances == null
+this._allowed has only one value
+this._totalSupply == 18990000000000000000000
+this._decimals == 18
+this._taxRate == 0
+this._whenSent has only one value
+orig(this) has only one value
+orig(this._totalSupply) == 18990000000000000000000
+orig(block.timestamp) == 1611873084
+sum(this._allowed[].getSubLength()) == 0
+this._balances[this._devFund].getValue() == 18990000000000000000000
+this._whenSent[this._devFund].getValue() == 1611873084
+orig(this._allowed[post(pair(to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

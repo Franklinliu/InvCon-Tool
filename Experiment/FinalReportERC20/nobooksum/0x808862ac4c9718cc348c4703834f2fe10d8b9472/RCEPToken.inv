@@ -1,0 +1,39 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+RCEPToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.ERC20Basic_own_totalSupply == orig(_value)
+this.ERC20Basic_own_totalSupply == this.BasicToken_own_balances[orig(_to)].getValue()
+this.BasicToken_own_owner == msg.sender
+this.BasicToken_own_owner == orig(this.BasicToken_own_owner)
+this.BasicToken_own_owner == orig(msg.sender)
+this.BasicToken_own_transferable == orig(this.BasicToken_own_transferable)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_frozenAccount == orig(this.BasicToken_own_frozenAccount)
+this.BasicToken_own_frozenAccount[].getValue() == orig(this.BasicToken_own_frozenAccount[].getValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+_to == orig(_to)
+orig(_value) == this.BasicToken_own_balances[orig(_to)].getValue()
+orig(msg.value) == this.BasicToken_own_balances[this.BasicToken_own_owner].getValue()
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances[this.BasicToken_own_owner].getValue() == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.ERC20Basic_own_totalSupply == 15000000000000000000000000000
+this.BasicToken_own_transferable == true
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_frozenAccount has only one value
+this.StandardToken_own_allowed has only one value
+this.decimals == 18
+orig(this) has only one value
+orig(_value) == 15000000000000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1611741987
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+this.BasicToken_own_balances[this.BasicToken_own_owner].getValue() == 0
+this.BasicToken_own_balances[orig(_to)].getValue() == 15000000000000000000000000000
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

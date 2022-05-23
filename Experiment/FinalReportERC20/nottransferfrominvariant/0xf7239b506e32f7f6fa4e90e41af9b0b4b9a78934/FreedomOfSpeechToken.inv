@@ -1,0 +1,48 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+FreedomOfSpeechToken.setRate(uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == this.treasurer
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.treasurer)
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.ERC20Basic_own_totalSupply == this.purchasableTokens
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+msg.sender == orig(msg.sender)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.Pausable_own_paused == false
+this.ERC20Basic_own_totalSupply == 0
+this.BasicToken_own_balances has only one value
+this.StandardToken_own_allowed has only one value
+this.purchasableTokens == 0
+orig(this) has only one value
+orig(rate) == 2000
+orig(block.timestamp) == 1610909063
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+===========================================================================
+FreedomOfSpeechToken.unpause():::EXIT2
+this == orig(this)
+this.Ownable_own_owner == this.treasurer
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.treasurer)
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.ERC20Basic_own_totalSupply == this.purchasableTokens
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+msg.sender == orig(msg.sender)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.Pausable_own_paused == false
+this.ERC20Basic_own_totalSupply == 0
+this.BasicToken_own_balances has only one value
+this.StandardToken_own_allowed has only one value
+this.purchasableTokens == 0
+orig(this) has only one value
+orig(block.timestamp) == 1610568132
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+Exiting Daikon.

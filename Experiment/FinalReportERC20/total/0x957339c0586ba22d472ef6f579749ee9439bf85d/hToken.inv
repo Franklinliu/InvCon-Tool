@@ -1,0 +1,208 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+hToken.approve(address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == this.upgradedAddress
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.upgradedAddress)
+this.Pausable_own_paused == this.deprecated
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.Pausable_own_paused == orig(this.deprecated)
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_basisPointsRate
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_maximumFee
+this.ERC20Basic_own__totalSupply == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_basisPointsRate == this.BasicToken_own_maximumFee
+this.BasicToken_own_basisPointsRate == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+this.BasicToken_own_maximumFee == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.BlackList_own_isBlackListed == orig(this.BlackList_own_isBlackListed)
+this.BlackList_own_isBlackListed[].getValue() == orig(this.BlackList_own_isBlackListed[].getValue())
+_spender == orig(_spender)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.Pausable_own_paused == false
+this.ERC20Basic_own__totalSupply == 0
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_basisPointsRate == 0
+this.BasicToken_own_maximumFee == 0
+this.StandardToken_own_allowed has only one value
+this.BlackList_own_isBlackListed has only one value
+_value == 99999999999999999999999999999999000000000000000000
+block.timestamp one of { 1609933513, 1610273743 }
+orig(this) has only one value
+orig(_value) == 99999999999999999999999999999999000000000000000000
+orig(block.timestamp) one of { 1609933513, 1610273743 }
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue()) == 0
+===========================================================================
+hToken.issue(uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == this.upgradedAddress
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.upgradedAddress)
+this.Pausable_own_paused == this.deprecated
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.Pausable_own_paused == orig(this.deprecated)
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_basisPointsRate
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.BlackList_own_isBlackListed == orig(this.BlackList_own_isBlackListed)
+this.BlackList_own_isBlackListed[].getValue() == orig(this.BlackList_own_isBlackListed[].getValue())
+msg.sender == orig(msg.sender)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.Pausable_own_paused == false
+this.ERC20Basic_own__totalSupply == 0
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_basisPointsRate == 0
+this.StandardToken_own_allowed has only one value
+this.BlackList_own_isBlackListed has only one value
+orig(this) has only one value
+orig(amount) == 10000000000000000000000000
+orig(block.timestamp) == 1610081873
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+===========================================================================
+hToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == this.upgradedAddress
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.upgradedAddress)
+this.Pausable_own_paused == this.deprecated
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.Pausable_own_paused == orig(this.deprecated)
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_basisPointsRate
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_maximumFee
+this.ERC20Basic_own__totalSupply == this.decimals
+this.ERC20Basic_own__totalSupply == msg.value
+this.ERC20Basic_own__totalSupply == orig(this.ERC20Basic_own__totalSupply)
+this.ERC20Basic_own__totalSupply == orig(this.BasicToken_own_basisPointsRate)
+this.ERC20Basic_own__totalSupply == orig(this.BasicToken_own_maximumFee)
+this.ERC20Basic_own__totalSupply == orig(this.decimals)
+this.ERC20Basic_own__totalSupply == orig(msg.value)
+this.ERC20Basic_own__totalSupply == sum(this.BasicToken_own_balances[].getValue())
+this.ERC20Basic_own__totalSupply == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_basisPointsRate == this.BasicToken_own_maximumFee
+this.BasicToken_own_basisPointsRate == this.decimals
+this.BasicToken_own_basisPointsRate == msg.value
+this.BasicToken_own_basisPointsRate == orig(this.ERC20Basic_own__totalSupply)
+this.BasicToken_own_basisPointsRate == orig(this.BasicToken_own_basisPointsRate)
+this.BasicToken_own_basisPointsRate == orig(this.BasicToken_own_maximumFee)
+this.BasicToken_own_basisPointsRate == orig(this.decimals)
+this.BasicToken_own_basisPointsRate == orig(msg.value)
+this.BasicToken_own_basisPointsRate == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_basisPointsRate == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.BasicToken_own_maximumFee == this.decimals
+this.BasicToken_own_maximumFee == msg.value
+this.BasicToken_own_maximumFee == orig(this.ERC20Basic_own__totalSupply)
+this.BasicToken_own_maximumFee == orig(this.BasicToken_own_basisPointsRate)
+this.BasicToken_own_maximumFee == orig(this.BasicToken_own_maximumFee)
+this.BasicToken_own_maximumFee == orig(this.decimals)
+this.BasicToken_own_maximumFee == orig(msg.value)
+this.BasicToken_own_maximumFee == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_maximumFee == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.BlackList_own_isBlackListed == orig(this.BlackList_own_isBlackListed)
+this.BlackList_own_isBlackListed[].getValue() == orig(this.BlackList_own_isBlackListed[].getValue())
+this.decimals == msg.value
+this.decimals == orig(this.ERC20Basic_own__totalSupply)
+this.decimals == orig(this.BasicToken_own_basisPointsRate)
+this.decimals == orig(this.BasicToken_own_maximumFee)
+this.decimals == orig(this.decimals)
+this.decimals == orig(msg.value)
+this.decimals == sum(this.BasicToken_own_balances[].getValue())
+this.decimals == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.ERC20Basic_own__totalSupply)
+msg.value == orig(this.BasicToken_own_basisPointsRate)
+msg.value == orig(this.BasicToken_own_maximumFee)
+msg.value == orig(this.decimals)
+msg.value == orig(msg.value)
+msg.value == sum(this.BasicToken_own_balances[].getValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20Basic_own__totalSupply) == orig(this.BasicToken_own_basisPointsRate)
+orig(this.ERC20Basic_own__totalSupply) == orig(this.BasicToken_own_maximumFee)
+orig(this.ERC20Basic_own__totalSupply) == orig(this.decimals)
+orig(this.ERC20Basic_own__totalSupply) == orig(msg.value)
+orig(this.ERC20Basic_own__totalSupply) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.ERC20Basic_own__totalSupply) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(this.BasicToken_own_basisPointsRate) == orig(this.BasicToken_own_maximumFee)
+orig(this.BasicToken_own_basisPointsRate) == orig(this.decimals)
+orig(this.BasicToken_own_basisPointsRate) == orig(msg.value)
+orig(this.BasicToken_own_basisPointsRate) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.BasicToken_own_basisPointsRate) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(this.BasicToken_own_maximumFee) == orig(this.decimals)
+orig(this.BasicToken_own_maximumFee) == orig(msg.value)
+orig(this.BasicToken_own_maximumFee) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.BasicToken_own_maximumFee) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(this.decimals) == orig(msg.value)
+orig(this.decimals) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.decimals) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.BasicToken_own_balances[].getValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.Pausable_own_paused == false
+this.ERC20Basic_own__totalSupply == 0
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_basisPointsRate == 0
+this.BasicToken_own_maximumFee == 0
+this.StandardToken_own_allowed has only one value
+this.BlackList_own_isBlackListed has only one value
+this.BlackList_own_isBlackListed[].getValue() elements != null
+this.decimals == 0
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20Basic_own__totalSupply) == 0
+orig(this.BasicToken_own_basisPointsRate) == 0
+orig(this.BasicToken_own_maximumFee) == 0
+orig(this.decimals) == 0
+orig(msg.value) == 0
+sum(this.BasicToken_own_balances[].getValue()) == 0
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.Ownable_own_owner != orig(_to)
+this.Ownable_own_owner != orig(msg.sender)
+this.ERC20Basic_own__totalSupply < _value
+this.ERC20Basic_own__totalSupply < block.timestamp
+this.ERC20Basic_own__totalSupply < orig(_value)
+this.ERC20Basic_own__totalSupply < orig(block.timestamp)
+this.BasicToken_own_basisPointsRate < _value
+this.BasicToken_own_basisPointsRate < block.timestamp
+this.BasicToken_own_basisPointsRate < orig(_value)
+this.BasicToken_own_basisPointsRate < orig(block.timestamp)
+this.BasicToken_own_maximumFee < _value
+this.BasicToken_own_maximumFee < block.timestamp
+this.BasicToken_own_maximumFee < orig(_value)
+this.BasicToken_own_maximumFee < orig(block.timestamp)
+this.decimals < _value
+this.decimals < block.timestamp
+this.decimals < orig(_value)
+this.decimals < orig(block.timestamp)
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.ERC20Basic_own__totalSupply) < orig(_value)
+orig(this.ERC20Basic_own__totalSupply) < orig(block.timestamp)
+orig(this.BasicToken_own_basisPointsRate) < orig(_value)
+orig(this.BasicToken_own_basisPointsRate) < orig(block.timestamp)
+orig(this.BasicToken_own_maximumFee) < orig(_value)
+orig(this.BasicToken_own_maximumFee) < orig(block.timestamp)
+orig(this.decimals) < orig(_value)
+orig(this.decimals) < orig(block.timestamp)
+orig(_to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

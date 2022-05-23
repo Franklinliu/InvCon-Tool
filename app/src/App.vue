@@ -1,32 +1,31 @@
 <template>
   <div id="app">
-    <NavHeader></NavHeader>
-    <Tab> </Tab>
-    <BotFooter> </BotFooter>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <MyCodeMirror></MyCodeMirror>
   </div>
 </template>
 
 <script>
-import Tab from "./components/Tab";
-import BotFooter from "./components/BotFooter";
-import NavHeader from "./components/NavHeader";
+// import HelloWorld from './components/HelloWorld.vue'
+import MyCodeMirror from './components/MyCodeMirror.vue'
+
 export default {
-  // name: "App",
+  name: 'App',
   components: {
-    BotFooter,
-    NavHeader,
-    Tab
+    // HelloWorld,
+    MyCodeMirror
   }
-};
+}
 </script>
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
-  height: 90vh; /* vh stands for view-port height, 1vh is 1% of screen height*/
+  /* margin-top: 60px; */
 }
 </style>

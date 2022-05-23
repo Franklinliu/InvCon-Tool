@@ -1,0 +1,42 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TokenMintERC20Token.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowances == orig(this.ERC20_own__allowances)
+this.ERC20_own__allowances[].getSubLength() == orig(this.ERC20_own__allowances[].getSubLength())
+this.ERC20_own__totalSupply == this._decimals
+this.ERC20_own__totalSupply == msg.value
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.ERC20_own__totalSupply == orig(msg.value)
+this.ERC20_own__totalSupply == orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue())
+this.ERC20_own_Account == orig(this.ERC20_own_Account)
+this._decimals == msg.value
+this._decimals == orig(this.ERC20_own__totalSupply)
+this._decimals == orig(msg.value)
+this._decimals == orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue())
+recipient == orig(recipient)
+amount == orig(amount)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.ERC20_own__totalSupply)
+msg.value == orig(msg.value)
+msg.value == orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == orig(msg.value)
+orig(this.ERC20_own__totalSupply) == orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue())
+orig(msg.value) == orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue())
+sum(this.ERC20_own__allowances[].getSubLength()) == sum(orig(this.ERC20_own__allowances[].getSubLength()))
+this.ERC20_own__balances == null
+this.ERC20_own__allowances has only one value
+this.ERC20_own__totalSupply == 0
+this._decimals == 0
+msg.value == 0
+orig(this) has only one value
+orig(this.ERC20_own__totalSupply) == 0
+orig(msg.value) == 0
+sum(this.ERC20_own__allowances[].getSubLength()) == 0
+orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

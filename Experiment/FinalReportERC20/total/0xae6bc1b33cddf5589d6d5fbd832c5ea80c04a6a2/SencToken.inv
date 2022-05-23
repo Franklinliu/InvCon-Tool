@@ -1,0 +1,208 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+SencToken.finishMinting():::EXIT1
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.BasicToken_own_totalSupply_ == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own_owner == this.Operatable_own_primaryOperator
+this.Ownable_own_owner == this.Operatable_own_secondaryOperator
+this.Ownable_own_owner == msg.sender
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.Operatable_own_primaryOperator)
+this.Ownable_own_owner == orig(this.Operatable_own_secondaryOperator)
+this.Ownable_own_owner == orig(msg.sender)
+this.Pausable_own_paused == this.mintingFinished
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+orig(this.BasicToken_own_totalSupply_) == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 10000000000000000000000000
+this.StandardToken_own_allowed has only one value
+this.Pausable_own_paused == true
+this.decimals == 18
+orig(this) has only one value
+orig(this.BasicToken_own_totalSupply_) == 10000000000000000000000000
+orig(this.mintingFinished) == false
+orig(msg.value) == 0
+orig(block.timestamp) == 1611926897
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() == 10000000000000000000000000
+===========================================================================
+SencToken.mint(address,uint256):::EXIT1
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == orig(_amount)
+this.BasicToken_own_totalSupply_ == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own_owner == this.Operatable_own_primaryOperator
+this.Ownable_own_owner == this.Operatable_own_secondaryOperator
+this.Ownable_own_owner == _to
+this.Ownable_own_owner == msg.sender
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.Operatable_own_primaryOperator)
+this.Ownable_own_owner == orig(this.Operatable_own_secondaryOperator)
+this.Ownable_own_owner == orig(_to)
+this.Ownable_own_owner == orig(msg.sender)
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.mintingFinished == orig(this.mintingFinished)
+orig(_amount) == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 10000000000000000000000000
+this.StandardToken_own_allowed has only one value
+this.Pausable_own_paused == true
+this.decimals == 18
+this.mintingFinished == false
+orig(this) has only one value
+orig(_amount) == 10000000000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1611165281
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() == 10000000000000000000000000
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+===========================================================================
+SencToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.BasicToken_own_totalSupply_ == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_totalSupply_ == sum(orig(this.BasicToken_own_balances[].getValue()))
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own_owner == this.Operatable_own_primaryOperator
+this.Ownable_own_owner == this.Operatable_own_secondaryOperator
+this.Ownable_own_owner == msg.sender
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.Operatable_own_primaryOperator)
+this.Ownable_own_owner == orig(this.Operatable_own_secondaryOperator)
+this.Ownable_own_owner == orig(msg.sender)
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.decimals == orig(this.decimals)
+this.mintingFinished == orig(this.mintingFinished)
+_to == orig(_to)
+_value == orig(_value)
+_value == this.BasicToken_own_balances[orig(_to)].getValue()
+msg.value == orig(msg.value)
+msg.value == sum(this.StandardToken_own_allowed[].getSubValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.BasicToken_own_totalSupply_) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.BasicToken_own_totalSupply_) == sum(orig(this.BasicToken_own_balances[].getValue()))
+orig(_value) == this.BasicToken_own_balances[orig(_to)].getValue()
+orig(msg.value) == sum(this.StandardToken_own_allowed[].getSubValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == sum(orig(this.BasicToken_own_balances[].getValue()))
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+sum(this.StandardToken_own_allowed[].getSubValue()) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 10000000000000000000000000
+this.StandardToken_own_allowed has only one value
+this.Pausable_own_paused == false
+this.decimals == 18
+this.mintingFinished == true
+_value one of { 400000000000000000000000, 2000000000000000000000000, 7600000000000000000000000 }
+msg.value == 0
+block.timestamp one of { 1611927202, 1611928154, 1611928228 }
+orig(this) has only one value
+orig(this.BasicToken_own_totalSupply_) == 10000000000000000000000000
+orig(this.decimals) == 18
+orig(_value) one of { 400000000000000000000000, 2000000000000000000000000, 7600000000000000000000000 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1611927202, 1611928154, 1611928228 }
+sum(this.BasicToken_own_balances[].getValue()) == 10000000000000000000000000
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+sum(this.StandardToken_own_allowed[].getSubValue()) == 0
+sum(orig(this.BasicToken_own_balances[].getValue())) == 10000000000000000000000000
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() one of { 0, 2000000000000000000000000, 2400000000000000000000000 }
+this.BasicToken_own_balances[orig(_to)].getValue() one of { 400000000000000000000000, 2000000000000000000000000, 7600000000000000000000000 }
+orig(this.BasicToken_own_balances[post(msg.sender)].getValue()) one of { 2000000000000000000000000, 2400000000000000000000000, 10000000000000000000000000 }
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+===========================================================================
+SencToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.BasicToken_own_totalSupply_ == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_totalSupply_ == sum(orig(this.BasicToken_own_balances[].getValue()))
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own_owner == this.Operatable_own_primaryOperator
+this.Ownable_own_owner == this.Operatable_own_secondaryOperator
+this.Ownable_own_owner == msg.sender
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.Operatable_own_primaryOperator)
+this.Ownable_own_owner == orig(this.Operatable_own_secondaryOperator)
+this.Ownable_own_owner == orig(msg.sender)
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.decimals == orig(this.decimals)
+this.mintingFinished == orig(this.mintingFinished)
+_to == orig(_to)
+_value == orig(_value)
+msg.value == orig(msg.value)
+msg.value == sum(this.StandardToken_own_allowed[].getSubValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.BasicToken_own_totalSupply_) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.BasicToken_own_totalSupply_) == sum(orig(this.BasicToken_own_balances[].getValue()))
+orig(msg.value) == sum(this.StandardToken_own_allowed[].getSubValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == sum(orig(this.BasicToken_own_balances[].getValue()))
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+sum(this.StandardToken_own_allowed[].getSubValue()) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 10000000000000000000000000
+this.StandardToken_own_allowed has only one value
+this.decimals == 18
+_value one of { 2000000000000000000000000, 7600000000000000000000000 }
+msg.value == 0
+orig(this) has only one value
+orig(this.BasicToken_own_totalSupply_) == 10000000000000000000000000
+orig(this.decimals) == 18
+orig(_value) one of { 2000000000000000000000000, 7600000000000000000000000 }
+orig(msg.value) == 0
+sum(this.BasicToken_own_balances[].getValue()) == 10000000000000000000000000
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+sum(this.StandardToken_own_allowed[].getSubValue()) == 0
+sum(orig(this.BasicToken_own_balances[].getValue())) == 10000000000000000000000000
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() one of { 2400000000000000000000000, 10000000000000000000000000 }
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+===========================================================================
+SencToken.unpause():::EXIT1
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.BasicToken_own_totalSupply_ == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own_owner == this.Operatable_own_primaryOperator
+this.Ownable_own_owner == this.Operatable_own_secondaryOperator
+this.Ownable_own_owner == msg.sender
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.Operatable_own_primaryOperator)
+this.Ownable_own_owner == orig(this.Operatable_own_secondaryOperator)
+this.Ownable_own_owner == orig(msg.sender)
+this.mintingFinished == orig(this.Pausable_own_paused)
+this.mintingFinished == orig(this.mintingFinished)
+orig(this.BasicToken_own_totalSupply_) == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 10000000000000000000000000
+this.StandardToken_own_allowed has only one value
+this.Pausable_own_paused == false
+this.decimals == 18
+this.mintingFinished == true
+orig(this) has only one value
+orig(this.BasicToken_own_totalSupply_) == 10000000000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1611927064
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() == 10000000000000000000000000
+Exiting Daikon.

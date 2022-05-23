@@ -1,0 +1,26 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TokenMintERC20Token.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply == this._decimals
+this.ERC20_own__totalSupply == orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+this._decimals == orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+to == orig(to)
+msg.sender == orig(msg.sender)
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+this.ERC20_own__balances == null
+this.ERC20_own__allowed has only one value
+this.ERC20_own__totalSupply == 0
+this._decimals == 0
+orig(this) has only one value
+orig(value) == 100000000000000000000000000
+orig(block.timestamp) == 1610191116
+sum(this.ERC20_own__allowed[].getSubLength()) == 0
+orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

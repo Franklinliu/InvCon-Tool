@@ -1,0 +1,111 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TokenMintERC20Token.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowances == orig(this.ERC20_own__allowances)
+this.ERC20_own__allowances[].getSubLength() == orig(this.ERC20_own__allowances[].getSubLength())
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.ERC20_own__totalSupply == sum(this.ERC20_own__balances[].getValue())
+this.ERC20_own__totalSupply == sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20_own_Account == orig(this.ERC20_own_Account)
+this._decimals == orig(this._decimals)
+recipient == orig(recipient)
+amount == orig(amount)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.ERC20_own__allowances[].getSubValue())
+msg.value == orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20_own__totalSupply) == sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) == sum(this.ERC20_own__allowances[].getSubValue())
+orig(msg.value) == orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) == sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.ERC20_own__allowances[].getSubLength()) == sum(orig(this.ERC20_own__allowances[].getSubLength()))
+sum(this.ERC20_own__allowances[].getSubValue()) == orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue())
+this.ERC20_own__balances == null
+this.ERC20_own__allowances has only one value
+this.ERC20_own__totalSupply == 2100000000000
+this._decimals == 5
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20_own__totalSupply) == 2100000000000
+orig(this._decimals) == 5
+orig(msg.value) == 0
+sum(this.ERC20_own__balances[].getValue()) == 2100000000000
+sum(this.ERC20_own__allowances[].getSubLength()) == 0
+sum(this.ERC20_own__allowances[].getSubValue()) == 0
+sum(orig(this.ERC20_own__balances[].getValue())) == 2100000000000
+orig(this.ERC20_own__balances[post(recipient)].getValue()) == 100000000
+orig(this.ERC20_own__allowances[post(pair(recipient,msg.sender))].getSubValue()) == 0
+this.ERC20_own_Account != orig(recipient)
+this.ERC20_own_Account != orig(msg.sender)
+this._decimals < amount
+this._decimals < block.timestamp
+this._decimals < orig(this.ERC20_own__totalSupply)
+this._decimals < orig(amount)
+this._decimals < orig(block.timestamp)
+this._decimals < sum(this.ERC20_own__balances[].getValue())
+this._decimals < sum(orig(this.ERC20_own__balances[].getValue()))
+this._decimals < this.ERC20_own__balances[orig(recipient)].getValue()
+this._decimals < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this._decimals < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+amount < orig(this.ERC20_own__totalSupply)
+amount < sum(this.ERC20_own__balances[].getValue())
+amount < sum(orig(this.ERC20_own__balances[].getValue()))
+amount <= this.ERC20_own__balances[orig(recipient)].getValue()
+amount < this.ERC20_own__balances[orig(msg.sender)].getValue()
+amount < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+msg.value < block.timestamp
+msg.value < orig(this.ERC20_own__totalSupply)
+msg.value < orig(this._decimals)
+msg.value < orig(amount)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.ERC20_own__balances[].getValue())
+msg.value < sum(orig(this.ERC20_own__balances[].getValue()))
+msg.value < this.ERC20_own__balances[orig(recipient)].getValue()
+msg.value < this.ERC20_own__balances[orig(msg.sender)].getValue()
+msg.value < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+block.timestamp < orig(this.ERC20_own__totalSupply)
+block.timestamp < sum(this.ERC20_own__balances[].getValue())
+block.timestamp < sum(orig(this.ERC20_own__balances[].getValue()))
+block.timestamp < this.ERC20_own__balances[orig(msg.sender)].getValue()
+block.timestamp < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this._decimals) < orig(amount)
+orig(this._decimals) < orig(block.timestamp)
+orig(this._decimals) < sum(this.ERC20_own__balances[].getValue())
+orig(this._decimals) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this._decimals) < this.ERC20_own__balances[orig(recipient)].getValue()
+orig(this._decimals) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this._decimals) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(recipient) != orig(msg.sender)
+orig(amount) < sum(this.ERC20_own__balances[].getValue())
+orig(amount) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(amount) <= this.ERC20_own__balances[orig(recipient)].getValue()
+orig(amount) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(amount) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.ERC20_own__balances[].getValue())
+orig(msg.value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) < this.ERC20_own__balances[orig(recipient)].getValue()
+orig(msg.value) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(msg.value) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(block.timestamp) < sum(this.ERC20_own__balances[].getValue())
+orig(block.timestamp) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(block.timestamp) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+sum(this.ERC20_own__allowances[].getSubValue()) < sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.ERC20_own__allowances[].getSubValue()) < this.ERC20_own__balances[orig(recipient)].getValue()
+sum(this.ERC20_own__allowances[].getSubValue()) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.ERC20_own__allowances[].getSubValue()) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.ERC20_own__balances[orig(recipient)].getValue() < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.ERC20_own__balances[orig(recipient)].getValue() < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.ERC20_own__balances[orig(msg.sender)].getValue() < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+amount + this.ERC20_own__balances[orig(msg.sender)].getValue() - orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+orig(amount) + this.ERC20_own__balances[orig(msg.sender)].getValue() - orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+Exiting Daikon.

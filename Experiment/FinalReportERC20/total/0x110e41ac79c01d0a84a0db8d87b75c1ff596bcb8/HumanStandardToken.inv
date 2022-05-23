@@ -1,0 +1,33 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+HumanStandardToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.StandardToken_own_balances == orig(this.StandardToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.StandardToken_own_totalSupply == orig(_value)
+this.StandardToken_own_totalSupply == this.StandardToken_own_balances[orig(_to)].getValue()
+this.StandardToken_own_totalSupply == orig(this.StandardToken_own_balances[post(msg.sender)].getValue())
+_to == orig(_to)
+msg.sender == orig(msg.sender)
+orig(_value) == this.StandardToken_own_balances[orig(_to)].getValue()
+orig(_value) == orig(this.StandardToken_own_balances[post(msg.sender)].getValue())
+orig(msg.value) == this.StandardToken_own_balances[orig(msg.sender)].getValue()
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.StandardToken_own_balances[orig(_to)].getValue() == orig(this.StandardToken_own_balances[post(msg.sender)].getValue())
+this.StandardToken_own_balances == null
+this.StandardToken_own_allowed has only one value
+this.StandardToken_own_totalSupply == 21000000000000
+this.decimals == 6
+orig(this) has only one value
+orig(_value) == 21000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1611638839
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+this.StandardToken_own_balances[orig(_to)].getValue() == 21000000000000
+this.StandardToken_own_balances[orig(msg.sender)].getValue() == 0
+orig(this.StandardToken_own_balances[post(msg.sender)].getValue()) == 21000000000000
+Exiting Daikon.

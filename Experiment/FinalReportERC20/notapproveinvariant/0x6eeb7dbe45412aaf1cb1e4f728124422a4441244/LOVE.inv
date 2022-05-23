@@ -1,0 +1,53 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+LOVE.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.ERC20Basic_own_totalSupply == orig(this.ERC20Basic_own_totalSupply)
+this.ERC20Basic_own_totalSupply == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+_to == orig(_to)
+_value == orig(_value)
+_value == this.BasicToken_own_balances[orig(_to)].getValue()
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.StandardToken_own_allowed[].getSubValue())
+msg.value == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20Basic_own_totalSupply) == sum(this.BasicToken_own_balances[].getValue())
+orig(_value) == this.BasicToken_own_balances[orig(_to)].getValue()
+orig(msg.value) == sum(this.StandardToken_own_allowed[].getSubValue())
+orig(msg.value) == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+sum(this.StandardToken_own_allowed[].getSubValue()) == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+sum(this.StandardToken_own_allowed[].getSubValue()) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.ERC20Basic_own_totalSupply == 430000
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_balances[].getValue() elements >= 0
+this.StandardToken_own_allowed has only one value
+_value one of { 215000, 430000 }
+msg.value == 0
+block.timestamp one of { 1611476958, 1611847140, 1611849409 }
+orig(this) has only one value
+orig(this.ERC20Basic_own_totalSupply) == 430000
+orig(_value) one of { 215000, 430000 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1611476958, 1611847140, 1611849409 }
+sum(this.BasicToken_own_balances[].getValue()) == 430000
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+sum(this.StandardToken_own_allowed[].getSubValue()) == 0
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() == 0
+orig(this.BasicToken_own_balances[post(this.Ownable_own_owner)].getValue()) one of { 0, 430000 }
+this.BasicToken_own_balances[orig(_to)].getValue() one of { 215000, 430000 }
+this.BasicToken_own_balances[orig(msg.sender)].getValue() one of { 0, 215000 }
+orig(this.BasicToken_own_balances[post(msg.sender)].getValue()) one of { 215000, 430000 }
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

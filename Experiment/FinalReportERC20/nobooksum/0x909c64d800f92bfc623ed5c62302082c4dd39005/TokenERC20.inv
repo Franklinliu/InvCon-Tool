@@ -1,0 +1,34 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TokenERC20.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.decimals == this.totalSupply
+this.decimals == orig(msg.value)
+this.decimals == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+this.totalSupply == orig(msg.value)
+this.totalSupply == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+this.allowance[].getSubLength() == orig(this.allowance[].getSubLength())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+orig(msg.value) == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+sum(this.allowance[].getSubLength()) == sum(orig(this.allowance[].getSubLength()))
+this.decimals == 0
+this.totalSupply == 0
+this.balanceOf has only one value
+this.allowance has only one value
+_value one of { 2000000000000000000000, 10000000000000000000000000 }
+block.timestamp one of { 1610077548, 1618161432 }
+orig(this) has only one value
+orig(_value) one of { 2000000000000000000000, 10000000000000000000000000 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1610077548, 1618161432 }
+sum(this.allowance[].getSubLength()) == 0
+orig(this.allowance[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

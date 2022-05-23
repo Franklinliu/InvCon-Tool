@@ -1,0 +1,107 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+NokuCustomERC20.mint(address,uint256):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == this.DetailedERC20_own_decimals
+this.BasicToken_own_totalSupply_ == this.transferableFromBlock
+this.BasicToken_own_totalSupply_ == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own_owner == this.NokuCustomToken_own_pricingPlan
+this.Ownable_own_owner == this.NokuCustomToken_own_serviceProvider
+this.Ownable_own_owner == this.timelock
+this.Ownable_own_owner == this.vesting
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.NokuCustomToken_own_pricingPlan)
+this.Ownable_own_owner == orig(this.NokuCustomToken_own_serviceProvider)
+this.Ownable_own_owner == orig(this.timelock)
+this.Ownable_own_owner == orig(this.vesting)
+this.NokuCustomToken_own_burningFinished == this.MintableToken_own_mintingFinished
+this.NokuCustomToken_own_burningFinished == this.mintingFeeEnabled
+this.NokuCustomToken_own_burningFinished == this.transferFeePaymentFinished
+this.NokuCustomToken_own_burningFinished == orig(this.NokuCustomToken_own_burningFinished)
+this.NokuCustomToken_own_burningFinished == orig(this.MintableToken_own_mintingFinished)
+this.NokuCustomToken_own_burningFinished == orig(this.mintingFeeEnabled)
+this.NokuCustomToken_own_burningFinished == orig(this.transferFeePaymentFinished)
+this.DetailedERC20_own_decimals == this.transferableFromBlock
+this.DetailedERC20_own_decimals == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.transferableFromBlock == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.initiallyLockedBalanceOf == orig(this.initiallyLockedBalanceOf)
+_to == orig(_to)
+_amount == orig(_amount)
+msg.sender == orig(_to)
+block.timestamp == orig(block.timestamp)
+orig(_to) == orig(msg.sender)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.NokuCustomToken_own_burningFinished == false
+this.DetailedERC20_own_decimals == 0
+this.transferableFromBlock == 0
+this.initiallyLockedBalanceOf has only one value
+_amount one of { 14999000000000000000000000, 85000000000000000000000000 }
+block.timestamp one of { 1615385583, 1615454482 }
+orig(this) has only one value
+orig(_amount) one of { 14999000000000000000000000, 85000000000000000000000000 }
+orig(block.timestamp) one of { 1615385583, 1615454482 }
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+===========================================================================
+NokuCustomERC20.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == this.DetailedERC20_own_decimals
+this.BasicToken_own_totalSupply_ == this.transferableFromBlock
+this.BasicToken_own_totalSupply_ == this.lockEndBlock
+this.BasicToken_own_totalSupply_ == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own_owner == this.NokuCustomToken_own_pricingPlan
+this.Ownable_own_owner == this.NokuCustomToken_own_serviceProvider
+this.Ownable_own_owner == this.timelock
+this.Ownable_own_owner == this.vesting
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.NokuCustomToken_own_pricingPlan)
+this.Ownable_own_owner == orig(this.NokuCustomToken_own_serviceProvider)
+this.Ownable_own_owner == orig(this.timelock)
+this.Ownable_own_owner == orig(this.vesting)
+this.NokuCustomToken_own_burningFinished == this.MintableToken_own_mintingFinished
+this.NokuCustomToken_own_burningFinished == this.mintingFeeEnabled
+this.NokuCustomToken_own_burningFinished == this.transferFeePaymentFinished
+this.NokuCustomToken_own_burningFinished == orig(this.NokuCustomToken_own_burningFinished)
+this.NokuCustomToken_own_burningFinished == orig(this.MintableToken_own_mintingFinished)
+this.NokuCustomToken_own_burningFinished == orig(this.mintingFeeEnabled)
+this.NokuCustomToken_own_burningFinished == orig(this.transferFeePaymentFinished)
+this.DetailedERC20_own_decimals == this.transferableFromBlock
+this.DetailedERC20_own_decimals == this.lockEndBlock
+this.DetailedERC20_own_decimals == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.transferableFromBlock == this.lockEndBlock
+this.transferableFromBlock == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.lockEndBlock == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.initiallyLockedBalanceOf == orig(this.initiallyLockedBalanceOf)
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.NokuCustomToken_own_burningFinished == false
+this.DetailedERC20_own_decimals == 0
+this.transferableFromBlock == 0
+this.lockEndBlock == 0
+this.initiallyLockedBalanceOf has only one value
+_value one of { 1000000000000000000000, 14999000000000000000000000 }
+block.timestamp one of { 1612265478, 1612338739, 1615385715 }
+orig(this) has only one value
+orig(_value) one of { 1000000000000000000000, 14999000000000000000000000 }
+orig(block.timestamp) one of { 1612265478, 1612338739, 1615385715 }
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

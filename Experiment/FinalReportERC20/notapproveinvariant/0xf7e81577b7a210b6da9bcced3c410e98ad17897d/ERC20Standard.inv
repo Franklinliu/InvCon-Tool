@@ -1,0 +1,78 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+ERC20Standard.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.totalSupply == this.decimals
+this.totalSupply == msg.value
+this.totalSupply == orig(this.totalSupply)
+this.totalSupply == orig(this.decimals)
+this.totalSupply == orig(msg.value)
+this.totalSupply == sum(this.balances[].getValue())
+this.totalSupply == orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue())
+this.decimals == msg.value
+this.decimals == orig(this.totalSupply)
+this.decimals == orig(this.decimals)
+this.decimals == orig(msg.value)
+this.decimals == sum(this.balances[].getValue())
+this.decimals == orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue())
+this.owner == orig(this.owner)
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+_recipient == orig(_recipient)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.totalSupply)
+msg.value == orig(this.decimals)
+msg.value == orig(msg.value)
+msg.value == sum(this.balances[].getValue())
+msg.value == orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.totalSupply) == orig(this.decimals)
+orig(this.totalSupply) == orig(msg.value)
+orig(this.totalSupply) == sum(this.balances[].getValue())
+orig(this.totalSupply) == orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue())
+orig(this.decimals) == orig(msg.value)
+orig(this.decimals) == sum(this.balances[].getValue())
+orig(this.decimals) == orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.balances[].getValue())
+orig(msg.value) == orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue())
+sum(this.balances[].getValue()) == orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.totalSupply == 0
+this.decimals == 0
+this.balances has only one value
+this.allowed has only one value
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.totalSupply) == 0
+orig(this.decimals) == 0
+orig(msg.value) == 0
+sum(this.balances[].getValue()) == 0
+sum(this.allowed[].getSubLength()) == 0
+orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue()) == 0
+this.totalSupply < _value
+this.totalSupply < block.timestamp
+this.totalSupply < orig(_value)
+this.totalSupply < orig(block.timestamp)
+this.decimals < _value
+this.decimals < block.timestamp
+this.decimals < orig(_value)
+this.decimals < orig(block.timestamp)
+this.owner != orig(_recipient)
+this.owner != orig(msg.sender)
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.totalSupply) < orig(_value)
+orig(this.totalSupply) < orig(block.timestamp)
+orig(this.decimals) < orig(_value)
+orig(this.decimals) < orig(block.timestamp)
+orig(_recipient) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

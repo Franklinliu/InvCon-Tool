@@ -1,0 +1,99 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+rainbow.approve(address,uint256):::EXIT2
+this == orig(this)
+this.EIP20Interface_own_totalSupply == this.decimals
+this.EIP20Interface_own_totalSupply == msg.value
+this.EIP20Interface_own_totalSupply == orig(this.EIP20Interface_own_totalSupply)
+this.EIP20Interface_own_totalSupply == orig(this.decimals)
+this.EIP20Interface_own_totalSupply == orig(msg.value)
+this.EIP20Interface_own_totalSupply == sum(this.balances[].getValue())
+this.EIP20Interface_own_totalSupply == orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue())
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+this.decimals == msg.value
+this.decimals == orig(this.EIP20Interface_own_totalSupply)
+this.decimals == orig(this.decimals)
+this.decimals == orig(msg.value)
+this.decimals == sum(this.balances[].getValue())
+this.decimals == orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue())
+_spender == orig(_spender)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.EIP20Interface_own_totalSupply)
+msg.value == orig(this.decimals)
+msg.value == orig(msg.value)
+msg.value == sum(this.balances[].getValue())
+msg.value == orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.EIP20Interface_own_totalSupply) == orig(this.decimals)
+orig(this.EIP20Interface_own_totalSupply) == orig(msg.value)
+orig(this.EIP20Interface_own_totalSupply) == sum(this.balances[].getValue())
+orig(this.EIP20Interface_own_totalSupply) == orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue())
+orig(this.decimals) == orig(msg.value)
+orig(this.decimals) == sum(this.balances[].getValue())
+orig(this.decimals) == orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.balances[].getValue())
+orig(msg.value) == orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue())
+sum(this.balances[].getValue()) == orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.EIP20Interface_own_totalSupply == 0
+this.balances has only one value
+this.allowed has only one value
+this.decimals == 0
+_value == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.EIP20Interface_own_totalSupply) == 0
+orig(this.decimals) == 0
+orig(_value) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(msg.value) == 0
+sum(this.balances[].getValue()) == 0
+sum(this.allowed[].getSubLength()) == 0
+orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue()) == 0
+this.EIP20Interface_own_totalSupply < _value
+this.EIP20Interface_own_totalSupply < block.timestamp
+this.EIP20Interface_own_totalSupply < orig(_value)
+this.EIP20Interface_own_totalSupply < orig(block.timestamp)
+this.decimals < _value
+this.decimals < block.timestamp
+this.decimals < orig(_value)
+this.decimals < orig(block.timestamp)
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.EIP20Interface_own_totalSupply) < orig(_value)
+orig(this.EIP20Interface_own_totalSupply) < orig(block.timestamp)
+orig(this.decimals) < orig(_value)
+orig(this.decimals) < orig(block.timestamp)
+orig(_spender) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+===========================================================================
+rainbow.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.EIP20Interface_own_totalSupply == this.decimals
+this.EIP20Interface_own_totalSupply == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+this.decimals == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+_to == orig(_to)
+msg.sender == orig(_to)
+orig(_to) == orig(msg.sender)
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.EIP20Interface_own_totalSupply == 0
+this.balances has only one value
+this.allowed has only one value
+this.decimals == 0
+orig(this) has only one value
+orig(_value) == 1000000000000000000000000000
+orig(block.timestamp) == 1610176543
+sum(this.allowed[].getSubLength()) == 0
+orig(this.allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

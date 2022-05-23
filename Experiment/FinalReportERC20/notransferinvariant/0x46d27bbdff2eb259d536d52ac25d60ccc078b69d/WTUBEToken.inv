@@ -1,0 +1,77 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+WTUBEToken.issue(uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == this.upgradedAddress
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.upgradedAddress)
+this.Pausable_own_paused == this.deprecated
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.Pausable_own_paused == orig(this.deprecated)
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_basisPointsRate
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_maximumFee
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_basisPointsRate == this.BasicToken_own_maximumFee
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+amount == orig(amount)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.Pausable_own_paused == false
+this.ERC20Basic_own__totalSupply == 0
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_basisPointsRate == 0
+this.BasicToken_own_maximumFee == 0
+this.StandardToken_own_allowed has only one value
+amount one of { 1000000000000, 1000000000000000 }
+block.timestamp one of { 1610548170, 1611741499 }
+orig(this) has only one value
+orig(amount) one of { 1000000000000, 1000000000000000 }
+orig(block.timestamp) one of { 1610548170, 1611741499 }
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+===========================================================================
+WTUBEToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == this.upgradedAddress
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.upgradedAddress)
+this.Pausable_own_paused == this.deprecated
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.Pausable_own_paused == orig(this.deprecated)
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_basisPointsRate
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_maximumFee
+this.ERC20Basic_own__totalSupply == this.decimals
+this.ERC20Basic_own__totalSupply == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_basisPointsRate == this.BasicToken_own_maximumFee
+this.BasicToken_own_basisPointsRate == this.decimals
+this.BasicToken_own_basisPointsRate == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.BasicToken_own_maximumFee == this.decimals
+this.BasicToken_own_maximumFee == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.decimals == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.Pausable_own_paused == false
+this.ERC20Basic_own__totalSupply == 0
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_basisPointsRate == 0
+this.BasicToken_own_maximumFee == 0
+this.StandardToken_own_allowed has only one value
+this.decimals == 0
+_value one of { 10000000, 4999000000000, 6969000000000 }
+block.timestamp one of { 1611741224, 1611741596, 1614212794 }
+orig(this) has only one value
+orig(_value) one of { 10000000, 4999000000000, 6969000000000 }
+orig(block.timestamp) one of { 1611741224, 1611741596, 1614212794 }
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

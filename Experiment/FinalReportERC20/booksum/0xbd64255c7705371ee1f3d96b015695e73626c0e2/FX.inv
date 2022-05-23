@@ -1,0 +1,57 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+FX.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.StandardToken_own_totalSupply == msg.value
+this.StandardToken_own_totalSupply == orig(this.StandardToken_own_totalSupply)
+this.StandardToken_own_totalSupply == orig(msg.value)
+this.StandardToken_own_totalSupply == sum(this.StandardToken_own_balances[].getValue())
+this.StandardToken_own_totalSupply == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_balances == orig(this.StandardToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.mainWallet == orig(this.mainWallet)
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.StandardToken_own_totalSupply)
+msg.value == orig(msg.value)
+msg.value == sum(this.StandardToken_own_balances[].getValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.StandardToken_own_totalSupply) == orig(msg.value)
+orig(this.StandardToken_own_totalSupply) == sum(this.StandardToken_own_balances[].getValue())
+orig(this.StandardToken_own_totalSupply) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.StandardToken_own_balances[].getValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_balances[].getValue()) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.StandardToken_own_totalSupply == 0
+this.StandardToken_own_balances has only one value
+this.StandardToken_own_allowed has only one value
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.StandardToken_own_totalSupply) == 0
+orig(msg.value) == 0
+sum(this.StandardToken_own_balances[].getValue()) == 0
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.StandardToken_own_totalSupply < _value
+this.StandardToken_own_totalSupply < block.timestamp
+this.StandardToken_own_totalSupply < orig(_value)
+this.StandardToken_own_totalSupply < orig(block.timestamp)
+this.mainWallet != orig(_to)
+this.mainWallet != orig(msg.sender)
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.StandardToken_own_totalSupply) < orig(_value)
+orig(this.StandardToken_own_totalSupply) < orig(block.timestamp)
+orig(_to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

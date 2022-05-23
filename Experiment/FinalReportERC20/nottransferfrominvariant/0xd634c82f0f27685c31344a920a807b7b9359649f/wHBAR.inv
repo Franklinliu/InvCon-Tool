@@ -1,0 +1,206 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+wHBAR.mint(address,uint256):::EXIT2
+this == orig(this)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowances == orig(this.ERC20_own__allowances)
+this.ERC20_own__allowances[].getSubLength() == this.Holdable_own_operators[].getSubLength()
+this.ERC20_own__allowances[].getSubLength() == this.Payoutable_own_payoutOperators[].getSubLength()
+this.ERC20_own__allowances[].getSubLength() == orig(this.ERC20_own__allowances[].getSubLength())
+this.ERC20_own__allowances[].getSubLength() == orig(this.Holdable_own_operators[].getSubLength())
+this.ERC20_own__allowances[].getSubLength() == orig(this.Payoutable_own_payoutOperators[].getSubLength())
+this.ERC20_own__totalSupply == this.Holdable_own__totalHeldBalance
+this.ERC20_own__totalSupply == this.AccountCreator_own_fee
+this.ERC20_own__totalSupply == this._decimals
+this.ERC20_own__totalSupply == this._accountCreateFee
+this.ERC20_own__totalSupply == msg.value
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.ERC20_own__totalSupply == orig(this.Holdable_own__totalHeldBalance)
+this.ERC20_own__totalSupply == orig(this.AccountCreator_own_fee)
+this.ERC20_own__totalSupply == orig(this._decimals)
+this.ERC20_own__totalSupply == orig(this._accountCreateFee)
+this.ERC20_own__totalSupply == orig(msg.value)
+this.ERC20_own__totalSupply == sum(this.ERC20_own__balances[].getValue())
+this.ERC20_own__totalSupply == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+this.Holdable_own_holds == orig(this.Holdable_own_holds)
+this.Holdable_own_holds[].getValue() == this.Payoutable_own_orderedPayouts[].getValue()
+this.Holdable_own_holds[].getValue() == this.AccountCreator_own_requests[].getValue()
+this.Holdable_own_holds[].getValue() == orig(this.Holdable_own_holds[].getValue())
+this.Holdable_own_heldBalance == orig(this.Holdable_own_heldBalance)
+this.Holdable_own_operators == orig(this.Holdable_own_operators)
+this.Holdable_own_operators[].getSubValue() == this.Payoutable_own_payoutOperators[].getSubValue()
+this.Holdable_own_operators[].getSubValue() == orig(this.Holdable_own_operators[].getSubValue())
+this.Holdable_own_operators[].getSubValue() == orig(this.Payoutable_own_payoutOperators[].getSubValue())
+this.Holdable_own__totalHeldBalance == this.AccountCreator_own_fee
+this.Holdable_own__totalHeldBalance == this._decimals
+this.Holdable_own__totalHeldBalance == this._accountCreateFee
+this.Holdable_own__totalHeldBalance == msg.value
+this.Holdable_own__totalHeldBalance == orig(this.ERC20_own__totalSupply)
+this.Holdable_own__totalHeldBalance == orig(this.Holdable_own__totalHeldBalance)
+this.Holdable_own__totalHeldBalance == orig(this.AccountCreator_own_fee)
+this.Holdable_own__totalHeldBalance == orig(this._decimals)
+this.Holdable_own__totalHeldBalance == orig(this._accountCreateFee)
+this.Holdable_own__totalHeldBalance == orig(msg.value)
+this.Holdable_own__totalHeldBalance == sum(this.ERC20_own__balances[].getValue())
+this.Holdable_own__totalHeldBalance == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+this.Payoutable_own_orderedPayouts == orig(this.Payoutable_own_orderedPayouts)
+this.Payoutable_own_orderedPayouts[].getValue() == this.AccountCreator_own_requests[].getValue()
+this.Payoutable_own_orderedPayouts[].getValue() == orig(this.Payoutable_own_orderedPayouts[].getValue())
+this.Payoutable_own_payoutOperators == orig(this.Payoutable_own_payoutOperators)
+this.Payoutable_own_payoutAgent == this.Payoutable_own_suspenseAccount
+this.Payoutable_own_payoutAgent == this.AccountCreator_own_accountCreator
+this.Payoutable_own_payoutAgent == this._owner
+this.Payoutable_own_payoutAgent == orig(this.Payoutable_own_payoutAgent)
+this.Payoutable_own_payoutAgent == orig(this.Payoutable_own_suspenseAccount)
+this.Payoutable_own_payoutAgent == orig(this.AccountCreator_own_accountCreator)
+this.Payoutable_own_payoutAgent == orig(this._owner)
+this.AccountCreator_own_requests == orig(this.AccountCreator_own_requests)
+this.AccountCreator_own_requests[].getValue() == orig(this.AccountCreator_own_requests[].getValue())
+this.AccountCreator_own_fee == this._decimals
+this.AccountCreator_own_fee == this._accountCreateFee
+this.AccountCreator_own_fee == msg.value
+this.AccountCreator_own_fee == orig(this.ERC20_own__totalSupply)
+this.AccountCreator_own_fee == orig(this.Holdable_own__totalHeldBalance)
+this.AccountCreator_own_fee == orig(this.AccountCreator_own_fee)
+this.AccountCreator_own_fee == orig(this._decimals)
+this.AccountCreator_own_fee == orig(this._accountCreateFee)
+this.AccountCreator_own_fee == orig(msg.value)
+this.AccountCreator_own_fee == sum(this.ERC20_own__balances[].getValue())
+this.AccountCreator_own_fee == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+this._decimals == this._accountCreateFee
+this._decimals == msg.value
+this._decimals == orig(this.ERC20_own__totalSupply)
+this._decimals == orig(this.Holdable_own__totalHeldBalance)
+this._decimals == orig(this.AccountCreator_own_fee)
+this._decimals == orig(this._decimals)
+this._decimals == orig(this._accountCreateFee)
+this._decimals == orig(msg.value)
+this._decimals == sum(this.ERC20_own__balances[].getValue())
+this._decimals == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+this._accountCreateFee == msg.value
+this._accountCreateFee == orig(this.ERC20_own__totalSupply)
+this._accountCreateFee == orig(this.Holdable_own__totalHeldBalance)
+this._accountCreateFee == orig(this.AccountCreator_own_fee)
+this._accountCreateFee == orig(this._decimals)
+this._accountCreateFee == orig(this._accountCreateFee)
+this._accountCreateFee == orig(msg.value)
+this._accountCreateFee == sum(this.ERC20_own__balances[].getValue())
+this._accountCreateFee == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+to == orig(to)
+amount == orig(amount)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.ERC20_own__totalSupply)
+msg.value == orig(this.Holdable_own__totalHeldBalance)
+msg.value == orig(this.AccountCreator_own_fee)
+msg.value == orig(this._decimals)
+msg.value == orig(this._accountCreateFee)
+msg.value == orig(msg.value)
+msg.value == sum(this.ERC20_own__balances[].getValue())
+msg.value == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == orig(this.Holdable_own__totalHeldBalance)
+orig(this.ERC20_own__totalSupply) == orig(this.AccountCreator_own_fee)
+orig(this.ERC20_own__totalSupply) == orig(this._decimals)
+orig(this.ERC20_own__totalSupply) == orig(this._accountCreateFee)
+orig(this.ERC20_own__totalSupply) == orig(msg.value)
+orig(this.ERC20_own__totalSupply) == sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20_own__totalSupply) == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+orig(this.Holdable_own__totalHeldBalance) == orig(this.AccountCreator_own_fee)
+orig(this.Holdable_own__totalHeldBalance) == orig(this._decimals)
+orig(this.Holdable_own__totalHeldBalance) == orig(this._accountCreateFee)
+orig(this.Holdable_own__totalHeldBalance) == orig(msg.value)
+orig(this.Holdable_own__totalHeldBalance) == sum(this.ERC20_own__balances[].getValue())
+orig(this.Holdable_own__totalHeldBalance) == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+orig(this.AccountCreator_own_fee) == orig(this._decimals)
+orig(this.AccountCreator_own_fee) == orig(this._accountCreateFee)
+orig(this.AccountCreator_own_fee) == orig(msg.value)
+orig(this.AccountCreator_own_fee) == sum(this.ERC20_own__balances[].getValue())
+orig(this.AccountCreator_own_fee) == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+orig(this._decimals) == orig(this._accountCreateFee)
+orig(this._decimals) == orig(msg.value)
+orig(this._decimals) == sum(this.ERC20_own__balances[].getValue())
+orig(this._decimals) == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+orig(this._accountCreateFee) == orig(msg.value)
+orig(this._accountCreateFee) == sum(this.ERC20_own__balances[].getValue())
+orig(this._accountCreateFee) == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.ERC20_own__balances[].getValue())
+orig(msg.value) == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) == orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue())
+sum(this.ERC20_own__allowances[].getSubLength()) == sum(this.Holdable_own_operators[].getSubLength())
+sum(this.ERC20_own__allowances[].getSubLength()) == sum(this.Payoutable_own_payoutOperators[].getSubLength())
+sum(this.ERC20_own__allowances[].getSubLength()) == sum(orig(this.ERC20_own__allowances[].getSubLength()))
+sum(this.ERC20_own__allowances[].getSubLength()) == sum(orig(this.Holdable_own_operators[].getSubLength()))
+sum(this.ERC20_own__allowances[].getSubLength()) == sum(orig(this.Payoutable_own_payoutOperators[].getSubLength()))
+this.ERC20_own__balances == null
+this.ERC20_own__allowances has only one value
+this.ERC20_own__totalSupply == 0
+this.Holdable_own_holds has only one value
+this.Holdable_own_holds[].getValue() elements != null
+this.Holdable_own_heldBalance has only one value
+this.Holdable_own_operators has only one value
+this.Holdable_own_operators[].getSubValue() elements != null
+this.Holdable_own__totalHeldBalance == 0
+this.Payoutable_own_orderedPayouts has only one value
+this.Payoutable_own_orderedPayouts[].getValue() elements != null
+this.Payoutable_own_payoutOperators has only one value
+this.AccountCreator_own_requests has only one value
+this.AccountCreator_own_requests[].getValue() elements != null
+this.AccountCreator_own_fee == 0
+this._decimals == 0
+this._accountCreateFee == 0
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20_own__totalSupply) == 0
+orig(this.Holdable_own__totalHeldBalance) == 0
+orig(this.AccountCreator_own_fee) == 0
+orig(this._decimals) == 0
+orig(this._accountCreateFee) == 0
+orig(msg.value) == 0
+sum(this.ERC20_own__balances[].getValue()) == 0
+sum(this.ERC20_own__allowances[].getSubLength()) == 0
+orig(this.ERC20_own__allowances[post(pair(to,msg.sender))].getSubValue()) == 0
+this.ERC20_own__totalSupply < amount
+this.ERC20_own__totalSupply < block.timestamp
+this.ERC20_own__totalSupply < orig(amount)
+this.ERC20_own__totalSupply < orig(block.timestamp)
+this.Holdable_own_holds[].getValue() is the reverse of this.Payoutable_own_orderedPayouts[].getValue()
+this.Holdable_own_holds[].getValue() is the reverse of this.AccountCreator_own_requests[].getValue()
+this.Holdable_own__totalHeldBalance < amount
+this.Holdable_own__totalHeldBalance < block.timestamp
+this.Holdable_own__totalHeldBalance < orig(amount)
+this.Holdable_own__totalHeldBalance < orig(block.timestamp)
+this.Payoutable_own_orderedPayouts[].getValue() is the reverse of this.AccountCreator_own_requests[].getValue()
+this.Payoutable_own_payoutAgent != orig(to)
+this.Payoutable_own_payoutAgent != orig(msg.sender)
+this.AccountCreator_own_fee < amount
+this.AccountCreator_own_fee < block.timestamp
+this.AccountCreator_own_fee < orig(amount)
+this.AccountCreator_own_fee < orig(block.timestamp)
+this._decimals < amount
+this._decimals < block.timestamp
+this._decimals < orig(amount)
+this._decimals < orig(block.timestamp)
+this._accountCreateFee < amount
+this._accountCreateFee < block.timestamp
+this._accountCreateFee < orig(amount)
+this._accountCreateFee < orig(block.timestamp)
+msg.value < block.timestamp
+msg.value < orig(amount)
+msg.value < orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) < orig(amount)
+orig(this.ERC20_own__totalSupply) < orig(block.timestamp)
+orig(this.Holdable_own__totalHeldBalance) < orig(amount)
+orig(this.Holdable_own__totalHeldBalance) < orig(block.timestamp)
+orig(this.AccountCreator_own_fee) < orig(amount)
+orig(this.AccountCreator_own_fee) < orig(block.timestamp)
+orig(this._decimals) < orig(amount)
+orig(this._decimals) < orig(block.timestamp)
+orig(this._accountCreateFee) < orig(amount)
+orig(this._accountCreateFee) < orig(block.timestamp)
+orig(to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

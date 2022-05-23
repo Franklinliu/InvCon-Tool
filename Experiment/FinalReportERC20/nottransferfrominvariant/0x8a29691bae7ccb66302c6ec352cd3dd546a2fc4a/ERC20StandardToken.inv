@@ -1,0 +1,42 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+ERC20StandardToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.ERC20Ownable_own_owner == orig(this.ERC20Ownable_own_owner)
+this.ERC20Token_own_balances == orig(this.ERC20Token_own_balances)
+this.ERC20Token_own_allowed == orig(this.ERC20Token_own_allowed)
+this.ERC20Token_own_allowed[].getSubLength() == orig(this.ERC20Token_own_allowed[].getSubLength())
+this.totalSupply == this.decimals
+this.totalSupply == msg.value
+this.totalSupply == orig(msg.value)
+this.totalSupply == orig(this.ERC20Token_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.decimals == msg.value
+this.decimals == orig(msg.value)
+this.decimals == orig(this.ERC20Token_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.mintable == orig(this.mintable)
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == orig(this.ERC20Token_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(msg.value) == orig(this.ERC20Token_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.ERC20Token_own_allowed[].getSubLength()) == sum(orig(this.ERC20Token_own_allowed[].getSubLength()))
+this.ERC20Token_own_balances has only one value
+this.ERC20Token_own_allowed has only one value
+this.totalSupply == 0
+this.decimals == 0
+this.mintable == false
+_value one of { 9601179633180000000000, 90031665805860000000000, 100000000000000000000000 }
+msg.value == 0
+block.timestamp one of { 1610208418, 1629429659, 1629430202 }
+orig(this) has only one value
+orig(_value) one of { 9601179633180000000000, 90031665805860000000000, 100000000000000000000000 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1610208418, 1629429659, 1629430202 }
+sum(this.ERC20Token_own_allowed[].getSubLength()) == 0
+orig(this.ERC20Token_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

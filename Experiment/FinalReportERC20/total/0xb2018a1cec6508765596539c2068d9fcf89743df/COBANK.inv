@@ -1,0 +1,61 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+COBANK.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner_ == orig(this.Ownable_own_owner_)
+this.Ownable_own_locked_ == orig(this.Ownable_own_locked_)
+this.Ownable_own_locked_[].getValue() == orig(this.Ownable_own_locked_[].getValue())
+this.ERC20Token_own_totalSupply_ == msg.value
+this.ERC20Token_own_totalSupply_ == orig(this.ERC20Token_own_totalSupply_)
+this.ERC20Token_own_totalSupply_ == orig(msg.value)
+this.ERC20Token_own_totalSupply_ == sum(this.ERC20Token_own_balances_[].getValue())
+this.ERC20Token_own_totalSupply_ == orig(this.ERC20Token_own_allowed_[post(pair(to,msg.sender))].getSubValue())
+this.ERC20Token_own_balances_ == orig(this.ERC20Token_own_balances_)
+this.ERC20Token_own_allowed_ == orig(this.ERC20Token_own_allowed_)
+this.ERC20Token_own_allowed_[].getSubLength() == orig(this.ERC20Token_own_allowed_[].getSubLength())
+to == orig(to)
+value == orig(value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.ERC20Token_own_totalSupply_)
+msg.value == orig(msg.value)
+msg.value == sum(this.ERC20Token_own_balances_[].getValue())
+msg.value == orig(this.ERC20Token_own_allowed_[post(pair(to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20Token_own_totalSupply_) == orig(msg.value)
+orig(this.ERC20Token_own_totalSupply_) == sum(this.ERC20Token_own_balances_[].getValue())
+orig(this.ERC20Token_own_totalSupply_) == orig(this.ERC20Token_own_allowed_[post(pair(to,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.ERC20Token_own_balances_[].getValue())
+orig(msg.value) == orig(this.ERC20Token_own_allowed_[post(pair(to,msg.sender))].getSubValue())
+sum(this.ERC20Token_own_balances_[].getValue()) == orig(this.ERC20Token_own_allowed_[post(pair(to,msg.sender))].getSubValue())
+sum(this.ERC20Token_own_allowed_[].getSubLength()) == sum(orig(this.ERC20Token_own_allowed_[].getSubLength()))
+this.Ownable_own_locked_ has only one value
+this.Ownable_own_locked_[].getValue() elements != null
+this.ERC20Token_own_totalSupply_ == 0
+this.ERC20Token_own_balances_ has only one value
+this.ERC20Token_own_allowed_ has only one value
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20Token_own_totalSupply_) == 0
+orig(msg.value) == 0
+sum(this.ERC20Token_own_balances_[].getValue()) == 0
+sum(this.ERC20Token_own_allowed_[].getSubLength()) == 0
+orig(this.ERC20Token_own_allowed_[post(pair(to,msg.sender))].getSubValue()) == 0
+this.Ownable_own_owner_ != orig(to)
+this.Ownable_own_owner_ != orig(msg.sender)
+this.ERC20Token_own_totalSupply_ < value
+this.ERC20Token_own_totalSupply_ < block.timestamp
+this.ERC20Token_own_totalSupply_ < orig(value)
+this.ERC20Token_own_totalSupply_ < orig(block.timestamp)
+msg.value < block.timestamp
+msg.value < orig(value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(value)
+orig(this.ERC20Token_own_totalSupply_) < orig(value)
+orig(this.ERC20Token_own_totalSupply_) < orig(block.timestamp)
+orig(to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

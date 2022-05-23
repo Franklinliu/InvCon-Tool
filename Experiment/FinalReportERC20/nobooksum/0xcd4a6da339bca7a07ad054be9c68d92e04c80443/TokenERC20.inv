@@ -1,0 +1,40 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TokenERC20.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.decimals == orig(this.decimals)
+this.totalSupply == orig(this.totalSupply)
+this.totalSupply == orig(this.balanceOf[post(msg.sender)].getValue())
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+this.allowance[].getSubLength() == orig(this.allowance[].getSubLength())
+_to == orig(_to)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.totalSupply) == orig(this.balanceOf[post(msg.sender)].getValue())
+orig(_value) == this.balanceOf[orig(_to)].getValue()
+orig(msg.value) == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+sum(this.allowance[].getSubLength()) == sum(orig(this.allowance[].getSubLength()))
+this.decimals == 18
+this.totalSupply == 1000000000000000000000000000
+this.balanceOf has only one value
+this.allowance has only one value
+msg.value == 0
+block.timestamp one of { 1611366790, 1611383216 }
+orig(this) has only one value
+orig(this.decimals) == 18
+orig(this.totalSupply) == 1000000000000000000000000000
+orig(_value) one of { 300000000000000000000000000, 1000000000000000000000000000 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1611366790, 1611383216 }
+sum(this.allowance[].getSubLength()) == 0
+this.balanceOf[orig(_to)].getValue() one of { 300000000000000000000000000, 1000000000000000000000000000 }
+this.balanceOf[orig(msg.sender)].getValue() one of { 0, 700000000000000000000000000 }
+orig(this.balanceOf[post(msg.sender)].getValue()) == 1000000000000000000000000000
+orig(this.allowance[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

@@ -1,0 +1,30 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+MyAdvancedToken.approve(address,uint256):::EXIT2
+this == orig(this)
+this.owned_own_owner == orig(this.owned_own_owner)
+this.TokenERC20_own_decimals == this.TokenERC20_own_totalSupply
+this.TokenERC20_own_decimals == orig(this.TokenERC20_own_allowance[post(pair(_spender,msg.sender))].getSubValue())
+this.TokenERC20_own_totalSupply == orig(this.TokenERC20_own_allowance[post(pair(_spender,msg.sender))].getSubValue())
+this.TokenERC20_own_balanceOf == orig(this.TokenERC20_own_balanceOf)
+this.TokenERC20_own_allowance == orig(this.TokenERC20_own_allowance)
+this.TokenERC20_own_allowance[].getSubLength() == orig(this.TokenERC20_own_allowance[].getSubLength())
+this.frozenAccount == orig(this.frozenAccount)
+this.frozenAccount[].getValue() == orig(this.frozenAccount[].getValue())
+_spender == orig(_spender)
+msg.sender == orig(msg.sender)
+sum(this.TokenERC20_own_allowance[].getSubLength()) == sum(orig(this.TokenERC20_own_allowance[].getSubLength()))
+this.TokenERC20_own_decimals == 0
+this.TokenERC20_own_totalSupply == 0
+this.TokenERC20_own_balanceOf has only one value
+this.TokenERC20_own_allowance has only one value
+this.frozenAccount has only one value
+orig(this) has only one value
+orig(_value) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(block.timestamp) == 1609662064
+sum(this.TokenERC20_own_allowance[].getSubLength()) == 0
+orig(this.TokenERC20_own_allowance[post(pair(_spender,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

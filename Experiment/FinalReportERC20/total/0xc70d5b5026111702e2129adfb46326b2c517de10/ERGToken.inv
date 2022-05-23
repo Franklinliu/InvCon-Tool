@@ -1,0 +1,89 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+ERGToken.approve(address,uint256):::EXIT2
+this == orig(this)
+this.decimals == this._totalSupply
+this.decimals == orig(this.allowed[post(pair(spender,msg.sender))].getSubValue())
+this._totalSupply == orig(this.allowed[post(pair(spender,msg.sender))].getSubValue())
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+spender == orig(spender)
+msg.sender == orig(msg.sender)
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.decimals == 0
+this._totalSupply == 0
+this.balances has only one value
+this.allowed has only one value
+orig(this) has only one value
+orig(tokens) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(block.timestamp) == 1610062908
+sum(this.allowed[].getSubLength()) == 0
+orig(this.allowed[post(pair(spender,msg.sender))].getSubValue()) == 0
+===========================================================================
+ERGToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.decimals == this._totalSupply
+this.decimals == msg.value
+this.decimals == orig(this.decimals)
+this.decimals == orig(this._totalSupply)
+this.decimals == orig(msg.value)
+this.decimals == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+this._totalSupply == msg.value
+this._totalSupply == orig(this.decimals)
+this._totalSupply == orig(this._totalSupply)
+this._totalSupply == orig(msg.value)
+this._totalSupply == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+to == orig(to)
+tokens == orig(tokens)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.decimals)
+msg.value == orig(this._totalSupply)
+msg.value == orig(msg.value)
+msg.value == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.decimals) == orig(this._totalSupply)
+orig(this.decimals) == orig(msg.value)
+orig(this.decimals) == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+orig(this._totalSupply) == orig(msg.value)
+orig(this._totalSupply) == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+orig(msg.value) == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.decimals == 0
+this._totalSupply == 0
+this.balances has only one value
+this.allowed has only one value
+tokens one of { 100000000000000000000, 1000000000000000000000, 999900000000000000000000 }
+msg.value == 0
+orig(this) has only one value
+orig(this.decimals) == 0
+orig(this._totalSupply) == 0
+orig(tokens) one of { 100000000000000000000, 1000000000000000000000, 999900000000000000000000 }
+orig(msg.value) == 0
+sum(this.allowed[].getSubLength()) == 0
+orig(this.allowed[post(pair(to,msg.sender))].getSubValue()) == 0
+this.decimals < tokens
+this.decimals < block.timestamp
+this.decimals < orig(tokens)
+this.decimals < orig(block.timestamp)
+this._totalSupply < tokens
+this._totalSupply < block.timestamp
+this._totalSupply < orig(tokens)
+this._totalSupply < orig(block.timestamp)
+msg.value < block.timestamp
+msg.value < orig(tokens)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(tokens)
+orig(this.decimals) < orig(tokens)
+orig(this.decimals) < orig(block.timestamp)
+orig(this._totalSupply) < orig(tokens)
+orig(this._totalSupply) < orig(block.timestamp)
+orig(to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

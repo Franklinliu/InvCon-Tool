@@ -1,0 +1,66 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+EchoToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.BasicToken_own_totalSupply_ == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_totalSupply_ == sum(orig(this.BasicToken_own_balances[].getValue()))
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+_to == orig(_to)
+_value == orig(_value)
+_value == this.BasicToken_own_balances[orig(_to)].getValue()
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.StandardToken_own_allowed[].getSubValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.BasicToken_own_totalSupply_) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.BasicToken_own_totalSupply_) == sum(orig(this.BasicToken_own_balances[].getValue()))
+orig(_value) == this.BasicToken_own_balances[orig(_to)].getValue()
+orig(msg.value) == sum(this.StandardToken_own_allowed[].getSubValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == sum(orig(this.BasicToken_own_balances[].getValue()))
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+sum(this.StandardToken_own_allowed[].getSubValue()) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 1000000000000000000000000000
+this.StandardToken_own_allowed has only one value
+msg.value == 0
+block.timestamp one of { 1611747416, 1614723267 }
+orig(this) has only one value
+orig(this.BasicToken_own_totalSupply_) == 1000000000000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1611747416, 1614723267 }
+sum(this.BasicToken_own_balances[].getValue()) == 1000000000000000000000000000
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+sum(this.StandardToken_own_allowed[].getSubValue()) == 0
+sum(orig(this.BasicToken_own_balances[].getValue())) == 1000000000000000000000000000
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+===========================================================================
+EchoToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+_to == orig(_to)
+msg.sender == orig(msg.sender)
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 1000000000000000000000000000
+this.StandardToken_own_allowed has only one value
+orig(this) has only one value
+orig(this.BasicToken_own_totalSupply_) == 1000000000000000000000000000
+orig(_value) == 100000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1614718136
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+this.BasicToken_own_balances[orig(msg.sender)].getValue() == 100000000000000000000000000
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

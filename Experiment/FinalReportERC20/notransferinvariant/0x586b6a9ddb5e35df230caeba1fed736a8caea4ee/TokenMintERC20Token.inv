@@ -1,0 +1,30 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TokenMintERC20Token.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowances == orig(this.ERC20_own__allowances)
+this.ERC20_own__allowances[].getSubLength() == orig(this.ERC20_own__allowances[].getSubLength())
+this.ERC20_own__totalSupply == orig(amount)
+this.ERC20_own__totalSupply == this.ERC20_own__balances[orig(recipient)].getValue()
+this.ERC20_own_Account == orig(this.ERC20_own_Account)
+recipient == orig(recipient)
+msg.sender == orig(msg.sender)
+orig(amount) == this.ERC20_own__balances[orig(recipient)].getValue()
+orig(msg.value) == this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.ERC20_own__allowances[].getSubLength()) == sum(orig(this.ERC20_own__allowances[].getSubLength()))
+this.ERC20_own__balances == null
+this.ERC20_own__allowances has only one value
+this.ERC20_own__totalSupply == 3300000000000000
+this._decimals == 8
+orig(this) has only one value
+orig(amount) == 3300000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1611635664
+sum(this.ERC20_own__allowances[].getSubLength()) == 0
+this.ERC20_own__balances[orig(recipient)].getValue() == 3300000000000000
+this.ERC20_own__balances[orig(msg.sender)].getValue() == 0
+Exiting Daikon.

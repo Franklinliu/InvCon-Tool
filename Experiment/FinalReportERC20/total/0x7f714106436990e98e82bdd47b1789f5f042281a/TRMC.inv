@@ -1,0 +1,138 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TRMC.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_newOwner == orig(this.Ownable_own_newOwner)
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.initialSupply == orig(this.initialSupply)
+this.totalSupply_ == orig(this.totalSupply_)
+this.totalSupply_ == sum(this.balances[].getValue())
+this.totalSupply_ == sum(orig(this.balances[].getValue()))
+this.balances == orig(this.balances)
+this.locks == orig(this.locks)
+this.locks[].getValue() == this.frozen[].getValue()
+this.locks[].getValue() == orig(this.locks[].getValue())
+this.locks[].getValue() == orig(this.frozen[].getValue())
+this.frozen == orig(this.frozen)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == this.lockupInfo[].getLength()
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+this.allowed[].getSubLength() == orig(this.lockupInfo[].getLength())
+this.lockupInfo == orig(this.lockupInfo)
+this.lockupInfo[].getValue() == orig(this.lockupInfo[].getValue())
+_to == orig(_to)
+_value == orig(_value)
+_value == this.balances[orig(_to)].getValue()
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.allowed[].getSubValue())
+msg.value == this.balances[this.Ownable_own_owner].getValue()
+msg.value == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.totalSupply_) == sum(this.balances[].getValue())
+orig(this.totalSupply_) == sum(orig(this.balances[].getValue()))
+orig(_value) == this.balances[orig(_to)].getValue()
+orig(msg.value) == sum(this.allowed[].getSubValue())
+orig(msg.value) == this.balances[this.Ownable_own_owner].getValue()
+orig(msg.value) == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.balances[].getValue()) == sum(orig(this.balances[].getValue()))
+sum(this.allowed[].getSubLength()) == sum(this.lockupInfo[].getLength())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+sum(this.allowed[].getSubLength()) == sum(orig(this.lockupInfo[].getLength()))
+sum(this.allowed[].getSubValue()) == this.balances[this.Ownable_own_owner].getValue()
+sum(this.allowed[].getSubValue()) == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+this.balances[this.Ownable_own_owner].getValue() == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+this.Pausable_own_paused == false
+this.initialSupply == 21000000
+this.totalSupply_ == 21000000000000000000000000
+this.balances has only one value
+this.balances[].getValue() elements >= 0
+this.locks has only one value
+this.locks[].getValue() elements != null
+this.frozen has only one value
+this.allowed has only one value
+this.lockupInfo has only one value
+this.lockupInfo[].getValue() elements != null
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.initialSupply) == 21000000
+orig(this.totalSupply_) == 21000000000000000000000000
+orig(this.balances[].getValue()) elements >= 0
+orig(msg.value) == 0
+sum(this.balances[].getValue()) == 21000000000000000000000000
+sum(this.allowed[].getSubLength()) == 0
+sum(this.allowed[].getSubValue()) == 0
+sum(orig(this.balances[].getValue())) == 21000000000000000000000000
+this.balances[this.Ownable_own_owner].getValue() == 0
+orig(this.balances[post(this.Ownable_own_owner)].getValue()) one of { 0, 21000000000000000000000000 }
+this.balances[orig(msg.sender)].getValue() >= 0
+orig(this.allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.Ownable_own_owner != this.Ownable_own_newOwner
+this.Ownable_own_owner != orig(_to)
+this.Ownable_own_newOwner != orig(_to)
+this.Ownable_own_newOwner != orig(msg.sender)
+this.initialSupply < this.totalSupply_
+this.initialSupply < _value
+this.initialSupply < orig(this.totalSupply_)
+this.initialSupply < orig(_value)
+this.initialSupply < sum(this.balances[].getValue())
+this.initialSupply < sum(orig(this.balances[].getValue()))
+this.initialSupply < this.balances[orig(_to)].getValue()
+this.initialSupply < orig(this.balances[post(msg.sender)].getValue())
+_value <= orig(this.totalSupply_)
+_value <= sum(this.balances[].getValue())
+_value <= sum(orig(this.balances[].getValue()))
+_value <= orig(this.balances[post(msg.sender)].getValue())
+msg.value < block.timestamp
+msg.value < orig(this.initialSupply)
+msg.value < orig(this.totalSupply_)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.balances[].getValue())
+msg.value < sum(orig(this.balances[].getValue()))
+msg.value <= orig(this.balances[post(this.Ownable_own_owner)].getValue())
+msg.value < this.balances[orig(_to)].getValue()
+msg.value <= this.balances[orig(msg.sender)].getValue()
+msg.value < orig(this.balances[post(msg.sender)].getValue())
+block.timestamp < orig(this.totalSupply_)
+block.timestamp < sum(this.balances[].getValue())
+block.timestamp < sum(orig(this.balances[].getValue()))
+block.timestamp < this.balances[orig(_to)].getValue()
+block.timestamp < orig(this.balances[post(msg.sender)].getValue())
+orig(this.initialSupply) < orig(this.totalSupply_)
+orig(this.initialSupply) < sum(this.balances[].getValue())
+orig(this.initialSupply) < sum(orig(this.balances[].getValue()))
+orig(this.initialSupply) < this.balances[orig(_to)].getValue()
+orig(this.initialSupply) < orig(this.balances[post(msg.sender)].getValue())
+orig(this.totalSupply_) >= orig(_value)
+orig(_to) != orig(msg.sender)
+orig(_value) <= sum(this.balances[].getValue())
+orig(_value) <= sum(orig(this.balances[].getValue()))
+orig(_value) <= orig(this.balances[post(msg.sender)].getValue())
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) <= orig(this.balances[post(this.Ownable_own_owner)].getValue())
+orig(msg.value) < this.balances[orig(_to)].getValue()
+orig(msg.value) <= this.balances[orig(msg.sender)].getValue()
+orig(msg.value) < orig(this.balances[post(msg.sender)].getValue())
+orig(block.timestamp) < this.balances[orig(_to)].getValue()
+orig(block.timestamp) < orig(this.balances[post(msg.sender)].getValue())
+sum(this.allowed[].getSubValue()) <= orig(this.balances[post(this.Ownable_own_owner)].getValue())
+sum(this.allowed[].getSubValue()) < this.balances[orig(_to)].getValue()
+sum(this.allowed[].getSubValue()) <= this.balances[orig(msg.sender)].getValue()
+sum(this.allowed[].getSubValue()) < orig(this.balances[post(msg.sender)].getValue())
+this.balances[this.Ownable_own_owner].getValue() <= orig(this.balances[post(this.Ownable_own_owner)].getValue())
+this.balances[this.Ownable_own_owner].getValue() < this.balances[orig(_to)].getValue()
+this.balances[this.Ownable_own_owner].getValue() <= this.balances[orig(msg.sender)].getValue()
+this.balances[this.Ownable_own_owner].getValue() < orig(this.balances[post(msg.sender)].getValue())
+orig(this.balances[post(this.Ownable_own_owner)].getValue()) <= this.balances[orig(_to)].getValue()
+orig(this.balances[post(this.Ownable_own_owner)].getValue()) <= orig(this.balances[post(msg.sender)].getValue())
+this.balances[orig(_to)].getValue() <= orig(this.balances[post(msg.sender)].getValue())
+this.balances[orig(msg.sender)].getValue() < orig(this.balances[post(msg.sender)].getValue())
+_value + this.balances[orig(msg.sender)].getValue() - orig(this.balances[post(msg.sender)].getValue()) == 0
+orig(_value) + this.balances[orig(msg.sender)].getValue() - orig(this.balances[post(msg.sender)].getValue()) == 0
+this.balances[orig(_to)].getValue() + this.balances[orig(msg.sender)].getValue() - orig(this.balances[post(msg.sender)].getValue()) == 0
+Exiting Daikon.

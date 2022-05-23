@@ -1,0 +1,43 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+HumanStandardToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Token_own_totalSupply == this.decimals
+this.Token_own_totalSupply == msg.value
+this.Token_own_totalSupply == orig(this.Token_own_totalSupply)
+this.Token_own_totalSupply == orig(msg.value)
+this.Token_own_totalSupply == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_balances == orig(this.StandardToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.decimals == msg.value
+this.decimals == orig(this.Token_own_totalSupply)
+this.decimals == orig(msg.value)
+this.decimals == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.Token_own_totalSupply)
+msg.value == orig(msg.value)
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.Token_own_totalSupply) == orig(msg.value)
+orig(this.Token_own_totalSupply) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.Token_own_totalSupply == 0
+this.StandardToken_own_balances has only one value
+this.StandardToken_own_allowed has only one value
+this.decimals == 0
+_value one of { 5000000000000, 21000000000000000 }
+msg.value == 0
+orig(this) has only one value
+orig(this.Token_own_totalSupply) == 0
+orig(_value) one of { 5000000000000, 21000000000000000 }
+orig(msg.value) == 0
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

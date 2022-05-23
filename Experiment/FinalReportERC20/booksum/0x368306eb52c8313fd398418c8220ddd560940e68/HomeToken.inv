@@ -1,0 +1,313 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+HomeToken.addValidator(address):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == this.decimals
+this.BasicToken_own_totalSupply_ == orig(this.StandardToken_own_allowed[post(pair(_validator,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own__owner == this.Bridgeable_own_foreignContract
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.Bridgeable_own_foreignContract)
+this.Bridgeable_own_validators == orig(this.Bridgeable_own_validators)
+this.Bridgeable_own_foreignTransactions == orig(this.Bridgeable_own_foreignTransactions)
+this.Bridgeable_own_foreignTransactions[].getValue() == orig(this.Bridgeable_own_foreignTransactions[].getValue())
+this.decimals == orig(this.StandardToken_own_allowed[post(pair(_validator,msg.sender))].getSubValue())
+_validator == orig(_validator)
+msg.sender == orig(_validator)
+orig(_validator) == orig(msg.sender)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.Bridgeable_own_validators has only one value
+this.Bridgeable_own_foreignTransactions has only one value
+this.decimals == 0
+orig(this) has only one value
+orig(block.timestamp) == 1610220937
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_validator,msg.sender))].getSubValue()) == 0
+===========================================================================
+HomeToken.approve(address,uint256):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == this.decimals
+this.BasicToken_own_totalSupply_ == this.INITIAL_SUPPLY
+this.BasicToken_own_totalSupply_ == msg.value
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.BasicToken_own_totalSupply_ == orig(this.decimals)
+this.BasicToken_own_totalSupply_ == orig(this.INITIAL_SUPPLY)
+this.BasicToken_own_totalSupply_ == orig(msg.value)
+this.BasicToken_own_totalSupply_ == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_totalSupply_ == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own__owner == this.Bridgeable_own_foreignContract
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.Bridgeable_own_foreignContract)
+this.Bridgeable_own_validators == orig(this.Bridgeable_own_validators)
+this.Bridgeable_own_foreignTransactions == orig(this.Bridgeable_own_foreignTransactions)
+this.Bridgeable_own_foreignTransactions[].getValue() == orig(this.Bridgeable_own_foreignTransactions[].getValue())
+this.decimals == this.INITIAL_SUPPLY
+this.decimals == msg.value
+this.decimals == orig(this.BasicToken_own_totalSupply_)
+this.decimals == orig(this.decimals)
+this.decimals == orig(this.INITIAL_SUPPLY)
+this.decimals == orig(msg.value)
+this.decimals == sum(this.BasicToken_own_balances[].getValue())
+this.decimals == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+this.INITIAL_SUPPLY == msg.value
+this.INITIAL_SUPPLY == orig(this.BasicToken_own_totalSupply_)
+this.INITIAL_SUPPLY == orig(this.decimals)
+this.INITIAL_SUPPLY == orig(this.INITIAL_SUPPLY)
+this.INITIAL_SUPPLY == orig(msg.value)
+this.INITIAL_SUPPLY == sum(this.BasicToken_own_balances[].getValue())
+this.INITIAL_SUPPLY == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+_spender == orig(_spender)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.BasicToken_own_totalSupply_)
+msg.value == orig(this.decimals)
+msg.value == orig(this.INITIAL_SUPPLY)
+msg.value == orig(msg.value)
+msg.value == sum(this.BasicToken_own_balances[].getValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.BasicToken_own_totalSupply_) == orig(this.decimals)
+orig(this.BasicToken_own_totalSupply_) == orig(this.INITIAL_SUPPLY)
+orig(this.BasicToken_own_totalSupply_) == orig(msg.value)
+orig(this.BasicToken_own_totalSupply_) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.BasicToken_own_totalSupply_) == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+orig(this.decimals) == orig(this.INITIAL_SUPPLY)
+orig(this.decimals) == orig(msg.value)
+orig(this.decimals) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.decimals) == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+orig(this.INITIAL_SUPPLY) == orig(msg.value)
+orig(this.INITIAL_SUPPLY) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.INITIAL_SUPPLY) == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.BasicToken_own_balances[].getValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.Bridgeable_own_validators has only one value
+this.Bridgeable_own_foreignTransactions has only one value
+this.Bridgeable_own_foreignTransactions[].getValue() elements != null
+this.decimals == 0
+this.INITIAL_SUPPLY == 0
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.BasicToken_own_totalSupply_) == 0
+orig(this.decimals) == 0
+orig(this.INITIAL_SUPPLY) == 0
+orig(msg.value) == 0
+sum(this.BasicToken_own_balances[].getValue()) == 0
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue()) == 0
+this.BasicToken_own_totalSupply_ < _value
+this.BasicToken_own_totalSupply_ < block.timestamp
+this.BasicToken_own_totalSupply_ < orig(_value)
+this.BasicToken_own_totalSupply_ < orig(block.timestamp)
+this.Ownable_own__owner != orig(_spender)
+this.Ownable_own__owner != orig(msg.sender)
+this.decimals < _value
+this.decimals < block.timestamp
+this.decimals < orig(_value)
+this.decimals < orig(block.timestamp)
+this.INITIAL_SUPPLY < _value
+this.INITIAL_SUPPLY < block.timestamp
+this.INITIAL_SUPPLY < orig(_value)
+this.INITIAL_SUPPLY < orig(block.timestamp)
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.BasicToken_own_totalSupply_) < orig(_value)
+orig(this.BasicToken_own_totalSupply_) < orig(block.timestamp)
+orig(this.decimals) < orig(_value)
+orig(this.decimals) < orig(block.timestamp)
+orig(this.INITIAL_SUPPLY) < orig(_value)
+orig(this.INITIAL_SUPPLY) < orig(block.timestamp)
+orig(_spender) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+===========================================================================
+HomeToken.exit(bytes32,address,uint256,bytes):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == this.decimals
+this.BasicToken_own_totalSupply_ == this.INITIAL_SUPPLY
+this.BasicToken_own_totalSupply_ == orig(this.StandardToken_own_allowed[post(pair(_txnHash,_foreignContract))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own__owner == this.Bridgeable_own_foreignContract
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.Bridgeable_own_foreignContract)
+this.Bridgeable_own_validators == orig(this.Bridgeable_own_validators)
+this.Bridgeable_own_foreignTransactions == orig(this.Bridgeable_own_foreignTransactions)
+this.Bridgeable_own_foreignTransactions[].getValue() == orig(this.Bridgeable_own_foreignTransactions[].getValue())
+this.decimals == this.INITIAL_SUPPLY
+this.decimals == orig(this.StandardToken_own_allowed[post(pair(_txnHash,_foreignContract))].getSubValue())
+this.INITIAL_SUPPLY == orig(this.StandardToken_own_allowed[post(pair(_txnHash,_foreignContract))].getSubValue())
+_txnHash == orig(_txnHash)
+_foreignContract == orig(_foreignContract)
+_amount == orig(_amount)
+_signatures == orig(_signatures)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.Bridgeable_own_validators has only one value
+this.Bridgeable_own_foreignTransactions has only one value
+this.decimals == 0
+this.INITIAL_SUPPLY == 0
+_amount one of { 49999737743163500027758984, 50000000000000000000000000 }
+block.timestamp one of { 1610238497, 1615562258 }
+orig(this) has only one value
+orig(_amount) one of { 49999737743163500027758984, 50000000000000000000000000 }
+orig(block.timestamp) one of { 1610238497, 1615562258 }
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_txnHash,_foreignContract))].getSubValue()) == 0
+===========================================================================
+HomeToken.pair(address):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == this.decimals
+this.BasicToken_own_totalSupply_ == orig(this.StandardToken_own_allowed[post(pair(_foreignContract,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own__owner == this.Bridgeable_own_foreignContract
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.Bridgeable_own_foreignContract)
+this.Bridgeable_own_validators == orig(this.Bridgeable_own_validators)
+this.Bridgeable_own_foreignTransactions == orig(this.Bridgeable_own_foreignTransactions)
+this.Bridgeable_own_foreignTransactions[].getValue() == orig(this.Bridgeable_own_foreignTransactions[].getValue())
+this.decimals == orig(this.StandardToken_own_allowed[post(pair(_foreignContract,msg.sender))].getSubValue())
+_foreignContract == orig(_foreignContract)
+msg.sender == orig(msg.sender)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.Bridgeable_own_validators has only one value
+this.Bridgeable_own_foreignTransactions has only one value
+this.decimals == 0
+orig(this) has only one value
+orig(block.timestamp) == 1610221108
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_foreignContract,msg.sender))].getSubValue()) == 0
+===========================================================================
+HomeToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == this.decimals
+this.BasicToken_own_totalSupply_ == this.INITIAL_SUPPLY
+this.BasicToken_own_totalSupply_ == msg.value
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.BasicToken_own_totalSupply_ == orig(this.decimals)
+this.BasicToken_own_totalSupply_ == orig(this.INITIAL_SUPPLY)
+this.BasicToken_own_totalSupply_ == orig(msg.value)
+this.BasicToken_own_totalSupply_ == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_totalSupply_ == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.Ownable_own__owner == this.Bridgeable_own_foreignContract
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.Bridgeable_own_foreignContract)
+this.Bridgeable_own_validators == orig(this.Bridgeable_own_validators)
+this.Bridgeable_own_foreignTransactions == orig(this.Bridgeable_own_foreignTransactions)
+this.Bridgeable_own_foreignTransactions[].getValue() == orig(this.Bridgeable_own_foreignTransactions[].getValue())
+this.decimals == this.INITIAL_SUPPLY
+this.decimals == msg.value
+this.decimals == orig(this.BasicToken_own_totalSupply_)
+this.decimals == orig(this.decimals)
+this.decimals == orig(this.INITIAL_SUPPLY)
+this.decimals == orig(msg.value)
+this.decimals == sum(this.BasicToken_own_balances[].getValue())
+this.decimals == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.INITIAL_SUPPLY == msg.value
+this.INITIAL_SUPPLY == orig(this.BasicToken_own_totalSupply_)
+this.INITIAL_SUPPLY == orig(this.decimals)
+this.INITIAL_SUPPLY == orig(this.INITIAL_SUPPLY)
+this.INITIAL_SUPPLY == orig(msg.value)
+this.INITIAL_SUPPLY == sum(this.BasicToken_own_balances[].getValue())
+this.INITIAL_SUPPLY == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.BasicToken_own_totalSupply_)
+msg.value == orig(this.decimals)
+msg.value == orig(this.INITIAL_SUPPLY)
+msg.value == orig(msg.value)
+msg.value == sum(this.BasicToken_own_balances[].getValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.BasicToken_own_totalSupply_) == orig(this.decimals)
+orig(this.BasicToken_own_totalSupply_) == orig(this.INITIAL_SUPPLY)
+orig(this.BasicToken_own_totalSupply_) == orig(msg.value)
+orig(this.BasicToken_own_totalSupply_) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.BasicToken_own_totalSupply_) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(this.decimals) == orig(this.INITIAL_SUPPLY)
+orig(this.decimals) == orig(msg.value)
+orig(this.decimals) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.decimals) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(this.INITIAL_SUPPLY) == orig(msg.value)
+orig(this.INITIAL_SUPPLY) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.INITIAL_SUPPLY) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.BasicToken_own_balances[].getValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.Bridgeable_own_validators has only one value
+this.Bridgeable_own_foreignTransactions has only one value
+this.Bridgeable_own_foreignTransactions[].getValue() elements != null
+this.decimals == 0
+this.INITIAL_SUPPLY == 0
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.BasicToken_own_totalSupply_) == 0
+orig(this.decimals) == 0
+orig(this.INITIAL_SUPPLY) == 0
+orig(msg.value) == 0
+sum(this.BasicToken_own_balances[].getValue()) == 0
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.BasicToken_own_totalSupply_ < _value
+this.BasicToken_own_totalSupply_ < block.timestamp
+this.BasicToken_own_totalSupply_ < orig(_value)
+this.BasicToken_own_totalSupply_ < orig(block.timestamp)
+this.Ownable_own__owner != orig(_to)
+this.Ownable_own__owner != orig(msg.sender)
+this.decimals < _value
+this.decimals < block.timestamp
+this.decimals < orig(_value)
+this.decimals < orig(block.timestamp)
+this.INITIAL_SUPPLY < _value
+this.INITIAL_SUPPLY < block.timestamp
+this.INITIAL_SUPPLY < orig(_value)
+this.INITIAL_SUPPLY < orig(block.timestamp)
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.BasicToken_own_totalSupply_) < orig(_value)
+orig(this.BasicToken_own_totalSupply_) < orig(block.timestamp)
+orig(this.decimals) < orig(_value)
+orig(this.decimals) < orig(block.timestamp)
+orig(this.INITIAL_SUPPLY) < orig(_value)
+orig(this.INITIAL_SUPPLY) < orig(block.timestamp)
+orig(_to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

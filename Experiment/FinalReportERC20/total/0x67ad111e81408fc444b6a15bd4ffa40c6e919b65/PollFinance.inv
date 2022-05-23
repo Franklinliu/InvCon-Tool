@@ -1,0 +1,32 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+PollFinance.withdrawEther():::EXIT2
+this == orig(this)
+this.ERC20Basic_own_totalSupply == orig(msg.value)
+this.ERC20_own_freezeOf == orig(this.ERC20_own_freezeOf)
+this.owner == msg.sender
+this.owner == orig(this.owner)
+this.owner == orig(msg.sender)
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+this.distributionFinished == orig(this.distributionFinished)
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.ERC20Basic_own_totalSupply == 0
+this.ERC20_own_freezeOf has only one value
+this.balances has only one value
+this.allowed has only one value
+this.totalSupply == 10000000000000
+this.totalDistributed == 2000687189311
+this.tokensPerEth == 3600000000
+this.distributionFinished == false
+orig(this) has only one value
+orig(msg.value) == 0
+orig(block.timestamp) == 12047920
+sum(this.balances[].getValue()) == 1000687189311
+sum(this.allowed[].getSubLength()) == 0
+this.balances[this.owner].getValue() == 1000036000000
+Exiting Daikon.

@@ -1,0 +1,59 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+PCHERY.mint(address,uint256):::EXIT1
+this == orig(this)
+this.ERC223_own_totalSupply == this.distributeAmount
+this.ERC223_own_totalSupply == orig(msg.value)
+this.ERC223_own_totalSupply == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+this.Ownable_own_owner == _to
+this.Ownable_own_owner == msg.sender
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(_to)
+this.Ownable_own_owner == orig(msg.sender)
+this.decimals == orig(this.decimals)
+this.initialSupply == orig(this.initialSupply)
+this.totalSupply == sum(this.balanceOf[].getValue())
+this.totalSupply == this.balanceOf[this.Ownable_own_owner].getValue()
+this.distributeAmount == orig(msg.value)
+this.distributeAmount == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+this.mintingFinished == orig(this.mintingFinished)
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+this.allowance[].getSubLength() == orig(this.allowance[].getSubLength())
+this.frozenAccount == orig(this.frozenAccount)
+this.frozenAccount[].getValue() == orig(this.frozenAccount[].getValue())
+this.unlockUnixTime == orig(this.unlockUnixTime)
+_unitAmount == orig(_unitAmount)
+block.timestamp == orig(block.timestamp)
+orig(this.totalSupply) == orig(this.balanceOf[post(_to)].getValue())
+orig(msg.value) == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+sum(this.balanceOf[].getValue()) == this.balanceOf[this.Ownable_own_owner].getValue()
+sum(this.allowance[].getSubLength()) == sum(orig(this.allowance[].getSubLength()))
+this.ERC223_own_totalSupply == 0
+this.decimals == 8
+this.initialSupply == 20000000000000
+this.totalSupply one of { 30000000000000, 40000000000000 }
+this.distributeAmount == 0
+this.mintingFinished == false
+this.balanceOf has only one value
+this.allowance has only one value
+this.frozenAccount has only one value
+this.unlockUnixTime has only one value
+_unitAmount == 10000000000000
+block.timestamp one of { 1611837793, 1611837817 }
+orig(this) has only one value
+orig(this.decimals) == 8
+orig(this.initialSupply) == 20000000000000
+orig(this.totalSupply) one of { 20000000000000, 30000000000000 }
+orig(_unitAmount) == 10000000000000
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1611837793, 1611837817 }
+sum(this.balanceOf[].getValue()) one of { 30000000000000, 40000000000000 }
+sum(this.allowance[].getSubLength()) == 0
+this.balanceOf[this.Ownable_own_owner].getValue() one of { 30000000000000, 40000000000000 }
+orig(this.balanceOf[post(_to)].getValue()) one of { 20000000000000, 30000000000000 }
+orig(this.allowance[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

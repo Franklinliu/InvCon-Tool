@@ -1,0 +1,133 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+defiqa.approve(address,uint256):::EXIT2
+this == orig(this)
+this.ERC20_own_totalSupply == this.approvalCounts
+this.ERC20_own_totalSupply == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+this.StandardToken_own_balances == orig(this.StandardToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.OnlyOwner_own_owner == this.OnlyOwner_own_controller
+this.OnlyOwner_own_owner == this.burnedTokensReceiver
+this.OnlyOwner_own_owner == orig(this.OnlyOwner_own_owner)
+this.OnlyOwner_own_owner == orig(this.OnlyOwner_own_controller)
+this.OnlyOwner_own_owner == orig(this.burnedTokensReceiver)
+this.approvalCounts == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+_spender == orig(_spender)
+msg.sender == orig(msg.sender)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.ERC20_own_totalSupply == 0
+this.StandardToken_own_balances has only one value
+this.StandardToken_own_allowed has only one value
+this.approvalCounts == 0
+orig(this) has only one value
+orig(_value) == 40000000000000000000000
+orig(block.timestamp) == 1612222355
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue()) == 0
+===========================================================================
+defiqa.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.ERC20_own_totalSupply == this.approvalCounts
+this.ERC20_own_totalSupply == this.minRequiredApprovals
+this.ERC20_own_totalSupply == msg.value
+this.ERC20_own_totalSupply == orig(this.ERC20_own_totalSupply)
+this.ERC20_own_totalSupply == orig(this.approvalCounts)
+this.ERC20_own_totalSupply == orig(this.minRequiredApprovals)
+this.ERC20_own_totalSupply == orig(msg.value)
+this.ERC20_own_totalSupply == sum(this.StandardToken_own_balances[].getValue())
+this.ERC20_own_totalSupply == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_balances == orig(this.StandardToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.OnlyOwner_own_owner == this.OnlyOwner_own_controller
+this.OnlyOwner_own_owner == this.burnedTokensReceiver
+this.OnlyOwner_own_owner == orig(this.OnlyOwner_own_owner)
+this.OnlyOwner_own_owner == orig(this.OnlyOwner_own_controller)
+this.OnlyOwner_own_owner == orig(this.burnedTokensReceiver)
+this.approvalCounts == this.minRequiredApprovals
+this.approvalCounts == msg.value
+this.approvalCounts == orig(this.ERC20_own_totalSupply)
+this.approvalCounts == orig(this.approvalCounts)
+this.approvalCounts == orig(this.minRequiredApprovals)
+this.approvalCounts == orig(msg.value)
+this.approvalCounts == sum(this.StandardToken_own_balances[].getValue())
+this.approvalCounts == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.minRequiredApprovals == msg.value
+this.minRequiredApprovals == orig(this.ERC20_own_totalSupply)
+this.minRequiredApprovals == orig(this.approvalCounts)
+this.minRequiredApprovals == orig(this.minRequiredApprovals)
+this.minRequiredApprovals == orig(msg.value)
+this.minRequiredApprovals == sum(this.StandardToken_own_balances[].getValue())
+this.minRequiredApprovals == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.ERC20_own_totalSupply)
+msg.value == orig(this.approvalCounts)
+msg.value == orig(this.minRequiredApprovals)
+msg.value == orig(msg.value)
+msg.value == sum(this.StandardToken_own_balances[].getValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own_totalSupply) == orig(this.approvalCounts)
+orig(this.ERC20_own_totalSupply) == orig(this.minRequiredApprovals)
+orig(this.ERC20_own_totalSupply) == orig(msg.value)
+orig(this.ERC20_own_totalSupply) == sum(this.StandardToken_own_balances[].getValue())
+orig(this.ERC20_own_totalSupply) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(this.approvalCounts) == orig(this.minRequiredApprovals)
+orig(this.approvalCounts) == orig(msg.value)
+orig(this.approvalCounts) == sum(this.StandardToken_own_balances[].getValue())
+orig(this.approvalCounts) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(this.minRequiredApprovals) == orig(msg.value)
+orig(this.minRequiredApprovals) == sum(this.StandardToken_own_balances[].getValue())
+orig(this.minRequiredApprovals) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.StandardToken_own_balances[].getValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_balances[].getValue()) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.ERC20_own_totalSupply == 0
+this.StandardToken_own_balances has only one value
+this.StandardToken_own_allowed has only one value
+this.approvalCounts == 0
+this.minRequiredApprovals == 0
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20_own_totalSupply) == 0
+orig(this.approvalCounts) == 0
+orig(this.minRequiredApprovals) == 0
+orig(msg.value) == 0
+sum(this.StandardToken_own_balances[].getValue()) == 0
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.ERC20_own_totalSupply < _value
+this.ERC20_own_totalSupply < block.timestamp
+this.ERC20_own_totalSupply < orig(_value)
+this.ERC20_own_totalSupply < orig(block.timestamp)
+this.OnlyOwner_own_owner != orig(_to)
+this.OnlyOwner_own_owner != orig(msg.sender)
+this.approvalCounts < _value
+this.approvalCounts < block.timestamp
+this.approvalCounts < orig(_value)
+this.approvalCounts < orig(block.timestamp)
+this.minRequiredApprovals < _value
+this.minRequiredApprovals < block.timestamp
+this.minRequiredApprovals < orig(_value)
+this.minRequiredApprovals < orig(block.timestamp)
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.ERC20_own_totalSupply) < orig(_value)
+orig(this.ERC20_own_totalSupply) < orig(block.timestamp)
+orig(this.approvalCounts) < orig(_value)
+orig(this.approvalCounts) < orig(block.timestamp)
+orig(this.minRequiredApprovals) < orig(_value)
+orig(this.minRequiredApprovals) < orig(block.timestamp)
+orig(_to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

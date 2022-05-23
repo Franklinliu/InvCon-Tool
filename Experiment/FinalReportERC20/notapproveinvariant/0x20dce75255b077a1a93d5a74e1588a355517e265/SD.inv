@@ -1,0 +1,281 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+SD.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.Controlled_own_controller == orig(this.Controlled_own_controller)
+this.MiniMeToken_own_decimals == orig(this.MiniMeToken_own_decimals)
+this.MiniMeToken_own_parentToken == orig(this.MiniMeToken_own_parentToken)
+this.MiniMeToken_own_parentSnapShotBlock == msg.value
+this.MiniMeToken_own_parentSnapShotBlock == orig(this.MiniMeToken_own_parentSnapShotBlock)
+this.MiniMeToken_own_parentSnapShotBlock == orig(msg.value)
+this.MiniMeToken_own_parentSnapShotBlock == sum(this.MiniMeToken_own_allowed[].getSubValue())
+this.MiniMeToken_own_parentSnapShotBlock == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.MiniMeToken_own_creationBlock == orig(this.MiniMeToken_own_creationBlock)
+this.MiniMeToken_own_balances == orig(this.MiniMeToken_own_balances)
+this.MiniMeToken_own_allowed == orig(this.MiniMeToken_own_allowed)
+this.MiniMeToken_own_allowed[].getSubLength() == orig(this.MiniMeToken_own_allowed[].getSubLength())
+this.MiniMeToken_own_totalSupplyHistory == orig(this.MiniMeToken_own_totalSupplyHistory)
+this.MiniMeToken_own_transfersEnabled == orig(this.MiniMeToken_own_transfersEnabled)
+this.MiniMeToken_own_tokenFactory == orig(this.MiniMeToken_own_tokenFactory)
+_to == orig(_to)
+_amount == orig(_amount)
+_amount == this.MiniMeToken_own_balances[orig(_to)].getValue()
+msg.sender == orig(msg.sender)
+msg.value == orig(this.MiniMeToken_own_parentSnapShotBlock)
+msg.value == orig(msg.value)
+msg.value == sum(this.MiniMeToken_own_allowed[].getSubValue())
+msg.value == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.MiniMeToken_own_parentSnapShotBlock) == orig(msg.value)
+orig(this.MiniMeToken_own_parentSnapShotBlock) == sum(this.MiniMeToken_own_allowed[].getSubValue())
+orig(this.MiniMeToken_own_parentSnapShotBlock) == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(_amount) == this.MiniMeToken_own_balances[orig(_to)].getValue()
+orig(msg.value) == sum(this.MiniMeToken_own_allowed[].getSubValue())
+orig(msg.value) == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.MiniMeToken_own_allowed[].getSubLength()) == sum(orig(this.MiniMeToken_own_allowed[].getSubLength()))
+sum(this.MiniMeToken_own_allowed[].getSubValue()) == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() == this.MiniMeToken_own_balances[orig(this.MiniMeToken_own_tokenFactory)].getLength()
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() == orig(this.MiniMeToken_own_balances[post(this.MiniMeToken_own_tokenFactory)].getLength())
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() == orig(this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength())
+this.MiniMeToken_own_balances[_to].getLength() == this.MiniMeToken_own_balances[orig(_to)].getLength()
+this.MiniMeToken_own_balances[msg.sender].getLength() == this.MiniMeToken_own_balances[orig(msg.sender)].getLength()
+orig(this.MiniMeToken_own_balances[post(_to)].getLength()) == orig(this.MiniMeToken_own_balances[_to].getLength())
+orig(this.MiniMeToken_own_balances[post(msg.sender)].getLength()) == orig(this.MiniMeToken_own_balances[msg.sender].getLength())
+this.MiniMeToken_own_decimals == 18
+this.MiniMeToken_own_parentSnapShotBlock == 0
+this.MiniMeToken_own_creationBlock == 11748367
+this.MiniMeToken_own_balances has only one value
+this.MiniMeToken_own_balances[].getLength() elements >= 1
+this.MiniMeToken_own_allowed has only one value
+this.MiniMeToken_own_totalSupplyHistory has only one value
+this.MiniMeToken_own_transfersEnabled == true
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.MiniMeToken_own_decimals) == 18
+orig(this.MiniMeToken_own_parentSnapShotBlock) == 0
+orig(this.MiniMeToken_own_creationBlock) == 11748367
+orig(this.MiniMeToken_own_balances[].getLength()) elements >= 1
+orig(msg.value) == 0
+sum(this.MiniMeToken_own_allowed[].getSubLength()) == 0
+sum(this.MiniMeToken_own_allowed[].getSubValue()) == 0
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() == 1
+this.MiniMeToken_own_balances[orig(_to)].getLength() >= 1
+this.MiniMeToken_own_balances[orig(msg.sender)].getLength() >= 1
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getValue() == 11767897
+this.MiniMeToken_own_balances[orig(_to)].getValue() one of { 5000000000000000000000000, 100000000000000000000000000 }
+this.MiniMeToken_own_balances[orig(msg.sender)].getValue() one of { 11767897, 95000000000000000000000000 }
+orig(this.MiniMeToken_own_balances[post(this.MiniMeToken_own_tokenFactory)].getValue()) one of { 11767897, 100000000000000000000000000 }
+orig(this.MiniMeToken_own_balances[post(_to)].getLength()) >= 1
+orig(this.MiniMeToken_own_balances[post(msg.sender)].getLength()) >= 1
+orig(this.MiniMeToken_own_balances[post(msg.sender)].getValue()) one of { 95000000000000000000000000, 100000000000000000000000000 }
+orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.Controlled_own_controller != this.MiniMeToken_own_parentToken
+this.Controlled_own_controller != this.MiniMeToken_own_tokenFactory
+this.Controlled_own_controller != orig(_to)
+this.Controlled_own_controller != orig(msg.sender)
+this.MiniMeToken_own_decimals < this.MiniMeToken_own_creationBlock
+this.MiniMeToken_own_decimals < _amount
+this.MiniMeToken_own_decimals < block.timestamp
+this.MiniMeToken_own_decimals < orig(this.MiniMeToken_own_creationBlock)
+this.MiniMeToken_own_decimals < orig(_amount)
+this.MiniMeToken_own_decimals < orig(block.timestamp)
+this.MiniMeToken_own_parentToken != this.MiniMeToken_own_tokenFactory
+this.MiniMeToken_own_parentToken != orig(_to)
+this.MiniMeToken_own_parentToken != orig(msg.sender)
+this.MiniMeToken_own_parentSnapShotBlock < this.MiniMeToken_own_creationBlock
+this.MiniMeToken_own_parentSnapShotBlock < _amount
+this.MiniMeToken_own_parentSnapShotBlock < block.timestamp
+this.MiniMeToken_own_parentSnapShotBlock < orig(this.MiniMeToken_own_decimals)
+this.MiniMeToken_own_parentSnapShotBlock < orig(this.MiniMeToken_own_creationBlock)
+this.MiniMeToken_own_parentSnapShotBlock < orig(_amount)
+this.MiniMeToken_own_parentSnapShotBlock < orig(block.timestamp)
+this.MiniMeToken_own_creationBlock < _amount
+this.MiniMeToken_own_creationBlock < block.timestamp
+this.MiniMeToken_own_creationBlock < orig(_amount)
+this.MiniMeToken_own_creationBlock < orig(block.timestamp)
+this.MiniMeToken_own_balances[].getLength() > this.MiniMeToken_own_allowed[].getSubLength() (lexically)
+this.MiniMeToken_own_balances[].getLength() >= this.MiniMeToken_own_allowed[].getSubLength() (lexically)
+this.MiniMeToken_own_balances[].getLength() >= orig(this.MiniMeToken_own_balances[].getLength()) (lexically)
+this.MiniMeToken_own_balances[].getLength() elements < sum(this.MiniMeToken_own_balances[].getLength())
+this.MiniMeToken_own_balances[].getLength() elements > sum(this.MiniMeToken_own_allowed[].getSubLength())
+this.MiniMeToken_own_balances[].getLength() elements <= sum(orig(this.MiniMeToken_own_balances[].getLength()))
+this.MiniMeToken_own_balances[].getLength() elements >= this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength()
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() in this.MiniMeToken_own_balances[].getLength()
+this.MiniMeToken_own_balances[orig(_to)].getLength() in this.MiniMeToken_own_balances[].getLength()
+this.MiniMeToken_own_balances[orig(msg.sender)].getLength() in this.MiniMeToken_own_balances[].getLength()
+this.MiniMeToken_own_allowed[].getSubLength() < orig(this.MiniMeToken_own_balances[].getLength()) (lexically)
+this.MiniMeToken_own_allowed[].getSubLength() <= orig(this.MiniMeToken_own_balances[].getLength()) (lexically)
+this.MiniMeToken_own_tokenFactory != orig(_to)
+msg.value < block.timestamp
+msg.value < orig(this.MiniMeToken_own_decimals)
+msg.value < orig(this.MiniMeToken_own_creationBlock)
+msg.value < orig(_amount)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_amount)
+orig(this.MiniMeToken_own_decimals) < orig(this.MiniMeToken_own_creationBlock)
+orig(this.MiniMeToken_own_decimals) < orig(_amount)
+orig(this.MiniMeToken_own_decimals) < orig(block.timestamp)
+orig(this.MiniMeToken_own_parentSnapShotBlock) < orig(this.MiniMeToken_own_creationBlock)
+orig(this.MiniMeToken_own_parentSnapShotBlock) < orig(_amount)
+orig(this.MiniMeToken_own_parentSnapShotBlock) < orig(block.timestamp)
+orig(this.MiniMeToken_own_creationBlock) < orig(_amount)
+orig(this.MiniMeToken_own_creationBlock) < orig(block.timestamp)
+orig(this.MiniMeToken_own_balances[].getLength()) elements < sum(this.MiniMeToken_own_balances[].getLength())
+orig(this.MiniMeToken_own_balances[].getLength()) elements > sum(this.MiniMeToken_own_allowed[].getSubLength())
+orig(this.MiniMeToken_own_balances[].getLength()) elements <= sum(orig(this.MiniMeToken_own_balances[].getLength()))
+orig(this.MiniMeToken_own_balances[].getLength()) elements >= this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength()
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() in orig(this.MiniMeToken_own_balances[].getLength())
+orig(this.MiniMeToken_own_balances[post(_to)].getLength()) in orig(this.MiniMeToken_own_balances[].getLength())
+orig(this.MiniMeToken_own_balances[post(msg.sender)].getLength()) in orig(this.MiniMeToken_own_balances[].getLength())
+orig(_to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+sum(this.MiniMeToken_own_allowed[].getSubLength()) % sum(this.MiniMeToken_own_balances[].getLength()) == 0
+sum(this.MiniMeToken_own_balances[].getLength()) > sum(this.MiniMeToken_own_allowed[].getSubLength())
+sum(this.MiniMeToken_own_balances[].getLength()) >= sum(orig(this.MiniMeToken_own_balances[].getLength()))
+sum(this.MiniMeToken_own_balances[].getLength()) > this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength()
+sum(this.MiniMeToken_own_balances[].getLength()) > this.MiniMeToken_own_balances[orig(_to)].getLength()
+sum(this.MiniMeToken_own_balances[].getLength()) > this.MiniMeToken_own_balances[orig(msg.sender)].getLength()
+sum(this.MiniMeToken_own_balances[].getLength()) > orig(this.MiniMeToken_own_balances[post(_to)].getLength())
+sum(this.MiniMeToken_own_balances[].getLength()) > orig(this.MiniMeToken_own_balances[post(msg.sender)].getLength())
+sum(this.MiniMeToken_own_allowed[].getSubLength()) % sum(orig(this.MiniMeToken_own_balances[].getLength())) == 0
+sum(this.MiniMeToken_own_allowed[].getSubLength()) < sum(orig(this.MiniMeToken_own_balances[].getLength()))
+sum(this.MiniMeToken_own_allowed[].getSubLength()) < this.MiniMeToken_own_balances[orig(_to)].getLength()
+sum(this.MiniMeToken_own_allowed[].getSubLength()) < this.MiniMeToken_own_balances[orig(msg.sender)].getLength()
+sum(this.MiniMeToken_own_allowed[].getSubLength()) < orig(this.MiniMeToken_own_balances[post(_to)].getLength())
+sum(this.MiniMeToken_own_allowed[].getSubLength()) < orig(this.MiniMeToken_own_balances[post(msg.sender)].getLength())
+sum(orig(this.MiniMeToken_own_balances[].getLength())) >= this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength()
+sum(orig(this.MiniMeToken_own_balances[].getLength())) >= this.MiniMeToken_own_balances[orig(_to)].getLength()
+sum(orig(this.MiniMeToken_own_balances[].getLength())) >= this.MiniMeToken_own_balances[orig(msg.sender)].getLength()
+sum(orig(this.MiniMeToken_own_balances[].getLength())) > orig(this.MiniMeToken_own_balances[post(_to)].getLength())
+sum(orig(this.MiniMeToken_own_balances[].getLength())) >= orig(this.MiniMeToken_own_balances[post(msg.sender)].getLength())
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() <= this.MiniMeToken_own_balances[orig(_to)].getLength()
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() <= this.MiniMeToken_own_balances[orig(msg.sender)].getLength()
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() <= orig(this.MiniMeToken_own_balances[post(_to)].getLength())
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() <= orig(this.MiniMeToken_own_balances[post(msg.sender)].getLength())
+this.MiniMeToken_own_balances[orig(_to)].getLength() >= orig(this.MiniMeToken_own_balances[post(_to)].getLength())
+this.MiniMeToken_own_balances[orig(msg.sender)].getLength() >= orig(this.MiniMeToken_own_balances[post(msg.sender)].getLength())
+===========================================================================
+SD.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Controlled_own_controller == orig(this.Controlled_own_controller)
+this.MiniMeToken_own_decimals == orig(this.MiniMeToken_own_decimals)
+this.MiniMeToken_own_parentToken == orig(this.MiniMeToken_own_parentToken)
+this.MiniMeToken_own_parentSnapShotBlock == msg.value
+this.MiniMeToken_own_parentSnapShotBlock == orig(this.MiniMeToken_own_parentSnapShotBlock)
+this.MiniMeToken_own_parentSnapShotBlock == orig(msg.value)
+this.MiniMeToken_own_parentSnapShotBlock == sum(this.MiniMeToken_own_allowed[].getSubValue())
+this.MiniMeToken_own_parentSnapShotBlock == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.MiniMeToken_own_creationBlock == orig(this.MiniMeToken_own_creationBlock)
+this.MiniMeToken_own_balances == orig(this.MiniMeToken_own_balances)
+this.MiniMeToken_own_balances[].getLength() == orig(this.MiniMeToken_own_balances[].getLength())
+this.MiniMeToken_own_allowed == orig(this.MiniMeToken_own_allowed)
+this.MiniMeToken_own_allowed[].getSubLength() == orig(this.MiniMeToken_own_allowed[].getSubLength())
+this.MiniMeToken_own_totalSupplyHistory == orig(this.MiniMeToken_own_totalSupplyHistory)
+this.MiniMeToken_own_transfersEnabled == orig(this.MiniMeToken_own_transfersEnabled)
+this.MiniMeToken_own_tokenFactory == orig(this.MiniMeToken_own_tokenFactory)
+_to == orig(_to)
+_amount == orig(_amount)
+_amount == this.MiniMeToken_own_balances[orig(msg.sender)].getValue()
+msg.sender == orig(msg.sender)
+msg.value == orig(this.MiniMeToken_own_parentSnapShotBlock)
+msg.value == orig(msg.value)
+msg.value == sum(this.MiniMeToken_own_allowed[].getSubValue())
+msg.value == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.MiniMeToken_own_parentSnapShotBlock) == orig(msg.value)
+orig(this.MiniMeToken_own_parentSnapShotBlock) == sum(this.MiniMeToken_own_allowed[].getSubValue())
+orig(this.MiniMeToken_own_parentSnapShotBlock) == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(_amount) == this.MiniMeToken_own_balances[orig(msg.sender)].getValue()
+orig(msg.value) == sum(this.MiniMeToken_own_allowed[].getSubValue())
+orig(msg.value) == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.MiniMeToken_own_balances[].getLength()) == sum(orig(this.MiniMeToken_own_balances[].getLength()))
+sum(this.MiniMeToken_own_allowed[].getSubLength()) == sum(orig(this.MiniMeToken_own_allowed[].getSubLength()))
+sum(this.MiniMeToken_own_allowed[].getSubValue()) == orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() == this.MiniMeToken_own_balances[orig(this.MiniMeToken_own_tokenFactory)].getLength()
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() == orig(this.MiniMeToken_own_balances[post(this.MiniMeToken_own_tokenFactory)].getLength())
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() == orig(this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength())
+this.MiniMeToken_own_balances[msg.sender].getLength() == this.MiniMeToken_own_balances[orig(msg.sender)].getLength()
+this.MiniMeToken_own_balances[orig(msg.sender)].getLength() == orig(this.MiniMeToken_own_balances[post(msg.sender)].getLength())
+this.MiniMeToken_own_balances[orig(msg.sender)].getLength() == orig(this.MiniMeToken_own_balances[msg.sender].getLength())
+this.MiniMeToken_own_decimals == 18
+this.MiniMeToken_own_parentSnapShotBlock == 0
+this.MiniMeToken_own_creationBlock == 11748367
+this.MiniMeToken_own_balances has only one value
+this.MiniMeToken_own_balances[].getLength() elements >= 1
+this.MiniMeToken_own_allowed has only one value
+this.MiniMeToken_own_totalSupplyHistory has only one value
+this.MiniMeToken_own_transfersEnabled == true
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.MiniMeToken_own_decimals) == 18
+orig(this.MiniMeToken_own_parentSnapShotBlock) == 0
+orig(this.MiniMeToken_own_creationBlock) == 11748367
+orig(msg.value) == 0
+sum(this.MiniMeToken_own_allowed[].getSubLength()) == 0
+sum(this.MiniMeToken_own_allowed[].getSubValue()) == 0
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() == 1
+this.MiniMeToken_own_balances[orig(msg.sender)].getLength() >= 1
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getValue() == 11767897
+this.MiniMeToken_own_balances[orig(msg.sender)].getValue() == 5000000000000000000000000
+orig(this.MiniMeToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.Controlled_own_controller != this.MiniMeToken_own_parentToken
+this.Controlled_own_controller != this.MiniMeToken_own_tokenFactory
+this.Controlled_own_controller != orig(_to)
+this.Controlled_own_controller != orig(msg.sender)
+this.MiniMeToken_own_decimals < this.MiniMeToken_own_creationBlock
+this.MiniMeToken_own_decimals < _amount
+this.MiniMeToken_own_decimals < block.timestamp
+this.MiniMeToken_own_decimals < orig(this.MiniMeToken_own_creationBlock)
+this.MiniMeToken_own_decimals < orig(_amount)
+this.MiniMeToken_own_decimals < orig(block.timestamp)
+this.MiniMeToken_own_parentToken != this.MiniMeToken_own_tokenFactory
+this.MiniMeToken_own_parentToken != orig(_to)
+this.MiniMeToken_own_parentToken != orig(msg.sender)
+this.MiniMeToken_own_parentSnapShotBlock < this.MiniMeToken_own_creationBlock
+this.MiniMeToken_own_parentSnapShotBlock < _amount
+this.MiniMeToken_own_parentSnapShotBlock < block.timestamp
+this.MiniMeToken_own_parentSnapShotBlock < orig(this.MiniMeToken_own_decimals)
+this.MiniMeToken_own_parentSnapShotBlock < orig(this.MiniMeToken_own_creationBlock)
+this.MiniMeToken_own_parentSnapShotBlock < orig(_amount)
+this.MiniMeToken_own_parentSnapShotBlock < orig(block.timestamp)
+this.MiniMeToken_own_creationBlock < _amount
+this.MiniMeToken_own_creationBlock < block.timestamp
+this.MiniMeToken_own_creationBlock < orig(_amount)
+this.MiniMeToken_own_creationBlock < orig(block.timestamp)
+this.MiniMeToken_own_balances[].getLength() > this.MiniMeToken_own_allowed[].getSubLength() (lexically)
+this.MiniMeToken_own_balances[].getLength() >= this.MiniMeToken_own_allowed[].getSubLength() (lexically)
+this.MiniMeToken_own_balances[].getLength() elements < sum(this.MiniMeToken_own_balances[].getLength())
+this.MiniMeToken_own_balances[].getLength() elements > sum(this.MiniMeToken_own_allowed[].getSubLength())
+this.MiniMeToken_own_balances[].getLength() elements >= this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength()
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() in this.MiniMeToken_own_balances[].getLength()
+this.MiniMeToken_own_balances[orig(msg.sender)].getLength() in this.MiniMeToken_own_balances[].getLength()
+this.MiniMeToken_own_tokenFactory != orig(_to)
+this.MiniMeToken_own_tokenFactory != orig(msg.sender)
+msg.value < block.timestamp
+msg.value < orig(this.MiniMeToken_own_decimals)
+msg.value < orig(this.MiniMeToken_own_creationBlock)
+msg.value < orig(_amount)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_amount)
+orig(this.MiniMeToken_own_decimals) < orig(this.MiniMeToken_own_creationBlock)
+orig(this.MiniMeToken_own_decimals) < orig(_amount)
+orig(this.MiniMeToken_own_decimals) < orig(block.timestamp)
+orig(this.MiniMeToken_own_parentSnapShotBlock) < orig(this.MiniMeToken_own_creationBlock)
+orig(this.MiniMeToken_own_parentSnapShotBlock) < orig(_amount)
+orig(this.MiniMeToken_own_parentSnapShotBlock) < orig(block.timestamp)
+orig(this.MiniMeToken_own_creationBlock) < orig(_amount)
+orig(this.MiniMeToken_own_creationBlock) < orig(block.timestamp)
+orig(_to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+sum(this.MiniMeToken_own_allowed[].getSubLength()) % sum(this.MiniMeToken_own_balances[].getLength()) == 0
+sum(this.MiniMeToken_own_balances[].getLength()) > sum(this.MiniMeToken_own_allowed[].getSubLength())
+sum(this.MiniMeToken_own_balances[].getLength()) > this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength()
+sum(this.MiniMeToken_own_balances[].getLength()) > this.MiniMeToken_own_balances[orig(msg.sender)].getLength()
+sum(this.MiniMeToken_own_allowed[].getSubLength()) < this.MiniMeToken_own_balances[orig(msg.sender)].getLength()
+this.MiniMeToken_own_balances[this.MiniMeToken_own_tokenFactory].getLength() <= this.MiniMeToken_own_balances[orig(msg.sender)].getLength()
+Exiting Daikon.

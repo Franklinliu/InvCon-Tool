@@ -1,0 +1,1961 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+ETHWolfToken.approve(address,uint256):::EXIT1
+this == orig(this)
+this.Ownable_own__owner == this.evolutionAddress
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.evolutionAddress)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.ERC20_own__totalSupply == sum(this.ERC20_own__balances[].getValue())
+this.ERC20_own__totalSupply == sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals == orig(this.ERC20Detailed_own__decimals)
+this.Power_own_maxExpArray == orig(this.Power_own_maxExpArray)
+this.WolfBondingCurve_own_reserveRatio == orig(this.WolfBondingCurve_own_reserveRatio)
+this.ValidGasPrice_own_maxGasPrice == orig(this.ValidGasPrice_own_maxGasPrice)
+this.reserve == orig(this.reserve)
+this.evolutionDuration == orig(this.evolutionDuration)
+spender == orig(spender)
+value == orig(value)
+value == this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.Power_own_maxExpArray[])
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20_own__totalSupply) == sum(orig(this.ERC20_own__balances[].getValue()))
+orig(value) == this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+orig(msg.value) == sum(this.Power_own_maxExpArray[])
+sum(this.ERC20_own__balances[].getValue()) == sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue()) == orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+this.ERC20_own__balances has only one value
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements one of { 1, 2, 3 }
+this.ERC20_own__allowed[].getSubValue() elements >= 0
+this.ERC20Detailed_own__decimals == 18
+this.Power_own_maxExpArray has only one value
+this.Power_own_maxExpArray[] elements <= 0
+this.Power_own_maxExpArray[] elements >= 0
+this.Power_own_maxExpArray[] sorted by <=
+this.Power_own_maxExpArray[] sorted by ==
+this.Power_own_maxExpArray[] sorted by >=
+this.WolfBondingCurve_own_reserveRatio == 500000
+this.ValidGasPrice_own_maxGasPrice == 1000000000000000000
+this.evolutionDuration == 1639828799
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20_own__allowed[].getSubLength()) elements one of { 1, 2, 3 }
+orig(this.ERC20_own__allowed[].getSubValue()) elements >= 0
+orig(this.ERC20Detailed_own__decimals) == 18
+orig(this.WolfBondingCurve_own_reserveRatio) == 500000
+orig(this.ValidGasPrice_own_maxGasPrice) == 1000000000000000000
+orig(this.evolutionDuration) == 1639828799
+orig(msg.value) == 0
+sum(this.Power_own_maxExpArray[]) == 0
+this.ERC20_own__allowed[pair(spender,msg.sender)].getSubValue() one of { 0, 17894425330000000082023, 26947212670000000000000 }
+orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue()) one of { 0, 17894425330000000082023 }
+orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue()) >= 0
+this.Ownable_own__owner != orig(spender)
+this.ERC20_own__allowed[].getSubLength() >= orig(this.ERC20_own__allowed[].getSubLength()) (lexically)
+this.ERC20_own__allowed[].getSubLength() elements <= sum(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply <= sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20Detailed_own__decimals < this.WolfBondingCurve_own_reserveRatio
+this.ERC20Detailed_own__decimals < this.ValidGasPrice_own_maxGasPrice
+this.ERC20Detailed_own__decimals < this.reserve
+this.ERC20Detailed_own__decimals < this.evolutionDuration
+this.ERC20Detailed_own__decimals < value
+this.ERC20Detailed_own__decimals < block.timestamp
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__totalSupply)
+this.ERC20Detailed_own__decimals < orig(this.WolfBondingCurve_own_reserveRatio)
+this.ERC20Detailed_own__decimals < orig(this.ValidGasPrice_own_maxGasPrice)
+this.ERC20Detailed_own__decimals < orig(this.reserve)
+this.ERC20Detailed_own__decimals < orig(this.evolutionDuration)
+this.ERC20Detailed_own__decimals < orig(value)
+this.ERC20Detailed_own__decimals < orig(block.timestamp)
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__balances[].getValue())
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(spender)].getValue()
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.ERC20Detailed_own__decimals < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+this.Power_own_maxExpArray[] elements == msg.value
+this.Power_own_maxExpArray[] elements == orig(msg.value)
+this.Power_own_maxExpArray[] elements == sum(this.Power_own_maxExpArray[])
+this.WolfBondingCurve_own_reserveRatio < this.ValidGasPrice_own_maxGasPrice
+this.WolfBondingCurve_own_reserveRatio < this.reserve
+this.WolfBondingCurve_own_reserveRatio < this.evolutionDuration
+this.WolfBondingCurve_own_reserveRatio < value
+this.WolfBondingCurve_own_reserveRatio < block.timestamp
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__totalSupply)
+this.WolfBondingCurve_own_reserveRatio < orig(this.ValidGasPrice_own_maxGasPrice)
+this.WolfBondingCurve_own_reserveRatio < orig(this.reserve)
+this.WolfBondingCurve_own_reserveRatio < orig(this.evolutionDuration)
+this.WolfBondingCurve_own_reserveRatio < orig(value)
+this.WolfBondingCurve_own_reserveRatio < orig(block.timestamp)
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__balances[].getValue())
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__allowed[].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__balances[].getValue()))
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[orig(spender)].getValue()
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__totalSupply)
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__balances[].getValue())
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__allowed[].getSubValue())
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[orig(spender)].getValue()
+this.reserve < orig(this.ERC20_own__totalSupply)
+this.reserve < sum(this.ERC20_own__balances[].getValue())
+this.reserve < sum(this.ERC20_own__allowed[].getSubValue())
+this.reserve < sum(orig(this.ERC20_own__balances[].getValue()))
+this.reserve < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.reserve < this.ERC20_own__balances[orig(spender)].getValue()
+this.evolutionDuration < value
+this.evolutionDuration < orig(this.ERC20_own__totalSupply)
+this.evolutionDuration < orig(this.ValidGasPrice_own_maxGasPrice)
+this.evolutionDuration < orig(this.reserve)
+this.evolutionDuration < orig(value)
+this.evolutionDuration < sum(this.ERC20_own__balances[].getValue())
+this.evolutionDuration < sum(this.ERC20_own__allowed[].getSubValue())
+this.evolutionDuration < sum(orig(this.ERC20_own__balances[].getValue()))
+this.evolutionDuration < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.evolutionDuration < this.ERC20_own__balances[orig(spender)].getValue()
+this.evolutionDuration < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.evolutionDuration < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+value <= sum(this.ERC20_own__allowed[].getSubValue())
+msg.value < block.timestamp
+msg.value < orig(this.ERC20_own__totalSupply)
+msg.value < orig(this.ERC20Detailed_own__decimals)
+msg.value < orig(this.WolfBondingCurve_own_reserveRatio)
+msg.value < orig(this.ValidGasPrice_own_maxGasPrice)
+msg.value < orig(this.reserve)
+msg.value < orig(this.evolutionDuration)
+msg.value < orig(value)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.ERC20_own__balances[].getValue())
+msg.value < sum(this.ERC20_own__allowed[].getSubValue())
+msg.value < sum(orig(this.ERC20_own__balances[].getValue()))
+msg.value <= sum(orig(this.ERC20_own__allowed[].getSubValue()))
+msg.value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+msg.value < this.ERC20_own__balances[orig(spender)].getValue()
+msg.value < this.ERC20_own__balances[orig(msg.sender)].getValue()
+msg.value <= this.ERC20_own__allowed[pair(spender,msg.sender)].getSubValue()
+msg.value < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+msg.value <= orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue())
+msg.value <= orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+block.timestamp < orig(this.ERC20_own__totalSupply)
+block.timestamp < orig(this.ValidGasPrice_own_maxGasPrice)
+block.timestamp < orig(this.reserve)
+block.timestamp < orig(value)
+block.timestamp < sum(this.ERC20_own__balances[].getValue())
+block.timestamp < sum(this.ERC20_own__allowed[].getSubValue())
+block.timestamp < sum(orig(this.ERC20_own__balances[].getValue()))
+block.timestamp < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+block.timestamp < this.ERC20_own__balances[orig(spender)].getValue()
+block.timestamp < this.ERC20_own__balances[orig(msg.sender)].getValue()
+block.timestamp < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+orig(this.ERC20_own__allowed[].getSubLength()) elements < sum(this.ERC20_own__allowed[].getSubLength())
+orig(this.ERC20_own__allowed[].getSubLength()) elements <= sum(orig(this.ERC20_own__allowed[].getSubLength()))
+orig(this.ERC20_own__totalSupply) <= sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20Detailed_own__decimals) < orig(this.WolfBondingCurve_own_reserveRatio)
+orig(this.ERC20Detailed_own__decimals) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.ERC20Detailed_own__decimals) < orig(this.reserve)
+orig(this.ERC20Detailed_own__decimals) < orig(this.evolutionDuration)
+orig(this.ERC20Detailed_own__decimals) < orig(value)
+orig(this.ERC20Detailed_own__decimals) < orig(block.timestamp)
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.reserve)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.evolutionDuration)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(value)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(block.timestamp)
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.reserve) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.reserve) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.reserve) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.evolutionDuration) < orig(value)
+orig(this.evolutionDuration) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.evolutionDuration) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.evolutionDuration) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.evolutionDuration) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.evolutionDuration) < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+orig(value) <= sum(this.ERC20_own__allowed[].getSubValue())
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(msg.value) <= sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(msg.value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(msg.value) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(msg.value) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(msg.value) <= this.ERC20_own__allowed[pair(spender,msg.sender)].getSubValue()
+orig(msg.value) < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+orig(msg.value) <= orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue())
+orig(msg.value) <= orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+orig(block.timestamp) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(block.timestamp) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(block.timestamp) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(block.timestamp) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(block.timestamp) < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+sum(this.ERC20_own__balances[].getValue()) <= sum(this.ERC20_own__allowed[].getSubValue())
+sum(this.ERC20_own__allowed[].getSubLength()) >= sum(orig(this.ERC20_own__allowed[].getSubLength()))
+sum(this.ERC20_own__allowed[].getSubValue()) >= sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.Power_own_maxExpArray[]) <= sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(spender)].getValue()
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.Power_own_maxExpArray[]) <= this.ERC20_own__allowed[pair(spender,msg.sender)].getSubValue()
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+sum(this.Power_own_maxExpArray[]) <= orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue())
+sum(this.Power_own_maxExpArray[]) <= orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+this.ERC20_own__allowed[pair(spender,msg.sender)].getSubValue() <= this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+- sum(this.ERC20_own__allowed[].getSubValue()) + sum(orig(this.ERC20_own__allowed[].getSubValue())) + this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue() == 0
+===========================================================================
+ETHWolfToken.approve(address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own__owner == this.evolutionAddress
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.evolutionAddress)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.ERC20_own__totalSupply == sum(this.ERC20_own__balances[].getValue())
+this.ERC20_own__totalSupply == sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals == orig(this.ERC20Detailed_own__decimals)
+this.Power_own_maxExpArray == orig(this.Power_own_maxExpArray)
+this.WolfBondingCurve_own_reserveRatio == orig(this.WolfBondingCurve_own_reserveRatio)
+this.ValidGasPrice_own_maxGasPrice == orig(this.ValidGasPrice_own_maxGasPrice)
+this.reserve == orig(this.reserve)
+this.evolutionDuration == orig(this.evolutionDuration)
+spender == orig(spender)
+value == orig(value)
+value == orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.Power_own_maxExpArray[])
+msg.value == orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20_own__totalSupply) == sum(orig(this.ERC20_own__balances[].getValue()))
+orig(value) == orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+orig(msg.value) == sum(this.Power_own_maxExpArray[])
+orig(msg.value) == orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) == sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+sum(this.ERC20_own__allowed[].getSubValue()) == sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) == orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue())
+this.ERC20_own__balances has only one value
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements one of { 1, 2, 3 }
+this.ERC20_own__allowed[].getSubValue() elements >= 0
+this.ERC20Detailed_own__decimals == 18
+this.Power_own_maxExpArray has only one value
+this.Power_own_maxExpArray[] elements <= 0
+this.Power_own_maxExpArray[] elements >= 0
+this.Power_own_maxExpArray[] sorted by <=
+this.Power_own_maxExpArray[] sorted by ==
+this.Power_own_maxExpArray[] sorted by >=
+this.WolfBondingCurve_own_reserveRatio == 500000
+this.ValidGasPrice_own_maxGasPrice == 1000000000000000000
+this.evolutionDuration == 1639828799
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20Detailed_own__decimals) == 18
+orig(this.WolfBondingCurve_own_reserveRatio) == 500000
+orig(this.ValidGasPrice_own_maxGasPrice) == 1000000000000000000
+orig(this.evolutionDuration) == 1639828799
+orig(msg.value) == 0
+sum(this.Power_own_maxExpArray[]) == 0
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() one of { 590000000000000000000000, 593790000000000000000000, 595000000000000000000000 }
+orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue()) == 0
+this.Ownable_own__owner != orig(spender)
+this.Ownable_own__owner != orig(msg.sender)
+this.ERC20_own__allowed[].getSubLength() elements < sum(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20_own__totalSupply < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.WolfBondingCurve_own_reserveRatio
+this.ERC20Detailed_own__decimals < this.ValidGasPrice_own_maxGasPrice
+this.ERC20Detailed_own__decimals < this.reserve
+this.ERC20Detailed_own__decimals < this.evolutionDuration
+this.ERC20Detailed_own__decimals < block.timestamp
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__totalSupply)
+this.ERC20Detailed_own__decimals < orig(this.WolfBondingCurve_own_reserveRatio)
+this.ERC20Detailed_own__decimals < orig(this.ValidGasPrice_own_maxGasPrice)
+this.ERC20Detailed_own__decimals < orig(this.reserve)
+this.ERC20Detailed_own__decimals < orig(this.evolutionDuration)
+this.ERC20Detailed_own__decimals < orig(block.timestamp)
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__balances[].getValue())
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(spender)].getValue()
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.Power_own_maxExpArray[] elements == msg.value
+this.Power_own_maxExpArray[] elements == orig(msg.value)
+this.Power_own_maxExpArray[] elements == sum(this.Power_own_maxExpArray[])
+this.Power_own_maxExpArray[] elements == orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < this.ValidGasPrice_own_maxGasPrice
+this.WolfBondingCurve_own_reserveRatio < this.reserve
+this.WolfBondingCurve_own_reserveRatio < this.evolutionDuration
+this.WolfBondingCurve_own_reserveRatio < block.timestamp
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__totalSupply)
+this.WolfBondingCurve_own_reserveRatio < orig(this.ValidGasPrice_own_maxGasPrice)
+this.WolfBondingCurve_own_reserveRatio < orig(this.reserve)
+this.WolfBondingCurve_own_reserveRatio < orig(this.evolutionDuration)
+this.WolfBondingCurve_own_reserveRatio < orig(block.timestamp)
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__balances[].getValue())
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__allowed[].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__balances[].getValue()))
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[orig(spender)].getValue()
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__totalSupply)
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__balances[].getValue())
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__allowed[].getSubValue())
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[orig(spender)].getValue()
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.reserve < orig(this.ERC20_own__totalSupply)
+this.reserve < sum(this.ERC20_own__balances[].getValue())
+this.reserve < sum(this.ERC20_own__allowed[].getSubValue())
+this.reserve < sum(orig(this.ERC20_own__balances[].getValue()))
+this.reserve < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.reserve < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.reserve < this.ERC20_own__balances[orig(spender)].getValue()
+this.reserve < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.evolutionDuration < orig(this.ERC20_own__totalSupply)
+this.evolutionDuration < orig(this.ValidGasPrice_own_maxGasPrice)
+this.evolutionDuration < orig(this.reserve)
+this.evolutionDuration < sum(this.ERC20_own__balances[].getValue())
+this.evolutionDuration < sum(this.ERC20_own__allowed[].getSubValue())
+this.evolutionDuration < sum(orig(this.ERC20_own__balances[].getValue()))
+this.evolutionDuration < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.evolutionDuration < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.evolutionDuration < this.ERC20_own__balances[orig(spender)].getValue()
+this.evolutionDuration < this.ERC20_own__balances[orig(msg.sender)].getValue()
+value < orig(this.ERC20_own__totalSupply)
+value < sum(this.ERC20_own__balances[].getValue())
+value < sum(this.ERC20_own__allowed[].getSubValue())
+value < sum(orig(this.ERC20_own__balances[].getValue()))
+value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+value < this.ERC20_own__balances[orig(spender)].getValue()
+msg.value < block.timestamp
+msg.value < orig(this.ERC20_own__totalSupply)
+msg.value < orig(this.ERC20Detailed_own__decimals)
+msg.value < orig(this.WolfBondingCurve_own_reserveRatio)
+msg.value < orig(this.ValidGasPrice_own_maxGasPrice)
+msg.value < orig(this.reserve)
+msg.value < orig(this.evolutionDuration)
+msg.value <= orig(value)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.ERC20_own__balances[].getValue())
+msg.value < sum(this.ERC20_own__allowed[].getSubValue())
+msg.value < sum(orig(this.ERC20_own__balances[].getValue()))
+msg.value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+msg.value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+msg.value < this.ERC20_own__balances[orig(spender)].getValue()
+msg.value < this.ERC20_own__balances[orig(msg.sender)].getValue()
+msg.value <= orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+block.timestamp < orig(this.ERC20_own__totalSupply)
+block.timestamp < orig(this.ValidGasPrice_own_maxGasPrice)
+block.timestamp < orig(this.reserve)
+block.timestamp < sum(this.ERC20_own__balances[].getValue())
+block.timestamp < sum(this.ERC20_own__allowed[].getSubValue())
+block.timestamp < sum(orig(this.ERC20_own__balances[].getValue()))
+block.timestamp < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+block.timestamp < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+block.timestamp < this.ERC20_own__balances[orig(spender)].getValue()
+block.timestamp < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.ERC20_own__totalSupply) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20_own__totalSupply) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < orig(this.WolfBondingCurve_own_reserveRatio)
+orig(this.ERC20Detailed_own__decimals) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.ERC20Detailed_own__decimals) < orig(this.reserve)
+orig(this.ERC20Detailed_own__decimals) < orig(this.evolutionDuration)
+orig(this.ERC20Detailed_own__decimals) < orig(block.timestamp)
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.reserve)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.evolutionDuration)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(block.timestamp)
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__balances[].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.reserve) < sum(this.ERC20_own__balances[].getValue())
+orig(this.reserve) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.reserve) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.reserve) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.reserve) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.reserve) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.reserve) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.evolutionDuration) < sum(this.ERC20_own__balances[].getValue())
+orig(this.evolutionDuration) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.evolutionDuration) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.evolutionDuration) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(this.evolutionDuration) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(spender) != orig(msg.sender)
+orig(value) < sum(this.ERC20_own__balances[].getValue())
+orig(value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(value) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.ERC20_own__balances[].getValue())
+orig(msg.value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(msg.value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(msg.value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(msg.value) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(msg.value) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(msg.value) <= orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+orig(block.timestamp) < sum(this.ERC20_own__balances[].getValue())
+orig(block.timestamp) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(block.timestamp) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(block.timestamp) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(block.timestamp) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(block.timestamp) < this.ERC20_own__balances[orig(spender)].getValue()
+orig(block.timestamp) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.ERC20_own__balances[].getValue()) < sum(this.ERC20_own__allowed[].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(spender)].getValue()
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.Power_own_maxExpArray[]) <= orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+sum(orig(this.ERC20_own__balances[].getValue())) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue()) < orig(this.ERC20_own__allowed[post(pair(msg.sender,spender))].getSubValue())
+===========================================================================
+ETHWolfToken.born():::EXIT1
+this == orig(this)
+this.Ownable_own__owner == this.evolutionAddress
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.evolutionAddress)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply == sum(this.ERC20_own__balances[].getValue())
+this.ERC20Detailed_own__decimals == orig(this.ERC20Detailed_own__decimals)
+this.Power_own_maxExpArray == orig(this.Power_own_maxExpArray)
+this.WolfBondingCurve_own_reserveRatio == orig(this.WolfBondingCurve_own_reserveRatio)
+this.ValidGasPrice_own_maxGasPrice == orig(this.ValidGasPrice_own_maxGasPrice)
+this.evolutionDuration == orig(this.evolutionDuration)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+sum(this.ERC20_own__allowed[].getSubValue()) == sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() == orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ERC20_own__balances has only one value
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements one of { 1, 2, 3 }
+this.ERC20_own__allowed[].getSubValue() elements >= 0
+this.ERC20Detailed_own__decimals == 18
+this.Power_own_maxExpArray has only one value
+this.Power_own_maxExpArray[] elements <= 0
+this.Power_own_maxExpArray[] elements >= 0
+this.Power_own_maxExpArray[] sorted by <=
+this.Power_own_maxExpArray[] sorted by ==
+this.Power_own_maxExpArray[] sorted by >=
+this.WolfBondingCurve_own_reserveRatio == 500000
+this.ValidGasPrice_own_maxGasPrice == 1000000000000000000
+this.evolutionDuration == 1639828799
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20_own__balances[].getValue()) elements >= 0
+orig(this.ERC20Detailed_own__decimals) == 18
+orig(this.WolfBondingCurve_own_reserveRatio) == 500000
+orig(this.ValidGasPrice_own_maxGasPrice) == 1000000000000000000
+orig(this.evolutionDuration) == 1639828799
+sum(this.Power_own_maxExpArray[]) == 0
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() one of { 590000000000000000000000, 593790000000000000000000, 595000000000000000000000 }
+orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue()) one of { 590000000000000000000000, 593790000000000000000000, 595000000000000000000000 }
+this.Ownable_own__owner != orig(msg.sender)
+this.ERC20_own__allowed[].getSubLength() elements < sum(this.ERC20_own__allowed[].getSubLength())
+this.ERC20Detailed_own__decimals < this.WolfBondingCurve_own_reserveRatio
+this.ERC20Detailed_own__decimals < this.ValidGasPrice_own_maxGasPrice
+this.ERC20Detailed_own__decimals < this.reserve
+this.ERC20Detailed_own__decimals < this.evolutionDuration
+this.ERC20Detailed_own__decimals < msg.value
+this.ERC20Detailed_own__decimals < block.timestamp
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__totalSupply)
+this.ERC20Detailed_own__decimals < orig(this.WolfBondingCurve_own_reserveRatio)
+this.ERC20Detailed_own__decimals < orig(this.ValidGasPrice_own_maxGasPrice)
+this.ERC20Detailed_own__decimals < orig(this.reserve)
+this.ERC20Detailed_own__decimals < orig(this.evolutionDuration)
+this.ERC20Detailed_own__decimals < orig(msg.value)
+this.ERC20Detailed_own__decimals < orig(block.timestamp)
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__balances[].getValue())
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.Power_own_maxExpArray[] elements == sum(this.Power_own_maxExpArray[])
+this.WolfBondingCurve_own_reserveRatio < this.ValidGasPrice_own_maxGasPrice
+this.WolfBondingCurve_own_reserveRatio < this.reserve
+this.WolfBondingCurve_own_reserveRatio < this.evolutionDuration
+this.WolfBondingCurve_own_reserveRatio < msg.value
+this.WolfBondingCurve_own_reserveRatio < block.timestamp
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__totalSupply)
+this.WolfBondingCurve_own_reserveRatio < orig(this.ValidGasPrice_own_maxGasPrice)
+this.WolfBondingCurve_own_reserveRatio < orig(this.reserve)
+this.WolfBondingCurve_own_reserveRatio < orig(this.evolutionDuration)
+this.WolfBondingCurve_own_reserveRatio < orig(msg.value)
+this.WolfBondingCurve_own_reserveRatio < orig(block.timestamp)
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__balances[].getValue())
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__allowed[].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__balances[].getValue()))
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__totalSupply)
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__balances[].getValue())
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__allowed[].getSubValue())
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.reserve < orig(this.ERC20_own__totalSupply)
+this.reserve < sum(this.ERC20_own__balances[].getValue())
+this.reserve < sum(this.ERC20_own__allowed[].getSubValue())
+this.reserve < sum(orig(this.ERC20_own__balances[].getValue()))
+this.reserve < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.reserve < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.reserve < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.reserve < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.evolutionDuration < msg.value
+this.evolutionDuration < orig(this.ERC20_own__totalSupply)
+this.evolutionDuration < orig(this.ValidGasPrice_own_maxGasPrice)
+this.evolutionDuration < orig(this.reserve)
+this.evolutionDuration < orig(msg.value)
+this.evolutionDuration < sum(this.ERC20_own__balances[].getValue())
+this.evolutionDuration < sum(this.ERC20_own__allowed[].getSubValue())
+this.evolutionDuration < sum(orig(this.ERC20_own__balances[].getValue()))
+this.evolutionDuration < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.evolutionDuration < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.evolutionDuration < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.evolutionDuration < this.ERC20_own__balances[orig(msg.sender)].getValue()
+msg.value < orig(this.ERC20_own__totalSupply)
+msg.value <= orig(this.ValidGasPrice_own_maxGasPrice)
+msg.value < orig(this.reserve)
+msg.value < sum(this.ERC20_own__balances[].getValue())
+msg.value < sum(this.ERC20_own__allowed[].getSubValue())
+msg.value < sum(orig(this.ERC20_own__balances[].getValue()))
+msg.value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+msg.value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+msg.value < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+msg.value < this.ERC20_own__balances[orig(msg.sender)].getValue()
+block.timestamp < orig(this.ERC20_own__totalSupply)
+block.timestamp < orig(this.ValidGasPrice_own_maxGasPrice)
+block.timestamp < orig(this.reserve)
+block.timestamp < orig(this.evolutionDuration)
+block.timestamp < orig(msg.value)
+block.timestamp < sum(this.ERC20_own__balances[].getValue())
+block.timestamp < sum(this.ERC20_own__allowed[].getSubValue())
+block.timestamp < sum(orig(this.ERC20_own__balances[].getValue()))
+block.timestamp < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+block.timestamp < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+block.timestamp < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+block.timestamp < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.ERC20_own__totalSupply) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20Detailed_own__decimals) < orig(this.WolfBondingCurve_own_reserveRatio)
+orig(this.ERC20Detailed_own__decimals) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.ERC20Detailed_own__decimals) < orig(this.reserve)
+orig(this.ERC20Detailed_own__decimals) < orig(this.evolutionDuration)
+orig(this.ERC20Detailed_own__decimals) < orig(msg.value)
+orig(this.ERC20Detailed_own__decimals) < orig(block.timestamp)
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.reserve)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.evolutionDuration)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(msg.value)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(block.timestamp)
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__balances[].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.reserve) < sum(this.ERC20_own__balances[].getValue())
+orig(this.reserve) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.reserve) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.reserve) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.reserve) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.reserve) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.reserve) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.evolutionDuration) < orig(msg.value)
+orig(this.evolutionDuration) < sum(this.ERC20_own__balances[].getValue())
+orig(this.evolutionDuration) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.evolutionDuration) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.evolutionDuration) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.evolutionDuration) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(msg.value) < sum(this.ERC20_own__balances[].getValue())
+orig(msg.value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(msg.value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(msg.value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(msg.value) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(msg.value) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(block.timestamp) < sum(this.ERC20_own__balances[].getValue())
+orig(block.timestamp) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(block.timestamp) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(block.timestamp) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(block.timestamp) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(block.timestamp) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+- this.reserve + msg.value + orig(this.reserve) == 0
+- this.reserve + orig(this.reserve) + orig(msg.value) == 0
+===========================================================================
+ETHWolfToken.died(uint256):::EXIT1
+this == orig(this)
+this.Ownable_own__owner == this.evolutionAddress
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.evolutionAddress)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply == sum(this.ERC20_own__balances[].getValue())
+this.ERC20Detailed_own__decimals == orig(this.ERC20Detailed_own__decimals)
+this.Power_own_maxExpArray == orig(this.Power_own_maxExpArray)
+this.WolfBondingCurve_own_reserveRatio == orig(this.WolfBondingCurve_own_reserveRatio)
+this.ValidGasPrice_own_maxGasPrice == orig(this.ValidGasPrice_own_maxGasPrice)
+this.evolutionDuration == orig(this.evolutionDuration)
+_amount == orig(_amount)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.Power_own_maxExpArray[])
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) == sum(this.Power_own_maxExpArray[])
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+sum(this.ERC20_own__allowed[].getSubValue()) == sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() == orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ERC20_own__balances has only one value
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements one of { 1, 2, 3 }
+this.ERC20_own__allowed[].getSubValue() elements >= 0
+this.ERC20Detailed_own__decimals == 18
+this.Power_own_maxExpArray has only one value
+this.Power_own_maxExpArray[] elements <= 0
+this.Power_own_maxExpArray[] elements >= 0
+this.Power_own_maxExpArray[] sorted by <=
+this.Power_own_maxExpArray[] sorted by ==
+this.Power_own_maxExpArray[] sorted by >=
+this.WolfBondingCurve_own_reserveRatio == 500000
+this.ValidGasPrice_own_maxGasPrice == 1000000000000000000
+this.evolutionDuration == 1639828799
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20_own__balances[].getValue()) elements >= 0
+orig(this.ERC20Detailed_own__decimals) == 18
+orig(this.WolfBondingCurve_own_reserveRatio) == 500000
+orig(this.ValidGasPrice_own_maxGasPrice) == 1000000000000000000
+orig(this.evolutionDuration) == 1639828799
+orig(msg.value) == 0
+sum(this.Power_own_maxExpArray[]) == 0
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() one of { 590000000000000000000000, 595000000000000000000000 }
+orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue()) one of { 590000000000000000000000, 595000000000000000000000 }
+this.ERC20_own__balances[orig(msg.sender)].getValue() >= 0
+this.Ownable_own__owner != orig(msg.sender)
+this.ERC20_own__allowed[].getSubLength() elements < sum(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply < orig(this.ERC20_own__totalSupply)
+this.ERC20_own__totalSupply < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20_own__totalSupply < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20_own__totalSupply < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.WolfBondingCurve_own_reserveRatio
+this.ERC20Detailed_own__decimals < this.ValidGasPrice_own_maxGasPrice
+this.ERC20Detailed_own__decimals < this.reserve
+this.ERC20Detailed_own__decimals < this.evolutionDuration
+this.ERC20Detailed_own__decimals < _amount
+this.ERC20Detailed_own__decimals < block.timestamp
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__totalSupply)
+this.ERC20Detailed_own__decimals < orig(this.WolfBondingCurve_own_reserveRatio)
+this.ERC20Detailed_own__decimals < orig(this.ValidGasPrice_own_maxGasPrice)
+this.ERC20Detailed_own__decimals < orig(this.reserve)
+this.ERC20Detailed_own__decimals < orig(this.evolutionDuration)
+this.ERC20Detailed_own__decimals < orig(_amount)
+this.ERC20Detailed_own__decimals < orig(block.timestamp)
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__balances[].getValue())
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.Power_own_maxExpArray[] elements == msg.value
+this.Power_own_maxExpArray[] elements == orig(msg.value)
+this.Power_own_maxExpArray[] elements == sum(this.Power_own_maxExpArray[])
+this.WolfBondingCurve_own_reserveRatio < this.ValidGasPrice_own_maxGasPrice
+this.WolfBondingCurve_own_reserveRatio < this.reserve
+this.WolfBondingCurve_own_reserveRatio < this.evolutionDuration
+this.WolfBondingCurve_own_reserveRatio < _amount
+this.WolfBondingCurve_own_reserveRatio < block.timestamp
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__totalSupply)
+this.WolfBondingCurve_own_reserveRatio < orig(this.ValidGasPrice_own_maxGasPrice)
+this.WolfBondingCurve_own_reserveRatio < orig(this.reserve)
+this.WolfBondingCurve_own_reserveRatio < orig(this.evolutionDuration)
+this.WolfBondingCurve_own_reserveRatio < orig(_amount)
+this.WolfBondingCurve_own_reserveRatio < orig(block.timestamp)
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__balances[].getValue())
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__allowed[].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__balances[].getValue()))
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.ValidGasPrice_own_maxGasPrice < _amount
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__totalSupply)
+this.ValidGasPrice_own_maxGasPrice < orig(_amount)
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__balances[].getValue())
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__allowed[].getSubValue())
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.reserve < _amount
+this.reserve < orig(this.ERC20_own__totalSupply)
+this.reserve < orig(this.reserve)
+this.reserve < orig(_amount)
+this.reserve < sum(this.ERC20_own__balances[].getValue())
+this.reserve < sum(this.ERC20_own__allowed[].getSubValue())
+this.reserve < sum(orig(this.ERC20_own__balances[].getValue()))
+this.reserve < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.reserve < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.reserve < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.reserve < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.evolutionDuration < _amount
+this.evolutionDuration < orig(this.ERC20_own__totalSupply)
+this.evolutionDuration < orig(this.ValidGasPrice_own_maxGasPrice)
+this.evolutionDuration < orig(this.reserve)
+this.evolutionDuration < orig(_amount)
+this.evolutionDuration < sum(this.ERC20_own__balances[].getValue())
+this.evolutionDuration < sum(this.ERC20_own__allowed[].getSubValue())
+this.evolutionDuration < sum(orig(this.ERC20_own__balances[].getValue()))
+this.evolutionDuration < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.evolutionDuration < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.evolutionDuration < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.evolutionDuration < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+_amount < orig(this.ERC20_own__totalSupply)
+_amount < sum(this.ERC20_own__balances[].getValue())
+_amount < sum(this.ERC20_own__allowed[].getSubValue())
+_amount < sum(orig(this.ERC20_own__balances[].getValue()))
+_amount < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+_amount < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+_amount < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+_amount <= orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+msg.value < block.timestamp
+msg.value < orig(this.ERC20_own__totalSupply)
+msg.value < orig(this.ERC20Detailed_own__decimals)
+msg.value < orig(this.WolfBondingCurve_own_reserveRatio)
+msg.value < orig(this.ValidGasPrice_own_maxGasPrice)
+msg.value < orig(this.reserve)
+msg.value < orig(this.evolutionDuration)
+msg.value < orig(_amount)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.ERC20_own__balances[].getValue())
+msg.value < sum(this.ERC20_own__allowed[].getSubValue())
+msg.value < sum(orig(this.ERC20_own__balances[].getValue()))
+msg.value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+msg.value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+msg.value < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+msg.value <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+msg.value < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+block.timestamp < orig(this.ERC20_own__totalSupply)
+block.timestamp < orig(this.ValidGasPrice_own_maxGasPrice)
+block.timestamp < orig(this.reserve)
+block.timestamp < orig(this.evolutionDuration)
+block.timestamp < orig(_amount)
+block.timestamp < sum(this.ERC20_own__balances[].getValue())
+block.timestamp < sum(this.ERC20_own__allowed[].getSubValue())
+block.timestamp < sum(orig(this.ERC20_own__balances[].getValue()))
+block.timestamp < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+block.timestamp < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+block.timestamp < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+block.timestamp < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.ERC20_own__totalSupply) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20_own__totalSupply) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < orig(this.WolfBondingCurve_own_reserveRatio)
+orig(this.ERC20Detailed_own__decimals) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.ERC20Detailed_own__decimals) < orig(this.reserve)
+orig(this.ERC20Detailed_own__decimals) < orig(this.evolutionDuration)
+orig(this.ERC20Detailed_own__decimals) < orig(_amount)
+orig(this.ERC20Detailed_own__decimals) < orig(block.timestamp)
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.reserve)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.evolutionDuration)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(_amount)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(block.timestamp)
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__balances[].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(_amount)
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.reserve) < orig(_amount)
+orig(this.reserve) < sum(this.ERC20_own__balances[].getValue())
+orig(this.reserve) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.reserve) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.reserve) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.reserve) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.reserve) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.reserve) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.evolutionDuration) < orig(_amount)
+orig(this.evolutionDuration) < sum(this.ERC20_own__balances[].getValue())
+orig(this.evolutionDuration) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.evolutionDuration) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.evolutionDuration) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.evolutionDuration) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(_amount) < sum(this.ERC20_own__balances[].getValue())
+orig(_amount) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(_amount) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(_amount) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(_amount) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(_amount) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(_amount) <= orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.ERC20_own__balances[].getValue())
+orig(msg.value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(msg.value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(msg.value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(msg.value) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(msg.value) <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(msg.value) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(block.timestamp) < sum(this.ERC20_own__balances[].getValue())
+orig(block.timestamp) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(block.timestamp) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(block.timestamp) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(block.timestamp) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+sum(this.ERC20_own__balances[].getValue()) < sum(this.ERC20_own__allowed[].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) < sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.ERC20_own__balances[].getValue()) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+sum(this.Power_own_maxExpArray[]) <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+sum(orig(this.ERC20_own__balances[].getValue())) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20_own__balances[orig(msg.sender)].getValue() < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+- this.ERC20_own__totalSupply - _amount + orig(this.ERC20_own__totalSupply) == 0
+- this.ERC20_own__totalSupply - _amount + sum(orig(this.ERC20_own__balances[].getValue())) == 0
+this.ERC20_own__totalSupply - orig(this.ERC20_own__totalSupply) + orig(_amount) == 0
+- this.ERC20_own__totalSupply - orig(_amount) + sum(orig(this.ERC20_own__balances[].getValue())) == 0
+_amount - orig(this.ERC20_own__totalSupply) + sum(this.ERC20_own__balances[].getValue()) == 0
+- _amount - sum(this.ERC20_own__balances[].getValue()) + sum(orig(this.ERC20_own__balances[].getValue())) == 0
+_amount + this.ERC20_own__balances[orig(msg.sender)].getValue() - orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+- orig(this.ERC20_own__totalSupply) + orig(_amount) + sum(this.ERC20_own__balances[].getValue()) == 0
+- orig(_amount) - sum(this.ERC20_own__balances[].getValue()) + sum(orig(this.ERC20_own__balances[].getValue())) == 0
+orig(_amount) + this.ERC20_own__balances[orig(msg.sender)].getValue() - orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+===========================================================================
+ETHWolfToken.evolution(uint256):::EXIT1
+this == orig(this)
+this.Ownable_own__owner == this.evolutionAddress
+this.Ownable_own__owner == msg.sender
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.evolutionAddress)
+this.Ownable_own__owner == orig(msg.sender)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.Power_own_maxExpArray == orig(this.Power_own_maxExpArray)
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+this.ERC20_own__balances has only one value
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements one of { 1, 2, 3 }
+this.ERC20_own__allowed[].getSubValue() elements >= 0
+this.ERC20_own__totalSupply == 2704541318091796881572759
+this.ERC20Detailed_own__decimals == 18
+this.Power_own_maxExpArray has only one value
+this.Power_own_maxExpArray[] elements <= 0
+this.Power_own_maxExpArray[] elements >= 0
+this.WolfBondingCurve_own_reserveRatio == 500000
+this.ValidGasPrice_own_maxGasPrice == 1000000000000000000
+this.reserve == 5366334384661913
+this.evolutionDuration == 1639828799
+orig(this) has only one value
+orig(this.ERC20_own__totalSupply) == 2704541318091796881572759
+orig(this.reserve) == 7035366334384661913
+orig(_amount) == 7030000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 13841273
+sum(this.ERC20_own__allowed[].getSubLength()) == 54
+sum(this.ERC20_own__allowed[].getSubValue()) == 231584178474632390847141970017376805706539969341281128795511433695424695236679
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() == 595000000000000000000000
+===========================================================================
+ETHWolfToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.Ownable_own__owner == this.evolutionAddress
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.evolutionAddress)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.ERC20_own__totalSupply == sum(this.ERC20_own__balances[].getValue())
+this.ERC20_own__totalSupply == sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals == orig(this.ERC20Detailed_own__decimals)
+this.Power_own_maxExpArray == orig(this.Power_own_maxExpArray)
+this.WolfBondingCurve_own_reserveRatio == orig(this.WolfBondingCurve_own_reserveRatio)
+this.ValidGasPrice_own_maxGasPrice == orig(this.ValidGasPrice_own_maxGasPrice)
+this.reserve == orig(this.reserve)
+this.evolutionDuration == orig(this.evolutionDuration)
+to == orig(to)
+value == orig(value)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.Power_own_maxExpArray[])
+msg.value == orig(this.ERC20_own__allowed[post(pair(msg.sender,to))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20_own__totalSupply) == sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) == sum(this.Power_own_maxExpArray[])
+orig(msg.value) == orig(this.ERC20_own__allowed[post(pair(msg.sender,to))].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) == sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+sum(this.ERC20_own__allowed[].getSubValue()) == sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) == orig(this.ERC20_own__allowed[post(pair(msg.sender,to))].getSubValue())
+this.ERC20_own__balances has only one value
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements one of { 1, 2, 3 }
+this.ERC20_own__allowed[].getSubValue() elements >= 0
+this.ERC20Detailed_own__decimals == 18
+this.Power_own_maxExpArray has only one value
+this.Power_own_maxExpArray[] elements <= 0
+this.Power_own_maxExpArray[] elements >= 0
+this.Power_own_maxExpArray[] sorted by <=
+this.Power_own_maxExpArray[] sorted by ==
+this.Power_own_maxExpArray[] sorted by >=
+this.WolfBondingCurve_own_reserveRatio == 500000
+this.ValidGasPrice_own_maxGasPrice == 1000000000000000000
+this.evolutionDuration == 1639828799
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20_own__balances[].getValue()) elements >= 0
+orig(this.ERC20Detailed_own__decimals) == 18
+orig(this.WolfBondingCurve_own_reserveRatio) == 500000
+orig(this.ValidGasPrice_own_maxGasPrice) == 1000000000000000000
+orig(this.evolutionDuration) == 1639828799
+orig(msg.value) == 0
+sum(this.Power_own_maxExpArray[]) == 0
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() one of { 590000000000000000000000, 593790000000000000000000, 595000000000000000000000 }
+this.ERC20_own__balances[orig(msg.sender)].getValue() >= 0
+orig(this.ERC20_own__balances[post(to)].getValue()) >= 0
+orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue()) >= 0
+orig(this.ERC20_own__allowed[post(pair(msg.sender,to))].getSubValue()) == 0
+this.Ownable_own__owner != orig(to)
+this.ERC20_own__allowed[].getSubLength() elements <= sum(this.ERC20_own__allowed[].getSubLength())
+this.ERC20Detailed_own__decimals < this.WolfBondingCurve_own_reserveRatio
+this.ERC20Detailed_own__decimals < this.ValidGasPrice_own_maxGasPrice
+this.ERC20Detailed_own__decimals < this.reserve
+this.ERC20Detailed_own__decimals < this.evolutionDuration
+this.ERC20Detailed_own__decimals < value
+this.ERC20Detailed_own__decimals < block.timestamp
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__totalSupply)
+this.ERC20Detailed_own__decimals < orig(this.WolfBondingCurve_own_reserveRatio)
+this.ERC20Detailed_own__decimals < orig(this.ValidGasPrice_own_maxGasPrice)
+this.ERC20Detailed_own__decimals < orig(this.reserve)
+this.ERC20Detailed_own__decimals < orig(this.evolutionDuration)
+this.ERC20Detailed_own__decimals < orig(value)
+this.ERC20Detailed_own__decimals < orig(block.timestamp)
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__balances[].getValue())
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(to)].getValue()
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.Power_own_maxExpArray[] elements == msg.value
+this.Power_own_maxExpArray[] elements == orig(msg.value)
+this.Power_own_maxExpArray[] elements == sum(this.Power_own_maxExpArray[])
+this.Power_own_maxExpArray[] elements == orig(this.ERC20_own__allowed[post(pair(msg.sender,to))].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < this.ValidGasPrice_own_maxGasPrice
+this.WolfBondingCurve_own_reserveRatio < this.reserve
+this.WolfBondingCurve_own_reserveRatio < this.evolutionDuration
+this.WolfBondingCurve_own_reserveRatio < value
+this.WolfBondingCurve_own_reserveRatio < block.timestamp
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__totalSupply)
+this.WolfBondingCurve_own_reserveRatio < orig(this.ValidGasPrice_own_maxGasPrice)
+this.WolfBondingCurve_own_reserveRatio < orig(this.reserve)
+this.WolfBondingCurve_own_reserveRatio < orig(this.evolutionDuration)
+this.WolfBondingCurve_own_reserveRatio < orig(value)
+this.WolfBondingCurve_own_reserveRatio < orig(block.timestamp)
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__balances[].getValue())
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__allowed[].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__balances[].getValue()))
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[orig(to)].getValue()
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.ValidGasPrice_own_maxGasPrice <= value
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__totalSupply)
+this.ValidGasPrice_own_maxGasPrice <= orig(value)
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__balances[].getValue())
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__allowed[].getSubValue())
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ValidGasPrice_own_maxGasPrice <= this.ERC20_own__balances[orig(to)].getValue()
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.reserve < orig(this.ERC20_own__totalSupply)
+this.reserve < sum(this.ERC20_own__balances[].getValue())
+this.reserve < sum(this.ERC20_own__allowed[].getSubValue())
+this.reserve < sum(orig(this.ERC20_own__balances[].getValue()))
+this.reserve < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.reserve < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.reserve < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.reserve < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.evolutionDuration < value
+this.evolutionDuration < orig(this.ERC20_own__totalSupply)
+this.evolutionDuration < orig(this.ValidGasPrice_own_maxGasPrice)
+this.evolutionDuration < orig(this.reserve)
+this.evolutionDuration < orig(value)
+this.evolutionDuration < sum(this.ERC20_own__balances[].getValue())
+this.evolutionDuration < sum(this.ERC20_own__allowed[].getSubValue())
+this.evolutionDuration < sum(orig(this.ERC20_own__balances[].getValue()))
+this.evolutionDuration < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.evolutionDuration < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.evolutionDuration < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.evolutionDuration < this.ERC20_own__balances[orig(to)].getValue()
+this.evolutionDuration < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+value < orig(this.ERC20_own__totalSupply)
+value < sum(this.ERC20_own__balances[].getValue())
+value < sum(this.ERC20_own__allowed[].getSubValue())
+value < sum(orig(this.ERC20_own__balances[].getValue()))
+value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+value < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+value <= this.ERC20_own__balances[orig(to)].getValue()
+value <= orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+msg.value < block.timestamp
+msg.value < orig(this.ERC20_own__totalSupply)
+msg.value < orig(this.ERC20Detailed_own__decimals)
+msg.value < orig(this.WolfBondingCurve_own_reserveRatio)
+msg.value < orig(this.ValidGasPrice_own_maxGasPrice)
+msg.value < orig(this.reserve)
+msg.value < orig(this.evolutionDuration)
+msg.value < orig(value)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.ERC20_own__balances[].getValue())
+msg.value < sum(this.ERC20_own__allowed[].getSubValue())
+msg.value < sum(orig(this.ERC20_own__balances[].getValue()))
+msg.value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+msg.value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+msg.value < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+msg.value < this.ERC20_own__balances[orig(to)].getValue()
+msg.value <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+msg.value <= orig(this.ERC20_own__balances[post(to)].getValue())
+msg.value < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+msg.value <= orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+block.timestamp < orig(this.ERC20_own__totalSupply)
+block.timestamp < orig(this.ValidGasPrice_own_maxGasPrice)
+block.timestamp < orig(this.reserve)
+block.timestamp < orig(this.evolutionDuration)
+block.timestamp < orig(value)
+block.timestamp < sum(this.ERC20_own__balances[].getValue())
+block.timestamp < sum(this.ERC20_own__allowed[].getSubValue())
+block.timestamp < sum(orig(this.ERC20_own__balances[].getValue()))
+block.timestamp < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+block.timestamp < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+block.timestamp < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+block.timestamp < this.ERC20_own__balances[orig(to)].getValue()
+block.timestamp < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.ERC20Detailed_own__decimals) < orig(this.WolfBondingCurve_own_reserveRatio)
+orig(this.ERC20Detailed_own__decimals) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.ERC20Detailed_own__decimals) < orig(this.reserve)
+orig(this.ERC20Detailed_own__decimals) < orig(this.evolutionDuration)
+orig(this.ERC20Detailed_own__decimals) < orig(value)
+orig(this.ERC20Detailed_own__decimals) < orig(block.timestamp)
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.reserve)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.evolutionDuration)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(value)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(block.timestamp)
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__balances[].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) <= orig(value)
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) <= this.ERC20_own__balances[orig(to)].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.reserve) < sum(this.ERC20_own__balances[].getValue())
+orig(this.reserve) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.reserve) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.reserve) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.reserve) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.reserve) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.reserve) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.evolutionDuration) < orig(value)
+orig(this.evolutionDuration) < sum(this.ERC20_own__balances[].getValue())
+orig(this.evolutionDuration) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.evolutionDuration) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.evolutionDuration) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.evolutionDuration) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.evolutionDuration) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(to) != orig(msg.sender)
+orig(value) < sum(this.ERC20_own__balances[].getValue())
+orig(value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(value) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(value) <= this.ERC20_own__balances[orig(to)].getValue()
+orig(value) <= orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.ERC20_own__balances[].getValue())
+orig(msg.value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(msg.value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(msg.value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(msg.value) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(msg.value) < this.ERC20_own__balances[orig(to)].getValue()
+orig(msg.value) <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(msg.value) <= orig(this.ERC20_own__balances[post(to)].getValue())
+orig(msg.value) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(msg.value) <= orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+orig(block.timestamp) < sum(this.ERC20_own__balances[].getValue())
+orig(block.timestamp) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(block.timestamp) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(block.timestamp) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(block.timestamp) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(block.timestamp) < this.ERC20_own__balances[orig(to)].getValue()
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(to)].getValue()
+sum(this.Power_own_maxExpArray[]) <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.Power_own_maxExpArray[]) <= orig(this.ERC20_own__balances[post(to)].getValue())
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+sum(this.Power_own_maxExpArray[]) <= orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() <= orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ERC20_own__balances[orig(msg.sender)].getValue() < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.ERC20_own__balances[post(to)].getValue()) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+value - this.ERC20_own__balances[orig(to)].getValue() + orig(this.ERC20_own__balances[post(to)].getValue()) == 0
+value + this.ERC20_own__balances[orig(msg.sender)].getValue() - orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+orig(value) - this.ERC20_own__balances[orig(to)].getValue() + orig(this.ERC20_own__balances[post(to)].getValue()) == 0
+orig(value) + this.ERC20_own__balances[orig(msg.sender)].getValue() - orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+===========================================================================
+ETHWolfToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own__owner == this.evolutionAddress
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.evolutionAddress)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.Power_own_maxExpArray == orig(this.Power_own_maxExpArray)
+to == orig(to)
+msg.sender == orig(msg.sender)
+orig(msg.value) == orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+this.ERC20_own__balances has only one value
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements == 1
+this.ERC20_own__allowed[].getSubValue() elements >= 0
+this.ERC20_own__totalSupply == 1618742070783508909734705
+this.ERC20Detailed_own__decimals == 18
+this.Power_own_maxExpArray has only one value
+this.Power_own_maxExpArray[] elements <= 0
+this.Power_own_maxExpArray[] elements >= 0
+this.WolfBondingCurve_own_reserveRatio == 500000
+this.ValidGasPrice_own_maxGasPrice == 1000000000000000000
+this.reserve == 2520314761364034941
+this.evolutionDuration == 1639828799
+orig(this) has only one value
+orig(this.ERC20_own__totalSupply) == 1618742070783508909734705
+orig(value) == 33102000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 12134995
+sum(this.ERC20_own__allowed[].getSubLength()) == 15
+sum(this.ERC20_own__allowed[].getSubValue()) == 231584178474632390847141970017376805706539969331281128646170616322527613156679
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() == 590000000000000000000000
+this.ERC20_own__balances[orig(to)].getValue() == 419876850252701214
+this.ERC20_own__balances[orig(msg.sender)].getValue() == 778063906813652842000000
+orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue()) == 0
+===========================================================================
+ETHWolfToken.transferFrom(address,address,uint256):::EXIT1
+this == orig(this)
+this.Ownable_own__owner == this.evolutionAddress
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.evolutionAddress)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.ERC20_own__totalSupply == sum(this.ERC20_own__balances[].getValue())
+this.ERC20_own__totalSupply == sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals == orig(this.ERC20Detailed_own__decimals)
+this.Power_own_maxExpArray == orig(this.Power_own_maxExpArray)
+this.WolfBondingCurve_own_reserveRatio == orig(this.WolfBondingCurve_own_reserveRatio)
+this.ValidGasPrice_own_maxGasPrice == orig(this.ValidGasPrice_own_maxGasPrice)
+this.reserve == orig(this.reserve)
+this.evolutionDuration == orig(this.evolutionDuration)
+from == orig(from)
+to == orig(to)
+value == orig(value)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.Power_own_maxExpArray[])
+msg.value == this.ERC20_own__allowed[pair(to,msg.sender)].getSubValue()
+msg.value == orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20_own__totalSupply) == sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) == sum(this.Power_own_maxExpArray[])
+orig(msg.value) == this.ERC20_own__allowed[pair(to,msg.sender)].getSubValue()
+orig(msg.value) == orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) == sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+sum(this.Power_own_maxExpArray[]) == this.ERC20_own__allowed[pair(to,msg.sender)].getSubValue()
+sum(this.Power_own_maxExpArray[]) == orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+this.ERC20_own__balances[orig(to)].getValue() == this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.ERC20_own__balances[post(to)].getValue()) == orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.ERC20_own__allowed[pair(from,to)].getSubValue() == this.ERC20_own__allowed[pair(from,msg.sender)].getSubValue()
+this.ERC20_own__allowed[pair(to,msg.sender)].getSubValue() == orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue()) == orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue()) == orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+this.ERC20_own__balances has only one value
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements one of { 1, 2, 3 }
+this.ERC20_own__allowed[].getSubValue() elements >= 0
+this.ERC20Detailed_own__decimals == 18
+this.Power_own_maxExpArray has only one value
+this.Power_own_maxExpArray[] elements <= 0
+this.Power_own_maxExpArray[] elements >= 0
+this.Power_own_maxExpArray[] sorted by <=
+this.Power_own_maxExpArray[] sorted by ==
+this.Power_own_maxExpArray[] sorted by >=
+this.WolfBondingCurve_own_reserveRatio == 500000
+this.ValidGasPrice_own_maxGasPrice == 1000000000000000000
+this.evolutionDuration == 1639828799
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20_own__balances[].getValue()) elements >= 0
+orig(this.ERC20_own__allowed[].getSubValue()) elements >= 0
+orig(this.ERC20Detailed_own__decimals) == 18
+orig(this.WolfBondingCurve_own_reserveRatio) == 500000
+orig(this.ValidGasPrice_own_maxGasPrice) == 1000000000000000000
+orig(this.evolutionDuration) == 1639828799
+orig(msg.value) == 0
+sum(this.Power_own_maxExpArray[]) == 0
+this.ERC20_own__allowed[pair(from,to)].getSubValue() >= 0
+this.ERC20_own__allowed[pair(from,msg.sender)].getSubValue() >= 0
+this.ERC20_own__allowed[pair(to,msg.sender)].getSubValue() == 0
+orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue()) == 0
+orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue()) one of { 0, 5000000000000000000000 }
+this.Ownable_own__owner != orig(msg.sender)
+this.ERC20_own__allowed[].getSubLength() elements <= sum(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply <= sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.WolfBondingCurve_own_reserveRatio
+this.ERC20Detailed_own__decimals < this.ValidGasPrice_own_maxGasPrice
+this.ERC20Detailed_own__decimals < this.reserve
+this.ERC20Detailed_own__decimals < this.evolutionDuration
+this.ERC20Detailed_own__decimals < value
+this.ERC20Detailed_own__decimals < block.timestamp
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__totalSupply)
+this.ERC20Detailed_own__decimals < orig(this.WolfBondingCurve_own_reserveRatio)
+this.ERC20Detailed_own__decimals < orig(this.ValidGasPrice_own_maxGasPrice)
+this.ERC20Detailed_own__decimals < orig(this.reserve)
+this.ERC20Detailed_own__decimals < orig(this.evolutionDuration)
+this.ERC20Detailed_own__decimals < orig(value)
+this.ERC20Detailed_own__decimals < orig(block.timestamp)
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__balances[].getValue())
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(to)].getValue()
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(from)].getValue())
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(to)].getValue())
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+this.Power_own_maxExpArray[] elements == msg.value
+this.Power_own_maxExpArray[] elements == orig(msg.value)
+this.Power_own_maxExpArray[] elements == sum(this.Power_own_maxExpArray[])
+this.Power_own_maxExpArray[] elements == this.ERC20_own__allowed[pair(to,msg.sender)].getSubValue()
+this.Power_own_maxExpArray[] elements == orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < this.ValidGasPrice_own_maxGasPrice
+this.WolfBondingCurve_own_reserveRatio < this.reserve
+this.WolfBondingCurve_own_reserveRatio < this.evolutionDuration
+this.WolfBondingCurve_own_reserveRatio < value
+this.WolfBondingCurve_own_reserveRatio < block.timestamp
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__totalSupply)
+this.WolfBondingCurve_own_reserveRatio < orig(this.ValidGasPrice_own_maxGasPrice)
+this.WolfBondingCurve_own_reserveRatio < orig(this.reserve)
+this.WolfBondingCurve_own_reserveRatio < orig(this.evolutionDuration)
+this.WolfBondingCurve_own_reserveRatio < orig(value)
+this.WolfBondingCurve_own_reserveRatio < orig(block.timestamp)
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__balances[].getValue())
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__allowed[].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__balances[].getValue()))
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[orig(to)].getValue()
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__balances[post(from)].getValue())
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__balances[post(to)].getValue())
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+this.ValidGasPrice_own_maxGasPrice < value
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__totalSupply)
+this.ValidGasPrice_own_maxGasPrice < orig(value)
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__balances[].getValue())
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__allowed[].getSubValue())
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[orig(to)].getValue()
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__balances[post(from)].getValue())
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__balances[post(to)].getValue())
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+this.reserve < value
+this.reserve < orig(this.ERC20_own__totalSupply)
+this.reserve < orig(value)
+this.reserve < sum(this.ERC20_own__balances[].getValue())
+this.reserve < sum(this.ERC20_own__allowed[].getSubValue())
+this.reserve < sum(orig(this.ERC20_own__balances[].getValue()))
+this.reserve < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.reserve < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.reserve < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.reserve < this.ERC20_own__balances[orig(to)].getValue()
+this.reserve < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.reserve < orig(this.ERC20_own__balances[post(from)].getValue())
+this.reserve < orig(this.ERC20_own__balances[post(to)].getValue())
+this.reserve < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.reserve < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+this.evolutionDuration < value
+this.evolutionDuration < orig(this.ERC20_own__totalSupply)
+this.evolutionDuration < orig(this.ValidGasPrice_own_maxGasPrice)
+this.evolutionDuration < orig(this.reserve)
+this.evolutionDuration < orig(value)
+this.evolutionDuration < sum(this.ERC20_own__balances[].getValue())
+this.evolutionDuration < sum(this.ERC20_own__allowed[].getSubValue())
+this.evolutionDuration < sum(orig(this.ERC20_own__balances[].getValue()))
+this.evolutionDuration < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.evolutionDuration < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.evolutionDuration < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+this.evolutionDuration < this.ERC20_own__balances[orig(to)].getValue()
+this.evolutionDuration < this.ERC20_own__balances[orig(msg.sender)].getValue()
+this.evolutionDuration < orig(this.ERC20_own__balances[post(from)].getValue())
+this.evolutionDuration < orig(this.ERC20_own__balances[post(to)].getValue())
+this.evolutionDuration < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.evolutionDuration < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+value < orig(this.ERC20_own__totalSupply)
+value < sum(this.ERC20_own__balances[].getValue())
+value < sum(this.ERC20_own__allowed[].getSubValue())
+value < sum(orig(this.ERC20_own__balances[].getValue()))
+value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+value < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+value <= this.ERC20_own__balances[orig(to)].getValue()
+value <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+value <= orig(this.ERC20_own__balances[post(from)].getValue())
+value <= orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+msg.value < block.timestamp
+msg.value < orig(this.ERC20_own__totalSupply)
+msg.value < orig(this.ERC20Detailed_own__decimals)
+msg.value < orig(this.WolfBondingCurve_own_reserveRatio)
+msg.value < orig(this.ValidGasPrice_own_maxGasPrice)
+msg.value < orig(this.reserve)
+msg.value < orig(this.evolutionDuration)
+msg.value < orig(value)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.ERC20_own__balances[].getValue())
+msg.value < sum(this.ERC20_own__allowed[].getSubValue())
+msg.value < sum(orig(this.ERC20_own__balances[].getValue()))
+msg.value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+msg.value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+msg.value < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+msg.value <= this.ERC20_own__balances[orig(from)].getValue()
+msg.value < this.ERC20_own__balances[orig(to)].getValue()
+msg.value < this.ERC20_own__balances[orig(msg.sender)].getValue()
+msg.value < orig(this.ERC20_own__balances[post(from)].getValue())
+msg.value < orig(this.ERC20_own__balances[post(to)].getValue())
+msg.value < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+msg.value <= this.ERC20_own__allowed[pair(from,to)].getSubValue()
+msg.value <= this.ERC20_own__allowed[pair(from,msg.sender)].getSubValue()
+msg.value <= orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue())
+msg.value < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+msg.value <= orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+block.timestamp < orig(this.ERC20_own__totalSupply)
+block.timestamp < orig(this.ValidGasPrice_own_maxGasPrice)
+block.timestamp < orig(this.reserve)
+block.timestamp < orig(this.evolutionDuration)
+block.timestamp < orig(value)
+block.timestamp < sum(this.ERC20_own__balances[].getValue())
+block.timestamp < sum(this.ERC20_own__allowed[].getSubValue())
+block.timestamp < sum(orig(this.ERC20_own__balances[].getValue()))
+block.timestamp < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+block.timestamp < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+block.timestamp < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+block.timestamp < this.ERC20_own__balances[orig(to)].getValue()
+block.timestamp < this.ERC20_own__balances[orig(msg.sender)].getValue()
+block.timestamp < orig(this.ERC20_own__balances[post(from)].getValue())
+block.timestamp < orig(this.ERC20_own__balances[post(to)].getValue())
+block.timestamp < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+block.timestamp < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+orig(this.ERC20_own__totalSupply) <= sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < orig(this.WolfBondingCurve_own_reserveRatio)
+orig(this.ERC20Detailed_own__decimals) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.ERC20Detailed_own__decimals) < orig(this.reserve)
+orig(this.ERC20Detailed_own__decimals) < orig(this.evolutionDuration)
+orig(this.ERC20Detailed_own__decimals) < orig(value)
+orig(this.ERC20Detailed_own__decimals) < orig(block.timestamp)
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(from)].getValue())
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(to)].getValue())
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.ERC20Detailed_own__decimals) < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.reserve)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.evolutionDuration)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(value)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(block.timestamp)
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__balances[].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__balances[post(from)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__balances[post(to)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(value)
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__balances[post(from)].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__balances[post(to)].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+orig(this.reserve) < orig(value)
+orig(this.reserve) < sum(this.ERC20_own__balances[].getValue())
+orig(this.reserve) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.reserve) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.reserve) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.reserve) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.reserve) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.reserve) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.reserve) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.reserve) < orig(this.ERC20_own__balances[post(from)].getValue())
+orig(this.reserve) < orig(this.ERC20_own__balances[post(to)].getValue())
+orig(this.reserve) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.reserve) < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+orig(this.evolutionDuration) < orig(value)
+orig(this.evolutionDuration) < sum(this.ERC20_own__balances[].getValue())
+orig(this.evolutionDuration) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.evolutionDuration) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.evolutionDuration) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(this.evolutionDuration) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.evolutionDuration) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(this.evolutionDuration) < orig(this.ERC20_own__balances[post(from)].getValue())
+orig(this.evolutionDuration) < orig(this.ERC20_own__balances[post(to)].getValue())
+orig(this.evolutionDuration) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.evolutionDuration) < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+orig(from) != orig(msg.sender)
+orig(value) < sum(this.ERC20_own__balances[].getValue())
+orig(value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(value) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(value) <= this.ERC20_own__balances[orig(to)].getValue()
+orig(value) <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(value) <= orig(this.ERC20_own__balances[post(from)].getValue())
+orig(value) <= orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.ERC20_own__balances[].getValue())
+orig(msg.value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(msg.value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(msg.value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(msg.value) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(msg.value) <= this.ERC20_own__balances[orig(from)].getValue()
+orig(msg.value) < this.ERC20_own__balances[orig(to)].getValue()
+orig(msg.value) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(msg.value) < orig(this.ERC20_own__balances[post(from)].getValue())
+orig(msg.value) < orig(this.ERC20_own__balances[post(to)].getValue())
+orig(msg.value) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(msg.value) <= this.ERC20_own__allowed[pair(from,to)].getSubValue()
+orig(msg.value) <= this.ERC20_own__allowed[pair(from,msg.sender)].getSubValue()
+orig(msg.value) <= orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue())
+orig(msg.value) < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+orig(msg.value) <= orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+orig(block.timestamp) < sum(this.ERC20_own__balances[].getValue())
+orig(block.timestamp) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(block.timestamp) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(block.timestamp) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(block.timestamp) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+orig(block.timestamp) < this.ERC20_own__balances[orig(to)].getValue()
+orig(block.timestamp) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(from)].getValue())
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(to)].getValue())
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(block.timestamp) < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) <= sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.ERC20_own__allowed[].getSubValue()) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(this.Ownable_own__owner)].getValue())
+sum(this.Power_own_maxExpArray[]) <= this.ERC20_own__balances[orig(from)].getValue()
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(to)].getValue()
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(msg.sender)].getValue()
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(from)].getValue())
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(to)].getValue())
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+sum(this.Power_own_maxExpArray[]) <= this.ERC20_own__allowed[pair(from,to)].getSubValue()
+sum(this.Power_own_maxExpArray[]) <= this.ERC20_own__allowed[pair(from,msg.sender)].getSubValue()
+sum(this.Power_own_maxExpArray[]) <= orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue())
+sum(this.Power_own_maxExpArray[]) < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+sum(this.Power_own_maxExpArray[]) <= orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+sum(orig(this.ERC20_own__balances[].getValue())) <= sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20_own__balances[orig(from)].getValue() <= orig(this.ERC20_own__balances[post(from)].getValue())
+this.ERC20_own__allowed[pair(from,to)].getSubValue() < orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue())
+this.ERC20_own__allowed[pair(from,to)].getSubValue() < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+this.ERC20_own__allowed[pair(from,msg.sender)].getSubValue() <= orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue())
+this.ERC20_own__allowed[pair(from,msg.sender)].getSubValue() < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+this.ERC20_own__allowed[pair(to,msg.sender)].getSubValue() <= orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue())
+this.ERC20_own__allowed[pair(to,msg.sender)].getSubValue() < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+this.ERC20_own__allowed[pair(to,msg.sender)].getSubValue() <= orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue()) > orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue()) < orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue())
+- value - sum(this.ERC20_own__allowed[].getSubValue()) + sum(orig(this.ERC20_own__allowed[].getSubValue())) == 0
+value - this.ERC20_own__balances[orig(to)].getValue() + orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+value - this.ERC20_own__balances[orig(msg.sender)].getValue() + orig(this.ERC20_own__balances[post(to)].getValue()) == 0
+value - this.ERC20_own__balances[orig(msg.sender)].getValue() + orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+value + this.ERC20_own__allowed[pair(from,to)].getSubValue() - orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue()) == 0
+value + this.ERC20_own__allowed[pair(from,msg.sender)].getSubValue() - orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue()) == 0
+- orig(value) - sum(this.ERC20_own__allowed[].getSubValue()) + sum(orig(this.ERC20_own__allowed[].getSubValue())) == 0
+orig(value) - this.ERC20_own__balances[orig(to)].getValue() + orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+orig(value) - this.ERC20_own__balances[orig(msg.sender)].getValue() + orig(this.ERC20_own__balances[post(to)].getValue()) == 0
+orig(value) - this.ERC20_own__balances[orig(msg.sender)].getValue() + orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+orig(value) + this.ERC20_own__allowed[pair(from,to)].getSubValue() - orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue()) == 0
+orig(value) + this.ERC20_own__allowed[pair(from,msg.sender)].getSubValue() - orig(this.ERC20_own__allowed[post(pair(from,msg.sender))].getSubValue()) == 0
+===========================================================================
+ETHWolfToken.transferFrom(address,address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own__owner == this.evolutionAddress
+this.Ownable_own__owner == orig(this.Ownable_own__owner)
+this.Ownable_own__owner == orig(this.evolutionAddress)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply == orig(this.ERC20_own__totalSupply)
+this.ERC20_own__totalSupply == sum(this.ERC20_own__balances[].getValue())
+this.ERC20_own__totalSupply == sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals == orig(this.ERC20Detailed_own__decimals)
+this.Power_own_maxExpArray == orig(this.Power_own_maxExpArray)
+this.WolfBondingCurve_own_reserveRatio == orig(this.WolfBondingCurve_own_reserveRatio)
+this.ValidGasPrice_own_maxGasPrice == orig(this.ValidGasPrice_own_maxGasPrice)
+this.reserve == orig(this.reserve)
+this.evolutionDuration == orig(this.evolutionDuration)
+from == orig(from)
+to == orig(to)
+value == orig(value)
+msg.sender == orig(to)
+msg.value == orig(msg.value)
+msg.value == sum(this.Power_own_maxExpArray[])
+msg.value == orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20_own__totalSupply) == sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20_own__totalSupply) == sum(orig(this.ERC20_own__balances[].getValue()))
+orig(to) == orig(msg.sender)
+orig(msg.value) == sum(this.Power_own_maxExpArray[])
+orig(msg.value) == orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) == sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+sum(this.ERC20_own__allowed[].getSubValue()) == sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) == orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+this.ERC20_own__balances has only one value
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements one of { 1, 2 }
+this.ERC20_own__allowed[].getSubLength() sorted by <=
+this.ERC20_own__allowed[].getSubValue() elements >= 0
+this.ERC20_own__totalSupply one of { 2488573857254187826506642, 2510618675746873912022325 }
+this.ERC20Detailed_own__decimals == 18
+this.Power_own_maxExpArray has only one value
+this.Power_own_maxExpArray[] elements <= 0
+this.Power_own_maxExpArray[] elements >= 0
+this.Power_own_maxExpArray[] sorted by <=
+this.Power_own_maxExpArray[] sorted by ==
+this.Power_own_maxExpArray[] sorted by >=
+this.WolfBondingCurve_own_reserveRatio == 500000
+this.ValidGasPrice_own_maxGasPrice == 1000000000000000000
+this.reserve one of { 5956628895190055063, 6062628895190055063 }
+this.evolutionDuration == 1639828799
+value one of { 900000000000000000000, 1500000000000000000000, 4144559581102132000000 }
+msg.value == 0
+block.timestamp one of { 12345150, 12385825, 12386469 }
+orig(this) has only one value
+orig(this.ERC20_own__totalSupply) one of { 2488573857254187826506642, 2510618675746873912022325 }
+orig(this.ERC20Detailed_own__decimals) == 18
+orig(this.WolfBondingCurve_own_reserveRatio) == 500000
+orig(this.ValidGasPrice_own_maxGasPrice) == 1000000000000000000
+orig(this.reserve) one of { 5956628895190055063, 6062628895190055063 }
+orig(this.evolutionDuration) == 1639828799
+orig(value) one of { 900000000000000000000, 1500000000000000000000, 4144559581102132000000 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 12345150, 12385825, 12386469 }
+sum(this.ERC20_own__balances[].getValue()) one of { 2488573857254187826506642, 2510618675746873912022325 }
+sum(this.ERC20_own__allowed[].getSubLength()) one of { 26, 28 }
+sum(this.ERC20_own__allowed[].getSubValue()) one of { 231584178474632390847141970017376805706539969341281128477232616322527613156679, 231584178474632390847141970017376805706539969341281128480232616319657613156679 }
+sum(this.Power_own_maxExpArray[]) == 0
+sum(orig(this.ERC20_own__balances[].getValue())) one of { 2488573857254187826506642, 2510618675746873912022325 }
+sum(orig(this.ERC20_own__allowed[].getSubValue())) one of { 231584178474632390847141970017376805706539969341281128477232616322527613156679, 231584178474632390847141970017376805706539969341281128480232616319657613156679 }
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() == 590000000000000000000000
+this.ERC20_own__balances[orig(from)].getValue() one of { 312153, 15067849397782115461991 }
+this.ERC20_own__balances[orig(to)].getValue() one of { 1570071349579877628446973, 1609647332084316280446973 }
+orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue()) one of { 0, 500000000000000000000 }
+orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue()) == 0
+this.Ownable_own__owner != orig(from)
+this.Ownable_own__owner != orig(to)
+this.ERC20_own__allowed[].getSubLength() elements < sum(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__totalSupply < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20_own__totalSupply < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.WolfBondingCurve_own_reserveRatio
+this.ERC20Detailed_own__decimals < this.ValidGasPrice_own_maxGasPrice
+this.ERC20Detailed_own__decimals < this.reserve
+this.ERC20Detailed_own__decimals < this.evolutionDuration
+this.ERC20Detailed_own__decimals < value
+this.ERC20Detailed_own__decimals < block.timestamp
+this.ERC20Detailed_own__decimals < orig(this.ERC20_own__totalSupply)
+this.ERC20Detailed_own__decimals < orig(this.WolfBondingCurve_own_reserveRatio)
+this.ERC20Detailed_own__decimals < orig(this.ValidGasPrice_own_maxGasPrice)
+this.ERC20Detailed_own__decimals < orig(this.reserve)
+this.ERC20Detailed_own__decimals < orig(this.evolutionDuration)
+this.ERC20Detailed_own__decimals < orig(value)
+this.ERC20Detailed_own__decimals < orig(block.timestamp)
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__balances[].getValue())
+this.ERC20Detailed_own__decimals < sum(this.ERC20_own__allowed[].getSubValue())
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ERC20Detailed_own__decimals < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(from)].getValue()
+this.ERC20Detailed_own__decimals < this.ERC20_own__balances[orig(to)].getValue()
+this.Power_own_maxExpArray[] elements == msg.value
+this.Power_own_maxExpArray[] elements == orig(msg.value)
+this.Power_own_maxExpArray[] elements == sum(this.Power_own_maxExpArray[])
+this.Power_own_maxExpArray[] elements == orig(this.ERC20_own__allowed[post(pair(to,from))].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < this.ValidGasPrice_own_maxGasPrice
+this.WolfBondingCurve_own_reserveRatio < this.reserve
+this.WolfBondingCurve_own_reserveRatio < this.evolutionDuration
+this.WolfBondingCurve_own_reserveRatio < value
+this.WolfBondingCurve_own_reserveRatio < block.timestamp
+this.WolfBondingCurve_own_reserveRatio < orig(this.ERC20_own__totalSupply)
+this.WolfBondingCurve_own_reserveRatio < orig(this.ValidGasPrice_own_maxGasPrice)
+this.WolfBondingCurve_own_reserveRatio < orig(this.reserve)
+this.WolfBondingCurve_own_reserveRatio < orig(this.evolutionDuration)
+this.WolfBondingCurve_own_reserveRatio < orig(value)
+this.WolfBondingCurve_own_reserveRatio < orig(block.timestamp)
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__balances[].getValue())
+this.WolfBondingCurve_own_reserveRatio < sum(this.ERC20_own__allowed[].getSubValue())
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__balances[].getValue()))
+this.WolfBondingCurve_own_reserveRatio < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.WolfBondingCurve_own_reserveRatio < this.ERC20_own__balances[orig(to)].getValue()
+this.ValidGasPrice_own_maxGasPrice < this.reserve
+this.ValidGasPrice_own_maxGasPrice < value
+this.ValidGasPrice_own_maxGasPrice < orig(this.ERC20_own__totalSupply)
+this.ValidGasPrice_own_maxGasPrice < orig(this.reserve)
+this.ValidGasPrice_own_maxGasPrice < orig(value)
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__balances[].getValue())
+this.ValidGasPrice_own_maxGasPrice < sum(this.ERC20_own__allowed[].getSubValue())
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__balances[].getValue()))
+this.ValidGasPrice_own_maxGasPrice < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.ValidGasPrice_own_maxGasPrice < this.ERC20_own__balances[orig(to)].getValue()
+this.reserve < value
+this.reserve < orig(this.ERC20_own__totalSupply)
+this.reserve < orig(value)
+this.reserve < sum(this.ERC20_own__balances[].getValue())
+this.reserve < sum(this.ERC20_own__allowed[].getSubValue())
+this.reserve < sum(orig(this.ERC20_own__balances[].getValue()))
+this.reserve < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.reserve < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.reserve < this.ERC20_own__balances[orig(to)].getValue()
+this.evolutionDuration < value
+this.evolutionDuration < orig(this.ERC20_own__totalSupply)
+this.evolutionDuration < orig(this.ValidGasPrice_own_maxGasPrice)
+this.evolutionDuration < orig(this.reserve)
+this.evolutionDuration < orig(value)
+this.evolutionDuration < sum(this.ERC20_own__balances[].getValue())
+this.evolutionDuration < sum(this.ERC20_own__allowed[].getSubValue())
+this.evolutionDuration < sum(orig(this.ERC20_own__balances[].getValue()))
+this.evolutionDuration < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.evolutionDuration < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+this.evolutionDuration < this.ERC20_own__balances[orig(to)].getValue()
+value < orig(this.ERC20_own__totalSupply)
+value < sum(this.ERC20_own__balances[].getValue())
+value < sum(this.ERC20_own__allowed[].getSubValue())
+value < sum(orig(this.ERC20_own__balances[].getValue()))
+value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+value < this.ERC20_own__balances[orig(to)].getValue()
+msg.value < block.timestamp
+msg.value < orig(this.ERC20_own__totalSupply)
+msg.value < orig(this.ERC20Detailed_own__decimals)
+msg.value < orig(this.WolfBondingCurve_own_reserveRatio)
+msg.value < orig(this.ValidGasPrice_own_maxGasPrice)
+msg.value < orig(this.reserve)
+msg.value < orig(this.evolutionDuration)
+msg.value < orig(value)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.ERC20_own__balances[].getValue())
+msg.value < sum(this.ERC20_own__allowed[].getSubValue())
+msg.value < sum(orig(this.ERC20_own__balances[].getValue()))
+msg.value < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+msg.value < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+msg.value < this.ERC20_own__balances[orig(from)].getValue()
+msg.value < this.ERC20_own__balances[orig(to)].getValue()
+msg.value <= orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue())
+block.timestamp < orig(this.ERC20_own__totalSupply)
+block.timestamp < orig(this.ValidGasPrice_own_maxGasPrice)
+block.timestamp < orig(this.reserve)
+block.timestamp < orig(this.evolutionDuration)
+block.timestamp < orig(value)
+block.timestamp < sum(this.ERC20_own__balances[].getValue())
+block.timestamp < sum(this.ERC20_own__allowed[].getSubValue())
+block.timestamp < sum(orig(this.ERC20_own__balances[].getValue()))
+block.timestamp < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+block.timestamp < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+block.timestamp < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.ERC20_own__totalSupply) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20_own__totalSupply) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < orig(this.WolfBondingCurve_own_reserveRatio)
+orig(this.ERC20Detailed_own__decimals) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.ERC20Detailed_own__decimals) < orig(this.reserve)
+orig(this.ERC20Detailed_own__decimals) < orig(this.evolutionDuration)
+orig(this.ERC20Detailed_own__decimals) < orig(value)
+orig(this.ERC20Detailed_own__decimals) < orig(block.timestamp)
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ERC20Detailed_own__decimals) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ERC20Detailed_own__decimals) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(from)].getValue()
+orig(this.ERC20Detailed_own__decimals) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.ValidGasPrice_own_maxGasPrice)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.reserve)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(this.evolutionDuration)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(value)
+orig(this.WolfBondingCurve_own_reserveRatio) < orig(block.timestamp)
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__balances[].getValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.WolfBondingCurve_own_reserveRatio) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(this.reserve)
+orig(this.ValidGasPrice_own_maxGasPrice) < orig(value)
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__balances[].getValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.ValidGasPrice_own_maxGasPrice) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.reserve) < orig(value)
+orig(this.reserve) < sum(this.ERC20_own__balances[].getValue())
+orig(this.reserve) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.reserve) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.reserve) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.reserve) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.reserve) < this.ERC20_own__balances[orig(to)].getValue()
+orig(this.evolutionDuration) < orig(value)
+orig(this.evolutionDuration) < sum(this.ERC20_own__balances[].getValue())
+orig(this.evolutionDuration) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(this.evolutionDuration) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(this.evolutionDuration) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(this.evolutionDuration) < this.ERC20_own__balances[orig(to)].getValue()
+orig(from) != orig(to)
+orig(value) < sum(this.ERC20_own__balances[].getValue())
+orig(value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(value) < this.ERC20_own__balances[orig(to)].getValue()
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.ERC20_own__balances[].getValue())
+orig(msg.value) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(msg.value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(msg.value) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(msg.value) < this.ERC20_own__balances[orig(from)].getValue()
+orig(msg.value) < this.ERC20_own__balances[orig(to)].getValue()
+orig(msg.value) <= orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue())
+orig(block.timestamp) < sum(this.ERC20_own__balances[].getValue())
+orig(block.timestamp) < sum(this.ERC20_own__allowed[].getSubValue())
+orig(block.timestamp) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(block.timestamp) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+orig(block.timestamp) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+orig(block.timestamp) < this.ERC20_own__balances[orig(to)].getValue()
+sum(this.ERC20_own__balances[].getValue()) < sum(this.ERC20_own__allowed[].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.Power_own_maxExpArray[]) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[this.Ownable_own__owner].getValue()
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(from)].getValue()
+sum(this.Power_own_maxExpArray[]) < this.ERC20_own__balances[orig(to)].getValue()
+sum(this.Power_own_maxExpArray[]) <= orig(this.ERC20_own__allowed[post(pair(from,to))].getSubValue())
+sum(orig(this.ERC20_own__balances[].getValue())) < sum(orig(this.ERC20_own__allowed[].getSubValue()))
+this.ERC20_own__balances[this.Ownable_own__owner].getValue() < this.ERC20_own__balances[orig(to)].getValue()
+this.ERC20_own__balances[orig(from)].getValue() < this.ERC20_own__balances[orig(to)].getValue()
+Exiting Daikon.

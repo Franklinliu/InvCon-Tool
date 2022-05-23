@@ -1,0 +1,26 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+Gelt.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.decimals == this._totalSupply
+this.decimals == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+this._totalSupply == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+to == orig(to)
+msg.sender == orig(msg.sender)
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.decimals == 0
+this._totalSupply == 0
+this.balances has only one value
+this.allowed has only one value
+orig(this) has only one value
+orig(tokens) == 100000000000000000000000000
+orig(block.timestamp) == 1610579764
+sum(this.allowed[].getSubLength()) == 0
+orig(this.allowed[post(pair(to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

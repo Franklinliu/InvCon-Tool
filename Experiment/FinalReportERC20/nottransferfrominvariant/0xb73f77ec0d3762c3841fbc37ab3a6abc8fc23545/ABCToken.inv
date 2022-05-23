@@ -1,0 +1,195 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+ABCToken.Lock(address):::EXIT1
+this == orig(this)
+this.Ownable_own_owner == msg.sender
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(msg.sender)
+this.Ownable_own_newOwner == orig(this.Ownable_own_newOwner)
+this.decimals == orig(this.decimals)
+this.balances == orig(this.balances)
+this.frozen == orig(this.frozen)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+_holder == orig(_holder)
+orig(msg.value) == orig(this.allowed[post(pair(_holder,msg.sender))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.decimals == 8
+this.initialSupply == 1000000000
+this.totalSupply_ == 100000000000000000
+this.balances has only one value
+this.frozen has only one value
+this.frozen[].getValue() elements == true
+this.allowed has only one value
+orig(this) has only one value
+orig(this.decimals) == 8
+orig(msg.value) == 0
+orig(block.timestamp) == 1611561359
+sum(this.allowed[].getSubLength()) == 0
+this.balances[this.Ownable_own_owner].getValue() == 99999999989999899
+this.balances[orig(_holder)].getValue() == 10000101
+this.frozen[orig(_holder)].getValue() == true
+orig(this.allowed[post(pair(_holder,msg.sender))].getSubValue()) == 0
+this.frozen[].getValue() elements == this.frozen[orig(_holder)].getValue()
+this.frozen[orig(_holder)].getValue() in this.frozen[].getValue()
+===========================================================================
+ABCToken.UnLock(address):::EXIT1
+this == orig(this)
+this.Ownable_own_owner == msg.sender
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(msg.sender)
+this.Ownable_own_newOwner == orig(this.Ownable_own_newOwner)
+this.decimals == orig(this.decimals)
+this.balances == orig(this.balances)
+this.frozen == orig(this.frozen)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+_holder == orig(_holder)
+orig(msg.value) == orig(this.allowed[post(pair(_holder,msg.sender))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.decimals == 8
+this.initialSupply == 1000000000
+this.totalSupply_ == 100000000000000000
+this.balances has only one value
+this.frozen has only one value
+this.frozen[].getValue() elements == false
+this.allowed has only one value
+orig(this) has only one value
+orig(this.decimals) == 8
+orig(this.frozen[].getValue()) elements == true
+orig(msg.value) == 0
+orig(block.timestamp) == 1611561566
+sum(this.allowed[].getSubLength()) == 0
+this.balances[this.Ownable_own_owner].getValue() == 99999999989999899
+this.balances[orig(_holder)].getValue() == 10000101
+this.frozen[orig(_holder)].getValue() == false
+orig(this.frozen[post(_holder)].getValue()) == true
+orig(this.allowed[post(pair(_holder,msg.sender))].getSubValue()) == 0
+this.frozen[].getValue() elements == this.frozen[orig(_holder)].getValue()
+this.frozen[orig(_holder)].getValue() in this.frozen[].getValue()
+orig(this.frozen[].getValue()) elements == orig(this.frozen[post(_holder)].getValue())
+orig(this.frozen[post(_holder)].getValue()) in orig(this.frozen[].getValue())
+===========================================================================
+ABCToken.UnLock(address):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_newOwner == orig(this.Ownable_own_newOwner)
+this.decimals == orig(this.decimals)
+this.balances == orig(this.balances)
+this.frozen == orig(this.frozen)
+this.frozen[].getValue() == orig(this.frozen[].getValue())
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+_holder == orig(_holder)
+msg.sender == orig(_holder)
+orig(_holder) == orig(msg.sender)
+orig(msg.value) == orig(this.allowed[post(pair(_holder,msg.sender))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.decimals == 8
+this.initialSupply == 1000000000
+this.totalSupply_ == 100000000000000000
+this.balances has only one value
+this.frozen has only one value
+this.frozen[].getValue() elements == true
+this.allowed has only one value
+orig(this) has only one value
+orig(this.decimals) == 8
+orig(msg.value) == 0
+orig(block.timestamp) == 1611561538
+sum(this.allowed[].getSubLength()) == 0
+this.balances[this.Ownable_own_owner].getValue() == 99999999989999899
+this.balances[orig(_holder)].getValue() == 10000101
+this.frozen[orig(_holder)].getValue() == true
+orig(this.allowed[post(pair(_holder,msg.sender))].getSubValue()) == 0
+this.frozen[].getValue() elements == this.frozen[orig(_holder)].getValue()
+this.frozen[orig(_holder)].getValue() in this.frozen[].getValue()
+===========================================================================
+ABCToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_newOwner == orig(this.Ownable_own_newOwner)
+this.decimals == orig(this.decimals)
+this.initialSupply == orig(this.initialSupply)
+this.totalSupply_ == orig(this.totalSupply_)
+this.totalSupply_ == sum(this.balances[].getValue())
+this.totalSupply_ == sum(orig(this.balances[].getValue()))
+this.balances == orig(this.balances)
+this.frozen == orig(this.frozen)
+this.frozen[].getValue() == orig(this.frozen[].getValue())
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.allowed[].getSubValue())
+msg.value == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.totalSupply_) == sum(this.balances[].getValue())
+orig(this.totalSupply_) == sum(orig(this.balances[].getValue()))
+orig(msg.value) == sum(this.allowed[].getSubValue())
+orig(msg.value) == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.balances[].getValue()) == sum(orig(this.balances[].getValue()))
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+sum(this.allowed[].getSubValue()) == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+this.decimals == 8
+this.initialSupply == 1000000000
+this.totalSupply_ == 100000000000000000
+this.balances has only one value
+this.frozen has only one value
+this.frozen[].getValue() elements == false
+this.allowed has only one value
+msg.value == 0
+orig(this) has only one value
+orig(this.decimals) == 8
+orig(this.initialSupply) == 1000000000
+orig(this.totalSupply_) == 100000000000000000
+orig(msg.value) == 0
+sum(this.balances[].getValue()) == 100000000000000000
+sum(this.allowed[].getSubLength()) == 0
+sum(this.allowed[].getSubValue()) == 0
+sum(orig(this.balances[].getValue())) == 100000000000000000
+this.frozen[orig(msg.sender)].getValue() == false
+orig(this.balances[post(_to)].getValue()) one of { 10000000, 10000100, 99999999989999899 }
+orig(this.allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.frozen[].getValue() elements == this.frozen[orig(msg.sender)].getValue()
+this.frozen[orig(msg.sender)].getValue() in this.frozen[].getValue()
+===========================================================================
+ABCToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == _to
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(_to)
+this.Ownable_own_newOwner == orig(this.Ownable_own_newOwner)
+this.decimals == orig(this.decimals)
+this.balances == orig(this.balances)
+this.frozen == orig(this.frozen)
+this.frozen[].getValue() == orig(this.frozen[].getValue())
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+msg.sender == orig(msg.sender)
+orig(msg.value) == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.decimals == 8
+this.initialSupply == 1000000000
+this.totalSupply_ == 100000000000000000
+this.balances has only one value
+this.frozen has only one value
+this.frozen[].getValue() elements == true
+this.allowed has only one value
+orig(this) has only one value
+orig(this.decimals) == 8
+orig(_value) == 1
+orig(msg.value) == 0
+orig(block.timestamp) == 1611561481
+sum(this.allowed[].getSubLength()) == 0
+this.balances[this.Ownable_own_owner].getValue() == 99999999989999899
+this.balances[orig(msg.sender)].getValue() == 10000101
+this.frozen[orig(msg.sender)].getValue() == true
+orig(this.allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.frozen[].getValue() elements == this.frozen[orig(msg.sender)].getValue()
+this.frozen[orig(msg.sender)].getValue() in this.frozen[].getValue()
+Exiting Daikon.

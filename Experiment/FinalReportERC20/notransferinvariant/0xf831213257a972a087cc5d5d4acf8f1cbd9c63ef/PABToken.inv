@@ -1,0 +1,84 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+PABToken.approve(address,uint256):::EXIT2
+this == orig(this)
+this.owned_own_owner == orig(this.owned_own_owner)
+this.decimals == this.totalSupply
+this.decimals == orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue())
+this.totalSupply == orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue())
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+this.allowance[].getSubLength() == orig(this.allowance[].getSubLength())
+this.frozenAccount == orig(this.frozenAccount)
+this.frozenAccount[].getValue() == orig(this.frozenAccount[].getValue())
+_spender == orig(_spender)
+msg.sender == orig(msg.sender)
+sum(this.allowance[].getSubLength()) == sum(orig(this.allowance[].getSubLength()))
+this.decimals == 0
+this.totalSupply == 0
+this.balanceOf has only one value
+this.allowance has only one value
+this.frozenAccount has only one value
+orig(this) has only one value
+orig(_value) == 1111111111111111111
+orig(block.timestamp) == 1610648539
+sum(this.allowance[].getSubLength()) == 0
+orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue()) == 0
+===========================================================================
+PABToken.burn(uint256):::EXIT2
+this == orig(this)
+this.owned_own_owner == orig(this.owned_own_owner)
+this.decimals == this.totalSupply
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+this.allowance[].getSubLength() == orig(this.allowance[].getSubLength())
+this.frozenAccount == orig(this.frozenAccount)
+this.frozenAccount[].getValue() == orig(this.frozenAccount[].getValue())
+msg.sender == orig(msg.sender)
+sum(this.allowance[].getSubLength()) == sum(orig(this.allowance[].getSubLength()))
+this.decimals == 0
+this.totalSupply == 0
+this.balanceOf has only one value
+this.allowance has only one value
+this.frozenAccount has only one value
+orig(this) has only one value
+orig(_value) == 15242424212121
+orig(block.timestamp) == 1610648471
+sum(this.allowance[].getSubLength()) == 0
+===========================================================================
+PABToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.owned_own_owner == orig(this.owned_own_owner)
+this.decimals == this.totalSupply
+this.decimals == orig(msg.value)
+this.decimals == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+this.totalSupply == orig(msg.value)
+this.totalSupply == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+this.allowance[].getSubLength() == orig(this.allowance[].getSubLength())
+this.frozenAccount == orig(this.frozenAccount)
+this.frozenAccount[].getValue() == orig(this.frozenAccount[].getValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+orig(msg.value) == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+sum(this.allowance[].getSubLength()) == sum(orig(this.allowance[].getSubLength()))
+this.decimals == 0
+this.totalSupply == 0
+this.balanceOf has only one value
+this.allowance has only one value
+this.frozenAccount has only one value
+_value one of { 1522121, 111111111111 }
+block.timestamp == 1610648471
+orig(this) has only one value
+orig(_value) one of { 1522121, 111111111111 }
+orig(msg.value) == 0
+orig(block.timestamp) == 1610648471
+sum(this.allowance[].getSubLength()) == 0
+orig(this.allowance[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

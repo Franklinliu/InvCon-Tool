@@ -1,0 +1,49 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+Token.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Owned_own_owner == orig(this.Owned_own_owner)
+this.decimals == this.totalSupply
+this.decimals == msg.value
+this.decimals == orig(msg.value)
+this.decimals == orig(this.allowance[post(pair(toaddr,msg.sender))].getSubValue())
+this.totalSupply == msg.value
+this.totalSupply == orig(msg.value)
+this.totalSupply == orig(this.allowance[post(pair(toaddr,msg.sender))].getSubValue())
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+this.allowance[].getSubLength() == orig(this.allowance[].getSubLength())
+this.lock == orig(this.lock)
+this.freezeIn == orig(this.freezeIn)
+this.freezeIn[].getValue() == this.freezeOut[].getValue()
+this.freezeIn[].getValue() == orig(this.freezeIn[].getValue())
+this.freezeIn[].getValue() == orig(this.freezeOut[].getValue())
+this.freezeOut == orig(this.freezeOut)
+toaddr == orig(toaddr)
+value == orig(value)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == orig(this.allowance[post(pair(toaddr,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(msg.value) == orig(this.allowance[post(pair(toaddr,msg.sender))].getSubValue())
+sum(this.allowance[].getSubLength()) == sum(orig(this.allowance[].getSubLength()))
+this.decimals == 0
+this.totalSupply == 0
+this.balanceOf has only one value
+this.allowance has only one value
+this.lock has only one value
+this.freezeIn has only one value
+this.freezeOut has only one value
+value one of { 100000000000000000000, 70000000000000000000000000 }
+msg.value == 0
+block.timestamp one of { 1610740106, 1610772284, 1611217338 }
+orig(this) has only one value
+orig(value) one of { 100000000000000000000, 70000000000000000000000000 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1610740106, 1610772284, 1611217338 }
+sum(this.allowance[].getSubLength()) == 0
+orig(this.allowance[post(pair(toaddr,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

@@ -1,0 +1,28 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+ERC20Standard.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.totalSupply == this.decimals
+this.totalSupply == orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue())
+this.decimals == orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue())
+this.owner == orig(this.owner)
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+_recipient == orig(_recipient)
+msg.sender == orig(_recipient)
+orig(_recipient) == orig(msg.sender)
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.totalSupply == 0
+this.decimals == 0
+this.balances has only one value
+this.allowed has only one value
+orig(this) has only one value
+orig(_value) == 80000000000000000000000000
+orig(block.timestamp) == 1610680168
+sum(this.allowed[].getSubLength()) == 0
+orig(this.allowed[post(pair(_recipient,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

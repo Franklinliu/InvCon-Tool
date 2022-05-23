@@ -1,32 +1,49 @@
-<!-- views/index.ejs -->
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>InvCon</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <!-- load bootstrap css -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- load fontawesome -->
-    <style>
-      body {
-      padding-top: 0px;
-      margin-top: 0px;
-      }
-      section {
-      padding-top: 40px;
-      margin-top: -40px;
-      }
-    </style>
-  </head>
+    <title>InvCon</title>
+  </head>            
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse fs-3 " id="navbarSupportedContent">
+        <!-- <a class="nav-link fs-3 " href="#">INVCON </a> -->
+        <a class="nav-link disabled mr-auto fs-3" href="#"> InvCon <a>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link disabled  fs-3" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled  fs-3" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled fs-3" href="#">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled fs-3" href="#">People</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
     <noscript>
-      <strong>We're sorry but codesandbox doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but InvCon doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-</body>
+    <footer id="sticky-footer" class="mt-auto bg-light">
+      <p class="text-center fs-3">© InvCon 2022. A Dynamic Invariant Detector for Ethereum Smart Contracts</p>
+    </footer>
+  </body>
 </html>

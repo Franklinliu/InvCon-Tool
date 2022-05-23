@@ -1,0 +1,100 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+NLCToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Token_own_totalSupply == this.decimals
+this.Token_own_totalSupply == this.totalSupply
+this.Token_own_totalSupply == msg.value
+this.Token_own_totalSupply == orig(this.Token_own_totalSupply)
+this.Token_own_totalSupply == orig(this.decimals)
+this.Token_own_totalSupply == orig(this.totalSupply)
+this.Token_own_totalSupply == orig(msg.value)
+this.Token_own_totalSupply == sum(this.StandardToken_own__balances[].getValue())
+this.Token_own_totalSupply == orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own__balances == orig(this.StandardToken_own__balances)
+this.StandardToken_own__allowed == orig(this.StandardToken_own__allowed)
+this.StandardToken_own__allowed[].getSubLength() == orig(this.StandardToken_own__allowed[].getSubLength())
+this.decimals == this.totalSupply
+this.decimals == msg.value
+this.decimals == orig(this.Token_own_totalSupply)
+this.decimals == orig(this.decimals)
+this.decimals == orig(this.totalSupply)
+this.decimals == orig(msg.value)
+this.decimals == sum(this.StandardToken_own__balances[].getValue())
+this.decimals == orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue())
+this.totalSupply == msg.value
+this.totalSupply == orig(this.Token_own_totalSupply)
+this.totalSupply == orig(this.decimals)
+this.totalSupply == orig(this.totalSupply)
+this.totalSupply == orig(msg.value)
+this.totalSupply == sum(this.StandardToken_own__balances[].getValue())
+this.totalSupply == orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.Token_own_totalSupply)
+msg.value == orig(this.decimals)
+msg.value == orig(this.totalSupply)
+msg.value == orig(msg.value)
+msg.value == sum(this.StandardToken_own__balances[].getValue())
+msg.value == orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.Token_own_totalSupply) == orig(this.decimals)
+orig(this.Token_own_totalSupply) == orig(this.totalSupply)
+orig(this.Token_own_totalSupply) == orig(msg.value)
+orig(this.Token_own_totalSupply) == sum(this.StandardToken_own__balances[].getValue())
+orig(this.Token_own_totalSupply) == orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(this.decimals) == orig(this.totalSupply)
+orig(this.decimals) == orig(msg.value)
+orig(this.decimals) == sum(this.StandardToken_own__balances[].getValue())
+orig(this.decimals) == orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(this.totalSupply) == orig(msg.value)
+orig(this.totalSupply) == sum(this.StandardToken_own__balances[].getValue())
+orig(this.totalSupply) == orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.StandardToken_own__balances[].getValue())
+orig(msg.value) == orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own__balances[].getValue()) == orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own__allowed[].getSubLength()) == sum(orig(this.StandardToken_own__allowed[].getSubLength()))
+this.Token_own_totalSupply == 0
+this.StandardToken_own__balances has only one value
+this.StandardToken_own__allowed has only one value
+this.decimals == 0
+this.totalSupply == 0
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.Token_own_totalSupply) == 0
+orig(this.decimals) == 0
+orig(this.totalSupply) == 0
+orig(msg.value) == 0
+sum(this.StandardToken_own__balances[].getValue()) == 0
+sum(this.StandardToken_own__allowed[].getSubLength()) == 0
+orig(this.StandardToken_own__allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.Token_own_totalSupply < _value
+this.Token_own_totalSupply < block.timestamp
+this.Token_own_totalSupply < orig(_value)
+this.Token_own_totalSupply < orig(block.timestamp)
+this.decimals < _value
+this.decimals < block.timestamp
+this.decimals < orig(_value)
+this.decimals < orig(block.timestamp)
+this.totalSupply < _value
+this.totalSupply < block.timestamp
+this.totalSupply < orig(_value)
+this.totalSupply < orig(block.timestamp)
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.Token_own_totalSupply) < orig(_value)
+orig(this.Token_own_totalSupply) < orig(block.timestamp)
+orig(this.decimals) < orig(_value)
+orig(this.decimals) < orig(block.timestamp)
+orig(this.totalSupply) < orig(_value)
+orig(this.totalSupply) < orig(block.timestamp)
+orig(_to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

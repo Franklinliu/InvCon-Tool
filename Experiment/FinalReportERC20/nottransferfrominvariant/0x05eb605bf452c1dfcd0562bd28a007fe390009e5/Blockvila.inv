@@ -1,0 +1,64 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+Blockvila.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.Owned_own_owner == msg.sender
+this.Owned_own_owner == orig(this.Owned_own_owner)
+this.Owned_own_owner == orig(msg.sender)
+this.Owned_own_newOwner == _to
+this.Owned_own_newOwner == orig(this.Owned_own_newOwner)
+this.Owned_own_newOwner == orig(_to)
+this.StandardToken_own_balances == orig(this.StandardToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.StandardToken_own_totalSupply == orig(this.StandardToken_own_totalSupply)
+this.StandardToken_own_totalSupply == orig(this.StandardToken_own_balances[post(msg.sender)].getValue())
+orig(this.StandardToken_own_totalSupply) == orig(this.StandardToken_own_balances[post(msg.sender)].getValue())
+orig(_value) == this.StandardToken_own_balances[this.Owned_own_newOwner].getValue()
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.StandardToken_own_balances has only one value
+this.StandardToken_own_allowed has only one value
+this.StandardToken_own_totalSupply == 100000000000000000000000
+this.decimals == 18
+orig(this) has only one value
+orig(this.StandardToken_own_totalSupply) == 100000000000000000000000
+orig(_value) == 98000000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1612015336
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+this.StandardToken_own_balances[this.Owned_own_owner].getValue() == 2000000000000000000000
+this.StandardToken_own_balances[this.Owned_own_newOwner].getValue() == 98000000000000000000000
+orig(this.StandardToken_own_balances[post(msg.sender)].getValue()) == 100000000000000000000000
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+===========================================================================
+Blockvila.transferOwnership(address):::EXIT1
+this == orig(this)
+this.Owned_own_owner == msg.sender
+this.Owned_own_owner == orig(this.Owned_own_owner)
+this.Owned_own_owner == orig(msg.sender)
+this.Owned_own_newOwner == _newOwner
+this.Owned_own_newOwner == orig(_newOwner)
+this.StandardToken_own_balances == orig(this.StandardToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.StandardToken_own_totalSupply == orig(this.StandardToken_own_totalSupply)
+this.StandardToken_own_totalSupply == this.StandardToken_own_balances[this.Owned_own_owner].getValue()
+orig(this.StandardToken_own_totalSupply) == this.StandardToken_own_balances[this.Owned_own_owner].getValue()
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_newOwner,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.StandardToken_own_balances has only one value
+this.StandardToken_own_allowed has only one value
+this.StandardToken_own_totalSupply == 100000000000000000000000
+this.decimals == 18
+orig(this) has only one value
+orig(this.StandardToken_own_totalSupply) == 100000000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1611784825
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+this.StandardToken_own_balances[this.Owned_own_owner].getValue() == 100000000000000000000000
+orig(this.StandardToken_own_allowed[post(pair(_newOwner,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

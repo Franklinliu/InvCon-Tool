@@ -1,0 +1,68 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TokenERC20.approve(address,uint256):::EXIT2
+this == orig(this)
+this.decimals == this.totalSupply
+this.decimals == msg.value
+this.decimals == orig(msg.value)
+this.decimals == orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue())
+this.totalSupply == msg.value
+this.totalSupply == orig(msg.value)
+this.totalSupply == orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue())
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+this.allowance[].getSubLength() == orig(this.allowance[].getSubLength())
+_spender == orig(_spender)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(msg.value) == orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue())
+sum(this.allowance[].getSubLength()) == sum(orig(this.allowance[].getSubLength()))
+this.decimals == 0
+this.totalSupply == 0
+this.balanceOf has only one value
+this.allowance has only one value
+_value == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+msg.value == 0
+block.timestamp one of { 1610601617, 1610612237, 1610801123 }
+orig(this) has only one value
+orig(_value) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1610601617, 1610612237, 1610801123 }
+sum(this.allowance[].getSubLength()) == 0
+orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue()) == 0
+===========================================================================
+TokenERC20.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.decimals == this.totalSupply
+this.decimals == orig(msg.value)
+this.decimals == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+this.totalSupply == orig(msg.value)
+this.totalSupply == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+this.allowance[].getSubLength() == orig(this.allowance[].getSubLength())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+orig(msg.value) == orig(this.allowance[post(pair(_to,msg.sender))].getSubValue())
+sum(this.allowance[].getSubLength()) == sum(orig(this.allowance[].getSubLength()))
+this.decimals == 0
+this.totalSupply == 0
+this.balanceOf has only one value
+this.allowance has only one value
+_value one of { 49999990000000000000000, 50000000000000000000000 }
+block.timestamp one of { 1610693372, 1610707595 }
+orig(this) has only one value
+orig(_value) one of { 49999990000000000000000, 50000000000000000000000 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1610693372, 1610707595 }
+sum(this.allowance[].getSubLength()) == 0
+orig(this.allowance[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

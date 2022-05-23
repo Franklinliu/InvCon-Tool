@@ -1,0 +1,78 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+IAMToken.approve(address,uint256):::EXIT1
+this == orig(this)
+this.decimals == orig(this.decimals)
+this._totalSupply == orig(this._totalSupply)
+this._totalSupply == this.balances[orig(msg.sender)].getValue()
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+spender == orig(spender)
+tokens == orig(tokens)
+tokens == this.allowed[pair(msg.sender,spender)].getSubValue()
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == orig(this.allowed[post(pair(spender,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this._totalSupply) == this.balances[orig(msg.sender)].getValue()
+orig(tokens) == this.allowed[pair(msg.sender,spender)].getSubValue()
+orig(msg.value) == orig(this.allowed[post(pair(spender,msg.sender))].getSubValue())
+this.decimals == 2
+this._totalSupply == 100000000000
+this.balances has only one value
+this.allowed has only one value
+this.allowed[].getSubLength() elements one of { 1, 2 }
+tokens one of { 50000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639935 }
+msg.value == 0
+block.timestamp one of { 1611495856, 1612723364 }
+orig(this) has only one value
+orig(this.decimals) == 2
+orig(this._totalSupply) == 100000000000
+orig(this.allowed[].getSubLength()) elements == 1
+orig(tokens) one of { 50000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639935 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1611495856, 1612723364 }
+sum(this.allowed[].getSubLength()) one of { 1, 2 }
+sum(this.allowed[].getSubValue()) one of { 115792089237316195423570985008687907853269984665640564039457584007913129639935, 115792089237316195423570985008687907853269984665640564039457584007963129639935 }
+sum(orig(this.allowed[].getSubLength())) one of { 0, 1 }
+sum(orig(this.allowed[].getSubValue())) one of { 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935 }
+this.balances[orig(msg.sender)].getValue() == 100000000000
+this.allowed[pair(msg.sender,spender)].getSubValue() one of { 50000000000, 115792089237316195423570985008687907853269984665640564039457584007913129639935 }
+orig(this.allowed[post(pair(spender,msg.sender))].getSubValue()) == 0
+sum(this.allowed[].getSubLength()) in this.allowed[].getSubLength()
+this.allowed[].getSubLength() elements == sum(this.allowed[].getSubLength())
+orig(this.allowed[].getSubLength()) elements == sum(orig(this.allowed[].getSubLength()))
+===========================================================================
+IAMToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.decimals == orig(this.decimals)
+this._totalSupply == this.balances[orig(to)].getValue()
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+to == orig(to)
+msg.sender == orig(msg.sender)
+orig(tokens) == orig(this.balances[post(to)].getValue())
+orig(msg.value) == this.balances[orig(msg.sender)].getValue()
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.decimals == 2
+this._totalSupply == 100000000000
+this.balances has only one value
+this.allowed has only one value
+this.allowed[].getSubLength() elements == 2
+orig(this) has only one value
+orig(this.decimals) == 2
+orig(tokens) == 50000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 12006376
+sum(this.allowed[].getSubLength()) == 2
+sum(this.allowed[].getSubValue()) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+this.balances[orig(to)].getValue() == 100000000000
+this.balances[orig(msg.sender)].getValue() == 0
+orig(this.balances[post(to)].getValue()) == 50000000000
+sum(this.allowed[].getSubLength()) in this.allowed[].getSubLength()
+this.allowed[].getSubLength() elements == sum(this.allowed[].getSubLength())
+Exiting Daikon.

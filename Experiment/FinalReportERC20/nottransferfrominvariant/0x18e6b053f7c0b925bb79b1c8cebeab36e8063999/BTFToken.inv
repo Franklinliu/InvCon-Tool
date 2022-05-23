@@ -1,0 +1,68 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+BTFToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Pausable_own_paused == this.deprecated
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.Pausable_own_paused == orig(this.deprecated)
+this.ERC20Basic_own__totalSupply == orig(this.ERC20Basic_own__totalSupply)
+this.ERC20Basic_own__totalSupply == sum(this.BasicToken_own_balances[].getValue())
+this.ERC20Basic_own__totalSupply == sum(orig(this.BasicToken_own_balances[].getValue()))
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_basisPointsRate == this.BasicToken_own_maximumFee
+this.BasicToken_own_basisPointsRate == msg.value
+this.BasicToken_own_basisPointsRate == orig(msg.value)
+this.BasicToken_own_basisPointsRate == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+this.BasicToken_own_basisPointsRate == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.BasicToken_own_maximumFee == msg.value
+this.BasicToken_own_maximumFee == orig(msg.value)
+this.BasicToken_own_maximumFee == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+this.BasicToken_own_maximumFee == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.BlackList_own_isBlackListed == orig(this.BlackList_own_isBlackListed)
+this.BlackList_own_isBlackListed[].getValue() == orig(this.BlackList_own_isBlackListed[].getValue())
+this.decimals == orig(this.decimals)
+this.upgradedAddress == orig(this.upgradedAddress)
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20Basic_own__totalSupply) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.ERC20Basic_own__totalSupply) == sum(orig(this.BasicToken_own_balances[].getValue()))
+orig(msg.value) == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == sum(orig(this.BasicToken_own_balances[].getValue()))
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.Pausable_own_paused == false
+this.ERC20Basic_own__totalSupply == 210000000000000000000000000
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_balances[].getValue() elements >= 0
+this.BasicToken_own_basisPointsRate == 0
+this.BasicToken_own_maximumFee == 0
+this.StandardToken_own_allowed has only one value
+this.BlackList_own_isBlackListed has only one value
+this.decimals == 18
+msg.value == 0
+orig(this) has only one value
+orig(this.ERC20Basic_own__totalSupply) == 210000000000000000000000000
+orig(this.BasicToken_own_balances[].getValue()) elements >= 0
+orig(this.decimals) == 18
+orig(msg.value) == 0
+sum(this.BasicToken_own_balances[].getValue()) == 210000000000000000000000000
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+sum(orig(this.BasicToken_own_balances[].getValue())) == 210000000000000000000000000
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() == 0
+orig(this.BasicToken_own_balances[post(this.Ownable_own_owner)].getValue()) one of { 0, 210000000000000000000000000 }
+orig(this.BasicToken_own_balances[post(_to)].getValue()) == 21000000000000000000000
+orig(this.BasicToken_own_balances[post(msg.sender)].getValue()) one of { 2079000000000000000000000, 2100000000000000000000000, 210000000000000000000000000 }
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

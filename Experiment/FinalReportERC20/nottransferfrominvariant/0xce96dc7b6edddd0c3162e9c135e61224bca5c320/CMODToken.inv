@@ -1,0 +1,48 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+CMODToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.decimals == orig(this.decimals)
+this._totalSupply == orig(this._totalSupply)
+this._totalSupply == sum(this.balances[].getValue())
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+to == orig(to)
+tokens == orig(tokens)
+tokens == this.balances[orig(to)].getValue()
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == sum(this.allowed[].getSubValue())
+msg.value == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this._totalSupply) == sum(this.balances[].getValue())
+orig(tokens) == this.balances[orig(to)].getValue()
+orig(msg.value) == sum(this.allowed[].getSubValue())
+orig(msg.value) == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+sum(this.allowed[].getSubValue()) == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+this.decimals == 18
+this._totalSupply == 500000000000000000000000
+this.balances has only one value
+this.allowed has only one value
+tokens one of { 400000000000000000000, 50000000000000000000000 }
+msg.value == 0
+block.timestamp one of { 1611112853, 1611686414, 1611708415 }
+orig(this) has only one value
+orig(this.decimals) == 18
+orig(this._totalSupply) == 500000000000000000000000
+orig(tokens) one of { 400000000000000000000, 50000000000000000000000 }
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1611112853, 1611686414, 1611708415 }
+sum(this.balances[].getValue()) == 500000000000000000000000
+sum(this.allowed[].getSubLength()) == 0
+sum(this.allowed[].getSubValue()) == 0
+this.balances[orig(to)].getValue() one of { 400000000000000000000, 50000000000000000000000 }
+this.balances[orig(msg.sender)].getValue() one of { 449200000000000000000000, 449600000000000000000000, 450000000000000000000000 }
+orig(this.balances[post(msg.sender)].getValue()) one of { 449600000000000000000000, 450000000000000000000000, 500000000000000000000000 }
+orig(this.allowed[post(pair(to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

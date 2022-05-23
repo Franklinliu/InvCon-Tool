@@ -1,0 +1,176 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+SOLVECARE.approve(address,uint256):::EXIT1
+this == orig(this)
+this.ERC20Basic_own_totalSupply == orig(this.ERC20Basic_own_totalSupply)
+this.ERC20Basic_own_totalSupply == sum(this.BasicToken_own_balances[].getValue())
+this.ERC20Basic_own_totalSupply == sum(orig(this.BasicToken_own_balances[].getValue()))
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+_spender == orig(_spender)
+_value == orig(_value)
+_value == this.StandardToken_own_allowed[pair(msg.sender,_spender)].getSubValue()
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20Basic_own_totalSupply) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.ERC20Basic_own_totalSupply) == sum(orig(this.BasicToken_own_balances[].getValue()))
+orig(_value) == this.StandardToken_own_allowed[pair(msg.sender,_spender)].getSubValue()
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == sum(orig(this.BasicToken_own_balances[].getValue()))
+this.ERC20Basic_own_totalSupply == 1000000000000000000000000000
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_balances[].getValue() elements >= 0
+this.StandardToken_own_allowed has only one value
+this.StandardToken_own_allowed[].getSubLength() elements == 1
+_value == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+msg.value == 0
+orig(this) has only one value
+orig(this.ERC20Basic_own_totalSupply) == 1000000000000000000000000000
+orig(this.StandardToken_own_allowed[].getSubLength()) elements == 1
+orig(_value) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(msg.value) == 0
+sum(this.BasicToken_own_balances[].getValue()) == 1000000000000000000000000000
+sum(orig(this.BasicToken_own_balances[].getValue())) == 1000000000000000000000000000
+this.BasicToken_own_balances[orig(msg.sender)].getValue() one of { 49693627442514385357626195, 66872443316939379189860311, 1000000000000000000000000000 }
+this.StandardToken_own_allowed[pair(msg.sender,_spender)].getSubValue() == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue()) == 0
+sum(this.StandardToken_own_allowed[].getSubLength()) - sum(orig(this.StandardToken_own_allowed[].getSubLength())) - 1 == 0
+===========================================================================
+SOLVECARE.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.ERC20Basic_own_totalSupply == orig(this.ERC20Basic_own_totalSupply)
+this.ERC20Basic_own_totalSupply == sum(this.BasicToken_own_balances[].getValue())
+this.ERC20Basic_own_totalSupply == sum(orig(this.BasicToken_own_balances[].getValue()))
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.ERC20Basic_own_totalSupply) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.ERC20Basic_own_totalSupply) == sum(orig(this.BasicToken_own_balances[].getValue()))
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == sum(orig(this.BasicToken_own_balances[].getValue()))
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+sum(this.StandardToken_own_allowed[].getSubValue()) == sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+this.ERC20Basic_own_totalSupply == 1000000000000000000000000000
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_balances[].getValue() elements >= 0
+this.StandardToken_own_allowed has only one value
+this.StandardToken_own_allowed[].getSubLength() elements == 1
+this.StandardToken_own_allowed[].getSubValue() sorted by <=
+msg.value == 0
+block.timestamp one of { 11755258, 11755266, 11755275 }
+orig(this) has only one value
+orig(this.ERC20Basic_own_totalSupply) == 1000000000000000000000000000
+orig(this.BasicToken_own_balances[].getValue()) elements >= 0
+orig(msg.value) == 0
+orig(block.timestamp) one of { 11755258, 11755266, 11755275 }
+sum(this.BasicToken_own_balances[].getValue()) == 1000000000000000000000000000
+sum(this.StandardToken_own_allowed[].getSubLength()) one of { 1, 2, 3 }
+sum(this.StandardToken_own_allowed[].getSubValue()) one of { 115792089237316195423570985008687907853269984665639564039457584007913129639935, 231584178474632390847141970017375815706539969331280128078915168015826259279870, 347376267711948586270712955026063723559809953996920692118372752023739388919805 }
+sum(orig(this.BasicToken_own_balances[].getValue())) == 1000000000000000000000000000
+sum(orig(this.StandardToken_own_allowed[].getSubValue())) one of { 115792089237316195423570985008687907853269984665639564039457584007913129639935, 231584178474632390847141970017375815706539969331280128078915168015826259279870, 347376267711948586270712955026063723559809953996920692118372752023739388919805 }
+orig(this.BasicToken_own_balances[post(_to)].getValue()) == 765092458618451168745799492
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.ERC20Basic_own_totalSupply < sum(this.StandardToken_own_allowed[].getSubValue())
+this.ERC20Basic_own_totalSupply < sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+_value < orig(this.ERC20Basic_own_totalSupply)
+_value < sum(this.BasicToken_own_balances[].getValue())
+_value < sum(this.StandardToken_own_allowed[].getSubValue())
+_value < sum(orig(this.BasicToken_own_balances[].getValue()))
+_value < sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+_value <= this.BasicToken_own_balances[orig(_to)].getValue()
+_value <= orig(this.BasicToken_own_balances[post(msg.sender)].getValue())
+msg.value < block.timestamp
+msg.value < orig(this.ERC20Basic_own_totalSupply)
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.BasicToken_own_balances[].getValue())
+msg.value < sum(this.StandardToken_own_allowed[].getSubValue())
+msg.value < sum(orig(this.BasicToken_own_balances[].getValue()))
+msg.value < sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+msg.value < this.BasicToken_own_balances[orig(_to)].getValue()
+msg.value <= this.BasicToken_own_balances[orig(msg.sender)].getValue()
+msg.value < orig(this.BasicToken_own_balances[post(msg.sender)].getValue())
+block.timestamp < orig(this.ERC20Basic_own_totalSupply)
+block.timestamp < orig(_value)
+block.timestamp < sum(this.BasicToken_own_balances[].getValue())
+block.timestamp < sum(this.StandardToken_own_allowed[].getSubValue())
+block.timestamp < sum(orig(this.BasicToken_own_balances[].getValue()))
+block.timestamp < sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+block.timestamp < this.BasicToken_own_balances[orig(_to)].getValue()
+block.timestamp < orig(this.BasicToken_own_balances[post(msg.sender)].getValue())
+orig(this.ERC20Basic_own_totalSupply) < sum(this.StandardToken_own_allowed[].getSubValue())
+orig(this.ERC20Basic_own_totalSupply) < sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+orig(_to) != orig(msg.sender)
+orig(_value) < sum(this.BasicToken_own_balances[].getValue())
+orig(_value) < sum(this.StandardToken_own_allowed[].getSubValue())
+orig(_value) < sum(orig(this.BasicToken_own_balances[].getValue()))
+orig(_value) < sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+orig(_value) <= this.BasicToken_own_balances[orig(_to)].getValue()
+orig(_value) <= orig(this.BasicToken_own_balances[post(msg.sender)].getValue())
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.BasicToken_own_balances[].getValue())
+orig(msg.value) < sum(this.StandardToken_own_allowed[].getSubValue())
+orig(msg.value) < sum(orig(this.BasicToken_own_balances[].getValue()))
+orig(msg.value) < sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+orig(msg.value) < this.BasicToken_own_balances[orig(_to)].getValue()
+orig(msg.value) <= this.BasicToken_own_balances[orig(msg.sender)].getValue()
+orig(msg.value) < orig(this.BasicToken_own_balances[post(msg.sender)].getValue())
+orig(block.timestamp) < sum(this.BasicToken_own_balances[].getValue())
+orig(block.timestamp) < sum(this.StandardToken_own_allowed[].getSubValue())
+orig(block.timestamp) < sum(orig(this.BasicToken_own_balances[].getValue()))
+orig(block.timestamp) < sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+orig(block.timestamp) < this.BasicToken_own_balances[orig(_to)].getValue()
+orig(block.timestamp) < orig(this.BasicToken_own_balances[post(msg.sender)].getValue())
+sum(this.BasicToken_own_balances[].getValue()) < sum(this.StandardToken_own_allowed[].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) < sum(orig(this.StandardToken_own_allowed[].getSubValue()))
+this.BasicToken_own_balances[orig(msg.sender)].getValue() < orig(this.BasicToken_own_balances[post(msg.sender)].getValue())
+_value + this.BasicToken_own_balances[orig(msg.sender)].getValue() - orig(this.BasicToken_own_balances[post(msg.sender)].getValue()) == 0
+orig(_value) + this.BasicToken_own_balances[orig(msg.sender)].getValue() - orig(this.BasicToken_own_balances[post(msg.sender)].getValue()) == 0
+===========================================================================
+SOLVECARE.transferFrom(address,address,uint256):::EXIT1
+this == orig(this)
+this.ERC20Basic_own_totalSupply == orig(_value)
+this.ERC20Basic_own_totalSupply == this.BasicToken_own_balances[orig(_to)].getValue()
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+_from == orig(_from)
+_to == orig(_to)
+msg.sender == orig(msg.sender)
+orig(_value) == this.BasicToken_own_balances[orig(_to)].getValue()
+orig(msg.value) == this.BasicToken_own_balances[orig(_from)].getValue()
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_from,_to))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+sum(this.StandardToken_own_allowed[].getSubValue()) == this.StandardToken_own_allowed[pair(_from,msg.sender)].getSubValue()
+sum(orig(this.StandardToken_own_allowed[].getSubValue())) == orig(this.StandardToken_own_allowed[post(pair(_from,msg.sender))].getSubValue())
+this.BasicToken_own_balances[orig(_from)].getValue() == orig(this.StandardToken_own_allowed[post(pair(_from,_to))].getSubValue())
+this.ERC20Basic_own_totalSupply == 1000000000000000000000000000
+this.BasicToken_own_balances has only one value
+this.StandardToken_own_allowed has only one value
+this.StandardToken_own_allowed[].getSubLength() elements == 1
+orig(this) has only one value
+orig(_value) == 1000000000000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 11755252
+sum(this.StandardToken_own_allowed[].getSubLength()) == 1
+sum(this.StandardToken_own_allowed[].getSubValue()) == 115792089237316195423570985008687907853269984665639564039457584007913129639935
+sum(orig(this.StandardToken_own_allowed[].getSubValue())) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+this.BasicToken_own_balances[orig(_from)].getValue() == 0
+this.BasicToken_own_balances[orig(_to)].getValue() == 1000000000000000000000000000
+this.StandardToken_own_allowed[pair(_from,msg.sender)].getSubValue() == 115792089237316195423570985008687907853269984665639564039457584007913129639935
+orig(this.StandardToken_own_allowed[post(pair(_from,_to))].getSubValue()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_from,msg.sender))].getSubValue()) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+sum(this.StandardToken_own_allowed[].getSubLength()) in this.StandardToken_own_allowed[].getSubLength()
+this.StandardToken_own_allowed[].getSubLength() elements == sum(this.StandardToken_own_allowed[].getSubLength())
+Exiting Daikon.

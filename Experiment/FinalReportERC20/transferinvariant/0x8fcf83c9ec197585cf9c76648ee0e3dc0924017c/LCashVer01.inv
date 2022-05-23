@@ -1,0 +1,241 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+LCashVer01.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.owned_own_owner == orig(this.owned_own_owner)
+this.TokenERC20_own_decimals == orig(this.TokenERC20_own_decimals)
+this.TokenERC20_own_totalSupply == orig(this.TokenERC20_own_totalSupply)
+this.TokenERC20_own_totalSupply == sum(this.TokenERC20_own_balanceOf[].getValue())
+this.TokenERC20_own_totalSupply == sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+this.TokenERC20_own_balanceOf == orig(this.TokenERC20_own_balanceOf)
+this.TokenERC20_own_allowance == orig(this.TokenERC20_own_allowance)
+this.TokenERC20_own_allowance[].getSubLength() == orig(this.TokenERC20_own_allowance[].getSubLength())
+this.sellPrice == this.buyPrice
+this.sellPrice == msg.value
+this.sellPrice == orig(this.sellPrice)
+this.sellPrice == orig(this.buyPrice)
+this.sellPrice == orig(msg.value)
+this.sellPrice == sum(this.TokenERC20_own_allowance[].getSubValue())
+this.sellPrice == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+this.buyPrice == msg.value
+this.buyPrice == orig(this.sellPrice)
+this.buyPrice == orig(this.buyPrice)
+this.buyPrice == orig(msg.value)
+this.buyPrice == sum(this.TokenERC20_own_allowance[].getSubValue())
+this.buyPrice == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+this.frozenAccount == orig(this.frozenAccount)
+this.frozenAccount[].getValue() == orig(this.frozenAccount[].getValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.sellPrice)
+msg.value == orig(this.buyPrice)
+msg.value == orig(msg.value)
+msg.value == sum(this.TokenERC20_own_allowance[].getSubValue())
+msg.value == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.TokenERC20_own_totalSupply) == sum(this.TokenERC20_own_balanceOf[].getValue())
+orig(this.TokenERC20_own_totalSupply) == sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+orig(this.sellPrice) == orig(this.buyPrice)
+orig(this.sellPrice) == orig(msg.value)
+orig(this.sellPrice) == sum(this.TokenERC20_own_allowance[].getSubValue())
+orig(this.sellPrice) == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+orig(this.buyPrice) == orig(msg.value)
+orig(this.buyPrice) == sum(this.TokenERC20_own_allowance[].getSubValue())
+orig(this.buyPrice) == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.TokenERC20_own_allowance[].getSubValue())
+orig(msg.value) == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+sum(this.TokenERC20_own_balanceOf[].getValue()) == sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+sum(this.TokenERC20_own_allowance[].getSubLength()) == sum(orig(this.TokenERC20_own_allowance[].getSubLength()))
+sum(this.TokenERC20_own_allowance[].getSubValue()) == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+this.TokenERC20_own_decimals == 8
+this.TokenERC20_own_totalSupply == 300000000000000000
+this.TokenERC20_own_balanceOf has only one value
+this.TokenERC20_own_balanceOf[].getValue() elements >= 0
+this.TokenERC20_own_allowance has only one value
+this.sellPrice == 0
+this.buyPrice == 0
+this.frozenAccount has only one value
+this.frozenAccount[].getValue() elements != null
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.TokenERC20_own_decimals) == 8
+orig(this.TokenERC20_own_totalSupply) == 300000000000000000
+orig(this.TokenERC20_own_balanceOf[].getValue()) elements >= 0
+orig(this.sellPrice) == 0
+orig(this.buyPrice) == 0
+orig(msg.value) == 0
+sum(this.TokenERC20_own_balanceOf[].getValue()) == 300000000000000000
+sum(this.TokenERC20_own_allowance[].getSubLength()) == 0
+sum(this.TokenERC20_own_allowance[].getSubValue()) == 0
+sum(orig(this.TokenERC20_own_balanceOf[].getValue())) == 300000000000000000
+this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue() >= 0
+orig(this.TokenERC20_own_balanceOf[post(_to)].getValue()) >= 0
+orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.owned_own_owner != orig(_to)
+this.TokenERC20_own_decimals < this.TokenERC20_own_totalSupply
+this.TokenERC20_own_decimals < _value
+this.TokenERC20_own_decimals < block.timestamp
+this.TokenERC20_own_decimals < orig(this.TokenERC20_own_totalSupply)
+this.TokenERC20_own_decimals < orig(_value)
+this.TokenERC20_own_decimals < orig(block.timestamp)
+this.TokenERC20_own_decimals < sum(this.TokenERC20_own_balanceOf[].getValue())
+this.TokenERC20_own_decimals < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+this.TokenERC20_own_decimals < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+this.TokenERC20_own_decimals < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+this.TokenERC20_own_decimals < this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+this.TokenERC20_own_decimals < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+this.sellPrice < _value
+this.sellPrice < block.timestamp
+this.sellPrice < orig(this.TokenERC20_own_decimals)
+this.sellPrice < orig(this.TokenERC20_own_totalSupply)
+this.sellPrice < orig(_value)
+this.sellPrice < orig(block.timestamp)
+this.sellPrice < sum(this.TokenERC20_own_balanceOf[].getValue())
+this.sellPrice < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+this.sellPrice < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+this.sellPrice < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+this.sellPrice < this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+this.sellPrice <= this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue()
+this.sellPrice <= orig(this.TokenERC20_own_balanceOf[post(_to)].getValue())
+this.sellPrice < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+this.buyPrice < _value
+this.buyPrice < block.timestamp
+this.buyPrice < orig(this.TokenERC20_own_decimals)
+this.buyPrice < orig(this.TokenERC20_own_totalSupply)
+this.buyPrice < orig(_value)
+this.buyPrice < orig(block.timestamp)
+this.buyPrice < sum(this.TokenERC20_own_balanceOf[].getValue())
+this.buyPrice < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+this.buyPrice < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+this.buyPrice < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+this.buyPrice < this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+this.buyPrice <= this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue()
+this.buyPrice <= orig(this.TokenERC20_own_balanceOf[post(_to)].getValue())
+this.buyPrice < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+_value < orig(this.TokenERC20_own_totalSupply)
+_value < sum(this.TokenERC20_own_balanceOf[].getValue())
+_value < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+_value < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+_value < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+_value <= this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+_value <= orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+msg.value < block.timestamp
+msg.value < orig(this.TokenERC20_own_decimals)
+msg.value < orig(this.TokenERC20_own_totalSupply)
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.TokenERC20_own_balanceOf[].getValue())
+msg.value < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+msg.value < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+msg.value < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+msg.value < this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+msg.value <= this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue()
+msg.value <= orig(this.TokenERC20_own_balanceOf[post(_to)].getValue())
+msg.value < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+block.timestamp < orig(this.TokenERC20_own_totalSupply)
+block.timestamp < sum(this.TokenERC20_own_balanceOf[].getValue())
+block.timestamp < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+block.timestamp < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+block.timestamp < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+block.timestamp < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+orig(this.TokenERC20_own_decimals) < orig(this.TokenERC20_own_totalSupply)
+orig(this.TokenERC20_own_decimals) < orig(_value)
+orig(this.TokenERC20_own_decimals) < orig(block.timestamp)
+orig(this.TokenERC20_own_decimals) < sum(this.TokenERC20_own_balanceOf[].getValue())
+orig(this.TokenERC20_own_decimals) < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+orig(this.TokenERC20_own_decimals) < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+orig(this.TokenERC20_own_decimals) < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+orig(this.TokenERC20_own_decimals) < this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+orig(this.TokenERC20_own_decimals) < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+orig(this.sellPrice) < orig(_value)
+orig(this.sellPrice) < orig(block.timestamp)
+orig(this.sellPrice) < sum(this.TokenERC20_own_balanceOf[].getValue())
+orig(this.sellPrice) < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+orig(this.sellPrice) < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+orig(this.sellPrice) < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+orig(this.sellPrice) < this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+orig(this.sellPrice) <= this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue()
+orig(this.sellPrice) <= orig(this.TokenERC20_own_balanceOf[post(_to)].getValue())
+orig(this.sellPrice) < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+orig(this.buyPrice) < orig(_value)
+orig(this.buyPrice) < orig(block.timestamp)
+orig(this.buyPrice) < sum(this.TokenERC20_own_balanceOf[].getValue())
+orig(this.buyPrice) < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+orig(this.buyPrice) < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+orig(this.buyPrice) < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+orig(this.buyPrice) < this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+orig(this.buyPrice) <= this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue()
+orig(this.buyPrice) <= orig(this.TokenERC20_own_balanceOf[post(_to)].getValue())
+orig(this.buyPrice) < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+orig(_to) != orig(msg.sender)
+orig(_value) < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+orig(_value) < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+orig(_value) <= this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+orig(_value) <= orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.TokenERC20_own_balanceOf[].getValue())
+orig(msg.value) < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+orig(msg.value) < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+orig(msg.value) < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+orig(msg.value) < this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+orig(msg.value) <= this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue()
+orig(msg.value) <= orig(this.TokenERC20_own_balanceOf[post(_to)].getValue())
+orig(msg.value) < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+orig(block.timestamp) < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+orig(block.timestamp) < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+orig(block.timestamp) < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+sum(this.TokenERC20_own_allowance[].getSubValue()) < sum(orig(this.TokenERC20_own_balanceOf[].getValue()))
+sum(this.TokenERC20_own_allowance[].getSubValue()) < this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+sum(this.TokenERC20_own_allowance[].getSubValue()) < orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+sum(this.TokenERC20_own_allowance[].getSubValue()) < this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+sum(this.TokenERC20_own_allowance[].getSubValue()) <= this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue()
+sum(this.TokenERC20_own_allowance[].getSubValue()) <= orig(this.TokenERC20_own_balanceOf[post(_to)].getValue())
+sum(this.TokenERC20_own_allowance[].getSubValue()) < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue() <= orig(this.TokenERC20_own_balanceOf[post(this.owned_own_owner)].getValue())
+this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue() < orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+_value - this.TokenERC20_own_balanceOf[orig(_to)].getValue() + orig(this.TokenERC20_own_balanceOf[post(_to)].getValue()) == 0
+_value + this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue() - orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue()) == 0
+orig(_value) - this.TokenERC20_own_balanceOf[orig(_to)].getValue() + orig(this.TokenERC20_own_balanceOf[post(_to)].getValue()) == 0
+orig(_value) + this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue() - orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue()) == 0
+===========================================================================
+LCashVer01.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.owned_own_owner == orig(this.owned_own_owner)
+this.TokenERC20_own_decimals == orig(this.TokenERC20_own_decimals)
+this.TokenERC20_own_totalSupply == orig(this.TokenERC20_own_totalSupply)
+this.TokenERC20_own_balanceOf == orig(this.TokenERC20_own_balanceOf)
+this.TokenERC20_own_allowance == orig(this.TokenERC20_own_allowance)
+this.TokenERC20_own_allowance[].getSubLength() == orig(this.TokenERC20_own_allowance[].getSubLength())
+this.sellPrice == this.buyPrice
+this.sellPrice == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+this.buyPrice == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+this.frozenAccount == orig(this.frozenAccount)
+this.frozenAccount[].getValue() == orig(this.frozenAccount[].getValue())
+_to == orig(_to)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+sum(this.TokenERC20_own_allowance[].getSubLength()) == sum(orig(this.TokenERC20_own_allowance[].getSubLength()))
+this.TokenERC20_own_decimals == 8
+this.TokenERC20_own_totalSupply == 300000000000000000
+this.TokenERC20_own_balanceOf has only one value
+this.TokenERC20_own_balanceOf[].getValue() elements >= 0
+this.TokenERC20_own_allowance has only one value
+this.sellPrice == 0
+this.buyPrice == 0
+this.frozenAccount has only one value
+block.timestamp one of { 1613002832, 1619668299 }
+orig(this) has only one value
+orig(this.TokenERC20_own_decimals) == 8
+orig(this.TokenERC20_own_totalSupply) == 300000000000000000
+orig(block.timestamp) one of { 1613002832, 1619668299 }
+sum(this.TokenERC20_own_allowance[].getSubLength()) == 0
+this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue() one of { 285322739954900000, 297466666600000000 }
+this.TokenERC20_own_balanceOf[orig(_to)].getValue() == 75000000000
+this.TokenERC20_own_balanceOf[orig(msg.sender)].getValue() one of { 240330645348000, 2422000000000000 }
+orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

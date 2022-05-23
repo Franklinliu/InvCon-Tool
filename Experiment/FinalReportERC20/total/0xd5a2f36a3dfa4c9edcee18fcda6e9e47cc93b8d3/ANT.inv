@@ -1,0 +1,108 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+ANT.approve(address,uint256):::EXIT1
+this == orig(this)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+spender == orig(spender)
+value == orig(value)
+value == this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+msg.sender == orig(msg.sender)
+orig(value) == this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue()
+orig(msg.value) == orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue())
+this.ERC20_own__balances == null
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements == 1
+value == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(this) has only one value
+orig(value) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(msg.value) == 0
+orig(block.timestamp) == 1611863936
+sum(this.ERC20_own__balances[].getValue()) == 100000000000000000000000000000000
+sum(this.ERC20_own__allowed[].getSubLength()) == 1
+sum(orig(this.ERC20_own__allowed[].getSubLength())) == 0
+this.ERC20_own__balances[orig(msg.sender)].getValue() == 1000000000000000000000
+this.ERC20_own__allowed[pair(msg.sender,spender)].getSubValue() == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(this.ERC20_own__allowed[post(pair(spender,msg.sender))].getSubValue()) == 0
+sum(this.ERC20_own__allowed[].getSubLength()) in this.ERC20_own__allowed[].getSubLength()
+this.ERC20_own__allowed[].getSubLength() elements == sum(this.ERC20_own__allowed[].getSubLength())
+===========================================================================
+ANT.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.ERC20_own__balances == orig(this.ERC20_own__balances)
+this.ERC20_own__allowed == orig(this.ERC20_own__allowed)
+this.ERC20_own__allowed[].getSubLength() == orig(this.ERC20_own__allowed[].getSubLength())
+to == orig(to)
+value == orig(value)
+msg.sender == orig(msg.sender)
+msg.value == orig(msg.value)
+msg.value == orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(msg.value) == orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue())
+sum(this.ERC20_own__balances[].getValue()) == sum(orig(this.ERC20_own__balances[].getValue()))
+sum(this.ERC20_own__allowed[].getSubLength()) == sum(orig(this.ERC20_own__allowed[].getSubLength()))
+this.ERC20_own__balances == null
+this.ERC20_own__balances[].getValue() elements >= 0
+this.ERC20_own__allowed has only one value
+this.ERC20_own__allowed[].getSubLength() elements == 1
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.ERC20_own__balances[].getValue()) elements >= 0
+orig(msg.value) == 0
+sum(this.ERC20_own__balances[].getValue()) == 100000000000000000000000000000000
+sum(this.ERC20_own__allowed[].getSubLength()) one of { 0, 1 }
+sum(this.ERC20_own__allowed[].getSubValue()) one of { 0, 115792089237316195423570985008687907853269984665640564039457584007913129639935 }
+sum(orig(this.ERC20_own__balances[].getValue())) == 100000000000000000000000000000000
+this.ERC20_own__balances[orig(msg.sender)].getValue() >= 0
+orig(this.ERC20_own__balances[post(to)].getValue()) one of { 0, 3000000000000000000000000, 7999999000000000000000000000 }
+orig(this.ERC20_own__allowed[post(pair(to,msg.sender))].getSubValue()) == 0
+this.ERC20_own__allowed[].getSubLength() elements == sum(this.ERC20_own__allowed[].getSubLength())
+this.ERC20_own__allowed[].getSubValue() elements == sum(this.ERC20_own__allowed[].getSubValue())
+value <= sum(this.ERC20_own__balances[].getValue())
+value <= sum(orig(this.ERC20_own__balances[].getValue()))
+value <= this.ERC20_own__balances[orig(to)].getValue()
+value <= orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+msg.value < block.timestamp
+msg.value < orig(value)
+msg.value < orig(block.timestamp)
+msg.value < sum(this.ERC20_own__balances[].getValue())
+msg.value <= sum(this.ERC20_own__allowed[].getSubValue())
+msg.value < sum(orig(this.ERC20_own__balances[].getValue()))
+msg.value < this.ERC20_own__balances[orig(to)].getValue()
+msg.value <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+msg.value <= orig(this.ERC20_own__balances[post(to)].getValue())
+msg.value < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+block.timestamp < orig(value)
+block.timestamp < sum(this.ERC20_own__balances[].getValue())
+block.timestamp < sum(orig(this.ERC20_own__balances[].getValue()))
+block.timestamp < this.ERC20_own__balances[orig(to)].getValue()
+block.timestamp < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(to) != orig(msg.sender)
+orig(value) <= sum(this.ERC20_own__balances[].getValue())
+orig(value) <= sum(orig(this.ERC20_own__balances[].getValue()))
+orig(value) <= this.ERC20_own__balances[orig(to)].getValue()
+orig(value) <= orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(msg.value) < orig(block.timestamp)
+orig(msg.value) < sum(this.ERC20_own__balances[].getValue())
+orig(msg.value) <= sum(this.ERC20_own__allowed[].getSubValue())
+orig(msg.value) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(msg.value) < this.ERC20_own__balances[orig(to)].getValue()
+orig(msg.value) <= this.ERC20_own__balances[orig(msg.sender)].getValue()
+orig(msg.value) <= orig(this.ERC20_own__balances[post(to)].getValue())
+orig(msg.value) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(block.timestamp) < sum(this.ERC20_own__balances[].getValue())
+orig(block.timestamp) < sum(orig(this.ERC20_own__balances[].getValue()))
+orig(block.timestamp) < this.ERC20_own__balances[orig(to)].getValue()
+orig(block.timestamp) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.ERC20_own__balances[orig(to)].getValue() <= orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+this.ERC20_own__balances[orig(msg.sender)].getValue() < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+orig(this.ERC20_own__balances[post(to)].getValue()) < orig(this.ERC20_own__balances[post(msg.sender)].getValue())
+value - this.ERC20_own__balances[orig(to)].getValue() + orig(this.ERC20_own__balances[post(to)].getValue()) == 0
+value + this.ERC20_own__balances[orig(msg.sender)].getValue() - orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+orig(value) - this.ERC20_own__balances[orig(to)].getValue() + orig(this.ERC20_own__balances[post(to)].getValue()) == 0
+orig(value) + this.ERC20_own__balances[orig(msg.sender)].getValue() - orig(this.ERC20_own__balances[post(msg.sender)].getValue()) == 0
+Exiting Daikon.

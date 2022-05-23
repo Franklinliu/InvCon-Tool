@@ -1,0 +1,33 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+CyrusTheGeratCoin.approve(address,uint256):::EXIT2
+this == orig(this)
+_spender == orig(_spender)
+_value == orig(_value)
+msg.sender == orig(_spender)
+msg.value == orig(msg.value)
+block.timestamp == orig(block.timestamp)
+orig(_spender) == orig(msg.sender)
+_value == 100000000000
+msg.value == 0
+block.timestamp one of { 1610381189, 1610538234 }
+orig(this) has only one value
+orig(_value) == 100000000000
+orig(msg.value) == 0
+orig(block.timestamp) one of { 1610381189, 1610538234 }
+===========================================================================
+CyrusTheGeratCoin.transfer(address,uint256):::EXIT2
+this == orig(this)
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(_to)
+orig(_to) == orig(msg.sender)
+_value == 100000000000
+orig(this) has only one value
+orig(_value) == 100000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1610387597
+Exiting Daikon.

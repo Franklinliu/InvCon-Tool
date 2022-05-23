@@ -1,0 +1,51 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+CoolBitETFUSDTAndCompound.start():::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == this.baseRatio
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.WhiteListToken_own_whiteListAdmin == this.StableToken
+this.WhiteListToken_own_whiteListAdmin == this.oracle
+this.WhiteListToken_own_whiteListAdmin == this.cToken
+this.WhiteListToken_own_whiteListAdmin == this.bincentiveHot
+this.WhiteListToken_own_whiteListAdmin == this.bincentiveCold
+this.WhiteListToken_own_whiteListAdmin == orig(this.WhiteListToken_own_whiteListAdmin)
+this.WhiteListToken_own_whiteListAdmin == orig(this.StableToken)
+this.WhiteListToken_own_whiteListAdmin == orig(this.oracle)
+this.WhiteListToken_own_whiteListAdmin == orig(this.cToken)
+this.WhiteListToken_own_whiteListAdmin == orig(this.bincentiveHot)
+this.WhiteListToken_own_whiteListAdmin == orig(this.bincentiveCold)
+this.WhiteListToken_own_isTransferRestricted == this.WhiteListToken_own_isReceiveRestricted
+this.WhiteListToken_own_isTransferRestricted == orig(this.WhiteListToken_own_isTransferRestricted)
+this.WhiteListToken_own_isTransferRestricted == orig(this.WhiteListToken_own_isReceiveRestricted)
+this.WhiteListToken_own_transferWhiteList == orig(this.WhiteListToken_own_transferWhiteList)
+this.WhiteListToken_own_transferWhiteList[].getValue() == this.WhiteListToken_own_receiveWhiteList[].getValue()
+this.WhiteListToken_own_transferWhiteList[].getValue() == this.isInInvestorList[].getValue()
+this.WhiteListToken_own_transferWhiteList[].getValue() == orig(this.WhiteListToken_own_transferWhiteList[].getValue())
+this.WhiteListToken_own_transferWhiteList[].getValue() == orig(this.WhiteListToken_own_receiveWhiteList[].getValue())
+this.WhiteListToken_own_transferWhiteList[].getValue() == orig(this.isInInvestorList[].getValue())
+this.WhiteListToken_own_receiveWhiteList == orig(this.WhiteListToken_own_receiveWhiteList)
+this.investors == orig(this.investors)
+this.isInInvestorList == orig(this.isInInvestorList)
+this.investorDepositUSDTAmount == orig(this.investorDepositUSDTAmount)
+msg.sender == orig(msg.sender)
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.WhiteListToken_own_isTransferRestricted == false
+this.WhiteListToken_own_transferWhiteList has only one value
+this.WhiteListToken_own_receiveWhiteList has only one value
+this.baseRatio == 0
+this.investors has only one value
+this.isInInvestorList has only one value
+this.investorDepositUSDTAmount has only one value
+orig(this) has only one value
+orig(block.timestamp) == 1612514199
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+Exiting Daikon.
