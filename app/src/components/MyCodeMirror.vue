@@ -16,11 +16,12 @@
                     <option v-for="contract in analyzedcontracts" :key="contract">{{contract}}</option>
               </datalist> -->
               
-              <select class="form-control m-2 fs-3 w-25" id="search" v-model="contractaddress">
+              <select  class="form-control m-2 fs-3 w-25" id="search" v-model="contractaddress">
                   <option value="" disabled selected hidden>Please select a contract to start</option>
                   <option v-for="contract in analyzedcontracts" :key="contract">{{contract}}</option>
               </select>
-            <button class="btn btn-primary fs-3" type="button" @click="onSubmit">Search</button>
+            <button class="btn btn-primary fs-3  m-2" type="button" @click="onSubmit">Get Invariant</button>
+            <a v-show="contractaddress!=''" class="m-2" :href='"https://etherscan.io/address/"+this.contractaddress+"#code"' role="button" target="_blank">Go to Etherscan</a>
       </form>  
     </div>
     <div class = "container-fluid h-50 w-100" v-show = "hasSearched">
@@ -55,7 +56,6 @@
                 <option v-for="func in functions" :key="func">{{func}}</option>
               </select>
             </div>
-        
           </div>
         </form>
          <codemirror
@@ -113,6 +113,7 @@ export default {
   },
   data () {
     return {
+        etherscan: "https://etherscan.io/",
         checked: false,
         sourceCode: 'const a = 10',
         contractaddress: "",

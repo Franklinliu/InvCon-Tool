@@ -4,9 +4,8 @@ module.exports = {
       proxy: {
         '^/api': {
           target: 'http://155.69.148.241:8080',
-          changeOrigin: true,
-          pathRewrite: {'^/api': '/'},
-        //   logLevel: 'debug' 
+          changeOrigin: true
+          //   logLevel: 'debug' 
         },
       }
     }
