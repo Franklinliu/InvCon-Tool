@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb0aeb2475e9a3662a477a0b03f20fadff507bd97/0xb0aeb2475e9a3662a477a0b03f20fadff507bd97.sol",
+      "name": "KORCOIN",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb0aeb2475e9a3662a477a0b03f20fadff507bd97/0xb0aeb2475e9a3662a477a0b03f20fadff507bd97.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb0aeb2475e9a3662a477a0b03f20fadff507bd97/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb0aeb2475e9a3662a477a0b03f20fadff507bd97/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb0aeb2475e9a3662a477a0b03f20fadff507bd97/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb0aeb2475e9a3662a477a0b03f20fadff507bd97/storage.json"
+}

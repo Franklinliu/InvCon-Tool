@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x067085aa0ff4e97a3c61bf06de618e0aae11dbc2/0x067085aa0ff4e97a3c61bf06de618e0aae11dbc2.sol",
+      "name": "YPROToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x067085aa0ff4e97a3c61bf06de618e0aae11dbc2/0x067085aa0ff4e97a3c61bf06de618e0aae11dbc2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x067085aa0ff4e97a3c61bf06de618e0aae11dbc2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x067085aa0ff4e97a3c61bf06de618e0aae11dbc2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x067085aa0ff4e97a3c61bf06de618e0aae11dbc2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x067085aa0ff4e97a3c61bf06de618e0aae11dbc2/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xaebbd7b2eb03f84126f6849753b809755d7532f9/0xaebbd7b2eb03f84126f6849753b809755d7532f9.sol",
+      "name": "CAIZCOIN",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xaebbd7b2eb03f84126f6849753b809755d7532f9/0xaebbd7b2eb03f84126f6849753b809755d7532f9.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xaebbd7b2eb03f84126f6849753b809755d7532f9/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xaebbd7b2eb03f84126f6849753b809755d7532f9/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xaebbd7b2eb03f84126f6849753b809755d7532f9/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xaebbd7b2eb03f84126f6849753b809755d7532f9/storage.json"
+}

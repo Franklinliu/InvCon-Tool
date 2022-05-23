@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x67ad111e81408fc444b6a15bd4ffa40c6e919b65/0x67ad111e81408fc444b6a15bd4ffa40c6e919b65.sol",
+      "name": "PollFinance",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x67ad111e81408fc444b6a15bd4ffa40c6e919b65/0x67ad111e81408fc444b6a15bd4ffa40c6e919b65.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x67ad111e81408fc444b6a15bd4ffa40c6e919b65/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x67ad111e81408fc444b6a15bd4ffa40c6e919b65/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x67ad111e81408fc444b6a15bd4ffa40c6e919b65/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x67ad111e81408fc444b6a15bd4ffa40c6e919b65/storage.json"
+}

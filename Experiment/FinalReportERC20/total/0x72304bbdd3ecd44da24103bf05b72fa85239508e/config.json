@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x72304bbdd3ecd44da24103bf05b72fa85239508e/0x72304bbdd3ecd44da24103bf05b72fa85239508e.sol",
+      "name": "Rule34",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x72304bbdd3ecd44da24103bf05b72fa85239508e/0x72304bbdd3ecd44da24103bf05b72fa85239508e.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x72304bbdd3ecd44da24103bf05b72fa85239508e/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x72304bbdd3ecd44da24103bf05b72fa85239508e/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x72304bbdd3ecd44da24103bf05b72fa85239508e/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x72304bbdd3ecd44da24103bf05b72fa85239508e/storage.json"
+}

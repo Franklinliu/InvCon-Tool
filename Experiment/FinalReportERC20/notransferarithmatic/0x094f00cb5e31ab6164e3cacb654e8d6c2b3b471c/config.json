@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x094f00cb5e31ab6164e3cacb654e8d6c2b3b471c/0x094f00cb5e31ab6164e3cacb654e8d6c2b3b471c.sol",
+      "name": "ProSwap",
+      "compiler_version": "v0.4.18+commit.9cf6e910",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x094f00cb5e31ab6164e3cacb654e8d6c2b3b471c/0x094f00cb5e31ab6164e3cacb654e8d6c2b3b471c.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x094f00cb5e31ab6164e3cacb654e8d6c2b3b471c/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x094f00cb5e31ab6164e3cacb654e8d6c2b3b471c/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x094f00cb5e31ab6164e3cacb654e8d6c2b3b471c/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x094f00cb5e31ab6164e3cacb654e8d6c2b3b471c/storage.json"
+}

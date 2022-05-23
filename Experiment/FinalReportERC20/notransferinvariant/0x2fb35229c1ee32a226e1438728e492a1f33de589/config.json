@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x2fb35229c1ee32a226e1438728e492a1f33de589/0x2fb35229c1ee32a226e1438728e492a1f33de589.sol",
+      "name": "PubeCoin",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x2fb35229c1ee32a226e1438728e492a1f33de589/0x2fb35229c1ee32a226e1438728e492a1f33de589.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x2fb35229c1ee32a226e1438728e492a1f33de589/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x2fb35229c1ee32a226e1438728e492a1f33de589/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x2fb35229c1ee32a226e1438728e492a1f33de589/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x2fb35229c1ee32a226e1438728e492a1f33de589/storage.json"
+}

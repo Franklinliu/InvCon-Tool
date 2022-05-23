@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x356a5160f2b34bc8d88fb084745465ebbbed0174/0x356a5160f2b34bc8d88fb084745465ebbbed0174.sol",
+      "name": "INVI",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x356a5160f2b34bc8d88fb084745465ebbbed0174/0x356a5160f2b34bc8d88fb084745465ebbbed0174.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x356a5160f2b34bc8d88fb084745465ebbbed0174/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x356a5160f2b34bc8d88fb084745465ebbbed0174/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x356a5160f2b34bc8d88fb084745465ebbbed0174/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x356a5160f2b34bc8d88fb084745465ebbbed0174/storage.json"
+}

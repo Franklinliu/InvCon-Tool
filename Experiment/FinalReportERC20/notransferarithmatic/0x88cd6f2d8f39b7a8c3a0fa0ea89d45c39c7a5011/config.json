@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x88cd6f2d8f39b7a8c3a0fa0ea89d45c39c7a5011/0x88cd6f2d8f39b7a8c3a0fa0ea89d45c39c7a5011.sol",
+      "name": "Spartan",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x88cd6f2d8f39b7a8c3a0fa0ea89d45c39c7a5011/0x88cd6f2d8f39b7a8c3a0fa0ea89d45c39c7a5011.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x88cd6f2d8f39b7a8c3a0fa0ea89d45c39c7a5011/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x88cd6f2d8f39b7a8c3a0fa0ea89d45c39c7a5011/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x88cd6f2d8f39b7a8c3a0fa0ea89d45c39c7a5011/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x88cd6f2d8f39b7a8c3a0fa0ea89d45c39c7a5011/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbe8c2059390c80b1f95c34a2dbba9da825c2d43/0xdbe8c2059390c80b1f95c34a2dbba9da825c2d43.sol",
+      "name": "RabbitHole",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbe8c2059390c80b1f95c34a2dbba9da825c2d43/0xdbe8c2059390c80b1f95c34a2dbba9da825c2d43.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbe8c2059390c80b1f95c34a2dbba9da825c2d43/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbe8c2059390c80b1f95c34a2dbba9da825c2d43/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbe8c2059390c80b1f95c34a2dbba9da825c2d43/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbe8c2059390c80b1f95c34a2dbba9da825c2d43/storage.json"
+}

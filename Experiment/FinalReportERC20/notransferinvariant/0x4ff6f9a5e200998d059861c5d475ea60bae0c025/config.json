@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x4ff6f9a5e200998d059861c5d475ea60bae0c025/0x4ff6f9a5e200998d059861c5d475ea60bae0c025.sol",
+      "name": "Nameless",
+      "compiler_version": "v0.4.4+commit.4633f3de",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x4ff6f9a5e200998d059861c5d475ea60bae0c025/0x4ff6f9a5e200998d059861c5d475ea60bae0c025.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x4ff6f9a5e200998d059861c5d475ea60bae0c025/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x4ff6f9a5e200998d059861c5d475ea60bae0c025/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x4ff6f9a5e200998d059861c5d475ea60bae0c025/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x4ff6f9a5e200998d059861c5d475ea60bae0c025/storage.json"
+}

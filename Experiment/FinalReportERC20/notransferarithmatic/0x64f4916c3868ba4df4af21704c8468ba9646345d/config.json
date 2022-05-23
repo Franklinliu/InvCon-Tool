@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x64f4916c3868ba4df4af21704c8468ba9646345d/0x64f4916c3868ba4df4af21704c8468ba9646345d.sol",
+      "name": "TNTX",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x64f4916c3868ba4df4af21704c8468ba9646345d/0x64f4916c3868ba4df4af21704c8468ba9646345d.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x64f4916c3868ba4df4af21704c8468ba9646345d/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x64f4916c3868ba4df4af21704c8468ba9646345d/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x64f4916c3868ba4df4af21704c8468ba9646345d/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x64f4916c3868ba4df4af21704c8468ba9646345d/storage.json"
+}

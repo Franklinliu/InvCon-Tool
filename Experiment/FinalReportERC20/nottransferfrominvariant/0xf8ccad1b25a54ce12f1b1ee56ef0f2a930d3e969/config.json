@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8ccad1b25a54ce12f1b1ee56ef0f2a930d3e969/0xf8ccad1b25a54ce12f1b1ee56ef0f2a930d3e969.sol",
+      "name": "Finder",
+      "compiler_version": "v0.5.1+commit.c8a2cb62",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8ccad1b25a54ce12f1b1ee56ef0f2a930d3e969/0xf8ccad1b25a54ce12f1b1ee56ef0f2a930d3e969.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8ccad1b25a54ce12f1b1ee56ef0f2a930d3e969/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8ccad1b25a54ce12f1b1ee56ef0f2a930d3e969/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8ccad1b25a54ce12f1b1ee56ef0f2a930d3e969/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8ccad1b25a54ce12f1b1ee56ef0f2a930d3e969/storage.json"
+}

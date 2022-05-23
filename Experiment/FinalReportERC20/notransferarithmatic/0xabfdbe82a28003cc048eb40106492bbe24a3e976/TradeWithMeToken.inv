@@ -1,0 +1,66 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TradeWithMeToken.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.owned_own_owner == msg.sender
+this.owned_own_owner == orig(this.owned_own_owner)
+this.owned_own_owner == orig(msg.sender)
+this.TokenERC20_own_decimals == orig(this.TokenERC20_own_decimals)
+this.TokenERC20_own_totalSupply == orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue())
+this.TokenERC20_own_balanceOf == orig(this.TokenERC20_own_balanceOf)
+this.TokenERC20_own_allowance == orig(this.TokenERC20_own_allowance)
+this.TokenERC20_own_allowance[].getSubLength() == orig(this.TokenERC20_own_allowance[].getSubLength())
+this.frozenAccount == orig(this.frozenAccount)
+this.frozenAccount[].getValue() == orig(this.frozenAccount[].getValue())
+_to == orig(_to)
+orig(_value) == this.TokenERC20_own_balanceOf[orig(_to)].getValue()
+orig(msg.value) == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+sum(this.TokenERC20_own_allowance[].getSubLength()) == sum(orig(this.TokenERC20_own_allowance[].getSubLength()))
+this.TokenERC20_own_decimals == 18
+this.TokenERC20_own_totalSupply == 1000000000000000000000000
+this.TokenERC20_own_balanceOf has only one value
+this.TokenERC20_own_allowance has only one value
+this.frozenAccount has only one value
+orig(this) has only one value
+orig(this.TokenERC20_own_decimals) == 18
+orig(_value) == 100000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1610913043
+sum(this.TokenERC20_own_allowance[].getSubLength()) == 0
+this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue() == 999900000000000000000000
+this.TokenERC20_own_balanceOf[orig(_to)].getValue() == 100000000000000000000
+orig(this.TokenERC20_own_balanceOf[post(msg.sender)].getValue()) == 1000000000000000000000000
+orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue()) == 0
+===========================================================================
+TradeWithMeToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.owned_own_owner == msg.sender
+this.owned_own_owner == orig(this.owned_own_owner)
+this.owned_own_owner == orig(msg.sender)
+this.TokenERC20_own_decimals == orig(this.TokenERC20_own_decimals)
+this.TokenERC20_own_totalSupply == this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue()
+this.TokenERC20_own_balanceOf == orig(this.TokenERC20_own_balanceOf)
+this.TokenERC20_own_allowance == orig(this.TokenERC20_own_allowance)
+this.TokenERC20_own_allowance[].getSubLength() == orig(this.TokenERC20_own_allowance[].getSubLength())
+this.frozenAccount == orig(this.frozenAccount)
+this.frozenAccount[].getValue() == orig(this.frozenAccount[].getValue())
+_to == orig(_to)
+orig(msg.value) == orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue())
+sum(this.TokenERC20_own_allowance[].getSubLength()) == sum(orig(this.TokenERC20_own_allowance[].getSubLength()))
+this.TokenERC20_own_decimals == 18
+this.TokenERC20_own_totalSupply == 1000000000000000000000000
+this.TokenERC20_own_balanceOf has only one value
+this.TokenERC20_own_allowance has only one value
+this.frozenAccount has only one value
+orig(this) has only one value
+orig(this.TokenERC20_own_decimals) == 18
+orig(_value) == 100000000000000000000
+orig(msg.value) == 0
+orig(block.timestamp) == 1610912536
+sum(this.TokenERC20_own_allowance[].getSubLength()) == 0
+this.TokenERC20_own_balanceOf[this.owned_own_owner].getValue() == 1000000000000000000000000
+orig(this.TokenERC20_own_allowance[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

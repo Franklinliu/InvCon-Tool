@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18f90980ffce2a4e1b59c1315bdf81fabec56326/0x18f90980ffce2a4e1b59c1315bdf81fabec56326.sol",
+      "name": "unicornfinance",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18f90980ffce2a4e1b59c1315bdf81fabec56326/0x18f90980ffce2a4e1b59c1315bdf81fabec56326.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18f90980ffce2a4e1b59c1315bdf81fabec56326/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18f90980ffce2a4e1b59c1315bdf81fabec56326/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18f90980ffce2a4e1b59c1315bdf81fabec56326/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18f90980ffce2a4e1b59c1315bdf81fabec56326/storage.json"
+}

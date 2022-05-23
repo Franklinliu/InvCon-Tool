@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa1264a0cebdf9acb07a47252483254043b14b7d8/0xa1264a0cebdf9acb07a47252483254043b14b7d8.sol",
+      "name": "ARENDIP",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa1264a0cebdf9acb07a47252483254043b14b7d8/0xa1264a0cebdf9acb07a47252483254043b14b7d8.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa1264a0cebdf9acb07a47252483254043b14b7d8/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa1264a0cebdf9acb07a47252483254043b14b7d8/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa1264a0cebdf9acb07a47252483254043b14b7d8/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa1264a0cebdf9acb07a47252483254043b14b7d8/storage.json"
+}

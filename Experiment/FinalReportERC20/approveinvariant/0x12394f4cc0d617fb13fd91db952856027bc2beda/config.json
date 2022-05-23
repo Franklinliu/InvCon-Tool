@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x12394f4cc0d617fb13fd91db952856027bc2beda/0x12394f4cc0d617fb13fd91db952856027bc2beda.sol",
+      "name": "SDTToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x12394f4cc0d617fb13fd91db952856027bc2beda/0x12394f4cc0d617fb13fd91db952856027bc2beda.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x12394f4cc0d617fb13fd91db952856027bc2beda/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x12394f4cc0d617fb13fd91db952856027bc2beda/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x12394f4cc0d617fb13fd91db952856027bc2beda/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x12394f4cc0d617fb13fd91db952856027bc2beda/storage.json"
+}

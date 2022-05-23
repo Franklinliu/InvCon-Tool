@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfc886735b592272f0efdcc3d6877c11e4ec27d03/0xfc886735b592272f0efdcc3d6877c11e4ec27d03.sol",
+      "name": "DMWToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfc886735b592272f0efdcc3d6877c11e4ec27d03/0xfc886735b592272f0efdcc3d6877c11e4ec27d03.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfc886735b592272f0efdcc3d6877c11e4ec27d03/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfc886735b592272f0efdcc3d6877c11e4ec27d03/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfc886735b592272f0efdcc3d6877c11e4ec27d03/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfc886735b592272f0efdcc3d6877c11e4ec27d03/storage.json"
+}

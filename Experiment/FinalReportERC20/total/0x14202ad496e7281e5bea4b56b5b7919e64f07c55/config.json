@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x14202ad496e7281e5bea4b56b5b7919e64f07c55/0x14202ad496e7281e5bea4b56b5b7919e64f07c55.sol",
+      "name": "KorbitToken",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x14202ad496e7281e5bea4b56b5b7919e64f07c55/0x14202ad496e7281e5bea4b56b5b7919e64f07c55.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x14202ad496e7281e5bea4b56b5b7919e64f07c55/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x14202ad496e7281e5bea4b56b5b7919e64f07c55/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x14202ad496e7281e5bea4b56b5b7919e64f07c55/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x14202ad496e7281e5bea4b56b5b7919e64f07c55/storage.json"
+}

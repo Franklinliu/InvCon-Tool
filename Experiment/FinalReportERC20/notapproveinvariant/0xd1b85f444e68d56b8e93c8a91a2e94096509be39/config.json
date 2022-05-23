@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd1b85f444e68d56b8e93c8a91a2e94096509be39/0xd1b85f444e68d56b8e93c8a91a2e94096509be39.sol",
+      "name": "RoboWolfToken",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd1b85f444e68d56b8e93c8a91a2e94096509be39/0xd1b85f444e68d56b8e93c8a91a2e94096509be39.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd1b85f444e68d56b8e93c8a91a2e94096509be39/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd1b85f444e68d56b8e93c8a91a2e94096509be39/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd1b85f444e68d56b8e93c8a91a2e94096509be39/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd1b85f444e68d56b8e93c8a91a2e94096509be39/storage.json"
+}

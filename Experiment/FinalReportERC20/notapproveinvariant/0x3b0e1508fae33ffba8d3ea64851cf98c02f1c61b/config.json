@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3b0e1508fae33ffba8d3ea64851cf98c02f1c61b/0x3b0e1508fae33ffba8d3ea64851cf98c02f1c61b.sol",
+      "name": "KeFiToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3b0e1508fae33ffba8d3ea64851cf98c02f1c61b/0x3b0e1508fae33ffba8d3ea64851cf98c02f1c61b.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3b0e1508fae33ffba8d3ea64851cf98c02f1c61b/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3b0e1508fae33ffba8d3ea64851cf98c02f1c61b/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3b0e1508fae33ffba8d3ea64851cf98c02f1c61b/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3b0e1508fae33ffba8d3ea64851cf98c02f1c61b/storage.json"
+}

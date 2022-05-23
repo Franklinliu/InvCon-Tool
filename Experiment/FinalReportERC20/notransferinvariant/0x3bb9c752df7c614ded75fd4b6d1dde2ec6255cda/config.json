@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3bb9c752df7c614ded75fd4b6d1dde2ec6255cda/0x3bb9c752df7c614ded75fd4b6d1dde2ec6255cda.sol",
+      "name": "WazmCash",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3bb9c752df7c614ded75fd4b6d1dde2ec6255cda/0x3bb9c752df7c614ded75fd4b6d1dde2ec6255cda.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3bb9c752df7c614ded75fd4b6d1dde2ec6255cda/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3bb9c752df7c614ded75fd4b6d1dde2ec6255cda/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3bb9c752df7c614ded75fd4b6d1dde2ec6255cda/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3bb9c752df7c614ded75fd4b6d1dde2ec6255cda/storage.json"
+}

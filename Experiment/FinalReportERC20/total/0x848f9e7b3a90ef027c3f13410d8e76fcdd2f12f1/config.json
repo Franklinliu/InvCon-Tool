@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x848f9e7b3a90ef027c3f13410d8e76fcdd2f12f1/0x848f9e7b3a90ef027c3f13410d8e76fcdd2f12f1.sol",
+      "name": "NovusProtocol",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x848f9e7b3a90ef027c3f13410d8e76fcdd2f12f1/0x848f9e7b3a90ef027c3f13410d8e76fcdd2f12f1.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x848f9e7b3a90ef027c3f13410d8e76fcdd2f12f1/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x848f9e7b3a90ef027c3f13410d8e76fcdd2f12f1/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x848f9e7b3a90ef027c3f13410d8e76fcdd2f12f1/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x848f9e7b3a90ef027c3f13410d8e76fcdd2f12f1/storage.json"
+}

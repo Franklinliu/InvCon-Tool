@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x51c5c31db50cec6b604acbcd7b2bcbc52b533b52/0x51c5c31db50cec6b604acbcd7b2bcbc52b533b52.sol",
+      "name": "OscarOasis",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x51c5c31db50cec6b604acbcd7b2bcbc52b533b52/0x51c5c31db50cec6b604acbcd7b2bcbc52b533b52.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x51c5c31db50cec6b604acbcd7b2bcbc52b533b52/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x51c5c31db50cec6b604acbcd7b2bcbc52b533b52/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x51c5c31db50cec6b604acbcd7b2bcbc52b533b52/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x51c5c31db50cec6b604acbcd7b2bcbc52b533b52/storage.json"
+}

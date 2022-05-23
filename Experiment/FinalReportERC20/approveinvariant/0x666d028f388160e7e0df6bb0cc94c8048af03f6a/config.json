@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x666d028f388160e7e0df6bb0cc94c8048af03f6a/0x666d028f388160e7e0df6bb0cc94c8048af03f6a.sol",
+      "name": "RL3Token",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x666d028f388160e7e0df6bb0cc94c8048af03f6a/0x666d028f388160e7e0df6bb0cc94c8048af03f6a.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x666d028f388160e7e0df6bb0cc94c8048af03f6a/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x666d028f388160e7e0df6bb0cc94c8048af03f6a/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x666d028f388160e7e0df6bb0cc94c8048af03f6a/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x666d028f388160e7e0df6bb0cc94c8048af03f6a/storage.json"
+}

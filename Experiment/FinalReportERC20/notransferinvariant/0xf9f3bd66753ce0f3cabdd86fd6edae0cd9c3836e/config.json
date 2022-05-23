@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf9f3bd66753ce0f3cabdd86fd6edae0cd9c3836e/0xf9f3bd66753ce0f3cabdd86fd6edae0cd9c3836e.sol",
+      "name": "CoolBitETFUSDTAndCompound",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "00000000000000000000000023a4eb3d4d6c3c16ff479c2723a0806bf1bc5cb7000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7000000000000000000000000f650c3d88d12db855b8bf7d11be6c55a4e07dcc9000000000000000000000000c4c358f3af4888c5fea5f232ccc7ed04d5735cae00000000000000000000000006dd21231689a9444a578d070a0fe2e8e9aff5e7000000000000000000000000000000000000000000000000000000000026ceec00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000050",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf9f3bd66753ce0f3cabdd86fd6edae0cd9c3836e/0xf9f3bd66753ce0f3cabdd86fd6edae0cd9c3836e.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf9f3bd66753ce0f3cabdd86fd6edae0cd9c3836e/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf9f3bd66753ce0f3cabdd86fd6edae0cd9c3836e/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf9f3bd66753ce0f3cabdd86fd6edae0cd9c3836e/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf9f3bd66753ce0f3cabdd86fd6edae0cd9c3836e/storage.json"
+}

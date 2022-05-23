@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf61d911aef7ca400b4880b3f5cab290a6abd06d2/0xf61d911aef7ca400b4880b3f5cab290a6abd06d2.sol",
+      "name": "JuiceWrldCash",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf61d911aef7ca400b4880b3f5cab290a6abd06d2/0xf61d911aef7ca400b4880b3f5cab290a6abd06d2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf61d911aef7ca400b4880b3f5cab290a6abd06d2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf61d911aef7ca400b4880b3f5cab290a6abd06d2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf61d911aef7ca400b4880b3f5cab290a6abd06d2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf61d911aef7ca400b4880b3f5cab290a6abd06d2/storage.json"
+}

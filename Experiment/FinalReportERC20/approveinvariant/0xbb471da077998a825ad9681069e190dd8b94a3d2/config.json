@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbb471da077998a825ad9681069e190dd8b94a3d2/0xbb471da077998a825ad9681069e190dd8b94a3d2.sol",
+      "name": "DCT2Token",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbb471da077998a825ad9681069e190dd8b94a3d2/0xbb471da077998a825ad9681069e190dd8b94a3d2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbb471da077998a825ad9681069e190dd8b94a3d2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbb471da077998a825ad9681069e190dd8b94a3d2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbb471da077998a825ad9681069e190dd8b94a3d2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbb471da077998a825ad9681069e190dd8b94a3d2/storage.json"
+}

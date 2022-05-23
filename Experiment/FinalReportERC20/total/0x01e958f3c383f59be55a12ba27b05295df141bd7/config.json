@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x01e958f3c383f59be55a12ba27b05295df141bd7/0x01e958f3c383f59be55a12ba27b05295df141bd7.sol",
+      "name": "ERC20Token",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x01e958f3c383f59be55a12ba27b05295df141bd7/0x01e958f3c383f59be55a12ba27b05295df141bd7.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x01e958f3c383f59be55a12ba27b05295df141bd7/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x01e958f3c383f59be55a12ba27b05295df141bd7/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x01e958f3c383f59be55a12ba27b05295df141bd7/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x01e958f3c383f59be55a12ba27b05295df141bd7/storage.json"
+}

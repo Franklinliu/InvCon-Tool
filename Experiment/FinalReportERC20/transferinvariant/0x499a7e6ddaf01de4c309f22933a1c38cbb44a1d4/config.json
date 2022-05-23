@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x499a7e6ddaf01de4c309f22933a1c38cbb44a1d4/0x499a7e6ddaf01de4c309f22933a1c38cbb44a1d4.sol",
+      "name": "SANTAToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x499a7e6ddaf01de4c309f22933a1c38cbb44a1d4/0x499a7e6ddaf01de4c309f22933a1c38cbb44a1d4.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x499a7e6ddaf01de4c309f22933a1c38cbb44a1d4/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x499a7e6ddaf01de4c309f22933a1c38cbb44a1d4/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x499a7e6ddaf01de4c309f22933a1c38cbb44a1d4/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x499a7e6ddaf01de4c309f22933a1c38cbb44a1d4/storage.json"
+}

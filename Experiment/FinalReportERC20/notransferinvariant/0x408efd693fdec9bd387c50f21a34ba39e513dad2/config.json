@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x408efd693fdec9bd387c50f21a34ba39e513dad2/0x408efd693fdec9bd387c50f21a34ba39e513dad2.sol",
+      "name": "GDPToken",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x408efd693fdec9bd387c50f21a34ba39e513dad2/0x408efd693fdec9bd387c50f21a34ba39e513dad2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x408efd693fdec9bd387c50f21a34ba39e513dad2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x408efd693fdec9bd387c50f21a34ba39e513dad2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x408efd693fdec9bd387c50f21a34ba39e513dad2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x408efd693fdec9bd387c50f21a34ba39e513dad2/storage.json"
+}

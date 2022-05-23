@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x71304cf73294e34e8fbd459630a645983e61f982/0x71304cf73294e34e8fbd459630a645983e61f982.sol",
+      "name": "SOLVECARE",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x71304cf73294e34e8fbd459630a645983e61f982/0x71304cf73294e34e8fbd459630a645983e61f982.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x71304cf73294e34e8fbd459630a645983e61f982/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x71304cf73294e34e8fbd459630a645983e61f982/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x71304cf73294e34e8fbd459630a645983e61f982/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x71304cf73294e34e8fbd459630a645983e61f982/storage.json"
+}

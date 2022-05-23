@@ -1,0 +1,34 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+OscarOasis.transfer(address,uint256):::EXIT1
+this == orig(this)
+this.Owned_own_owner == msg.sender
+this.Owned_own_owner == orig(this.Owned_own_owner)
+this.Owned_own_owner == orig(msg.sender)
+this.Owned_own_newOwner == orig(this.Owned_own_newOwner)
+this.decimals == orig(this.decimals)
+this._totalSupply == this.balances[orig(to)].getValue()
+this.balances == orig(this.balances)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+to == orig(to)
+orig(msg.value) == this.balances[this.Owned_own_owner].getValue()
+orig(msg.value) == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.balances[this.Owned_own_owner].getValue() == orig(this.allowed[post(pair(to,msg.sender))].getSubValue())
+this.decimals == 11
+this._totalSupply == 10000000000000000
+this.balances has only one value
+this.allowed has only one value
+orig(this) has only one value
+orig(this.decimals) == 11
+orig(msg.value) == 0
+orig(block.timestamp) == 1616678009
+sum(this.allowed[].getSubLength()) == 0
+this.balances[this.Owned_own_owner].getValue() == 0
+this.balances[orig(to)].getValue() == 10000000000000000
+orig(this.allowed[post(pair(to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

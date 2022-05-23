@@ -1,0 +1,132 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+MainToken.approve(address,uint256):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == msg.value
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.BasicToken_own_totalSupply_ == orig(msg.value)
+this.BasicToken_own_totalSupply_ == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_totalSupply_ == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.FreezableToken_own_chains == orig(this.FreezableToken_own_chains)
+this.FreezableToken_own_freezings == orig(this.FreezableToken_own_freezings)
+this.FreezableToken_own_freezingBalance == orig(this.FreezableToken_own_freezingBalance)
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.MintableToken_own_mintingFinished == this.Pausable_own_paused
+this.MintableToken_own_mintingFinished == this.initialized
+this.MintableToken_own_mintingFinished == orig(this.MintableToken_own_mintingFinished)
+this.MintableToken_own_mintingFinished == orig(this.Pausable_own_paused)
+this.MintableToken_own_mintingFinished == orig(this.initialized)
+_spender == orig(_spender)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.BasicToken_own_totalSupply_)
+msg.value == orig(msg.value)
+msg.value == sum(this.BasicToken_own_balances[].getValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.BasicToken_own_totalSupply_) == orig(msg.value)
+orig(this.BasicToken_own_totalSupply_) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.BasicToken_own_totalSupply_) == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.BasicToken_own_balances[].getValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.FreezableToken_own_chains has only one value
+this.FreezableToken_own_freezings has only one value
+this.FreezableToken_own_freezingBalance has only one value
+this.MintableToken_own_mintingFinished == false
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.BasicToken_own_totalSupply_) == 0
+orig(msg.value) == 0
+sum(this.BasicToken_own_balances[].getValue()) == 0
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_spender,msg.sender))].getSubValue()) == 0
+this.BasicToken_own_totalSupply_ <= _value
+this.BasicToken_own_totalSupply_ < block.timestamp
+this.BasicToken_own_totalSupply_ <= orig(_value)
+this.BasicToken_own_totalSupply_ < orig(block.timestamp)
+this.Ownable_own_owner != orig(_spender)
+this.Ownable_own_owner != orig(msg.sender)
+msg.value < block.timestamp
+msg.value <= orig(_value)
+msg.value < orig(block.timestamp)
+orig(this.BasicToken_own_totalSupply_) <= orig(_value)
+orig(this.BasicToken_own_totalSupply_) < orig(block.timestamp)
+orig(_spender) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+===========================================================================
+MainToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.BasicToken_own_totalSupply_ == msg.value
+this.BasicToken_own_totalSupply_ == orig(this.BasicToken_own_totalSupply_)
+this.BasicToken_own_totalSupply_ == orig(msg.value)
+this.BasicToken_own_totalSupply_ == sum(this.BasicToken_own_balances[].getValue())
+this.BasicToken_own_totalSupply_ == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.FreezableToken_own_chains == orig(this.FreezableToken_own_chains)
+this.FreezableToken_own_freezings == orig(this.FreezableToken_own_freezings)
+this.FreezableToken_own_freezingBalance == orig(this.FreezableToken_own_freezingBalance)
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.MintableToken_own_mintingFinished == this.Pausable_own_paused
+this.MintableToken_own_mintingFinished == this.initialized
+this.MintableToken_own_mintingFinished == orig(this.MintableToken_own_mintingFinished)
+this.MintableToken_own_mintingFinished == orig(this.Pausable_own_paused)
+this.MintableToken_own_mintingFinished == orig(this.initialized)
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.BasicToken_own_totalSupply_)
+msg.value == orig(msg.value)
+msg.value == sum(this.BasicToken_own_balances[].getValue())
+msg.value == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+block.timestamp == orig(block.timestamp)
+orig(this.BasicToken_own_totalSupply_) == orig(msg.value)
+orig(this.BasicToken_own_totalSupply_) == sum(this.BasicToken_own_balances[].getValue())
+orig(this.BasicToken_own_totalSupply_) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+orig(msg.value) == sum(this.BasicToken_own_balances[].getValue())
+orig(msg.value) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.BasicToken_own_balances[].getValue()) == orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue())
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.BasicToken_own_balances == null
+this.BasicToken_own_totalSupply_ == 0
+this.StandardToken_own_allowed has only one value
+this.FreezableToken_own_chains has only one value
+this.FreezableToken_own_freezings has only one value
+this.FreezableToken_own_freezingBalance has only one value
+this.MintableToken_own_mintingFinished == false
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.BasicToken_own_totalSupply_) == 0
+orig(msg.value) == 0
+sum(this.BasicToken_own_balances[].getValue()) == 0
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+orig(this.StandardToken_own_allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+this.BasicToken_own_totalSupply_ < _value
+this.BasicToken_own_totalSupply_ < block.timestamp
+this.BasicToken_own_totalSupply_ < orig(_value)
+this.BasicToken_own_totalSupply_ < orig(block.timestamp)
+this.Ownable_own_owner != orig(_to)
+this.Ownable_own_owner != orig(msg.sender)
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.BasicToken_own_totalSupply_) < orig(_value)
+orig(this.BasicToken_own_totalSupply_) < orig(block.timestamp)
+orig(_to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

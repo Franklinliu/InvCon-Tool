@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c/0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c.sol",
+      "name": "EZDEX",
+      "compiler_version": "v0.4.21+commit.dfe3193c",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c/0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x9e8bfe46f9af27c5ea5c9c72b86d71bb86953a0c/storage.json"
+}

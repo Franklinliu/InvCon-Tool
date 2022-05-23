@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x393bc9f6b7dcfc9a2f53299264688a165586d423/0x393bc9f6b7dcfc9a2f53299264688a165586d423.sol",
+      "name": "PTRToken",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x393bc9f6b7dcfc9a2f53299264688a165586d423/0x393bc9f6b7dcfc9a2f53299264688a165586d423.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x393bc9f6b7dcfc9a2f53299264688a165586d423/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x393bc9f6b7dcfc9a2f53299264688a165586d423/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x393bc9f6b7dcfc9a2f53299264688a165586d423/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x393bc9f6b7dcfc9a2f53299264688a165586d423/storage.json"
+}

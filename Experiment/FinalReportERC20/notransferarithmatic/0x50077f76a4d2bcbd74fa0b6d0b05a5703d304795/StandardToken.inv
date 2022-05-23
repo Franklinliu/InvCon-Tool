@@ -1,0 +1,74 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+StandardToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Manager_own_managers == orig(this.Manager_own_managers)
+this.Pausable_own_paused == this.finishMint
+this.Pausable_own_paused == this.finishRestore
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.Pausable_own_paused == orig(this.finishMint)
+this.Pausable_own_paused == orig(this.finishRestore)
+this.Token_own_decimals == this.Token_own_totalSupply
+this.Token_own_decimals == msg.value
+this.Token_own_decimals == orig(this.Token_own_decimals)
+this.Token_own_decimals == orig(this.Token_own_totalSupply)
+this.Token_own_decimals == orig(msg.value)
+this.Token_own_totalSupply == msg.value
+this.Token_own_totalSupply == orig(this.Token_own_decimals)
+this.Token_own_totalSupply == orig(this.Token_own_totalSupply)
+this.Token_own_totalSupply == orig(msg.value)
+this.Token_own_user == orig(this.Token_own_user)
+this.Token_own_user[].getValue() == this.LockBalance_own_lockUser[].getValue()
+this.Token_own_user[].getValue() == orig(this.Token_own_user[].getValue())
+this.LockBalance_own_lockUser == orig(this.LockBalance_own_lockUser)
+this.LockBalance_own_lockUser[].getValue() == orig(this.LockBalance_own_lockUser[].getValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+msg.value == orig(this.Token_own_decimals)
+msg.value == orig(this.Token_own_totalSupply)
+msg.value == orig(msg.value)
+block.timestamp == orig(block.timestamp)
+orig(this.Token_own_decimals) == orig(this.Token_own_totalSupply)
+orig(this.Token_own_decimals) == orig(msg.value)
+orig(this.Token_own_totalSupply) == orig(msg.value)
+this.Manager_own_managers has only one value
+this.Pausable_own_paused == false
+this.Token_own_decimals == 0
+this.Token_own_totalSupply == 0
+this.Token_own_user has only one value
+this.Token_own_user[].getValue() elements != null
+this.LockBalance_own_lockUser has only one value
+this.LockBalance_own_lockUser[].getValue() elements != null
+msg.value == 0
+orig(this) has only one value
+orig(this) != null
+orig(this.Token_own_decimals) == 0
+orig(this.Token_own_totalSupply) == 0
+orig(msg.value) == 0
+this.Ownable_own_owner != orig(_to)
+this.Ownable_own_owner != orig(msg.sender)
+this.Token_own_decimals < _value
+this.Token_own_decimals < block.timestamp
+this.Token_own_decimals < orig(_value)
+this.Token_own_decimals < orig(block.timestamp)
+this.Token_own_totalSupply < _value
+this.Token_own_totalSupply < block.timestamp
+this.Token_own_totalSupply < orig(_value)
+this.Token_own_totalSupply < orig(block.timestamp)
+this.Token_own_user[].getValue() is the reverse of this.LockBalance_own_lockUser[].getValue()
+msg.value < block.timestamp
+msg.value < orig(_value)
+msg.value < orig(block.timestamp)
+block.timestamp < orig(_value)
+orig(this.Token_own_decimals) < orig(_value)
+orig(this.Token_own_decimals) < orig(block.timestamp)
+orig(this.Token_own_totalSupply) < orig(_value)
+orig(this.Token_own_totalSupply) < orig(block.timestamp)
+orig(_to) != orig(msg.sender)
+orig(msg.value) < orig(block.timestamp)
+Exiting Daikon.

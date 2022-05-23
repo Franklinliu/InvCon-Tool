@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8a5a4e596d0bc62c28b5b7823d0290bef63e92f/0xc8a5a4e596d0bc62c28b5b7823d0290bef63e92f.sol",
+      "name": "LtTToken",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8a5a4e596d0bc62c28b5b7823d0290bef63e92f/0xc8a5a4e596d0bc62c28b5b7823d0290bef63e92f.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8a5a4e596d0bc62c28b5b7823d0290bef63e92f/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8a5a4e596d0bc62c28b5b7823d0290bef63e92f/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8a5a4e596d0bc62c28b5b7823d0290bef63e92f/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8a5a4e596d0bc62c28b5b7823d0290bef63e92f/storage.json"
+}

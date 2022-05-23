@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7c6b67f26904fe9a83182c4d64486025ff8ff31c/0x7c6b67f26904fe9a83182c4d64486025ff8ff31c.sol",
+      "name": "Gelt",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7c6b67f26904fe9a83182c4d64486025ff8ff31c/0x7c6b67f26904fe9a83182c4d64486025ff8ff31c.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7c6b67f26904fe9a83182c4d64486025ff8ff31c/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7c6b67f26904fe9a83182c4d64486025ff8ff31c/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7c6b67f26904fe9a83182c4d64486025ff8ff31c/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7c6b67f26904fe9a83182c4d64486025ff8ff31c/storage.json"
+}

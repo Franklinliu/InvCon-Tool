@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbec00601a8ec2f0d06fb2d84a56b20d4abb38f2/0xdbec00601a8ec2f0d06fb2d84a56b20d4abb38f2.sol",
+      "name": "THBTToken",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbec00601a8ec2f0d06fb2d84a56b20d4abb38f2/0xdbec00601a8ec2f0d06fb2d84a56b20d4abb38f2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbec00601a8ec2f0d06fb2d84a56b20d4abb38f2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbec00601a8ec2f0d06fb2d84a56b20d4abb38f2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbec00601a8ec2f0d06fb2d84a56b20d4abb38f2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xdbec00601a8ec2f0d06fb2d84a56b20d4abb38f2/storage.json"
+}

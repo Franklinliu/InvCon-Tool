@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd5a2f36a3dfa4c9edcee18fcda6e9e47cc93b8d3/0xd5a2f36a3dfa4c9edcee18fcda6e9e47cc93b8d3.sol",
+      "name": "ANT",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "0000000000000000000000004b071f1136fa14db319115acf714568b8cc1adbd",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd5a2f36a3dfa4c9edcee18fcda6e9e47cc93b8d3/0xd5a2f36a3dfa4c9edcee18fcda6e9e47cc93b8d3.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd5a2f36a3dfa4c9edcee18fcda6e9e47cc93b8d3/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd5a2f36a3dfa4c9edcee18fcda6e9e47cc93b8d3/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd5a2f36a3dfa4c9edcee18fcda6e9e47cc93b8d3/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xd5a2f36a3dfa4c9edcee18fcda6e9e47cc93b8d3/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3a050c3c4cf5ad4f9bbcab33527cff200905648d/0x3a050c3c4cf5ad4f9bbcab33527cff200905648d.sol",
+      "name": "defiqa",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3a050c3c4cf5ad4f9bbcab33527cff200905648d/0x3a050c3c4cf5ad4f9bbcab33527cff200905648d.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3a050c3c4cf5ad4f9bbcab33527cff200905648d/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3a050c3c4cf5ad4f9bbcab33527cff200905648d/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3a050c3c4cf5ad4f9bbcab33527cff200905648d/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x3a050c3c4cf5ad4f9bbcab33527cff200905648d/storage.json"
+}

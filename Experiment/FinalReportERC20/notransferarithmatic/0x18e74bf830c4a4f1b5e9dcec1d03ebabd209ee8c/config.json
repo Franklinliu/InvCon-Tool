@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18e74bf830c4a4f1b5e9dcec1d03ebabd209ee8c/0x18e74bf830c4a4f1b5e9dcec1d03ebabd209ee8c.sol",
+      "name": "PCHERY",
+      "compiler_version": "v0.4.23+commit.124ca40d",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18e74bf830c4a4f1b5e9dcec1d03ebabd209ee8c/0x18e74bf830c4a4f1b5e9dcec1d03ebabd209ee8c.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18e74bf830c4a4f1b5e9dcec1d03ebabd209ee8c/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18e74bf830c4a4f1b5e9dcec1d03ebabd209ee8c/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18e74bf830c4a4f1b5e9dcec1d03ebabd209ee8c/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x18e74bf830c4a4f1b5e9dcec1d03ebabd209ee8c/storage.json"
+}

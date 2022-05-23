@@ -1,0 +1,33 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TokenERC20.approve(address,uint256):::EXIT1
+this == orig(this)
+this.decimals == orig(this.decimals)
+this.totalSupply == this.balanceOf[orig(msg.sender)].getValue()
+this.balanceOf == orig(this.balanceOf)
+this.allowance == orig(this.allowance)
+_spender == orig(_spender)
+msg.sender == orig(msg.sender)
+orig(_value) == this.allowance[pair(msg.sender,_spender)].getSubValue()
+orig(msg.value) == orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue())
+this.decimals == 18
+this.totalSupply == 2000000000000000000000000
+this.balanceOf has only one value
+this.allowance has only one value
+this.allowance[].getSubLength() elements == 1
+orig(this) has only one value
+orig(this.decimals) == 18
+orig(_value) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(msg.value) == 0
+orig(block.timestamp) == 1611651300
+sum(this.allowance[].getSubLength()) == 1
+sum(orig(this.allowance[].getSubLength())) == 0
+this.balanceOf[orig(msg.sender)].getValue() == 2000000000000000000000000
+this.allowance[pair(msg.sender,_spender)].getSubValue() == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(this.allowance[post(pair(_spender,msg.sender))].getSubValue()) == 0
+sum(this.allowance[].getSubLength()) in this.allowance[].getSubLength()
+this.allowance[].getSubLength() elements == sum(this.allowance[].getSubLength())
+Exiting Daikon.

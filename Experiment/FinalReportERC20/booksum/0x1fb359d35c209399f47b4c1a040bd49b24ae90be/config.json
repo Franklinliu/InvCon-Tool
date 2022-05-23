@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x1fb359d35c209399f47b4c1a040bd49b24ae90be/0x1fb359d35c209399f47b4c1a040bd49b24ae90be.sol",
+      "name": "AutobahnToken",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x1fb359d35c209399f47b4c1a040bd49b24ae90be/0x1fb359d35c209399f47b4c1a040bd49b24ae90be.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x1fb359d35c209399f47b4c1a040bd49b24ae90be/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x1fb359d35c209399f47b4c1a040bd49b24ae90be/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x1fb359d35c209399f47b4c1a040bd49b24ae90be/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x1fb359d35c209399f47b4c1a040bd49b24ae90be/storage.json"
+}

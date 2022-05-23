@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x91945c0fe638da40fe81d78cf7cd8ae1a7965814/0x91945c0fe638da40fe81d78cf7cd8ae1a7965814.sol",
+      "name": "DeeperToken",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x91945c0fe638da40fe81d78cf7cd8ae1a7965814/0x91945c0fe638da40fe81d78cf7cd8ae1a7965814.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x91945c0fe638da40fe81d78cf7cd8ae1a7965814/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x91945c0fe638da40fe81d78cf7cd8ae1a7965814/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x91945c0fe638da40fe81d78cf7cd8ae1a7965814/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x91945c0fe638da40fe81d78cf7cd8ae1a7965814/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f714106436990e98e82bdd47b1789f5f042281a/0x7f714106436990e98e82bdd47b1789f5f042281a.sol",
+      "name": "TRMC",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f714106436990e98e82bdd47b1789f5f042281a/0x7f714106436990e98e82bdd47b1789f5f042281a.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f714106436990e98e82bdd47b1789f5f042281a/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f714106436990e98e82bdd47b1789f5f042281a/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f714106436990e98e82bdd47b1789f5f042281a/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f714106436990e98e82bdd47b1789f5f042281a/storage.json"
+}

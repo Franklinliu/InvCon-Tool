@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x79bee52349cbddabad3b602084a63ff087c265a6/0x79bee52349cbddabad3b602084a63ff087c265a6.sol",
+      "name": "Ui6KToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x79bee52349cbddabad3b602084a63ff087c265a6/0x79bee52349cbddabad3b602084a63ff087c265a6.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x79bee52349cbddabad3b602084a63ff087c265a6/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x79bee52349cbddabad3b602084a63ff087c265a6/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x79bee52349cbddabad3b602084a63ff087c265a6/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x79bee52349cbddabad3b602084a63ff087c265a6/storage.json"
+}

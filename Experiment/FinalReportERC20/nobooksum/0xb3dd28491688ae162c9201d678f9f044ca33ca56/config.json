@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb3dd28491688ae162c9201d678f9f044ca33ca56/0xb3dd28491688ae162c9201d678f9f044ca33ca56.sol",
+      "name": "BlockchainYieldToken",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb3dd28491688ae162c9201d678f9f044ca33ca56/0xb3dd28491688ae162c9201d678f9f044ca33ca56.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb3dd28491688ae162c9201d678f9f044ca33ca56/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb3dd28491688ae162c9201d678f9f044ca33ca56/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb3dd28491688ae162c9201d678f9f044ca33ca56/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb3dd28491688ae162c9201d678f9f044ca33ca56/storage.json"
+}

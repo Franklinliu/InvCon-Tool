@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe6c772a6b41abac3fa51f0af431085fd9388ea84/0xe6c772a6b41abac3fa51f0af431085fd9388ea84.sol",
+      "name": "XMJtoken",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe6c772a6b41abac3fa51f0af431085fd9388ea84/0xe6c772a6b41abac3fa51f0af431085fd9388ea84.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe6c772a6b41abac3fa51f0af431085fd9388ea84/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe6c772a6b41abac3fa51f0af431085fd9388ea84/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe6c772a6b41abac3fa51f0af431085fd9388ea84/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe6c772a6b41abac3fa51f0af431085fd9388ea84/storage.json"
+}

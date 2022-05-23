@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xafeb231a41d5c137392fde5185572fa4edd4d36c/0xafeb231a41d5c137392fde5185572fa4edd4d36c.sol",
+      "name": "ENTEGAMER",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xafeb231a41d5c137392fde5185572fa4edd4d36c/0xafeb231a41d5c137392fde5185572fa4edd4d36c.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xafeb231a41d5c137392fde5185572fa4edd4d36c/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xafeb231a41d5c137392fde5185572fa4edd4d36c/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xafeb231a41d5c137392fde5185572fa4edd4d36c/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xafeb231a41d5c137392fde5185572fa4edd4d36c/storage.json"
+}

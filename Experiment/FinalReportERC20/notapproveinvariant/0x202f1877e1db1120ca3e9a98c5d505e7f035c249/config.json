@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x202f1877e1db1120ca3e9a98c5d505e7f035c249/0x202f1877e1db1120ca3e9a98c5d505e7f035c249.sol",
+      "name": "Zeus",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x202f1877e1db1120ca3e9a98c5d505e7f035c249/0x202f1877e1db1120ca3e9a98c5d505e7f035c249.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x202f1877e1db1120ca3e9a98c5d505e7f035c249/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x202f1877e1db1120ca3e9a98c5d505e7f035c249/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x202f1877e1db1120ca3e9a98c5d505e7f035c249/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x202f1877e1db1120ca3e9a98c5d505e7f035c249/storage.json"
+}

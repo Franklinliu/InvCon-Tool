@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x62b529d9577bc6fbf74bf6d76fb1be5a9e6dc489/0x62b529d9577bc6fbf74bf6d76fb1be5a9e6dc489.sol",
+      "name": "PBITToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x62b529d9577bc6fbf74bf6d76fb1be5a9e6dc489/0x62b529d9577bc6fbf74bf6d76fb1be5a9e6dc489.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x62b529d9577bc6fbf74bf6d76fb1be5a9e6dc489/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x62b529d9577bc6fbf74bf6d76fb1be5a9e6dc489/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x62b529d9577bc6fbf74bf6d76fb1be5a9e6dc489/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x62b529d9577bc6fbf74bf6d76fb1be5a9e6dc489/storage.json"
+}

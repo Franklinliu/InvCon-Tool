@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0bc43f7902851be6873f8c787289be60b2bf686/0xf0bc43f7902851be6873f8c787289be60b2bf686.sol",
+      "name": "BrucesGooseCoin",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0bc43f7902851be6873f8c787289be60b2bf686/0xf0bc43f7902851be6873f8c787289be60b2bf686.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0bc43f7902851be6873f8c787289be60b2bf686/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0bc43f7902851be6873f8c787289be60b2bf686/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0bc43f7902851be6873f8c787289be60b2bf686/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0bc43f7902851be6873f8c787289be60b2bf686/storage.json"
+}

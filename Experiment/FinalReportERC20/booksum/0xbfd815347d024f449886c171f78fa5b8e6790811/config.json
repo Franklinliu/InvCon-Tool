@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbfd815347d024f449886c171f78fa5b8e6790811/0xbfd815347d024f449886c171f78fa5b8e6790811.sol",
+      "name": "AAPX",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "00000000000000000000000000000000000000000005ca4ec2a79a7f67000000",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbfd815347d024f449886c171f78fa5b8e6790811/0xbfd815347d024f449886c171f78fa5b8e6790811.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbfd815347d024f449886c171f78fa5b8e6790811/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbfd815347d024f449886c171f78fa5b8e6790811/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbfd815347d024f449886c171f78fa5b8e6790811/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbfd815347d024f449886c171f78fa5b8e6790811/storage.json"
+}

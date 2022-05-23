@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x09ac024efc61655f5463230aadf9009c56b966e4/0x09ac024efc61655f5463230aadf9009c56b966e4.sol",
+      "name": "POOLZ",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x09ac024efc61655f5463230aadf9009c56b966e4/0x09ac024efc61655f5463230aadf9009c56b966e4.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x09ac024efc61655f5463230aadf9009c56b966e4/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x09ac024efc61655f5463230aadf9009c56b966e4/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x09ac024efc61655f5463230aadf9009c56b966e4/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x09ac024efc61655f5463230aadf9009c56b966e4/storage.json"
+}

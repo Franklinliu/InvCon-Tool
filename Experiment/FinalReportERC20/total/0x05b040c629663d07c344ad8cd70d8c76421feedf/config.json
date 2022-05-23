@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05b040c629663d07c344ad8cd70d8c76421feedf/0x05b040c629663d07c344ad8cd70d8c76421feedf.sol",
+      "name": "GenreBase",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05b040c629663d07c344ad8cd70d8c76421feedf/0x05b040c629663d07c344ad8cd70d8c76421feedf.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05b040c629663d07c344ad8cd70d8c76421feedf/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05b040c629663d07c344ad8cd70d8c76421feedf/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05b040c629663d07c344ad8cd70d8c76421feedf/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05b040c629663d07c344ad8cd70d8c76421feedf/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc6c6224cf32f5b0850ddf740b47cd1ed31abead4/0xc6c6224cf32f5b0850ddf740b47cd1ed31abead4.sol",
+      "name": "KUPP",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc6c6224cf32f5b0850ddf740b47cd1ed31abead4/0xc6c6224cf32f5b0850ddf740b47cd1ed31abead4.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc6c6224cf32f5b0850ddf740b47cd1ed31abead4/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc6c6224cf32f5b0850ddf740b47cd1ed31abead4/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc6c6224cf32f5b0850ddf740b47cd1ed31abead4/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc6c6224cf32f5b0850ddf740b47cd1ed31abead4/storage.json"
+}

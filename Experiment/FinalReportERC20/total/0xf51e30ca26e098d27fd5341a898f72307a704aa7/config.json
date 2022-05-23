@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf51e30ca26e098d27fd5341a898f72307a704aa7/0xf51e30ca26e098d27fd5341a898f72307a704aa7.sol",
+      "name": "LIVETOKEN",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf51e30ca26e098d27fd5341a898f72307a704aa7/0xf51e30ca26e098d27fd5341a898f72307a704aa7.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf51e30ca26e098d27fd5341a898f72307a704aa7/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf51e30ca26e098d27fd5341a898f72307a704aa7/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf51e30ca26e098d27fd5341a898f72307a704aa7/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf51e30ca26e098d27fd5341a898f72307a704aa7/storage.json"
+}

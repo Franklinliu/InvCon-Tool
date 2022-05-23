@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xca1cce661af5b25a210c922e755148f048c52448/0xca1cce661af5b25a210c922e755148f048c52448.sol",
+      "name": "Nexuscoin",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xca1cce661af5b25a210c922e755148f048c52448/0xca1cce661af5b25a210c922e755148f048c52448.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xca1cce661af5b25a210c922e755148f048c52448/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xca1cce661af5b25a210c922e755148f048c52448/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xca1cce661af5b25a210c922e755148f048c52448/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xca1cce661af5b25a210c922e755148f048c52448/storage.json"
+}

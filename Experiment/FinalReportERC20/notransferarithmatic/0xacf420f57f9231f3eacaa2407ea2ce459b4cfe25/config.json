@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xacf420f57f9231f3eacaa2407ea2ce459b4cfe25/0xacf420f57f9231f3eacaa2407ea2ce459b4cfe25.sol",
+      "name": "ViviToken",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xacf420f57f9231f3eacaa2407ea2ce459b4cfe25/0xacf420f57f9231f3eacaa2407ea2ce459b4cfe25.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xacf420f57f9231f3eacaa2407ea2ce459b4cfe25/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xacf420f57f9231f3eacaa2407ea2ce459b4cfe25/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xacf420f57f9231f3eacaa2407ea2ce459b4cfe25/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xacf420f57f9231f3eacaa2407ea2ce459b4cfe25/storage.json"
+}

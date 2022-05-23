@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8fe59b8b93a05e8c24cec23b45eaa38f604d42f5/0x8fe59b8b93a05e8c24cec23b45eaa38f604d42f5.sol",
+      "name": "TosDis",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8fe59b8b93a05e8c24cec23b45eaa38f604d42f5/0x8fe59b8b93a05e8c24cec23b45eaa38f604d42f5.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8fe59b8b93a05e8c24cec23b45eaa38f604d42f5/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8fe59b8b93a05e8c24cec23b45eaa38f604d42f5/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8fe59b8b93a05e8c24cec23b45eaa38f604d42f5/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8fe59b8b93a05e8c24cec23b45eaa38f604d42f5/storage.json"
+}

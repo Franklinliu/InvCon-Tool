@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x20dce75255b077a1a93d5a74e1588a355517e265/0x20dce75255b077a1a93d5a74e1588a355517e265.sol",
+      "name": "SD",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "0000000000000000000000009c486038e1720266ffa12550413645e54b414a400000000000000000000000009c486038e1720266ffa12550413645e54b414a40",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x20dce75255b077a1a93d5a74e1588a355517e265/0x20dce75255b077a1a93d5a74e1588a355517e265.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x20dce75255b077a1a93d5a74e1588a355517e265/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x20dce75255b077a1a93d5a74e1588a355517e265/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x20dce75255b077a1a93d5a74e1588a355517e265/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x20dce75255b077a1a93d5a74e1588a355517e265/storage.json"
+}

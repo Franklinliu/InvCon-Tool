@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcdb91508ee3423b38039df4d100c8ea50ac71a35/0xcdb91508ee3423b38039df4d100c8ea50ac71a35.sol",
+      "name": "EGOLD",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcdb91508ee3423b38039df4d100c8ea50ac71a35/0xcdb91508ee3423b38039df4d100c8ea50ac71a35.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcdb91508ee3423b38039df4d100c8ea50ac71a35/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcdb91508ee3423b38039df4d100c8ea50ac71a35/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcdb91508ee3423b38039df4d100c8ea50ac71a35/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcdb91508ee3423b38039df4d100c8ea50ac71a35/storage.json"
+}

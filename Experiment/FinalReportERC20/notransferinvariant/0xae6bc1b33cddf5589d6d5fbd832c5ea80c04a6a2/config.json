@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xae6bc1b33cddf5589d6d5fbd832c5ea80c04a6a2/0xae6bc1b33cddf5589d6d5fbd832c5ea80c04a6a2.sol",
+      "name": "SencToken",
+      "compiler_version": "v0.4.18+commit.9cf6e910",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xae6bc1b33cddf5589d6d5fbd832c5ea80c04a6a2/0xae6bc1b33cddf5589d6d5fbd832c5ea80c04a6a2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xae6bc1b33cddf5589d6d5fbd832c5ea80c04a6a2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xae6bc1b33cddf5589d6d5fbd832c5ea80c04a6a2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xae6bc1b33cddf5589d6d5fbd832c5ea80c04a6a2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xae6bc1b33cddf5589d6d5fbd832c5ea80c04a6a2/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x808862ac4c9718cc348c4703834f2fe10d8b9472/0x808862ac4c9718cc348c4703834f2fe10d8b9472.sol",
+      "name": "RCEPToken",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x808862ac4c9718cc348c4703834f2fe10d8b9472/0x808862ac4c9718cc348c4703834f2fe10d8b9472.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x808862ac4c9718cc348c4703834f2fe10d8b9472/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x808862ac4c9718cc348c4703834f2fe10d8b9472/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x808862ac4c9718cc348c4703834f2fe10d8b9472/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x808862ac4c9718cc348c4703834f2fe10d8b9472/storage.json"
+}

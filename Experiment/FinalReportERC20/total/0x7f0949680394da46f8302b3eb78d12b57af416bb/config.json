@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f0949680394da46f8302b3eb78d12b57af416bb/0x7f0949680394da46f8302b3eb78d12b57af416bb.sol",
+      "name": "crates",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f0949680394da46f8302b3eb78d12b57af416bb/0x7f0949680394da46f8302b3eb78d12b57af416bb.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f0949680394da46f8302b3eb78d12b57af416bb/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f0949680394da46f8302b3eb78d12b57af416bb/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f0949680394da46f8302b3eb78d12b57af416bb/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7f0949680394da46f8302b3eb78d12b57af416bb/storage.json"
+}

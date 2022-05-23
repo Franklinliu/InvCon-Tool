@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcd36493a9fd6b65ebebb6a667d06c9a476471b0b/0xcd36493a9fd6b65ebebb6a667d06c9a476471b0b.sol",
+      "name": "ElonMuskCoin",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcd36493a9fd6b65ebebb6a667d06c9a476471b0b/0xcd36493a9fd6b65ebebb6a667d06c9a476471b0b.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcd36493a9fd6b65ebebb6a667d06c9a476471b0b/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcd36493a9fd6b65ebebb6a667d06c9a476471b0b/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcd36493a9fd6b65ebebb6a667d06c9a476471b0b/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcd36493a9fd6b65ebebb6a667d06c9a476471b0b/storage.json"
+}

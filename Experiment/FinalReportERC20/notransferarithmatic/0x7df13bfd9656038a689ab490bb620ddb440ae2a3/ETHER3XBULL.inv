@@ -1,0 +1,101 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+ETHER3XBULL.approve(address,uint256):::EXIT1
+this == orig(this)
+this.decimals == orig(this.decimals)
+this.totalSupply == this.balances[this.owner].getValue()
+this.balances == orig(this.balances)
+this.allow == orig(this.allow)
+this.allow[].getValue() == orig(this.allow[].getValue())
+this.allowed == orig(this.allowed)
+this.owner == msg.sender
+this.owner == orig(this.owner)
+this.owner == orig(msg.sender)
+_spender == orig(_spender)
+orig(_value) == this.allowed[pair(msg.sender,_spender)].getSubValue()
+orig(msg.value) == orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue())
+this.allow[this.owner].getValue() == this.allow[msg.sender].getValue()
+this.allow[this.owner].getValue() == this.allow[orig(this.owner)].getValue()
+this.allow[this.owner].getValue() == this.allow[orig(msg.sender)].getValue()
+this.allow[this.owner].getValue() == orig(this.allow[post(this.owner)].getValue())
+this.allow[this.owner].getValue() == orig(this.allow[post(msg.sender)].getValue())
+this.allow[this.owner].getValue() == orig(this.allow[this.owner].getValue())
+this.allow[this.owner].getValue() == orig(this.allow[msg.sender].getValue())
+this.decimals == 18
+this.totalSupply == 10000000000000000000000
+this.balances has only one value
+this.allow has only one value
+this.allow[].getValue() elements == true
+this.allowed has only one value
+this.allowed[].getSubLength() elements == 1
+orig(this) has only one value
+orig(this.decimals) == 18
+orig(_value) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(msg.value) == 0
+orig(block.timestamp) == 1611818350
+sum(this.allowed[].getSubLength()) == 1
+sum(orig(this.allowed[].getSubLength())) == 0
+this.balances[this.owner].getValue() == 10000000000000000000000
+this.allow[this.owner].getValue() == true
+this.allowed[pair(msg.sender,_spender)].getSubValue() == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+orig(this.allowed[post(pair(_spender,msg.sender))].getSubValue()) == 0
+this.allow[].getValue() elements == this.allow[this.owner].getValue()
+this.allow[this.owner].getValue() in this.allow[].getValue()
+sum(this.allowed[].getSubLength()) in this.allowed[].getSubLength()
+this.allowed[].getSubLength() elements == sum(this.allowed[].getSubLength())
+===========================================================================
+ETHER3XBULL.transferFrom(address,address,uint256):::EXIT1
+this == orig(this)
+this.decimals == orig(this.decimals)
+this.totalSupply == this.balances[orig(_to)].getValue()
+this.balances == orig(this.balances)
+this.allow == orig(this.allow)
+this.allow[].getValue() == orig(this.allow[].getValue())
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+this.owner == _from
+this.owner == orig(this.owner)
+this.owner == orig(_from)
+_to == orig(_to)
+msg.sender == orig(msg.sender)
+orig(msg.value) == this.balances[this.owner].getValue()
+orig(msg.value) == orig(this.allowed[post(pair(_from,_to))].getSubValue())
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+sum(this.allowed[].getSubValue()) == this.allowed[pair(_from,msg.sender)].getSubValue()
+sum(orig(this.allowed[].getSubValue())) == orig(this.allowed[post(pair(_from,msg.sender))].getSubValue())
+this.balances[this.owner].getValue() == orig(this.allowed[post(pair(_from,_to))].getSubValue())
+this.allow[this.owner].getValue() == this.allow[_from].getValue()
+this.allow[this.owner].getValue() == this.allow[orig(this.owner)].getValue()
+this.allow[this.owner].getValue() == this.allow[orig(_from)].getValue()
+this.allow[this.owner].getValue() == orig(this.allow[post(this.owner)].getValue())
+this.allow[this.owner].getValue() == orig(this.allow[post(_from)].getValue())
+this.allow[this.owner].getValue() == orig(this.allow[this.owner].getValue())
+this.allow[this.owner].getValue() == orig(this.allow[_from].getValue())
+this.decimals == 18
+this.totalSupply == 10000000000000000000000
+this.balances has only one value
+this.allow has only one value
+this.allow[].getValue() elements == true
+this.allowed has only one value
+this.allowed[].getSubLength() elements == 1
+orig(this) has only one value
+orig(this.decimals) == 18
+orig(msg.value) == 0
+orig(block.timestamp) == 11742928
+sum(this.allowed[].getSubLength()) == 1
+sum(this.allowed[].getSubValue()) == 115792089237316195423570985008687907853269984665640564029457584007913129639935
+sum(orig(this.allowed[].getSubValue())) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+this.balances[this.owner].getValue() == 0
+this.balances[orig(_to)].getValue() == 10000000000000000000000
+this.allow[this.owner].getValue() == true
+this.allowed[pair(_from,msg.sender)].getSubValue() == 115792089237316195423570985008687907853269984665640564029457584007913129639935
+orig(this.allowed[post(pair(_from,_to))].getSubValue()) == 0
+orig(this.allowed[post(pair(_from,msg.sender))].getSubValue()) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+this.allow[].getValue() elements == this.allow[this.owner].getValue()
+this.allow[this.owner].getValue() in this.allow[].getValue()
+sum(this.allowed[].getSubLength()) in this.allowed[].getSubLength()
+this.allowed[].getSubLength() elements == sum(this.allowed[].getSubLength())
+Exiting Daikon.

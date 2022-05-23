@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf7239b506e32f7f6fa4e90e41af9b0b4b9a78934/0xf7239b506e32f7f6fa4e90e41af9b0b4b9a78934.sol",
+      "name": "FreedomOfSpeechToken",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "000000000000000000000000f5d5b66acfe303185a89f2b9189f4fc232ebcfd7",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf7239b506e32f7f6fa4e90e41af9b0b4b9a78934/0xf7239b506e32f7f6fa4e90e41af9b0b4b9a78934.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf7239b506e32f7f6fa4e90e41af9b0b4b9a78934/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf7239b506e32f7f6fa4e90e41af9b0b4b9a78934/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf7239b506e32f7f6fa4e90e41af9b0b4b9a78934/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf7239b506e32f7f6fa4e90e41af9b0b4b9a78934/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0101aa14dc15bbb7cb159f11e1fc065ac16a720/0xf0101aa14dc15bbb7cb159f11e1fc065ac16a720.sol",
+      "name": "IAMToken",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0101aa14dc15bbb7cb159f11e1fc065ac16a720/0xf0101aa14dc15bbb7cb159f11e1fc065ac16a720.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0101aa14dc15bbb7cb159f11e1fc065ac16a720/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0101aa14dc15bbb7cb159f11e1fc065ac16a720/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0101aa14dc15bbb7cb159f11e1fc065ac16a720/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf0101aa14dc15bbb7cb159f11e1fc065ac16a720/storage.json"
+}

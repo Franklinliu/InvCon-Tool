@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x24cfdba9ac8112a740c3b04382a5a802d9075ae6/0x24cfdba9ac8112a740c3b04382a5a802d9075ae6.sol",
+      "name": "ZlotowkaCoin",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x24cfdba9ac8112a740c3b04382a5a802d9075ae6/0x24cfdba9ac8112a740c3b04382a5a802d9075ae6.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x24cfdba9ac8112a740c3b04382a5a802d9075ae6/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x24cfdba9ac8112a740c3b04382a5a802d9075ae6/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x24cfdba9ac8112a740c3b04382a5a802d9075ae6/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x24cfdba9ac8112a740c3b04382a5a802d9075ae6/storage.json"
+}

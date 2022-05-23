@@ -1,0 +1,36 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+TestFilToken.issue(uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Pausable_own_paused == this.deprecated
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.Pausable_own_paused == orig(this.deprecated)
+this.ERC20Basic_own__totalSupply == orig(this.ERC20Basic_own__totalSupply)
+this.ERC20Basic_own__totalSupply == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+this.BasicToken_own_balances == orig(this.BasicToken_own_balances)
+this.StandardToken_own_allowed == orig(this.StandardToken_own_allowed)
+this.StandardToken_own_allowed[].getSubLength() == orig(this.StandardToken_own_allowed[].getSubLength())
+this.BlackList_own_isBlackListed == orig(this.BlackList_own_isBlackListed)
+this.BlackList_own_isBlackListed[].getValue() == orig(this.BlackList_own_isBlackListed[].getValue())
+this.upgradedAddress == orig(this.upgradedAddress)
+msg.sender == orig(msg.sender)
+orig(this.ERC20Basic_own__totalSupply) == this.BasicToken_own_balances[this.Ownable_own_owner].getValue()
+sum(this.StandardToken_own_allowed[].getSubLength()) == sum(orig(this.StandardToken_own_allowed[].getSubLength()))
+this.Pausable_own_paused == false
+this.ERC20Basic_own__totalSupply == 200000000000000
+this.BasicToken_own_balances has only one value
+this.BasicToken_own_basisPointsRate == 0
+this.StandardToken_own_allowed has only one value
+this.BlackList_own_isBlackListed has only one value
+this.decimals == 8
+orig(this) has only one value
+orig(this.ERC20Basic_own__totalSupply) == 200000000000000
+orig(amount) == 150000000000000
+orig(block.timestamp) == 1611027718
+sum(this.StandardToken_own_allowed[].getSubLength()) == 0
+this.BasicToken_own_balances[this.Ownable_own_owner].getValue() == 200000000000000
+Exiting Daikon.

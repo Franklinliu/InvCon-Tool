@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x183df4c11bd9a847ebedb3e03791449b06154b42/0x183df4c11bd9a847ebedb3e03791449b06154b42.sol",
+      "name": "CyrusTheGeratCoin",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x183df4c11bd9a847ebedb3e03791449b06154b42/0x183df4c11bd9a847ebedb3e03791449b06154b42.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x183df4c11bd9a847ebedb3e03791449b06154b42/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x183df4c11bd9a847ebedb3e03791449b06154b42/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x183df4c11bd9a847ebedb3e03791449b06154b42/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x183df4c11bd9a847ebedb3e03791449b06154b42/storage.json"
+}

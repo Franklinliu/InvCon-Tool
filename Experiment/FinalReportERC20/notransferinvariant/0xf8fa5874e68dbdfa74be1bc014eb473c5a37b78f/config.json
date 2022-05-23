@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8fa5874e68dbdfa74be1bc014eb473c5a37b78f/0xf8fa5874e68dbdfa74be1bc014eb473c5a37b78f.sol",
+      "name": "LNASolution",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8fa5874e68dbdfa74be1bc014eb473c5a37b78f/0xf8fa5874e68dbdfa74be1bc014eb473c5a37b78f.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8fa5874e68dbdfa74be1bc014eb473c5a37b78f/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8fa5874e68dbdfa74be1bc014eb473c5a37b78f/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8fa5874e68dbdfa74be1bc014eb473c5a37b78f/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xf8fa5874e68dbdfa74be1bc014eb473c5a37b78f/storage.json"
+}

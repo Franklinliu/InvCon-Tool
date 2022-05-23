@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb98f25fd5ea04a487e1a33258bffce4941f75c06/0xb98f25fd5ea04a487e1a33258bffce4941f75c06.sol",
+      "name": "INSA",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb98f25fd5ea04a487e1a33258bffce4941f75c06/0xb98f25fd5ea04a487e1a33258bffce4941f75c06.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb98f25fd5ea04a487e1a33258bffce4941f75c06/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb98f25fd5ea04a487e1a33258bffce4941f75c06/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb98f25fd5ea04a487e1a33258bffce4941f75c06/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb98f25fd5ea04a487e1a33258bffce4941f75c06/storage.json"
+}

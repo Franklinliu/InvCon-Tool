@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe171e4b490636799849012ed8db7e162e5073ee4/0xe171e4b490636799849012ed8db7e162e5073ee4.sol",
+      "name": "SWPRLToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe171e4b490636799849012ed8db7e162e5073ee4/0xe171e4b490636799849012ed8db7e162e5073ee4.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe171e4b490636799849012ed8db7e162e5073ee4/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe171e4b490636799849012ed8db7e162e5073ee4/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe171e4b490636799849012ed8db7e162e5073ee4/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe171e4b490636799849012ed8db7e162e5073ee4/storage.json"
+}

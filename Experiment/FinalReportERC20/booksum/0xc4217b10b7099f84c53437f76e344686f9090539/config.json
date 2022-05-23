@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc4217b10b7099f84c53437f76e344686f9090539/0xc4217b10b7099f84c53437f76e344686f9090539.sol",
+      "name": "AUR",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc4217b10b7099f84c53437f76e344686f9090539/0xc4217b10b7099f84c53437f76e344686f9090539.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc4217b10b7099f84c53437f76e344686f9090539/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc4217b10b7099f84c53437f76e344686f9090539/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc4217b10b7099f84c53437f76e344686f9090539/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc4217b10b7099f84c53437f76e344686f9090539/storage.json"
+}

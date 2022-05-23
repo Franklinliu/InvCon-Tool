@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa9574ea6bef0f5e641963a70c74e439312f99df3/0xa9574ea6bef0f5e641963a70c74e439312f99df3.sol",
+      "name": "ARCToken",
+      "compiler_version": "v0.4.21+commit.dfe3193c",
+      "arguments": "0000000000000000000000004d0241353834ab39068a4058ca3a2b1bb70ce71d000000000000000000000000000000000000000000000000000000003b9aca00",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa9574ea6bef0f5e641963a70c74e439312f99df3/0xa9574ea6bef0f5e641963a70c74e439312f99df3.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa9574ea6bef0f5e641963a70c74e439312f99df3/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa9574ea6bef0f5e641963a70c74e439312f99df3/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa9574ea6bef0f5e641963a70c74e439312f99df3/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa9574ea6bef0f5e641963a70c74e439312f99df3/storage.json"
+}

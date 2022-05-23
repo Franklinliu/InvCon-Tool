@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5f0415ea396f2ee499f4984df44fcdb044510c16/0x5f0415ea396f2ee499f4984df44fcdb044510c16.sol",
+      "name": "ACCAToken",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5f0415ea396f2ee499f4984df44fcdb044510c16/0x5f0415ea396f2ee499f4984df44fcdb044510c16.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5f0415ea396f2ee499f4984df44fcdb044510c16/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5f0415ea396f2ee499f4984df44fcdb044510c16/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5f0415ea396f2ee499f4984df44fcdb044510c16/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5f0415ea396f2ee499f4984df44fcdb044510c16/storage.json"
+}

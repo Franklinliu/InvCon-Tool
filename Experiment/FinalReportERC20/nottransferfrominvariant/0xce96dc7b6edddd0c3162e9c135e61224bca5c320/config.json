@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xce96dc7b6edddd0c3162e9c135e61224bca5c320/0xce96dc7b6edddd0c3162e9c135e61224bca5c320.sol",
+      "name": "CMODToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xce96dc7b6edddd0c3162e9c135e61224bca5c320/0xce96dc7b6edddd0c3162e9c135e61224bca5c320.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xce96dc7b6edddd0c3162e9c135e61224bca5c320/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xce96dc7b6edddd0c3162e9c135e61224bca5c320/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xce96dc7b6edddd0c3162e9c135e61224bca5c320/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xce96dc7b6edddd0c3162e9c135e61224bca5c320/storage.json"
+}

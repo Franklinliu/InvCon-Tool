@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xeced87f00d16c694960812fc36a21e53f37d7c7b/0xeced87f00d16c694960812fc36a21e53f37d7c7b.sol",
+      "name": "Poltura",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xeced87f00d16c694960812fc36a21e53f37d7c7b/0xeced87f00d16c694960812fc36a21e53f37d7c7b.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xeced87f00d16c694960812fc36a21e53f37d7c7b/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xeced87f00d16c694960812fc36a21e53f37d7c7b/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xeced87f00d16c694960812fc36a21e53f37d7c7b/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xeced87f00d16c694960812fc36a21e53f37d7c7b/storage.json"
+}

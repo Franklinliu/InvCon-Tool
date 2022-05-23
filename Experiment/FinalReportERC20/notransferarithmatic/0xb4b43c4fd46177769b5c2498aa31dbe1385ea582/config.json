@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb4b43c4fd46177769b5c2498aa31dbe1385ea582/0xb4b43c4fd46177769b5c2498aa31dbe1385ea582.sol",
+      "name": "DexterionToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb4b43c4fd46177769b5c2498aa31dbe1385ea582/0xb4b43c4fd46177769b5c2498aa31dbe1385ea582.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb4b43c4fd46177769b5c2498aa31dbe1385ea582/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb4b43c4fd46177769b5c2498aa31dbe1385ea582/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb4b43c4fd46177769b5c2498aa31dbe1385ea582/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb4b43c4fd46177769b5c2498aa31dbe1385ea582/storage.json"
+}

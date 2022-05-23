@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x80b21f23993b841f66616197b9e535c286302285/0x80b21f23993b841f66616197b9e535c286302285.sol",
+      "name": "GR1M",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x80b21f23993b841f66616197b9e535c286302285/0x80b21f23993b841f66616197b9e535c286302285.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x80b21f23993b841f66616197b9e535c286302285/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x80b21f23993b841f66616197b9e535c286302285/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x80b21f23993b841f66616197b9e535c286302285/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x80b21f23993b841f66616197b9e535c286302285/storage.json"
+}

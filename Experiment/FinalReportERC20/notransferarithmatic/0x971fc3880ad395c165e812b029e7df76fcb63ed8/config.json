@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x971fc3880ad395c165e812b029e7df76fcb63ed8/0x971fc3880ad395c165e812b029e7df76fcb63ed8.sol",
+      "name": "WireToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x971fc3880ad395c165e812b029e7df76fcb63ed8/0x971fc3880ad395c165e812b029e7df76fcb63ed8.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x971fc3880ad395c165e812b029e7df76fcb63ed8/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x971fc3880ad395c165e812b029e7df76fcb63ed8/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x971fc3880ad395c165e812b029e7df76fcb63ed8/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x971fc3880ad395c165e812b029e7df76fcb63ed8/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcf15b7d19be83ddb4401514e29decb15cf6b74f2/0xcf15b7d19be83ddb4401514e29decb15cf6b74f2.sol",
+      "name": "kpop",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcf15b7d19be83ddb4401514e29decb15cf6b74f2/0xcf15b7d19be83ddb4401514e29decb15cf6b74f2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcf15b7d19be83ddb4401514e29decb15cf6b74f2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcf15b7d19be83ddb4401514e29decb15cf6b74f2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcf15b7d19be83ddb4401514e29decb15cf6b74f2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xcf15b7d19be83ddb4401514e29decb15cf6b74f2/storage.json"
+}

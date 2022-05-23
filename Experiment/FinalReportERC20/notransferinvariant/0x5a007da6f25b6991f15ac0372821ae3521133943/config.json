@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5a007da6f25b6991f15ac0372821ae3521133943/0x5a007da6f25b6991f15ac0372821ae3521133943.sol",
+      "name": "EBULL",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5a007da6f25b6991f15ac0372821ae3521133943/0x5a007da6f25b6991f15ac0372821ae3521133943.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5a007da6f25b6991f15ac0372821ae3521133943/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5a007da6f25b6991f15ac0372821ae3521133943/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5a007da6f25b6991f15ac0372821ae3521133943/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5a007da6f25b6991f15ac0372821ae3521133943/storage.json"
+}

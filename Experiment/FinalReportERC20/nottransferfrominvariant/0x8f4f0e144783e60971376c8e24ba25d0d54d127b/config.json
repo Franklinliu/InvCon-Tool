@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8f4f0e144783e60971376c8e24ba25d0d54d127b/0x8f4f0e144783e60971376c8e24ba25d0d54d127b.sol",
+      "name": "WPToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8f4f0e144783e60971376c8e24ba25d0d54d127b/0x8f4f0e144783e60971376c8e24ba25d0d54d127b.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8f4f0e144783e60971376c8e24ba25d0d54d127b/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8f4f0e144783e60971376c8e24ba25d0d54d127b/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8f4f0e144783e60971376c8e24ba25d0d54d127b/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x8f4f0e144783e60971376c8e24ba25d0d54d127b/storage.json"
+}

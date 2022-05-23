@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0539bf9af0d5f8611a87a24560c406137a0431c2/0x0539bf9af0d5f8611a87a24560c406137a0431c2.sol",
+      "name": "HunterToken",
+      "compiler_version": "v0.4.21+commit.dfe3193c",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0539bf9af0d5f8611a87a24560c406137a0431c2/0x0539bf9af0d5f8611a87a24560c406137a0431c2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0539bf9af0d5f8611a87a24560c406137a0431c2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0539bf9af0d5f8611a87a24560c406137a0431c2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0539bf9af0d5f8611a87a24560c406137a0431c2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0539bf9af0d5f8611a87a24560c406137a0431c2/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7b912f3de4d3ad6eb583359e602e7bf361aa76d2/0x7b912f3de4d3ad6eb583359e602e7bf361aa76d2.sol",
+      "name": "FYTK",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7b912f3de4d3ad6eb583359e602e7bf361aa76d2/0x7b912f3de4d3ad6eb583359e602e7bf361aa76d2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7b912f3de4d3ad6eb583359e602e7bf361aa76d2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7b912f3de4d3ad6eb583359e602e7bf361aa76d2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7b912f3de4d3ad6eb583359e602e7bf361aa76d2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x7b912f3de4d3ad6eb583359e602e7bf361aa76d2/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5b2d697833ef239d1215d84dc52e20d7054ce0dc/0x5b2d697833ef239d1215d84dc52e20d7054ce0dc.sol",
+      "name": "JGOLDToken",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5b2d697833ef239d1215d84dc52e20d7054ce0dc/0x5b2d697833ef239d1215d84dc52e20d7054ce0dc.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5b2d697833ef239d1215d84dc52e20d7054ce0dc/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5b2d697833ef239d1215d84dc52e20d7054ce0dc/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5b2d697833ef239d1215d84dc52e20d7054ce0dc/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x5b2d697833ef239d1215d84dc52e20d7054ce0dc/storage.json"
+}

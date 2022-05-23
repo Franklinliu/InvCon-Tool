@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa5b7c4dd4f09db3d9cbb830906b7578877ceb61d/0xa5b7c4dd4f09db3d9cbb830906b7578877ceb61d.sol",
+      "name": "KarnyToken",
+      "compiler_version": "v0.4.21+commit.dfe3193c",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa5b7c4dd4f09db3d9cbb830906b7578877ceb61d/0xa5b7c4dd4f09db3d9cbb830906b7578877ceb61d.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa5b7c4dd4f09db3d9cbb830906b7578877ceb61d/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa5b7c4dd4f09db3d9cbb830906b7578877ceb61d/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa5b7c4dd4f09db3d9cbb830906b7578877ceb61d/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xa5b7c4dd4f09db3d9cbb830906b7578877ceb61d/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x10ee7eed07a5d9313b098feae55036c14338e94a/0x10ee7eed07a5d9313b098feae55036c14338e94a.sol",
+      "name": "SUNDLToken",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x10ee7eed07a5d9313b098feae55036c14338e94a/0x10ee7eed07a5d9313b098feae55036c14338e94a.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x10ee7eed07a5d9313b098feae55036c14338e94a/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x10ee7eed07a5d9313b098feae55036c14338e94a/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x10ee7eed07a5d9313b098feae55036c14338e94a/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x10ee7eed07a5d9313b098feae55036c14338e94a/storage.json"
+}

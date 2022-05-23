@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2569805a3337db27d37ba578609d8faa1c44c26/0xb2569805a3337db27d37ba578609d8faa1c44c26.sol",
+      "name": "Bloch",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2569805a3337db27d37ba578609d8faa1c44c26/0xb2569805a3337db27d37ba578609d8faa1c44c26.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2569805a3337db27d37ba578609d8faa1c44c26/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2569805a3337db27d37ba578609d8faa1c44c26/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2569805a3337db27d37ba578609d8faa1c44c26/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2569805a3337db27d37ba578609d8faa1c44c26/storage.json"
+}

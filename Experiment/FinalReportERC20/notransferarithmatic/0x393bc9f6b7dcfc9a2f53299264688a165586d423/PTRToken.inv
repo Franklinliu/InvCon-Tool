@@ -1,0 +1,49 @@
+Daikon version 5.8.6, released December 2, 2020; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+Warning: Daikon is using a dataflow hierarchy analysis on a data trace that does not appear to be over a program execution, consider running Daikon with the --nohierarchy flag.
+
+===========================================================================
+PTRToken.transfer(address,uint256):::EXIT2
+this == orig(this)
+this.Ownable_own_owner == this.Ownable_own_newOwner
+this.Ownable_own_owner == orig(this.Ownable_own_owner)
+this.Ownable_own_owner == orig(this.Ownable_own_newOwner)
+this.Pausable_own_paused == orig(this.Pausable_own_paused)
+this.decimals == this.initialSupply
+this.decimals == this.totalSupply_
+this.decimals == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+this.initialSupply == this.totalSupply_
+this.initialSupply == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+this.totalSupply_ == orig(this.allowed[post(pair(_to,msg.sender))].getSubValue())
+this.balances == orig(this.balances)
+this.locks == orig(this.locks)
+this.locks[].getValue() == this.frozen[].getValue()
+this.locks[].getValue() == orig(this.locks[].getValue())
+this.locks[].getValue() == orig(this.frozen[].getValue())
+this.frozen == orig(this.frozen)
+this.allowed == orig(this.allowed)
+this.allowed[].getSubLength() == orig(this.allowed[].getSubLength())
+this.lockupInfo == orig(this.lockupInfo)
+this.lockupInfo[].getValue() == orig(this.lockupInfo[].getValue())
+_to == orig(_to)
+_value == orig(_value)
+msg.sender == orig(msg.sender)
+block.timestamp == orig(block.timestamp)
+sum(this.allowed[].getSubLength()) == sum(orig(this.allowed[].getSubLength()))
+this.Pausable_own_paused == false
+this.decimals == 0
+this.initialSupply == 0
+this.totalSupply_ == 0
+this.balances has only one value
+this.locks has only one value
+this.frozen has only one value
+this.allowed has only one value
+this.lockupInfo has only one value
+_value == 750000000000000000000000000
+block.timestamp one of { 1611211424, 1611211465 }
+orig(this) has only one value
+orig(_value) == 750000000000000000000000000
+orig(block.timestamp) one of { 1611211424, 1611211465 }
+sum(this.allowed[].getSubLength()) == 0
+orig(this.allowed[post(pair(_to,msg.sender))].getSubValue()) == 0
+Exiting Daikon.

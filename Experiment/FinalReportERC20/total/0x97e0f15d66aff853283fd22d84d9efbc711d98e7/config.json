@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x97e0f15d66aff853283fd22d84d9efbc711d98e7/0x97e0f15d66aff853283fd22d84d9efbc711d98e7.sol",
+      "name": "Nnbtoken",
+      "compiler_version": "v0.4.17+commit.bdeb9e52",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x97e0f15d66aff853283fd22d84d9efbc711d98e7/0x97e0f15d66aff853283fd22d84d9efbc711d98e7.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x97e0f15d66aff853283fd22d84d9efbc711d98e7/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x97e0f15d66aff853283fd22d84d9efbc711d98e7/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x97e0f15d66aff853283fd22d84d9efbc711d98e7/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x97e0f15d66aff853283fd22d84d9efbc711d98e7/storage.json"
+}

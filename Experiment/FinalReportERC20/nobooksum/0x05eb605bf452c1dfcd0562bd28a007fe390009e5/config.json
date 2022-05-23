@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05eb605bf452c1dfcd0562bd28a007fe390009e5/0x05eb605bf452c1dfcd0562bd28a007fe390009e5.sol",
+      "name": "Blockvila",
+      "compiler_version": "v0.4.23+commit.124ca40d",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05eb605bf452c1dfcd0562bd28a007fe390009e5/0x05eb605bf452c1dfcd0562bd28a007fe390009e5.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05eb605bf452c1dfcd0562bd28a007fe390009e5/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05eb605bf452c1dfcd0562bd28a007fe390009e5/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05eb605bf452c1dfcd0562bd28a007fe390009e5/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x05eb605bf452c1dfcd0562bd28a007fe390009e5/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe5d3e12a53246d9aabd1c3599a43811947fe7b19/0xe5d3e12a53246d9aabd1c3599a43811947fe7b19.sol",
+      "name": "TehranNovinToken",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe5d3e12a53246d9aabd1c3599a43811947fe7b19/0xe5d3e12a53246d9aabd1c3599a43811947fe7b19.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe5d3e12a53246d9aabd1c3599a43811947fe7b19/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe5d3e12a53246d9aabd1c3599a43811947fe7b19/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe5d3e12a53246d9aabd1c3599a43811947fe7b19/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xe5d3e12a53246d9aabd1c3599a43811947fe7b19/storage.json"
+}

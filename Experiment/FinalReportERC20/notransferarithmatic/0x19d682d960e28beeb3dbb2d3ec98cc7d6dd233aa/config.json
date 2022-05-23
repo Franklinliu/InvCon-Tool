@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x19d682d960e28beeb3dbb2d3ec98cc7d6dd233aa/0x19d682d960e28beeb3dbb2d3ec98cc7d6dd233aa.sol",
+      "name": "GoldXCoin",
+      "compiler_version": "v0.4.25+commit.59dbf8f1",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x19d682d960e28beeb3dbb2d3ec98cc7d6dd233aa/0x19d682d960e28beeb3dbb2d3ec98cc7d6dd233aa.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x19d682d960e28beeb3dbb2d3ec98cc7d6dd233aa/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x19d682d960e28beeb3dbb2d3ec98cc7d6dd233aa/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x19d682d960e28beeb3dbb2d3ec98cc7d6dd233aa/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x19d682d960e28beeb3dbb2d3ec98cc7d6dd233aa/storage.json"
+}

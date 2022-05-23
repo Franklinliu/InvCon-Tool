@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbd64255c7705371ee1f3d96b015695e73626c0e2/0xbd64255c7705371ee1f3d96b015695e73626c0e2.sol",
+      "name": "FX",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbd64255c7705371ee1f3d96b015695e73626c0e2/0xbd64255c7705371ee1f3d96b015695e73626c0e2.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbd64255c7705371ee1f3d96b015695e73626c0e2/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbd64255c7705371ee1f3d96b015695e73626c0e2/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbd64255c7705371ee1f3d96b015695e73626c0e2/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xbd64255c7705371ee1f3d96b015695e73626c0e2/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0711f1005af593b8df936e99c731fe29c3c745ea/0x0711f1005af593b8df936e99c731fe29c3c745ea.sol",
+      "name": "FarmCoin",
+      "compiler_version": "v0.4.26+commit.4563c3fc",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0711f1005af593b8df936e99c731fe29c3c745ea/0x0711f1005af593b8df936e99c731fe29c3c745ea.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0711f1005af593b8df936e99c731fe29c3c745ea/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0711f1005af593b8df936e99c731fe29c3c745ea/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0711f1005af593b8df936e99c731fe29c3c745ea/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0x0711f1005af593b8df936e99c731fe29c3c745ea/storage.json"
+}

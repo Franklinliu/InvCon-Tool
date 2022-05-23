@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2018a1cec6508765596539c2068d9fcf89743df/0xb2018a1cec6508765596539c2068d9fcf89743df.sol",
+      "name": "COBANK",
+      "compiler_version": "v0.4.24+commit.e67f0147",
+      "arguments": "0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2018a1cec6508765596539c2068d9fcf89743df/0xb2018a1cec6508765596539c2068d9fcf89743df.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2018a1cec6508765596539c2068d9fcf89743df/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2018a1cec6508765596539c2068d9fcf89743df/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2018a1cec6508765596539c2068d9fcf89743df/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xb2018a1cec6508765596539c2068d9fcf89743df/storage.json"
+}

@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfddcf76966a56f2442cff05ea1ddb893673f48c4/0xfddcf76966a56f2442cff05ea1ddb893673f48c4.sol",
+      "name": "PowerCoin",
+      "compiler_version": "v0.5.0+commit.1d4f565a",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfddcf76966a56f2442cff05ea1ddb893673f48c4/0xfddcf76966a56f2442cff05ea1ddb893673f48c4.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfddcf76966a56f2442cff05ea1ddb893673f48c4/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfddcf76966a56f2442cff05ea1ddb893673f48c4/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfddcf76966a56f2442cff05ea1ddb893673f48c4/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xfddcf76966a56f2442cff05ea1ddb893673f48c4/storage.json"
+}

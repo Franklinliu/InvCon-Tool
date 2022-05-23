@@ -1,0 +1,11 @@
+{
+      "sourcecode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8ba3cf103e5a1658209c366153197ac7fa9c9b1/0xc8ba3cf103e5a1658209c366153197ac7fa9c9b1.sol",
+      "name": "DifoNetwork",
+      "compiler_version": "v0.4.18+commit.9cf6e910",
+      "arguments": "",
+      "abi_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8ba3cf103e5a1658209c366153197ac7fa9c9b1/0xc8ba3cf103e5a1658209c366153197ac7fa9c9b1.abi",
+      "transactions_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8ba3cf103e5a1658209c366153197ac7fa9c9b1/txs.json",
+      "tx_decode_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8ba3cf103e5a1658209c366153197ac7fa9c9b1/tx_decode.json",
+      "allstatechanges_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8ba3cf103e5a1658209c366153197ac7fa9c9b1/statechanges.txt",
+      "storageLayout_file": "/home/liuye/Projects/InvCon/Experiment/ERC20/0xc8ba3cf103e5a1658209c366153197ac7fa9c9b1/storage.json"
+}
