@@ -1,11 +1,11 @@
 module.exports = {
     devServer: {
+      disableHostCheck: true,
       port: 3000,
       proxy: {
         '^/api': {
-          target: 'http://155.69.148.241:8080',
+          target: 'http://www.smartcontractsecurity.org',
           changeOrigin: true
-          //   logLevel: 'debug' 
         },
       }
     }
