@@ -37,7 +37,7 @@ Below shows the source code and the detected invariants for ``ismToken`` contrac
 ![Display Page](./figures/ui-2.png) -->
 ### Buggy ERC20 Smart Contracts
 
-#### 1. Against Total Supply Equal to Balance Sum
+#### 1. Violating Total Supply Equal to Balance Sum
 
 * ETHER3XBULL(0x7df13bfd9656038a689ab490bb620ddb440ae2a3), dogecoin(0xfb3e0a102dad7a26ae7f3a2abac9796bee865e8e)
 ```bash 
@@ -89,7 +89,7 @@ PTRToken(0x393bc9f6b7dcfc9a2f53299264688a165586d423)
         return true;
     }
 ```
-#### 2. Against Transfer Invariant
+#### 2. Violating Transfer Invariant
 * FILHToken(0x25dba15589a29043c24d00036c1d56a262895dbf)
 ```bash 
     function transfer(address _to, uint _value) public onlyPayloadSize(2 * 32) {
@@ -204,7 +204,7 @@ NokuCustomERC20(0x98af2e926206f1eb5af46aeddd144727267d0487)
     }
 ```
 
-#### 3. Against TransferFrom Invariant
+#### 3. Violating TransferFrom Invariant
 * ismToken(0x496b277c76e441b59b7bc1aba4cc7a748ea29406, 0xcc6133136a75d464110f4305e3be0555e1daac3f)
 hToken(0x537edd52ebcb9f48ff2f8a28c51fcdb9d6a6e0d4, 0x2689a1d35ad5d656c1fb9468dd007ead6c3fde6c, 0x957339c0586ba22d472ef6f579749ee9439bf85d)
 ```bash
@@ -232,7 +232,7 @@ hToken(0x537edd52ebcb9f48ff2f8a28c51fcdb9d6a6e0d4, 0x2689a1d35ad5d656c1fb9468dd0
     }
 ```
 
-#### 4. Against Approve Invariant
+#### 4. Violating Approve Invariant
 * SOMETOKEN(0x342b2fa55cf870f5f619cc31e96a0c02c6f58cd4)
 ```bash 
     function approve(address _spender, uint256 _value) public
