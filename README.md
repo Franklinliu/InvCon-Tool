@@ -23,7 +23,9 @@ invcon  --eth_address 0x97b3c9aa2ddf4d215a71090c1ee5990e2ad60fd1
 ``` -->
 
 ### User Interface
-Currently the server is running inside NTU network. You can access the website if you are also inside the NTU network. Please try to use and take a look at [InvCon Website](http://155.69.148.241:3000/)
+
+The website of InvCon is hosted at http://www.smartcontractsecurity.org/invcon.
+<!-- Currently the server is running inside NTU network. You can access the website if you are also inside the NTU network. Please try to use and take a look at [InvCon Website](http://155.69.148.241:3000/)
 
 1. Home Page. 
 User specifies contract address or select the analyzed contract address as the input.
@@ -32,7 +34,7 @@ User specifies contract address or select the analyzed contract address as the i
 2. Display Page.
 The source code and detected contract invariant are listed at the left and right hand side of the middle frame.
 Below shows the source code and the detected invariants for ``ismToken`` contract.
-![Display Page](./figures/ui-2.png)
+![Display Page](./figures/ui-2.png) -->
 ### Buggy ERC20 Smart Contracts
 
 #### 1. Against Total Supply Equal to Balance Sum
@@ -44,11 +46,9 @@ function mint(address miner, uint256 _value) external onlyOwner {
 }
 ```
 
-* TokenMintERC20Token(0x9d42ec955fe0d463324f5f1caec5410274b2d2a0, 
- 0xf34ee2ad4d4770de80b885ed5853ac52f4e93c07, 
- 0x1fcb56176483f706070ea5f6b351ea6990f93f5c, 
- 0x6b262b065b0272a51dba9a89020cff67c5e7c81d,
- 0xc6f0b1378e6dbda2841795dc6d8f2ead27b308e5).
+* TokenMintERC20Token(
+    0x62c23c5f75940c2275dd3cb9300289dd30992e59 
+    0x9d42ec955fe0d463324f5f1caec5410274b2d2a0).
 ```bash 
     function _mint(address account, uint256 amount) internal {
         require(account != address(0), "ERC20: mint to the zero address");
@@ -71,7 +71,24 @@ function mint(address miner, uint256 _value) external onlyOwner {
         return true;
     }
 ```
-
+PTRToken(0x393bc9f6b7dcfc9a2f53299264688a165586d423)
+```bash 
+    function lock(address _holder, uint256 _amount, uint256 _releaseStart, uint256 _termOfRound, uint256 _releaseRate) internal onlyOwner returns (bool) {
+        require(locks[_holder] == false);
+        require(_releaseStart > now);
+        require(_termOfRound > 0);
+        require(_amount.mul(_releaseRate).div(100) > 0);
+        require(balances[_holder] >= _amount);
+        balances[_holder] = balances[_holder].sub(_amount);
+        lockupInfo[_holder] = LockupInfo(_releaseStart, _termOfRound, _amount.mul(_releaseRate).div(100), _amount);
+        
+        locks[_holder] = true;
+        
+        emit Lock(_holder, _amount);
+        
+        return true;
+    }
+```
 #### 2. Against Transfer Invariant
 * FILHToken(0x25dba15589a29043c24d00036c1d56a262895dbf)
 ```bash 
@@ -121,7 +138,37 @@ function mint(address miner, uint256 _value) external onlyOwner {
         return true;
     }
 ```
-* ismToken(0x496b277c76e441b59b7bc1aba4cc7a748ea29406)
+
+ACCAToken(0x5f0415ea396f2ee499f4984df44fcdb044510c16)
+```bash 
+    function transfer(address _to, uint256 _accaWei) public returns (bool) {
+        //    
+        require(_to != address(this));
+        
+        //   , APIS    
+        if(manoContracts[msg.sender] || manoContracts[_to]) {
+            return super.transfer(_to, _accaWei);
+        }
+        
+        //     .
+        if(lockedWalletInfo[msg.sender].timeLockUpEnd > now && lockedWalletInfo[msg.sender].sendLock == true) {
+            RejectedPaymentFromLockedUpWallet(msg.sender, _to, _accaWei);
+            return false;
+        } 
+        //      
+        else if(lockedWalletInfo[_to].timeLockUpEnd > now && lockedWalletInfo[_to].receiveLock == true) {
+            RejectedPaymentToLockedUpWallet(msg.sender, _to, _accaWei);
+            return false;
+        } 
+        //   ,  .
+        else {
+            return super.transfer(_to, _accaWei);
+        }
+    }
+```
+
+* ismToken(0x496b277c76e441b59b7bc1aba4cc7a748ea29406, 0xcc6133136a75d464110f4305e3be0555e1daac3f)
+hToken(0x537edd52ebcb9f48ff2f8a28c51fcdb9d6a6e0d4, 0x2689a1d35ad5d656c1fb9468dd007ead6c3fde6c, 0x957339c0586ba22d472ef6f579749ee9439bf85d)
 ```bash
     function transfer(address _to, uint _value) public onlyPayloadSize(2 * 32) {
         uint fee = (_value.mul(basisPointsRate)).div(10000);
@@ -138,8 +185,28 @@ function mint(address miner, uint256 _value) external onlyOwner {
         Transfer(msg.sender, _to, sendAmount);
     }
 ```
+
+NokuCustomERC20(0x98af2e926206f1eb5af46aeddd144727267d0487)
+```bash 
+    function transfer(address _to, uint256 _value) canTransfer(msg.sender, _value) public returns(bool transferred) {
+        if (freeTransfer()) {
+            return super.transfer(_to, _value);
+        }
+        else {
+            uint256 usageFee = transferFee(_value);
+            uint256 netValue = _value.sub(usageFee);
+
+            bool feeTransferred = super.transfer(owner, usageFee);
+            bool netValueTransferred = super.transfer(_to, netValue);
+
+            return feeTransferred && netValueTransferred;
+        }
+    }
+```
+
 #### 3. Against TransferFrom Invariant
-* ismToken(0x496b277c76e441b59b7bc1aba4cc7a748ea29406)
+* ismToken(0x496b277c76e441b59b7bc1aba4cc7a748ea29406, 0xcc6133136a75d464110f4305e3be0555e1daac3f)
+hToken(0x537edd52ebcb9f48ff2f8a28c51fcdb9d6a6e0d4, 0x2689a1d35ad5d656c1fb9468dd007ead6c3fde6c, 0x957339c0586ba22d472ef6f579749ee9439bf85d)
 ```bash
    function transferFrom(address _from, address _to, uint _value) public onlyPayloadSize(3 * 32) {
         var _allowance = allowed[_from][msg.sender];
@@ -174,14 +241,6 @@ function mint(address miner, uint256 _value) external onlyOwner {
         return true;
     }
 ```
-
-
-
-
-
-
-
-
 
 
 
