@@ -3,16 +3,69 @@
 ## InvCon, A Dynamic Invariant Detector for Ethereum Smart Contracts
 ---
 
+### Contents
+This readme first demonstrates the website allow user to access the mined contract invariants.
+Then, it shows how to quickly use *InvCon* to detect smart contract invariants with an example.
+We also show the buggy ERC20 smart contracts at this readme to highlight the application for detection of inconsistent smart contract against standards.
+
+- [InvCon, A Dynamic Invariant Detector for Ethereum Smart Contracts](#invcon-a-dynamic-invariant-detector-for-ethereum-smart-contracts)
+    - [Contents](#contents)
+  - [Get Started](#get-started)
+    - [Prerequisites](#prerequisites)
+    - [Quick Start](#quick-start)
+  - [Advanced Use](#advanced-use)
+   - [Buggy ERC20 Smart Contracts](#buggy-erc20-smart-contracts)
+   - [Dataset Collection](#dataset-collection)
+
+
+### User Interface 
+
+The website of InvCon is hosted at http://www.smartcontractsecurity.org/invcon.
+This website includes all the mined invariants of contracts mentioned in the experiment of the paper.
+
 <!-- ### Supported Smart Contracts
 
 Written in Solidity >= 0.5.12 -->
 
-### How to build
+## Get Started
 
-TODO:
+### Prerequisites
 
+* We assume Docker is installed. If not, please refer to the official website https://docs.docker.com/get-docker/ on how to install Docker. The artifact was tested on Docker version 20.10.7 and 20.10.14. 
+* *InvCon* needs to access the Internet to retrieve source code and transaction histories of smart contracts from the [Etherscan](https://etherscan.io/). We assume full access to this website.
 
+### Quick Start
 
+To get started quickly, we suggest to use *InvCon* docker images to have a quick start of smart contract invaraint detection.
+
+The following instruction will detect the contract invariants of smart contract **TokenERC20**([0x0e9d46eed51a527db8f5c12a803eb7fddf4da332](https://etherscan.io/address/0x0e9d46eed51a527db8f5c12a803eb7fddf4da332#code)) from its past transactions.
+Due to that we have cached the collected transaction data,
+this instruction will take no more than one minutes.
+```bash 
+docker pull liuyedocker/invcon:latest 
+docker run -it --rm liuyedocker/invcon invcon --eth_address 0x0e9d46eed51a527db8f5c12a803eb7fddf4da332
+```
+
+The normal output should be:
+
+<pre>|████████████████████████████████████████| 88/88 [100%] in 0.4s (240.28/s) 
+0
+finished!
+ please check invariant file: /home/liuye/Projects/InvCon/Experiment/ERC20/0x0e9d46eed51a527db8f5c12a803eb7fddf4da332/TokenERC20.inv
+</pre>
+
+### Advanced Use 
+We can also create a clean diretory on the host machine `/tmp` where the collected contract data, the mined contract invaraints will be saved via the volume mount.
+The instruction is as follows.
+```bash 
+docker pull liuyedocker/invcon:latest 
+mkdir /tmp 
+docker run -it --rm -v /tmp:/home/realworldcontracts/ liuyedocker/invcon invcon --eth_address 0x0e9d46eed51a527db8f5c12a803eb7fddf4da332 --workspace /home/realworldcontracts/
+```
+
+The normal output should be:
+```bash 
+```
 
 <!-- ### Quick Start
 
@@ -22,9 +75,6 @@ Mining specification of SteveJobs token contract.
 invcon  --eth_address 0x97b3c9aa2ddf4d215a71090c1ee5990e2ad60fd1
 ``` -->
 
-### User Interface
-
-The website of InvCon is hosted at http://www.smartcontractsecurity.org/invcon.
 <!-- Currently the server is running inside NTU network. You can access the website if you are also inside the NTU network. Please try to use and take a look at [InvCon Website](http://155.69.148.241:3000/)
 
 1. Home Page. 
