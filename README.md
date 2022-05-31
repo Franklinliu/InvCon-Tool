@@ -64,7 +64,26 @@ docker run -it --rm -v /tmp:/home/realworldcontracts/ liuyedocker/invcon invcon 
 ```
 
 The normal output should be:
-```bash 
+```bash
+2  internal txs to crawl...
+|████████████████████████████████████████| 2/2 [100%] in 1.8s (1.09/s)
+Internal message calls (except fallback function): 2
+{ abi:
+   '/home/realworldcontracts/0x0e9d46eed51a527db8f5c12a803eb7fddf4da332/0x0e9d46eed51a527db8f5c12a803eb7fddf4da332.abi',
+  tx:
+   '/home/realworldcontracts/0x0e9d46eed51a527db8f5c12a803eb7fddf4da332/txs.json',
+  output:
+   '/home/realworldcontracts/0x0e9d46eed51a527db8f5c12a803eb7fddf4da332/tx_decode.json' }
+crawl contract state changes along transactions...
+|████████████████████████████████████████| 88/88 [100%] in 54.8s (1.61/s)
+Installing '0.4.25'...
+Version '0.4.25' installed.
+Switched global version to 0.4.25
+|████████████████████████████████████████| 88/88 [100%] in 0.8s (109.98/s)
+0
+finished!
+ please check invariant file: /home/realworldcontracts/0x0e9d46eed51a527db8f5c12a803eb7fddf4da332/TokenERC20.inv
+>>>0x0e9d46eed51a527db8f5c12a803eb7fddf4da332-TokenERC20: 88 transactions; 6.3681488037109375 seconds
 ```
 
 <!-- ### Quick Start
